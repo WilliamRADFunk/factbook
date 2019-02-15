@@ -1,0 +1,28 @@
+{
+  "name": "data-glutton",
+  "version": "0.1.0",
+  "description": "Simple service to scrape data and store it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data",
+    "scraping",
+    "big",
+    "data",
+    "data",
+    "scraping",
+    "ontology",
+    "json",
+    "json-ld"
+  ],
+  "author": "William RAD Funk",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.34.0",
+    "request-promise": "^4.2.4",
+    "uuid-by-string": "^2.1.0"
+  }
+}
