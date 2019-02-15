@@ -19,9 +19,9 @@ fs.closeSync(fs.openSync(LOG_FILE_NAME, 'w'));
 
 // If countries file exists, great. Otherwise make a blank one for later.
 try {
-    rawData = fs.readFileSync('countries.json');
+    rawData = fs.readFileSync('dist/countries.json');
 } catch (err) {
-    fs.closeSync(fs.openSync('countries.json', 'w'));
+    fs.closeSync(fs.openSync('dist/countries.json', 'w'));
 }
 // If preexisting countries file, use it.
 if (rawData) {
@@ -147,7 +147,7 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
         let promises = getCountriesData();
         Promise.all(promises)
             .then(function(values) {
-                fs.writeFileSync('countries.json', JSON.stringify(countriesFile));
+                fs.writeFileSync('dist/countries.json', JSON.stringify(countriesFile));
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
