@@ -34,6 +34,7 @@ var getCountryData = (country, url) => {
 				dataScrapers.getBackground($, country, countriesFile);
 				dataScrapers.getBorderMapImg($, country, countriesFile);
 				dataScrapers.getRegionMapImg($, country, countriesFile);
+				dataScrapers.getSupllementalImages($, country, countriesFile);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
