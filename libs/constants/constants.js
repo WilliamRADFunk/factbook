@@ -22,6 +22,8 @@ const INST_REGION_MAP = MAIN_INSTANCE_PATH + 'regionMap/';
 const ONT_FLAG = MAIN_ONT_PATH + 'flag/';
 const INST_FLAG = MAIN_INSTANCE_PATH + 'flag/';
 const ONT_DESCRIPTION = MAIN_ONT_PATH + 'description/';
+const IMAGE_DIMENSIONS = ONT_IMAGE + 'dimenstions/';
+const IMAGE_SIZE = ONT_IMAGE + 'size/';
 
 module.exports = {
 	URL_BASE,
@@ -43,5 +45,7 @@ module.exports = {
 	ONT_REGION_MAP,
 	INST_REGION_MAP,
 	ONT_FLAG,
-	INST_FLAG
+	INST_FLAG,
+	IMAGE_DIMENSIONS,
+	IMAGE_SIZE
 };

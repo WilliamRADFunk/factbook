@@ -139,7 +139,10 @@ var getSupllementalImages = function(cheerioElem, country, root) {
         let suppImages = relations.filter(rel => rel[constants.HAS_SUPPLEMENTAL_IMG]);
 
 		var a = cheerioElem(this).find('img').attr('src');
-		var b = cheerioElem(this).find('img').attr('alt'); htmlToText
+		var b = cheerioElem(this).find('img').attr('alt');
+		var c = cheerioElem(this).find(cheerioElem('div.carousel-photo-info .photoInfo .flag_description_text'));
+		var imageProps = [];
+		c.each(function() { imageProps.push(cheerioElem(this).text().trim()); });
 		b = b && htmlToText.fromString(b);
 		var suppImgId, suppImgUrl;
         if (a && a.replace('../', '')) {
@@ -147,9 +150,11 @@ var getSupllementalImages = function(cheerioElem, country, root) {
 			suppImgId = getUuid(cleanSrc);
             suppImgUrl = constants.URL_BASE + cleanSrc;
 		}
-        if (suppImgUrl && !suppImages.some(img => img.hasSupplementalImg.id.includes(suppImgId))) {
+        if (suppImgUrl && !suppImages.some(img => img[constants.HAS_SUPPLEMENTAL_IMG].id.includes(suppImgId))) {
 			var attrs = {};
 			attrs[constants.ORIGINAL_IMAGE_URL] = suppImgUrl;
+			attrs[constants.IMAGE_DIMENSIONS] = imageProps[0] || 'N/A';
+			attrs[constants.IMAGE_SIZE] = imageProps[1] || 'N/A';
 
 			var relation = {};
 			relation[constants.HAS_SUPPLEMENTAL_IMG] = {
