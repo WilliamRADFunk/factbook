@@ -3,9 +3,8 @@ const rp = require('request-promise');
 const cheerio = require('cheerio');
 const getUuid = require('uuid-by-string');
 
-const hasProp = require('./libs/utils/has-prop');
-const getRelation = require('./libs/utils/get-relation');
 const constants = require('./libs/constants/constants');
+const dataScrapers = require('./libs/scrapers/data-getters');
 
 
 const LOG_FILE_NAME = ('logs/log-' + new Date().toISOString() + '.txt').replace(':', '-');
@@ -31,8 +30,10 @@ var getCountryData = (country, url) => {
         return rp(url, { timeout: constants.DATA_REQUEST_TIMEOUT })
             .then((html) => {
                 let $ = cheerio.load(html);
-				getFlag($, country);
-				getBackground($, country);
+				dataScrapers.getFlag($, country, countriesFile);
+				dataScrapers.getBackground($, country, countriesFile);
+				dataScrapers.getBorderMapImg($, country, countriesFile);
+				dataScrapers.getRegionMapImg($, country, countriesFile);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
@@ -54,69 +55,6 @@ var getCountriesData = () => {
     });
     return countryDataPromises;
 };
-
-var getFlag = (cheerioElem, country) => {
-    let relations = countriesFile[country].relations;
-    cheerioElem('div.flagBox').each(function() {
-        let flag = getRelation(relations, 'hasFlag');
-        if (flag && flag.attributes && flag.attributes.originalImageURL) { return; }
-
-        var a = cheerioElem(this).find('img').attr('src');
-        var flagImgUrl;
-        if (a && a.replace('../', '')) {
-            flagImgUrl = constants.URL_BASE + a.replace('../', '');
-        }
-        if (flagImgUrl) {
-            countriesFile[country].relations.push({
-                hasFlag: {
-                    id: constants.MAIN_INSTANCE_PATH + 'flag/' + getUuid(country),
-					label: country + '\'s national flag',
-					type: constants.MAIN_ONT_PATH + 'flag',
-					attributes: {
-						originalImageURL: flagImgUrl
-					},
-					relations: []
-                }
-            });
-        }
-        // TODO: scrape physical image from url and store it.
-    });
-    cheerioElem('div.modalFlagDesc').each(function() {
-		let flag = getRelation(relations, 'hasFlag');
-        if (flag && flag.attributes && flag.attributes.description) { return; }
-    
-        var a = cheerioElem(this).find('div.photogallery_captiontext').text();
-        if (!a) { return; }
-
-        if (flag) {
-            flag.attributes.description = a.trim();
-        } else {
-            countriesFile[country].relations.push({
-                hasFlag: {
-                    id: constants.MAIN_INSTANCE_PATH + 'flag/' + getUuid(country),
-					label: country + '\'s national flag',
-					type: constants.MAIN_ONT_PATH + 'flag',
-					attributes: {
-						description: a.trim(),
-					},
-					relations: []
-                }
-            });
-        }
-    });
-}
-
-var getBackground = (cheerioElem, country) => {
-	cheerioElem('#field-background').each(function() {
-        let backgroundAttr = countriesFile[country].attributes.background;
-        if (backgroundAttr) { return; }
-
-        var bckGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
-        if (bckGrd) {
-            countriesFile[country].attributes['background'] = bckGrd;
-        }
-    });
-}
 
 rp('https://www.cia.gov/library/publications/the-world-factbook/')
     .then((html) => {
