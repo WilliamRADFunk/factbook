@@ -3,7 +3,7 @@ const rp = require('request-promise');
 const cheerio = require('cheerio');
 const getUuid = require('uuid-by-string');
 
-const constants = require('./libs/constants/constants');
+const consts = require('./libs/constants/constants');
 const dataScrapers = require('./libs/scrapers/data-getters');
 
 
@@ -27,14 +27,15 @@ if (rawData) {
 
 var getCountryData = (country, url) => {
     if (country && url) {
-        return rp(url, { timeout: constants.DATA_REQUEST_TIMEOUT })
+        return rp(url, { timeout: consts.CUSTOM.DATA_REQUEST_TIMEOUT })
             .then((html) => {
                 let $ = cheerio.load(html);
 				dataScrapers.getFlag($, country, countriesFile);
 				dataScrapers.getBackground($, country, countriesFile);
 				dataScrapers.getBorderMapImg($, country, countriesFile);
 				dataScrapers.getRegionMapImg($, country, countriesFile);
-				dataScrapers.getSupllementalImages($, country, countriesFile);
+                dataScrapers.getSupllementalImages($, country, countriesFile);
+                dataScrapers.getGeography($, country, countriesFile);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
@@ -63,12 +64,12 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
         $('#search-place option').each(function() {
             var a = $(this).prev()
             var countryName = a.text().replace('\n', '').trim();
-            if (!countryName || countriesFile[countryName] || constants.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
+            if (!countryName || countriesFile[countryName] || consts.CUSTOM.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
                 // Either already have it, or it's in the invalid list.
             } else {
                 countriesFile.countriesInList.push(countryName);
                 countriesFile[countryName] = {
-                    id: constants.MAIN_INSTANCE_PATH + 'country/' + getUuid(countryName),
+                    id: consts.CUSTOM.MAIN_INSTANCE_PATH + 'country/' + getUuid(countryName),
                     label: countryName,
                     attributes: {},
                     relations: [],
@@ -82,7 +83,9 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
         let promises = getCountriesData();
         Promise.all(promises)
             .then(function() {
-                fs.writeFileSync('dist/countries.json', JSON.stringify(countriesFile));
+                let file = JSON.stringify(countriesFile);
+                file = file.replace(/\\n/g, ' ');
+                fs.writeFileSync('dist/countries.json', file);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
