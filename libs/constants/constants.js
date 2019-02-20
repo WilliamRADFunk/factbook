@@ -31,6 +31,11 @@ const ONT_LOCATION_DESCRIPTION = MAIN_ONT_PATH + 'locationDescription/';
 const ONT_MAP_REFERENCES = MAIN_ONT_PATH + 'mapReferences/';
 const IMAGE_DIMENSIONS = ONT_IMAGE + 'dimenstions/';
 const IMAGE_SIZE = ONT_IMAGE + 'size/';
+const ONT_TOTAL_AREA = MAIN_ONT_PATH + 'totalArea/';
+const ONT_LAND_AREA = MAIN_ONT_PATH + 'landArea/';
+const ONT_WATER_AREA = MAIN_ONT_PATH + 'waterArea/';
+const ONT_AREA_RANK = MAIN_ONT_PATH + 'areaRank/';
+const ONT_AREA_UNIT = MAIN_ONT_PATH + 'areaUnit/';
 
 const POS = 'http://www.w3.org/2003/01/geo/wgs84_pos#';
 
@@ -71,7 +76,12 @@ const CUSTOM = {
 	ONT_LOCATION_DESCRIPTION,
 	ONT_MAP_REFERENCES,
 	IMAGE_DIMENSIONS,
-	IMAGE_SIZE
+	IMAGE_SIZE,
+	ONT_TOTAL_AREA,
+	ONT_LAND_AREA,
+	ONT_WATER_AREA,
+	ONT_AREA_RANK,
+	ONT_AREA_UNIT
 };
 
 module.exports = {

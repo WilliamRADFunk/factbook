@@ -4,6 +4,41 @@ const htmlToText = require('html-to-text');
 const consts = require('../constants/constants');
 const getRelation = require('../utils/get-relation');
 
+var getArea = function(cheerioElem, country, root) {
+	cheerioElem('#field-area > div.category_data.subfield.numeric').each(function() {
+		let areaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
+		let areaData = cheerioElem(this).find('span.subfield-number').text().trim();
+		switch (areaSwitch) {
+			case 'total:':
+				let totalAreaAttr = root[country].attributes[consts.CUSTOM.ONT_TOTAL_AREA];
+				if (totalAreaAttr) { return; }
+				root[country].attributes[consts.CUSTOM.ONT_TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				break;
+			case 'land:':
+				let landAreaAttr = root[country].attributes[consts.CUSTOM.ONT_LAND_AREA];
+				root[country].attributes[consts.CUSTOM.ONT_LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				if (landAreaAttr) { return; }
+				break;
+			case 'water:':
+				let waterAreaAttr = root[country].attributes[consts.CUSTOM.ONT_WATER_AREA];
+				root[country].attributes[consts.CUSTOM.ONT_WATER_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				if (waterAreaAttr) { return; }
+				break;
+		}
+    });
+	cheerioElem('#field-area > div > span.category_data').each(function() {
+        let areaRankAttr = root[country].attributes[consts.CUSTOM.ONT_AREA_RANK];
+        if (areaRankAttr) { return; }
+
+		let areaRank = cheerioElem(this).find('a').text().trim();
+		if (areaRank) {
+			root[country].attributes[consts.CUSTOM.ONT_AREA_RANK] = areaRank;
+		}
+		
+	});
+	root[country].attributes[consts.CUSTOM.ONT_AREA_UNIT] = 'sq km';
+};
+
 var getBackground = function(cheerioElem, country, root) {
 	cheerioElem('#field-background').each(function() {
         let backgroundAttr = root[country].attributes[consts.CUSTOM.ONT_BACKGROUND];
@@ -223,6 +258,7 @@ var getSupllementalImages = function(cheerioElem, country, root) {
 };
 
 module.exports = {
+	getArea,
 	getBackground,
 	getBorderMapImg,
 	getFlag,

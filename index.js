@@ -36,6 +36,7 @@ var getCountryData = (country, url) => {
 				dataScrapers.getRegionMapImg($, country, countriesFile);
                 dataScrapers.getSupllementalImages($, country, countriesFile);
                 dataScrapers.getGeography($, country, countriesFile);
+                dataScrapers.getArea($, country, countriesFile);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
@@ -63,7 +64,7 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
         let $ = cheerio.load(html);
         $('#search-place option').each(function() {
             var a = $(this).prev()
-            var countryName = a.text().replace('\n', '').trim();
+            var countryName = a.text().replace(/\\n/g, ' ').trim();
             if (!countryName || countriesFile[countryName] || consts.CUSTOM.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
                 // Either already have it, or it's in the invalid list.
             } else {
