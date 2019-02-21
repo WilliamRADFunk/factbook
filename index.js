@@ -37,6 +37,8 @@ var getCountryData = (country, url) => {
                 dataScrapers.getSupllementalImages($, country, countriesFile);
                 dataScrapers.getGeography($, country, countriesFile);
                 dataScrapers.getArea($, country, countriesFile);
+                dataScrapers.getAreaComparative($, country, countriesFile);
+                dataScrapers.getCoastLength($, country, countriesFile);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');

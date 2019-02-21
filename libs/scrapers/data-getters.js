@@ -39,12 +39,24 @@ var getArea = function(cheerioElem, country, root) {
 	root[country].attributes[consts.CUSTOM.ONT_AREA_UNIT] = 'sq km';
 };
 
+var getAreaComparative = function(cheerioElem, country, root) {
+	cheerioElem('#field-area-comparative').each(function() {
+        let areaAttr = root[country].attributes[consts.CUSTOM.ONT_AREA_COMPARATIVE];
+        if (areaAttr) { return; }
+
+        var areaGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
+        if (areaGrd) {
+            root[country].attributes[consts.CUSTOM.ONT_AREA_COMPARATIVE] = areaGrd;
+        }
+    });
+};
+
 var getBackground = function(cheerioElem, country, root) {
 	cheerioElem('#field-background').each(function() {
         let backgroundAttr = root[country].attributes[consts.CUSTOM.ONT_BACKGROUND];
         if (backgroundAttr) { return; }
 
-        var bckGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace('\n', ' ');
+        var bckGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (bckGrd) {
             root[country].attributes[consts.CUSTOM.ONT_BACKGROUND] = bckGrd;
         }
@@ -79,6 +91,21 @@ var getBorderMapImg = function(cheerioElem, country, root) {
         }
         // TODO: scrape physical image from url and store it.
     });
+};
+
+var getCoastLength = function(cheerioElem, country, root) {
+	cheerioElem('#field-coastline').each(function() {
+        let coastAttr = root[country].attributes[consts.CUSTOM.ONT_COAST_LENGTH];
+        if (coastAttr) { return; }
+
+        var coastGrd = cheerioElem(this).find('div.category_data.subfield.numeric').text().trim()
+        if (coastGrd) {
+			coastGrdSplit = coastGrd.split('km');
+			root[country].attributes[consts.CUSTOM.ONT_COAST_LENGTH] = coastGrdSplit[0].trim();
+			root[country].attributes[consts.CUSTOM.ONT_COAST_LENGTH_MODIFIER] = coastGrdSplit.slice(1).join('km').replace(/\\n/g, '').trim() || null;
+        }
+	});
+	root[country].attributes[consts.CUSTOM.ONT_COAST_LENGTH_UNIT] = 'km';
 };
 
 var getFlag = function(cheerioElem, country, root) {
@@ -259,8 +286,10 @@ var getSupllementalImages = function(cheerioElem, country, root) {
 
 module.exports = {
 	getArea,
+	getAreaComparative,
 	getBackground,
 	getBorderMapImg,
+	getCoastLength,
 	getFlag,
 	getGeography,
 	getRegionMapImg,
