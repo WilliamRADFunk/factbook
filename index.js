@@ -75,8 +75,8 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 countriesFile[countryName] = {
                     id: consts.CUSTOM.MAIN_INSTANCE_PATH + 'country/' + getUuid(countryName),
                     label: countryName,
-                    attributes: {},
-                    relations: [],
+                    datatypeProperties: {},
+                    objectProperties: [],
                     metaScrapeData: {
                         'data-place-code': a.attr('data-place-code')
                     }
