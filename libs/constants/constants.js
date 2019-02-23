@@ -37,6 +37,7 @@ const ONT_WATER_AREA = MAIN_ONT_PATH + 'waterArea/';
 const ONT_AREA_COMPARATIVE = MAIN_ONT_PATH + 'areaComparative/';
 const ONT_AREA_RANK = MAIN_ONT_PATH + 'areaRank/';
 const ONT_AREA_UNIT = MAIN_ONT_PATH + 'areaUnit/';
+const ONT_CLIMATE = MAIN_ONT_PATH + 'climate/';
 const ONT_COAST_LENGTH = MAIN_ONT_PATH + 'coastLength/';
 const ONT_COAST_LENGTH_UNIT = MAIN_ONT_PATH + 'coastLengthUnit/';
 const ONT_COAST_LENGTH_MODIFIER = MAIN_ONT_PATH + 'coastLengthModifier/';
@@ -87,6 +88,7 @@ const CUSTOM = {
 	ONT_AREA_COMPARATIVE,
 	ONT_AREA_RANK,
 	ONT_AREA_UNIT,
+	ONT_CLIMATE,
 	ONT_COAST_LENGTH,
 	ONT_COAST_LENGTH_UNIT,
 	ONT_COAST_LENGTH_MODIFIER

@@ -93,6 +93,18 @@ var getBorderMapImg = function(cheerioElem, country, root) {
     });
 };
 
+var getClimate = function(cheerioElem, country, root) {
+	cheerioElem('#field-climate').each(function() {
+        let climAttr = root[country].attributes[consts.CUSTOM.ONT_CLIMATE];
+        if (climAttr) { return; }
+
+        var climGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim()
+        if (climGrd) {
+			root[country].attributes[consts.CUSTOM.ONT_CLIMATE] = climGrd.replace(/\\n/g, '').trim();
+        }
+	});
+};
+
 var getCoastLength = function(cheerioElem, country, root) {
 	cheerioElem('#field-coastline').each(function() {
         let coastAttr = root[country].attributes[consts.CUSTOM.ONT_COAST_LENGTH];
@@ -289,6 +301,7 @@ module.exports = {
 	getAreaComparative,
 	getBackground,
 	getBorderMapImg,
+	getClimate,
 	getCoastLength,
 	getFlag,
 	getGeography,
