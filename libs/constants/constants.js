@@ -24,6 +24,7 @@ const ONT_BORDER_MAP = MAIN_ONT_PATH + 'BorderMap/';
 const ONT_IMAGE = MAIN_ONT_PATH + 'Image/';
 const ONT_GEO_LOCATION = WGS84_POS.LOCATION;
 const ONT_REGION_MAP = MAIN_ONT_PATH + 'RegionMap/';
+const ONT_DOMAIN_AREA = MAIN_ONT_PATH + 'DomainArea/';
 
 // ObjectProperty Paths
 const HAS_BORDER_MAP = MAIN_ONT_PATH + 'hasBorderMap/';
@@ -32,9 +33,7 @@ const HAS_LOCATION = MAIN_ONT_PATH + 'hasLocation/';
 const HAS_REGION_MAP = MAIN_ONT_PATH + 'hasRegionMap/';
 const HAS_GEO_LOCATION = MAIN_INSTANCE_PATH + 'hasLocation/';
 const HAS_SUPPLEMENTAL_IMG = MAIN_ONT_PATH + 'hasSupplementalImage/';
-
-const LOCATION_URI = MAIN_ONT_PATH + 'locatorURI/';
-const CONTENTS = ASSET_ONT_PATH + 'contents/';
+const HAS_DOMAIN_AREA = MAIN_ONT_PATH + 'hasDomainArea/';
 
 // DatatypeProperty Paths
 const BACKGROUND = MAIN_ONT_PATH + 'background/';
@@ -42,12 +41,15 @@ const LOCATION_DESCRIPTION = MAIN_ONT_PATH + 'locationDescription/';
 const IMAGE_DIMENSIONS = MAIN_ONT_PATH + 'imageDimensions/';
 const IMAGE_SIZE = MAIN_ONT_PATH + 'imageSize/';
 const MAP_REFERENCES = MAIN_ONT_PATH + 'mapReferences/';
+const LOCATION_URI = MAIN_ONT_PATH + 'locatorURI/';
+const CONTENT_DESCRIPTION = ASSET_ONT_PATH + 'contentDescription/';
 
 // Instance Paths
 const INST_BORDER_MAP = MAIN_INSTANCE_PATH + 'BorderMap/';
 const INST_IMAGE = MAIN_INSTANCE_PATH + 'Image/';
 const INST_REGION_MAP = MAIN_INSTANCE_PATH + 'RegionMap/';
 const INST_FLAG = MAIN_INSTANCE_PATH + 'NationalFlag/';
+const INST_DOMAIN_AREA = MAIN_INSTANCE_PATH + 'DomainArea/';
 
 
 const ONT_TOTAL_AREA = MAIN_ONT_PATH + 'totalArea/';
@@ -55,10 +57,9 @@ const ONT_LAND_AREA = MAIN_ONT_PATH + 'landArea/';
 const ONT_WATER_AREA = MAIN_ONT_PATH + 'waterArea/';
 const ONT_AREA_COMPARATIVE = MAIN_ONT_PATH + 'areaComparative/';
 const ONT_AREA_RANK = MAIN_ONT_PATH + 'areaRank/';
-const ONT_AREA_UNIT = MAIN_ONT_PATH + 'areaUnit/';
+const ONT_UNIT = MAIN_ONT_PATH + 'unit/';
 const ONT_CLIMATE = MAIN_ONT_PATH + 'climate/';
 const ONT_COAST_LENGTH = MAIN_ONT_PATH + 'coastLength/';
-const ONT_COAST_LENGTH_UNIT = MAIN_ONT_PATH + 'coastLengthUnit/';
 const ONT_COAST_LENGTH_MODIFIER = MAIN_ONT_PATH + 'coastLengthModifier/';
 
 const CUSTOM = {
@@ -74,7 +75,6 @@ const CUSTOM = {
 	HAS_SUPPLEMENTAL_IMG,
 	LOCATION_URI,
 	BACKGROUND,
-	ONT_DESCRIPTION,
 	ONT_BORDER_MAP,
 	INST_BORDER_MAP,
 	ONT_IMAGE,
@@ -86,6 +86,7 @@ const CUSTOM = {
 	ONT_FLAG,
 	INST_FLAG,
 	LOCATION_DESCRIPTION,
+	CONTENT_DESCRIPTION,
 	MAP_REFERENCES,
 	IMAGE_DIMENSIONS,
 	IMAGE_SIZE,
@@ -94,11 +95,14 @@ const CUSTOM = {
 	ONT_WATER_AREA,
 	ONT_AREA_COMPARATIVE,
 	ONT_AREA_RANK,
-	ONT_AREA_UNIT,
+	ONT_UNIT,
 	ONT_CLIMATE,
 	ONT_COAST_LENGTH,
-	ONT_COAST_LENGTH_UNIT,
-	ONT_COAST_LENGTH_MODIFIER
+	ONT_UNIT,
+	ONT_COAST_LENGTH_MODIFIER,
+	ONT_DOMAIN_AREA,
+	HAS_DOMAIN_AREA,
+	INST_DOMAIN_AREA
 };
 
 module.exports = {

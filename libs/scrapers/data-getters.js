@@ -5,48 +5,51 @@ const consts = require('../constants/constants');
 const getRelation = require('../utils/get-objectProperty');
 
 var getArea = function(cheerioElem, country, root) {
+    let objectProperties = root[country].objectProperties;
+	let map = getRelation(objectProperties, consts.CUSTOM.HAS_DOMAIN_AREA);
+	if (!map) {
+		var objectProp = {};
+		objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = {
+			id: consts.CUSTOM.INST_DOMAIN_AREA + getUuid(country),
+			label: 'Areas of land and water contained within ' + country + '\'s borders.',
+			type: consts.CUSTOM.ONT_DOMAIN_AREA,
+			datatypeProperties: {},
+			objectProperties: []
+		};
+
+		map = objectProp;
+		root[country].objectProperties.push(objectProp);
+	}
 	cheerioElem('#field-area > div.category_data.subfield.numeric').each(function() {
 		let areaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
 		let areaData = cheerioElem(this).find('span.subfield-number').text().trim();
 		switch (areaSwitch) {
 			case 'total:':
-				let totalAreaAttr = root[country].datatypeProperties[consts.CUSTOM.ONT_TOTAL_AREA];
-				if (totalAreaAttr) { return; }
-				root[country].datatypeProperties[consts.CUSTOM.ONT_TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.CUSTOM.ONT_TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				console.log('map', map);
 				break;
 			case 'land:':
-				let landAreaAttr = root[country].datatypeProperties[consts.CUSTOM.ONT_LAND_AREA];
-				root[country].datatypeProperties[consts.CUSTOM.ONT_LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
-				if (landAreaAttr) { return; }
+				map.datatypeProperties[consts.CUSTOM.ONT_LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
 				break;
 			case 'water:':
-				let waterAreaAttr = root[country].datatypeProperties[consts.CUSTOM.ONT_WATER_AREA];
-				root[country].datatypeProperties[consts.CUSTOM.ONT_WATER_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
-				if (waterAreaAttr) { return; }
+				map.datatypeProperties[consts.CUSTOM.ONT_WATER_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
 				break;
 		}
     });
 	cheerioElem('#field-area > div > span.category_data').each(function() {
-        let areaRankAttr = root[country].datatypeProperties[consts.CUSTOM.ONT_AREA_RANK];
-        if (areaRankAttr) { return; }
+        let areaRankAttr = map.datatypeProperties[consts.CUSTOM.ONT_AREA_RANK];
 
 		let areaRank = cheerioElem(this).find('a').text().trim();
 		if (areaRank) {
-			root[country].datatypeProperties[consts.CUSTOM.ONT_AREA_RANK] = areaRank;
+			map.datatypeProperties[consts.CUSTOM.ONT_AREA_RANK] = areaRank;
 		}
 		
 	});
-	root[country].datatypeProperties[consts.CUSTOM.ONT_AREA_UNIT] = 'sq km';
-};
-
-var getAreaComparative = function(cheerioElem, country, root) {
+	map.datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'sq km';
 	cheerioElem('#field-area-comparative').each(function() {
-        let areaAttr = root[country].datatypeProperties[consts.CUSTOM.ONT_AREA_COMPARATIVE];
-        if (areaAttr) { return; }
-
         var areaGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (areaGrd) {
-            root[country].datatypeProperties[consts.CUSTOM.ONT_AREA_COMPARATIVE] = areaGrd;
+            map.datatypeProperties[consts.CUSTOM.ONT_AREA_COMPARATIVE] = areaGrd;
         }
     });
 };
@@ -117,7 +120,7 @@ var getCoastLength = function(cheerioElem, country, root) {
 			root[country].datatypeProperties[consts.CUSTOM.ONT_COAST_LENGTH_MODIFIER] = coastGrdSplit.slice(1).join('km').replace(/\\n/g, '').trim() || null;
         }
 	});
-	root[country].datatypeProperties[consts.CUSTOM.ONT_COAST_LENGTH_UNIT] = 'km';
+	root[country].datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'km';
 };
 
 var getFlag = function(cheerioElem, country, root) {
@@ -152,28 +155,22 @@ var getFlag = function(cheerioElem, country, root) {
     });
     cheerioElem('div.modalFlagDesc').each(function() {
 		let flag = getRelation(objectProperties, consts.CUSTOM.HAS_FLAG);
-        if (flag && flag.objectProperties && flag.objectProperties.some(p => p.type === consts.CUSTOM.CONTENTS)) { return; }
     
         var a = cheerioElem(this).find('div.photogallery_captiontext').text().trim();
         if (!a) { return; }
 
         if (flag) {
-			const prop = flag.objectProperties.find(p => p.type === consts.CUSTOM.CONTENTS);
-			prop.id = a;
+			flag.datatypeProperties[consts.CUSTOM.CONTENT_DESCRIPTION] = a.replace(/\\n/g, '').trim();
         } else {
-			var objectProp = {};
+			var datatypeProp = {};
+			datatypeProp[consts.CUSTOM.CONTENT_DESCRIPTION] = a.trim();
+
 			objectProp[consts.CUSTOM.HAS_FLAG] = {
 				id: consts.CUSTOM.INST_FLAG + getUuid(country),
 				label: country + '\'s national flag',
 				type: consts.CUSTOM.ONT_FLAG,
-				datatypeProperties: {},
-				objectProperties: [{
-					id: a.trim(),
-					label: country + '\'s national flag image contents description',
-					type: consts.CUSTOM.CONTENTS,
-					datatypeProperties: {},
-					objectProperties: []
-				}]
+				datatypeProperties: datatypeProp,
+				objectProperties: []
 			};
 
             root[country].objectProperties.push(objectProp);
@@ -302,7 +299,6 @@ var getSupllementalImages = function(cheerioElem, country, root) {
 
 module.exports = {
 	getArea,
-	getAreaComparative,
 	getBackground,
 	getBorderMapImg,
 	getClimate,

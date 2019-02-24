@@ -37,7 +37,6 @@ var getCountryData = (country, url) => {
                 dataScrapers.getSupllementalImages($, country, countriesFile);
                 dataScrapers.getGeography($, country, countriesFile);
                 dataScrapers.getArea($, country, countriesFile);
-                dataScrapers.getAreaComparative($, country, countriesFile);
                 dataScrapers.getCoastLength($, country, countriesFile);
                 dataScrapers.getClimate($, country, countriesFile);
             })

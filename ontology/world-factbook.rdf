@@ -82,6 +82,13 @@
     <rdfs:comment>an image showing a country's position within a region.</rdfs:comment>
   </rdfs:Class>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#DomainArea -->
+
+  <rdfs:Class rdf:about="&wfact;#DomainArea">
+    <rdfs:label>Domain Area</rdfs:label>
+    <rdfs:comment>Area within a country's borders (ie. Land, Water, Total).</rdfs:comment>
+  </rdfs:Class>
+
   <!-- 
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -116,6 +123,13 @@
   <owl:ObjectProperty rdf:about="&wfact;#hasSupplementalImage">
       <rdfs:domain rdf:resource="&wfact;#Country"/>
       <rdfs:range rdf:resource="&wfact;#Image"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasDomainArea -->
+
+  <owl:ObjectProperty rdf:about="&wfact;#hasSupplementalImage">
+      <rdfs:domain rdf:resource="&wfact;#Country"/>
+      <rdfs:range rdf:resource="&wfact;#DomainArea"/>
   </owl:ObjectProperty>
 
   <!-- 
@@ -174,12 +188,75 @@
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
-  <!-- http://williamrobertfunk.com/ontologies/world-factbook#sourceURL -->
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#locatorURI -->
 
-  <DatatypeProperty rdf:about="&wfact;#sourceURL">
-    <rdfs:label>Map Reference</rdfs:label>
-    <rdfs:comment>A broad reference to country's position in the world (ie. Africa).</rdfs:comment>
-    <rdfs:domain rdf:resource="&owl;#Thing"/>
+  <DatatypeProperty rdf:about="&wfact;#locatorURI">
+    <rdfs:label>Locator URL</rdfs:label>
+    <rdfs:comment>URL location where image was originally located.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#Asset"/>
+    <rdfs:range rdf:resource="&xsd;literal"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#contentDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;#contentDescription">
+    <rdfs:label>Content Description</rdfs:label>
+    <rdfs:comment>Description of the contents contained within the asset.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#Asset"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#unit -->
+
+  <DatatypeProperty rdf:about="&wfact;#unit">
+    <rdfs:label>Unit</rdfs:label>
+    <rdfs:comment>Unit of measurement (ie. km, mi, sq km, celcius, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#totalArea -->
+
+  <DatatypeProperty rdf:about="&wfact;#totalArea">
+    <rdfs:label>Total Area</rdfs:label>
+    <rdfs:comment>Total area associated with the entity to which it's attached.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#landArea -->
+
+  <DatatypeProperty rdf:about="&wfact;#landArea">
+    <rdfs:label>Land Area</rdfs:label>
+    <rdfs:comment>Total land area associated with the entity to which it's attached.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#waterArea -->
+
+  <DatatypeProperty rdf:about="&wfact;#waterArea">
+    <rdfs:label>Water Area</rdfs:label>
+    <rdfs:comment>Total water area associated with the entity to which it's attached.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#areaRank -->
+
+  <DatatypeProperty rdf:about="&wfact;#areaRank">
+    <rdfs:label>Area Rank</rdfs:label>
+    <rdfs:comment>Numerical rank compared to similar entities.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#areaComparative -->
+
+  <DatatypeProperty rdf:about="&wfact;#areaComparative">
+    <rdfs:label>Comparative Area</rdfs:label>
+    <rdfs:comment>Comparative association with a well-known area to better define scale qualitatively.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#DomainArea"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
