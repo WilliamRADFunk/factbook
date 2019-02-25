@@ -17,7 +17,7 @@ var getArea = function(cheerioElem, country, root) {
 			objectProperties: []
 		};
 
-		map = objectProp;
+		map = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
 		root[country].objectProperties.push(objectProp);
 	}
 	cheerioElem('#field-area > div.category_data.subfield.numeric').each(function() {
@@ -26,7 +26,6 @@ var getArea = function(cheerioElem, country, root) {
 		switch (areaSwitch) {
 			case 'total:':
 				map.datatypeProperties[consts.CUSTOM.ONT_TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
-				console.log('map', map);
 				break;
 			case 'land:':
 				map.datatypeProperties[consts.CUSTOM.ONT_LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();

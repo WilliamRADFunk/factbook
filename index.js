@@ -30,14 +30,23 @@ var getCountryData = (country, url) => {
         return rp(url, { timeout: consts.CUSTOM.DATA_REQUEST_TIMEOUT })
             .then((html) => {
                 let $ = cheerio.load(html);
+                console.log('Getting Flag Data');
 				dataScrapers.getFlag($, country, countriesFile);
+                console.log('Getting Background Data');
 				dataScrapers.getBackground($, country, countriesFile);
+                console.log('Getting Border Map Image Data');
 				dataScrapers.getBorderMapImg($, country, countriesFile);
+                console.log('Getting Region Map Image Data');
 				dataScrapers.getRegionMapImg($, country, countriesFile);
+                console.log('Getting Supplemental Image Data');
                 dataScrapers.getSupllementalImages($, country, countriesFile);
+                console.log('Getting Geography Data');
                 dataScrapers.getGeography($, country, countriesFile);
+                console.log('Getting Area Data');
                 dataScrapers.getArea($, country, countriesFile);
+                console.log('Getting Coastal Data');
                 dataScrapers.getCoastLength($, country, countriesFile);
+                console.log('Getting Climate Data');
                 dataScrapers.getClimate($, country, countriesFile);
             })
             .catch(err => {
@@ -45,6 +54,8 @@ var getCountryData = (country, url) => {
             });
     } else {
         return new Promise(function(resolve) {
+            fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString()
+                + '\n\nFailure to scrape data for ' + country + ' at \n' + url + '\n\n');
             resolve(null);
         }).then(() => {});
     }
@@ -72,7 +83,7 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
             } else {
                 countriesFile.countriesInList.push(countryName);
                 countriesFile[countryName] = {
-                    id: consts.CUSTOM.MAIN_INSTANCE_PATH + 'country/' + getUuid(countryName),
+                    id: consts.CUSTOM.MAIN_INSTANCE_PATH + 'Country/' + getUuid(countryName),
                     label: countryName,
                     datatypeProperties: {},
                     objectProperties: [],
