@@ -11,7 +11,7 @@ var getArea = function(cheerioElem, country, root) {
 		var objectProp = {};
 		objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = {
 			id: consts.CUSTOM.INST_DOMAIN_AREA + getUuid(country),
-			label: 'Areas of land and water contained within ' + country + '\'s borders.',
+			label: 'hasDomainArea',
 			type: consts.CUSTOM.ONT_DOMAIN_AREA,
 			datatypeProperties: {},
 			objectProperties: []
@@ -36,9 +36,7 @@ var getArea = function(cheerioElem, country, root) {
 		}
     });
 	cheerioElem('#field-area > div > span.category_data').each(function() {
-        let areaRankAttr = map.datatypeProperties[consts.CUSTOM.ONT_AREA_RANK];
-
-		let areaRank = cheerioElem(this).find('a').text().trim();
+        let areaRank = cheerioElem(this).find('a').text().trim();
 		if (areaRank) {
 			map.datatypeProperties[consts.CUSTOM.ONT_AREA_RANK] = areaRank;
 		}
@@ -83,7 +81,7 @@ var getBorderMapImg = function(cheerioElem, country, root) {
 			var objectProp = {};
 			objectProp[consts.CUSTOM.HAS_BORDER_MAP] = {
 				id: consts.CUSTOM.INST_BORDER_MAP + getUuid(country),
-				label: 'Map of ' + country + ' and its border nations',
+				label: 'hasBorderMap',
 				type: consts.CUSTOM.ONT_BORDER_MAP,
 				datatypeProperties: datatypeProp,
 				objectProperties: []
@@ -96,30 +94,75 @@ var getBorderMapImg = function(cheerioElem, country, root) {
 };
 
 var getClimate = function(cheerioElem, country, root) {
-	cheerioElem('#field-climate').each(function() {
-        let climAttr = root[country].datatypeProperties[consts.CUSTOM.ONT_CLIMATE];
-        if (climAttr) { return; }
+    let objectProperties = root[country].objectProperties;
+	let map = getRelation(objectProperties, consts.CUSTOM.HAS_CLIMATE);
+	let mapZone = getRelation(map && map.objectProperties, consts.CUSTOM.HAS_CLIMATE_ZONE);
 
+	let zone;
+	if (!mapZone) {
+		zone = {};
+		zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = {
+			id: consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country),
+			label: 'hasClimateZone',
+			type: consts.CUSTOM.ONT_CLIMATE_ZONE,
+			datatypeProperties: {},
+			objectProperties: []
+		};
+
+		mapZone = zone[consts.CUSTOM.HAS_CLIMATE_ZONE];
+	}
+	if (!map) {
+		var attr = {};
+		attr[CLIMATE_ZONE_NAME] = 'N/A';
+		attr[CLIMATE_ZONE_DESCRIPTION] = 'N/A';
+
+		var objectProp = {};
+		objectProp[consts.CUSTOM.HAS_CLIMATE] = {
+			id: consts.CUSTOM.INST_CLIMATE + getUuid(country),
+			label: 'hasClimate',
+			type: consts.CUSTOM.ONT_CLIMATE,
+			datatypeProperties: attr,
+			objectProperties: [mapZone]
+		};
+
+		map = zone[consts.CUSTOM.HAS_CLIMATE];
+		root[country].objectProperties.push(objectProp);
+	}
+	cheerioElem('#field-climate').each(function() {
         var climGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim()
         if (climGrd) {
-			root[country].datatypeProperties[consts.CUSTOM.ONT_CLIMATE] = climGrd.replace(/\\n/g, '').trim();
+			const tempSplit = climGrd.replace(/\\n/g, '').trim().split(';');
+			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_NAME] = tempSplit[0].trim();
+			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_DESCRIPTION] = tempSplit[1].trim();
         }
 	});
 };
 
 var getCoastLength = function(cheerioElem, country, root) {
-	cheerioElem('#field-coastline').each(function() {
-        let coastAttr = root[country].datatypeProperties[consts.CUSTOM.ONT_COAST_LENGTH];
-        if (coastAttr) { return; }
+    let objectProperties = root[country].objectProperties;
+	let map = getRelation(objectProperties, consts.CUSTOM.HAS_COAST);
+	if (!map) {
+		var objectProp = {};
+		objectProp[consts.CUSTOM.HAS_COAST] = {
+			id: consts.CUSTOM.INST_COAST + getUuid(country),
+			label: 'hasCoast',
+			type: consts.CUSTOM.ONT_COAST,
+			datatypeProperties: {},
+			objectProperties: []
+		};
 
+		map = objectProp[consts.CUSTOM.HAS_COAST];
+		root[country].objectProperties.push(objectProp);
+	}
+	cheerioElem('#field-coastline').each(function() {
         var coastGrd = cheerioElem(this).find('div.category_data.subfield.numeric').text().trim()
         if (coastGrd) {
 			coastGrdSplit = coastGrd.split('km');
-			root[country].datatypeProperties[consts.CUSTOM.ONT_COAST_LENGTH] = coastGrdSplit[0].trim();
-			root[country].datatypeProperties[consts.CUSTOM.ONT_COAST_LENGTH_MODIFIER] = coastGrdSplit.slice(1).join('km').replace(/\\n/g, '').trim() || null;
+			map.datatypeProperties[consts.CUSTOM.ONT_LENGTH] = coastGrdSplit[0].trim();
+			map.datatypeProperties[consts.CUSTOM.ONT_LENGTH_MODIFIER] = coastGrdSplit.slice(1).join('km').replace(/\\n/g, '').trim() || null;
         }
 	});
-	root[country].datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'km';
+	map.datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'km';
 };
 
 var getFlag = function(cheerioElem, country, root) {
@@ -140,7 +183,7 @@ var getFlag = function(cheerioElem, country, root) {
 			var objectProp = {};
 			objectProp[consts.CUSTOM.HAS_FLAG] = {
 				id: consts.CUSTOM.INST_FLAG + getUuid(country),
-				label: country + '\'s national flag',
+				label: 'hasNationalFlag',
 				type: consts.CUSTOM.ONT_FLAG,
 				datatypeProperties: datatypeProp,
 				objectProperties: []
@@ -166,7 +209,7 @@ var getFlag = function(cheerioElem, country, root) {
 
 			objectProp[consts.CUSTOM.HAS_FLAG] = {
 				id: consts.CUSTOM.INST_FLAG + getUuid(country),
-				label: country + '\'s national flag',
+				label: 'hasNationalFlag',
 				type: consts.CUSTOM.ONT_FLAG,
 				datatypeProperties: datatypeProp,
 				objectProperties: []
@@ -208,7 +251,7 @@ var getGeography = function(cheerioElem, country, root) {
 			var objectProp = {};
 			objectProp[consts.CUSTOM.HAS_LOCATION] = {
 				id: consts.CUSTOM.INST_GEO_LOCATION + getUuid(country),
-				label: 'Lat/Long location of ' + country + '.',
+				label: 'hasGeographicLocation',
 				type: consts.CUSTOM.ONT_GEO_LOCATION,
 				datatypeProperties: datatypeProp,
 				objectProperties: []
@@ -246,7 +289,7 @@ var getRegionMapImg = function(cheerioElem, country, root) {
 			var objectProp = {};
 			objectProp[consts.CUSTOM.HAS_REGION_MAP] = {
 				id: consts.CUSTOM.INST_REGION_MAP + getUuid(country),
-				label: 'Map of ' + country + ' and its border nations',
+				label: 'hasRegionMap',
 				type: consts.CUSTOM.ONT_REGION_MAP,
 				datatypeProperties: datatypeProp,
 				objectProperties: []
@@ -278,13 +321,14 @@ var getSupllementalImages = function(cheerioElem, country, root) {
         if (suppImgUrl && !suppImages.some(img => img[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG].id.includes(suppImgId))) {
 			var datatypeProp = {};
 			datatypeProp[consts.CUSTOM.LOCATION_URI] = suppImgUrl;
+			datatypeProp[consts.CUSTOM.CONTENT_DESCRIPTION] = b || null;
 			datatypeProp[consts.CUSTOM.IMAGE_DIMENSIONS] = imageProps[0] || 'N/A';
 			datatypeProp[consts.CUSTOM.IMAGE_SIZE] = imageProps[1] || 'N/A';
 
 			var objectProp = {};
 			objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG] = {
 				id: consts.CUSTOM.INST_IMAGE + getUuid(country),
-				label: b || null,
+				label: 'hasSupplementalImage',
 				type: consts.CUSTOM.ONT_IMAGE,
 				datatypeProperties: datatypeProp,
 				objectProperties: []

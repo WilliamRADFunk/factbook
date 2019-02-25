@@ -89,6 +89,30 @@
     <rdfs:comment>Area within a country's borders (ie. Land, Water, Total).</rdfs:comment>
   </rdfs:Class>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Coast -->
+
+  <rdfs:Class rdf:about="&wfact;#Coast">
+    <rdfs:label>Coast</rdfs:label>
+    <rdfs:comment>Geographic section where the land borders the sea.</rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Climate -->
+
+  <rdfs:Class rdf:about="&wfact;#Climate">
+    <rdfs:label>Climate</rdfs:label>
+    <rdfs:comment>The weather conditions prevailing in an area in general or over a long period.</rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#ClimateZone -->
+
+  <rdfs:Class rdf:about="&wfact;#ClimateZone">
+    <rdfs:label>Climate Zone</rdfs:label>
+    <rdfs:comment>
+      Divisions of the Earth's climates into general climate zones according to average temperatures and average rainfall.
+      The three major climate zones on the Earth are the polar, temperate, and tropical zones.
+    </rdfs:comment>
+  </rdfs:Class>
+
   <!-- 
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -130,6 +154,27 @@
   <owl:ObjectProperty rdf:about="&wfact;#hasSupplementalImage">
       <rdfs:domain rdf:resource="&wfact;#Country"/>
       <rdfs:range rdf:resource="&wfact;#DomainArea"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasCoast -->
+
+  <owl:ObjectProperty rdf:about="&wfact;#hasCoast">
+      <rdfs:domain rdf:resource="&wfact;#Country"/>
+      <rdfs:range rdf:resource="&wfact;#Coast"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasClimate -->
+
+  <owl:ObjectProperty rdf:about="&wfact;#hasClimate">
+      <rdfs:domain rdf:resource="&wfact;#Country"/>
+      <rdfs:range rdf:resource="&wfact;#Climate"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasClimateZone -->
+
+  <owl:ObjectProperty rdf:about="&wfact;#hasClimateZone">
+      <rdfs:domain rdf:resource="&wfact;#Climate"/>
+      <rdfs:range rdf:resource="&wfact;#ClimateZone"/>
   </owl:ObjectProperty>
 
   <!-- 
@@ -212,6 +257,7 @@
     <rdfs:label>Unit</rdfs:label>
     <rdfs:comment>Unit of measurement (ie. km, mi, sq km, celcius, etc.).</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;#DomainArea"/>
+    <rdfs:domain rdf:resource="&asset;#Coast"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -257,6 +303,42 @@
     <rdfs:label>Comparative Area</rdfs:label>
     <rdfs:comment>Comparative association with a well-known area to better define scale qualitatively.</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;#DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#length -->
+
+  <DatatypeProperty rdf:about="&wfact;#length">
+    <rdfs:label>Length</rdfs:label>
+    <rdfs:comment>The measurement or extent of something from end to end</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#Coast"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#lengthModifier -->
+
+  <DatatypeProperty rdf:about="&wfact;#lengthModifier">
+    <rdfs:label>Length Modifier</rdfs:label>
+    <rdfs:comment>An additional descriptor to add information to a simple length measurement.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#Coast"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#climateZoneName -->
+
+  <DatatypeProperty rdf:about="&wfact;#climateZoneName">
+    <rdfs:label>Climate Zone Name</rdfs:label>
+    <rdfs:comment>Name of the climate zone (ie. polar, temperate, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#ClimateZone"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#climateZoneDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;#climateZoneDescription">
+    <rdfs:label>Climate Zone Description</rdfs:label>
+    <rdfs:comment>Greater detail for the climate of a given area.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#ClimateZone"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 

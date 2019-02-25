@@ -25,6 +25,9 @@ const ONT_IMAGE = MAIN_ONT_PATH + 'Image/';
 const ONT_GEO_LOCATION = WGS84_POS.LOCATION;
 const ONT_REGION_MAP = MAIN_ONT_PATH + 'RegionMap/';
 const ONT_DOMAIN_AREA = MAIN_ONT_PATH + 'DomainArea/';
+const ONT_COAST = MAIN_ONT_PATH + 'Coast/';
+const ONT_CLIMATE = MAIN_ONT_PATH + 'Climate/';
+const ONT_CLIMATE_ZONE = MAIN_ONT_PATH + 'ClimateZone/';
 
 // ObjectProperty Paths
 const HAS_BORDER_MAP = MAIN_ONT_PATH + 'hasBorderMap/';
@@ -34,6 +37,9 @@ const HAS_REGION_MAP = MAIN_ONT_PATH + 'hasRegionMap/';
 const HAS_GEO_LOCATION = MAIN_INSTANCE_PATH + 'hasLocation/';
 const HAS_SUPPLEMENTAL_IMG = MAIN_ONT_PATH + 'hasSupplementalImage/';
 const HAS_DOMAIN_AREA = MAIN_ONT_PATH + 'hasDomainArea/';
+const HAS_COAST = MAIN_ONT_PATH + 'hasCoast/';
+const HAS_CLIMATE = MAIN_ONT_PATH + 'hasClimate/';
+const HAS_CLIMATE_ZONE = MAIN_ONT_PATH + 'hasClimateZone/';
 
 // DatatypeProperty Paths
 const BACKGROUND = MAIN_ONT_PATH + 'background/';
@@ -43,6 +49,16 @@ const IMAGE_SIZE = MAIN_ONT_PATH + 'imageSize/';
 const MAP_REFERENCES = MAIN_ONT_PATH + 'mapReferences/';
 const LOCATION_URI = MAIN_ONT_PATH + 'locatorURI/';
 const CONTENT_DESCRIPTION = ASSET_ONT_PATH + 'contentDescription/';
+const ONT_TOTAL_AREA = MAIN_ONT_PATH + 'totalArea/';
+const ONT_LAND_AREA = MAIN_ONT_PATH + 'landArea/';
+const ONT_WATER_AREA = MAIN_ONT_PATH + 'waterArea/';
+const ONT_AREA_COMPARATIVE = MAIN_ONT_PATH + 'areaComparative/';
+const ONT_AREA_RANK = MAIN_ONT_PATH + 'areaRank/';
+const ONT_UNIT = MAIN_ONT_PATH + 'unit/';
+const ONT_LENGTH = MAIN_ONT_PATH + 'length/';
+const ONT_LENGTH_MODIFIER = MAIN_ONT_PATH + 'lengthModifier/';
+const CLIMATE_ZONE_NAME = MAIN_ONT_PATH + 'climateZoneName/';
+const CLIMATE_ZONE_DESCRIPTION = MAIN_ONT_PATH + 'climateZoneDescription/';
 
 // Instance Paths
 const INST_BORDER_MAP = MAIN_INSTANCE_PATH + 'BorderMap/';
@@ -50,17 +66,9 @@ const INST_IMAGE = MAIN_INSTANCE_PATH + 'Image/';
 const INST_REGION_MAP = MAIN_INSTANCE_PATH + 'RegionMap/';
 const INST_FLAG = MAIN_INSTANCE_PATH + 'NationalFlag/';
 const INST_DOMAIN_AREA = MAIN_INSTANCE_PATH + 'DomainArea/';
-
-
-const ONT_TOTAL_AREA = MAIN_ONT_PATH + 'totalArea/';
-const ONT_LAND_AREA = MAIN_ONT_PATH + 'landArea/';
-const ONT_WATER_AREA = MAIN_ONT_PATH + 'waterArea/';
-const ONT_AREA_COMPARATIVE = MAIN_ONT_PATH + 'areaComparative/';
-const ONT_AREA_RANK = MAIN_ONT_PATH + 'areaRank/';
-const ONT_UNIT = MAIN_ONT_PATH + 'unit/';
-const ONT_CLIMATE = MAIN_ONT_PATH + 'climate/';
-const ONT_COAST_LENGTH = MAIN_ONT_PATH + 'coastLength/';
-const ONT_COAST_LENGTH_MODIFIER = MAIN_ONT_PATH + 'coastLengthModifier/';
+const INST_COAST = MAIN_INSTANCE_PATH + 'Coast/';
+const INST_CLIMATE = MAIN_INSTANCE_PATH + 'Climate/';
+const INST_CLIMATE_ZONE = MAIN_INSTANCE_PATH + 'ClimateZone/';
 
 const CUSTOM = {
 	URL_BASE,
@@ -96,13 +104,23 @@ const CUSTOM = {
 	ONT_AREA_COMPARATIVE,
 	ONT_AREA_RANK,
 	ONT_UNIT,
-	ONT_CLIMATE,
-	ONT_COAST_LENGTH,
+	ONT_LENGTH,
 	ONT_UNIT,
-	ONT_COAST_LENGTH_MODIFIER,
+	ONT_LENGTH_MODIFIER,
 	ONT_DOMAIN_AREA,
 	HAS_DOMAIN_AREA,
-	INST_DOMAIN_AREA
+	INST_DOMAIN_AREA,
+	ONT_COAST,
+	HAS_COAST,
+	INST_COAST,
+	ONT_CLIMATE,
+	ONT_CLIMATE_ZONE,
+	HAS_CLIMATE,
+	HAS_CLIMATE_ZONE,
+	INST_CLIMATE,
+	INST_CLIMATE_ZONE,
+	CLIMATE_ZONE_NAME,
+	CLIMATE_ZONE_DESCRIPTION
 };
 
 module.exports = {
