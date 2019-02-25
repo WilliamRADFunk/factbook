@@ -53,9 +53,6 @@ var getArea = function(cheerioElem, country, root) {
 
 var getBackground = function(cheerioElem, country, root) {
 	cheerioElem('#field-background').each(function() {
-        let backgroundAttr = root[country].datatypeProperties[consts.CUSTOM.BACKGROUND];
-        if (backgroundAttr) { return; }
-
         var bckGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (bckGrd) {
             root[country].datatypeProperties[consts.CUSTOM.BACKGROUND] = bckGrd;
@@ -96,44 +93,44 @@ var getBorderMapImg = function(cheerioElem, country, root) {
 var getClimate = function(cheerioElem, country, root) {
     let objectProperties = root[country].objectProperties;
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_CLIMATE);
-	let mapZone = getRelation(map && map.objectProperties, consts.CUSTOM.HAS_CLIMATE_ZONE);
 
-	let zone;
-	if (!mapZone) {
-		zone = {};
-		zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = {
-			id: consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country),
-			label: 'hasClimateZone',
-			type: consts.CUSTOM.ONT_CLIMATE_ZONE,
-			datatypeProperties: {},
-			objectProperties: []
-		};
-
-		mapZone = zone[consts.CUSTOM.HAS_CLIMATE_ZONE];
-	}
 	if (!map) {
-		var attr = {};
-		attr[CLIMATE_ZONE_NAME] = 'N/A';
-		attr[CLIMATE_ZONE_DESCRIPTION] = 'N/A';
-
 		var objectProp = {};
 		objectProp[consts.CUSTOM.HAS_CLIMATE] = {
 			id: consts.CUSTOM.INST_CLIMATE + getUuid(country),
 			label: 'hasClimate',
 			type: consts.CUSTOM.ONT_CLIMATE,
-			datatypeProperties: attr,
-			objectProperties: [mapZone]
+			datatypeProperties: {},
+			objectProperties: []
 		};
 
-		map = zone[consts.CUSTOM.HAS_CLIMATE];
+		map = objectProp[consts.CUSTOM.HAS_CLIMATE];
 		root[country].objectProperties.push(objectProp);
 	}
+	let mapZone = getRelation(map.objectProperties, consts.CUSTOM.HAS_CLIMATE_ZONE);
+	let zone;
+	if (!mapZone) {
+		var attr = {};
+		attr[consts.CUSTOM.CLIMATE_ZONE_NAME] = 'N/A';
+		attr[consts.CUSTOM.CLIMATE_ZONE_DESCRIPTION] = 'N/A';
+
+		zone = {};
+		zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = {
+			id: consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country),
+			label: 'hasClimateZone',
+			type: consts.CUSTOM.ONT_CLIMATE_ZONE,
+			datatypeProperties: attr,
+			objectProperties: []
+		};
+		mapZone = zone[consts.CUSTOM.HAS_CLIMATE_ZONE];
+	}
+	map.objectProperties.push(zone);
 	cheerioElem('#field-climate').each(function() {
         var climGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim()
         if (climGrd) {
 			const tempSplit = climGrd.replace(/\\n/g, '').trim().split(';');
 			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_NAME] = tempSplit[0].trim();
-			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_DESCRIPTION] = tempSplit[1].trim();
+			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_DESCRIPTION] = tempSplit.slice(1).join(';').trim();
         }
 	});
 };
@@ -222,9 +219,6 @@ var getFlag = function(cheerioElem, country, root) {
 
 var getGeography = function(cheerioElem, country, root) {
 	cheerioElem('#field-location').each(function() {
-        let locationAttr = root[country].datatypeProperties[consts.CUSTOM.LOCATION_DESCRIPTION];
-        if (locationAttr) { return; }
-
         var locGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
         if (locGrd) {
             root[country].datatypeProperties[consts.CUSTOM.LOCATION_DESCRIPTION] = locGrd;
@@ -261,9 +255,6 @@ var getGeography = function(cheerioElem, country, root) {
         }
     });
 	cheerioElem('#field-map-references').each(function() {
-        let mapReferenceAttr = root[country].datatypeProperties[consts.CUSTOM.MAP_REFERENCES];
-        if (mapReferenceAttr) { return; }
-
         var mapRef = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
         if (mapRef) {
             root[country].datatypeProperties[consts.CUSTOM.MAP_REFERENCES] = mapRef;
