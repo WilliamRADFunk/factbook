@@ -1,5 +1,4 @@
 const getUuid = require('uuid-by-string');
-const htmlToText = require('html-to-text');
 
 const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
