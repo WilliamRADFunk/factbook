@@ -4,8 +4,8 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 
-var getCoastLength = function(cheerioElem, country) {
-    let objectProperties = store.countries[country].objectProperties;
+var getCoastLength = function(cheerioElem, country, countryId) {
+    let objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_COAST);
 	if (!map) {
 		var objectProp = {};
@@ -18,7 +18,7 @@ var getCoastLength = function(cheerioElem, country) {
 		};
 
 		map = objectProp[consts.CUSTOM.HAS_COAST];
-		store.countries[country].objectProperties.push(objectProp);
+		store.countries[countryId].objectProperties.push(objectProp);
 	}
 	cheerioElem('#field-coastline').each(function() {
         var coastGrd = cheerioElem(this).find('div.category_data.subfield.numeric').text().trim()

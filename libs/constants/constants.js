@@ -19,6 +19,7 @@ const COUNTRY_BLACKLIST = [
 ];
 
 // Class Paths
+const ONT_COUNTRY = MAIN_ONT_PATH + 'Country/';
 const ONT_FLAG = MAIN_ONT_PATH + 'NationalFlag/';
 const ONT_BORDER_MAP = MAIN_ONT_PATH + 'BorderMap/';
 const ONT_IMAGE = MAIN_ONT_PATH + 'Image/';
@@ -61,6 +62,7 @@ const CLIMATE_ZONE_NAME = MAIN_ONT_PATH + 'climateZoneName/';
 const CLIMATE_ZONE_DESCRIPTION = MAIN_ONT_PATH + 'climateZoneDescription/';
 
 // Instance Paths
+const INST_COUNTRY = MAIN_INSTANCE_PATH + 'Country/';
 const INST_BORDER_MAP = MAIN_INSTANCE_PATH + 'BorderMap/';
 const INST_IMAGE = MAIN_INSTANCE_PATH + 'Image/';
 const INST_REGION_MAP = MAIN_INSTANCE_PATH + 'RegionMap/';
@@ -71,6 +73,8 @@ const INST_CLIMATE = MAIN_INSTANCE_PATH + 'Climate/';
 const INST_CLIMATE_ZONE = MAIN_INSTANCE_PATH + 'ClimateZone/';
 
 const CUSTOM = {
+	ONT_COUNTRY,
+	INST_COUNTRY,
 	URL_BASE,
 	MAIN_INSTANCE_PATH,
 	MAIN_ONT_PATH,

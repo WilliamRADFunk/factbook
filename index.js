@@ -1,11 +1,11 @@
 const fs = require('fs');
 const rp = require('request-promise');
 const cheerio = require('cheerio');
-const getUuid = require('uuid-by-string');
 
 const consts = require('./libs/constants/constants');
 const store = require('./libs/constants/globalStore');
 const dataScrapers = require('./libs/scrapers/data-getters');
+const countryToId = require('./libs/utils/country-to-id.js');
 
 
 const LOG_FILE_NAME = ('logs/log-' + new Date().toISOString() + '.txt').replace(':', '-');
@@ -138,15 +138,16 @@ var getCountryData = (country, url) => {
         return rp(url, { timeout: consts.CUSTOM.DATA_REQUEST_TIMEOUT })
             .then((html) => {
                 let $ = cheerio.load(html);
-				dataScrapers.getFlag($, country);
-				dataScrapers.getBackground($, country);
-				dataScrapers.getBorderMapImg($, country);
-				dataScrapers.getRegionMapImg($, country);
-                dataScrapers.getSupllementalImages($, country);
-                dataScrapers.getGeography($, country);
-                dataScrapers.getArea($, country);
-                dataScrapers.getCoastLength($, country);
-                dataScrapers.getClimate($, country);
+                var countryId = countryToId(country);
+				dataScrapers.getFlag($, country, countryId);
+				dataScrapers.getBackground($, country, countryId);
+				dataScrapers.getBorderMapImg($, country, countryId);
+				dataScrapers.getRegionMapImg($, country, countryId);
+                dataScrapers.getSupllementalImages($, country, countryId);
+                dataScrapers.getGeography($, country, countryId);
+                dataScrapers.getArea($, country, countryId);
+                dataScrapers.getCoastLength($, country, countryId);
+                dataScrapers.getClimate($, country, countryId);
                 console.log('Data scrape for ', country, ' is complete');
             })
             .catch(err => {
@@ -165,7 +166,7 @@ var getCountriesData = () => {
     let countryDataPromises = [];
     let countries = store.countriesInList.slice();
     countries.forEach(country => {
-        let abbrev = store.countries[country].metaScrapeData['data-place-code'];
+        let abbrev = store.countries[countryToId(country)].metaScrapeData['data-place-code'];
         let url = 'https://www.cia.gov/library/publications/the-world-factbook/geos/' + abbrev + '.html';
         countryDataPromises.push(getCountryData(country, url));
     });
@@ -178,12 +179,13 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
         $('#search-place option').each(function() {
             var a = $(this).prev()
             var countryName = a.text().replace(/\\n/g, ' ').trim();
-            if (!countryName || store.countries[countryName] || consts.CUSTOM.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
+            var id = countryToId(countryName);
+            if (!countryName || store.countries[id] || consts.CUSTOM.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
                 // Either already have it, or it's in the invalid list.
             } else {
                 store.countriesInList.push(countryName);
-                store.countries[countryName] = {
-                    id: consts.CUSTOM.MAIN_INSTANCE_PATH + 'Country/' + getUuid(countryName),
+                store.countries[id] = {
+                    id: id,
                     label: countryName,
                     datatypeProperties: {},
                     objectProperties: [],

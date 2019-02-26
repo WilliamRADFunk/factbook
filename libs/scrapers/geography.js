@@ -4,14 +4,14 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 
-var getGeography = function(cheerioElem, country) {
+var getGeography = function(cheerioElem, country, countryId) {
 	cheerioElem('#field-location').each(function() {
         var locGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
         if (locGrd) {
-            store.countries[country].datatypeProperties[consts.CUSTOM.LOCATION_DESCRIPTION] = locGrd;
+            store.countries[countryId].datatypeProperties[consts.CUSTOM.LOCATION_DESCRIPTION] = locGrd;
         }
 	});
-    let objectProperties = store.countries[country].objectProperties;
+    let objectProperties = store.countries[countryId].objectProperties;
 	cheerioElem('#field-geographic-coordinates').each(function() {
         let geoAttr = getRelation(objectProperties, consts.CUSTOM.HAS_LOCATION);
         if (geoAttr) { return; }
@@ -38,13 +38,13 @@ var getGeography = function(cheerioElem, country) {
 				objectProperties: []
 			};
 
-            store.countries[country].objectProperties.push(objectProp);
+            store.countries[countryId].objectProperties.push(objectProp);
         }
     });
 	cheerioElem('#field-map-references').each(function() {
         var mapRef = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
         if (mapRef) {
-            store.countries[country].datatypeProperties[consts.CUSTOM.MAP_REFERENCES] = mapRef;
+            store.countries[countryId].datatypeProperties[consts.CUSTOM.MAP_REFERENCES] = mapRef;
         }
 	});
 };

@@ -4,8 +4,8 @@ const htmlToText = require('html-to-text');
 const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 
-var getSupllementalImages = function(cheerioElem, country) {
-    let objectProperties = store.countries[country].objectProperties;
+var getSupllementalImages = function(cheerioElem, country, countryId) {
+    let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.item.photo-all').each(function() {
         let suppImages = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG]);
 
@@ -37,7 +37,7 @@ var getSupllementalImages = function(cheerioElem, country) {
 				objectProperties: []
 			};
 
-            store.countries[country].objectProperties.push(objectProp);
+            store.countries[countryId].objectProperties.push(objectProp);
 		}
         // TODO: scrape physical image from url and store it.
     });

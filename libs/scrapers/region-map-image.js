@@ -4,8 +4,8 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 
-var getRegionMapImg = function(cheerioElem, country) {
-    let objectProperties = store.countries[country].objectProperties;
+var getRegionMapImg = function(cheerioElem, country, countryId) {
+    let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.mapBox').each(function() {
         let map = getRelation(objectProperties, consts.CUSTOM.HAS_REGION_MAP);
         if (map && map.datatypeProperties && map.datatypeProperties[consts.CUSTOM.LOCATION_URI]) { return; }
@@ -28,7 +28,7 @@ var getRegionMapImg = function(cheerioElem, country) {
 				objectProperties: []
 			};
 
-            store.countries[country].objectProperties.push(objectProp);
+            store.countries[countryId].objectProperties.push(objectProp);
         }
         // TODO: scrape physical image from url and store it.
     });

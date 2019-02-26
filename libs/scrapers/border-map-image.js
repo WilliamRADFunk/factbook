@@ -4,8 +4,8 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 
-var getBorderMapImg = function(cheerioElem, country) {
-    let objectProperties = store.countries[country].objectProperties;
+var getBorderMapImg = function(cheerioElem, country, countryId) {
+    let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.locatorBox').each(function() {
         let map = getRelation(objectProperties, consts.CUSTOM.HAS_BORDER_MAP);
         if (map && map.datatypeProperties && map.datatypeProperties[consts.CUSTOM.LOCATION_URI]) { return; }
@@ -28,7 +28,7 @@ var getBorderMapImg = function(cheerioElem, country) {
 				objectProperties: []
 			};
 
-            store.countries[country].objectProperties.push(objectProp);
+            store.countries[countryId].objectProperties.push(objectProp);
         }
         // TODO: scrape physical image from url and store it.
     });

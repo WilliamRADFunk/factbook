@@ -4,8 +4,8 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 
-var getFlag = function(cheerioElem, country) {
-    let objectProperties = store.countries[country].objectProperties;
+var getFlag = function(cheerioElem, country, countryId) {
+    let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.flagBox').each(function() {
         let flag = getRelation(objectProperties, consts.CUSTOM.HAS_FLAG);
         if (flag && flag.datatypeProperties && flag.datatypeProperties[consts.CUSTOM.LOCATION_URI]) { return; }
@@ -28,7 +28,7 @@ var getFlag = function(cheerioElem, country) {
 				objectProperties: []
 			};
 
-            store.countries[country].objectProperties.push(objectProp);
+            store.countries[countryId].objectProperties.push(objectProp);
 		}
 		
 		
@@ -54,7 +54,7 @@ var getFlag = function(cheerioElem, country) {
 				objectProperties: []
 			};
 
-            store.countries[country].objectProperties.push(objectProp);
+            store.countries[countryId].objectProperties.push(objectProp);
         }
     });
 };
