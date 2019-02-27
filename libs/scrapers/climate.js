@@ -3,6 +3,7 @@ const getUuid = require('uuid-by-string');
 const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
+const entityMaker = require('../utils/entity-maker.js');
 
 var getClimate = function(cheerioElem, country, countryId) {
     var objectProperties = store.countries[countryId].objectProperties;
@@ -13,13 +14,11 @@ var getClimate = function(cheerioElem, country, countryId) {
 		if (store.climates[cId]) {
 			objectProp[consts.CUSTOM.HAS_CLIMATE] = store.climates[cId];
 		} else {
-			objectProp[consts.CUSTOM.HAS_CLIMATE] = {
-				id: cId,
-				label: 'hasClimate',
-				type: consts.CUSTOM.ONT_CLIMATE,
-				datatypeProperties: {},
-				objectProperties: []
-			};
+			objectProp = entityMaker(
+				consts.CUSTOM.HAS_CLIMATE,
+				consts.CUSTOM.ONT_CLIMATE,
+				cId,
+				'hasClimate');
 			store.climates[cId] = objectProp[consts.CUSTOM.HAS_CLIMATE];
 		}
 		map = objectProp[consts.CUSTOM.HAS_CLIMATE];

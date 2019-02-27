@@ -3,6 +3,7 @@ const getUuid = require('uuid-by-string');
 const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
+const entityMaker = require('../utils/entity-maker.js');
 
 var getArea = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
@@ -13,13 +14,11 @@ var getArea = function(cheerioElem, country, countryId) {
 		if (store.domainAreas[daId]) {
 			objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = store.domainAreas[daId];
 		} else {
-			objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = {
-				id: daId,
-				label: 'hasDomainArea',
-				type: consts.CUSTOM.ONT_DOMAIN_AREA,
-				datatypeProperties: {},
-				objectProperties: []
-			};
+			objectProp = entityMaker(
+				consts.CUSTOM.HAS_DOMAIN_AREA,
+				consts.CUSTOM.ONT_DOMAIN_AREA,
+				daId,
+				'hasDomainArea');
 			store.domainAreas[daId] = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
 		}
 		map = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];

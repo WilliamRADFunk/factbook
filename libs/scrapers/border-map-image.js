@@ -3,6 +3,7 @@ const getUuid = require('uuid-by-string');
 const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
+const entityMaker = require('../utils/entity-maker.js');
 
 var getBorderMapImg = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
@@ -14,13 +15,11 @@ var getBorderMapImg = function(cheerioElem, country, countryId) {
             if (store.borderMaps[bmId]) {
                 objectProp[consts.CUSTOM.HAS_BORDER_MAP] = store.borderMaps[bmId];
             } else {
-                objectProp[consts.CUSTOM.HAS_BORDER_MAP] = {
-                    id: bmId,
-                    label: 'hasBorderMap',
-                    type: consts.CUSTOM.ONT_BORDER_MAP,
-                    datatypeProperties: {},
-                    objectProperties: []
-                };
+                objectProp = entityMaker(
+                    consts.CUSTOM.HAS_BORDER_MAP,
+                    consts.CUSTOM.ONT_BORDER_MAP,
+                    bmId,
+                    'hasBorderMap');
                 store.borderMaps[bmId] = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
             }
             map = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
