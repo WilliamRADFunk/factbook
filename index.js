@@ -133,6 +133,18 @@ if (regionMapsRawData) {
     store.regionMaps = JSON.parse(regionMapsRawData);
 }
 
+var borderRawData;
+// If countries file exists, great. Otherwise make a blank one for later.
+try {
+    borderRawData = fs.readFileSync('dist/borderCountries.json');
+} catch (err) {
+    fs.closeSync(fs.openSync('dist/borderCountries.json', 'w'));
+}
+// If preexisting borderCountries file, use it.
+if (borderRawData) {
+    store.borderCountries = JSON.parse(borderRawData);
+}
+
 var getCountryData = (country, url) => {
     if (country && url) {
         return rp(url, { timeout: consts.CUSTOM.DATA_REQUEST_TIMEOUT })
@@ -148,6 +160,7 @@ var getCountryData = (country, url) => {
                 dataScrapers.getArea($, country, countryId);
                 dataScrapers.getCoastLength($, country, countryId);
                 dataScrapers.getClimate($, country, countryId);
+                dataScrapers.getBorders($, country, countryId);
                 console.log('Data scrape for ', country, ' is complete');
             })
             .catch(err => {
@@ -242,6 +255,10 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 file = JSON.stringify(store.regionMaps);
                 file = file.replace(/\\n/g, ' ');
                 fs.writeFileSync('dist/regionMaps.json', file);
+
+                file = JSON.stringify(store.borderCountries);
+                file = file.replace(/\\n/g, ' ');
+                fs.writeFileSync('dist/borderCountries.json', file);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
