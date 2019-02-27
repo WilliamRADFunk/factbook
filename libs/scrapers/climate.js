@@ -8,19 +8,19 @@ var getClimate = function(cheerioElem, country, countryId) {
     var objectProperties = store.countries[countryId].objectProperties;
 	var map = getRelation(objectProperties, consts.CUSTOM.HAS_CLIMATE);
 	if (!map) {
-		var id = consts.CUSTOM.INST_CLIMATE + getUuid(country);
+		var cId = consts.CUSTOM.INST_CLIMATE + getUuid(country);
 		var objectProp = {};
-		if (store.climates[id]) {
-			objectProp[consts.CUSTOM.HAS_CLIMATE] = store.climates[id];
+		if (store.climates[cId]) {
+			objectProp[consts.CUSTOM.HAS_CLIMATE] = store.climates[cId];
 		} else {
 			objectProp[consts.CUSTOM.HAS_CLIMATE] = {
-				id: consts.CUSTOM.INST_CLIMATE + getUuid(country),
+				id: cId,
 				label: 'hasClimate',
 				type: consts.CUSTOM.ONT_CLIMATE,
 				datatypeProperties: {},
 				objectProperties: []
 			};
-			store.climates[id] = objectProp[consts.CUSTOM.HAS_CLIMATE];
+			store.climates[cId] = objectProp[consts.CUSTOM.HAS_CLIMATE];
 		}
 		map = objectProp[consts.CUSTOM.HAS_CLIMATE];
 		store.countries[countryId].objectProperties.push(objectProp);
@@ -29,10 +29,10 @@ var getClimate = function(cheerioElem, country, countryId) {
 	var mapZone = getRelation(map.objectProperties, consts.CUSTOM.HAS_CLIMATE_ZONE);
 	var zone;
 	if (!mapZone) {
-		var id = consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country);
+		var czId = consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country);
 		var zone = {};
-		if (store.climates[id]) {
-			zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = store.climateZones[id];
+		if (store.climateZones[czId]) {
+			zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = store.climateZones[czId];
 		} else {
 			var attr = {};
 			attr[consts.CUSTOM.CLIMATE_ZONE_NAME] = 'N/A';
@@ -40,13 +40,13 @@ var getClimate = function(cheerioElem, country, countryId) {
 
 			zone = {};
 			zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = {
-				id: consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country),
+				id: czId,
 				label: 'hasClimateZone',
 				type: consts.CUSTOM.ONT_CLIMATE_ZONE,
 				datatypeProperties: attr,
 				objectProperties: []
 			};
-			store.climateZones[id] = objectProp[consts.CUSTOM.HAS_CLIMATE_ZONE];
+			store.climateZones[czId] = zone[consts.CUSTOM.HAS_CLIMATE_ZONE];
 		}
 		mapZone = zone[consts.CUSTOM.HAS_CLIMATE_ZONE];
 	}

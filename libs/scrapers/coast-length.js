@@ -7,16 +7,21 @@ const getRelation = require('../utils/get-objectProperty.js');
 var getCoastLength = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_COAST);
+	var clId = consts.CUSTOM.INST_COAST + getUuid(country);
+	var objectProp = {};
 	if (!map) {
-		var objectProp = {};
-		objectProp[consts.CUSTOM.HAS_COAST] = {
-			id: consts.CUSTOM.INST_COAST + getUuid(country),
-			label: 'hasCoast',
-			type: consts.CUSTOM.ONT_COAST,
-			datatypeProperties: {},
-			objectProperties: []
-		};
-
+		if (store.coasts[clId]) {
+			objectProp[consts.CUSTOM.HAS_COAST] = store.coasts[clId];
+		} else {
+			objectProp[consts.CUSTOM.HAS_COAST] = {
+				id: clId,
+				label: 'hasCoast',
+				type: consts.CUSTOM.ONT_COAST,
+				datatypeProperties: {},
+				objectProperties: []
+			};
+			store.coasts[clId] = objectProp[consts.CUSTOM.HAS_COAST];
+		}
 		map = objectProp[consts.CUSTOM.HAS_COAST];
 		store.countries[countryId].objectProperties.push(objectProp);
 	}

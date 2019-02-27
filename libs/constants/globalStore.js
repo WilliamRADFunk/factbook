@@ -8,7 +8,8 @@ const globalStore = {
 	countriesInList: [],
 	domainAreas: {},
 	images: {},
-	nationaFlags: {},
+	locations: {},
+	nationalFlags: {},
 	regionMaps: {},
 };
 

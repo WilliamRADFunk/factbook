@@ -35,7 +35,6 @@ const HAS_BORDER_MAP = MAIN_ONT_PATH + 'hasBorderMap/';
 const HAS_FLAG = MAIN_ONT_PATH + 'hasNationalFlag/';
 const HAS_LOCATION = MAIN_ONT_PATH + 'hasLocation/';
 const HAS_REGION_MAP = MAIN_ONT_PATH + 'hasRegionMap/';
-const HAS_GEO_LOCATION = MAIN_INSTANCE_PATH + 'hasLocation/';
 const HAS_SUPPLEMENTAL_IMG = MAIN_ONT_PATH + 'hasSupplementalImage/';
 const HAS_DOMAIN_AREA = MAIN_ONT_PATH + 'hasDomainArea/';
 const HAS_COAST = MAIN_ONT_PATH + 'hasCoast/';
@@ -71,6 +70,7 @@ const INST_DOMAIN_AREA = MAIN_INSTANCE_PATH + 'DomainArea/';
 const INST_COAST = MAIN_INSTANCE_PATH + 'Coast/';
 const INST_CLIMATE = MAIN_INSTANCE_PATH + 'Climate/';
 const INST_CLIMATE_ZONE = MAIN_INSTANCE_PATH + 'ClimateZone/';
+const INST_GEO_LOCATION = GEO_ONT_PATH + 'Location/';
 
 const CUSTOM = {
 	ONT_COUNTRY,
@@ -92,7 +92,7 @@ const CUSTOM = {
 	ONT_IMAGE,
 	INST_IMAGE,
 	ONT_GEO_LOCATION,
-	HAS_GEO_LOCATION,
+	INST_GEO_LOCATION,
 	ONT_REGION_MAP,
 	INST_REGION_MAP,
 	ONT_FLAG,

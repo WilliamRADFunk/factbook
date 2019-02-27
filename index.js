@@ -211,11 +211,11 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 file = file.replace(/\\n/g, ' ');
                 fs.writeFileSync('dist/borderMaps.json', file);
 
-                file = JSON.stringify(store.climates);
+                file = JSON.stringify([store.climates]);
                 file = file.replace(/\\n/g, ' ');
                 fs.writeFileSync('dist/climates.json', file);
 
-                file = JSON.stringify(store.climatesZones);
+                file = JSON.stringify(store.climateZones);
                 file = file.replace(/\\n/g, ' ');
                 fs.writeFileSync('dist/climatesZones.json', file);
 
@@ -230,6 +230,10 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 file = JSON.stringify(store.images);
                 file = file.replace(/\\n/g, ' ');
                 fs.writeFileSync('dist/images.json', file);
+
+                file = JSON.stringify(store.locations);
+                file = file.replace(/\\n/g, ' ');
+                fs.writeFileSync('dist/locations.json', file);
 
                 file = JSON.stringify(store.nationalFlags);
                 file = file.replace(/\\n/g, ' ');

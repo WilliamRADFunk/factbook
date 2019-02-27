@@ -8,8 +8,24 @@ var getBorderMapImg = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.locatorBox').each(function() {
         let map = getRelation(objectProperties, consts.CUSTOM.HAS_BORDER_MAP);
-        if (map && map.datatypeProperties && map.datatypeProperties[consts.CUSTOM.LOCATION_URI]) { return; }
-
+        var bmId = consts.CUSTOM.INST_BORDER_MAP + getUuid(country);
+        var objectProp = {};
+        if (!map) {
+            if (store.borderMaps[bmId]) {
+                objectProp[consts.CUSTOM.HAS_BORDER_MAP] = store.borderMaps[bmId];
+            } else {
+                objectProp[consts.CUSTOM.HAS_BORDER_MAP] = {
+                    id: bmId,
+                    label: 'hasBorderMap',
+                    type: consts.CUSTOM.ONT_BORDER_MAP,
+                    datatypeProperties: {},
+                    objectProperties: []
+                };
+                store.borderMaps[bmId] = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
+            }
+            map = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
+            store.countries[countryId].objectProperties.push(objectProp);
+        }
         var a = cheerioElem(this).find('img').attr('src');
         var borderMapUrl;
         if (a && a.replace('../', '')) {
@@ -18,17 +34,7 @@ var getBorderMapImg = function(cheerioElem, country, countryId) {
         if (borderMapUrl) {
 			var datatypeProp = {};
 			datatypeProp[consts.CUSTOM.LOCATION_URI] = borderMapUrl;
-
-			var objectProp = {};
-			objectProp[consts.CUSTOM.HAS_BORDER_MAP] = {
-				id: consts.CUSTOM.INST_BORDER_MAP + getUuid(country),
-				label: 'hasBorderMap',
-				type: consts.CUSTOM.ONT_BORDER_MAP,
-				datatypeProperties: datatypeProp,
-				objectProperties: []
-			};
-
-            store.countries[countryId].objectProperties.push(objectProp);
+			objectProp[consts.CUSTOM.HAS_BORDER_MAP].datatypeProperties = datatypeProp;
         }
         // TODO: scrape physical image from url and store it.
     });

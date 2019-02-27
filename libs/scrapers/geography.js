@@ -13,8 +13,25 @@ var getGeography = function(cheerioElem, country, countryId) {
 	});
     let objectProperties = store.countries[countryId].objectProperties;
 	cheerioElem('#field-geographic-coordinates').each(function() {
-        let geoAttr = getRelation(objectProperties, consts.CUSTOM.HAS_LOCATION);
-        if (geoAttr) { return; }
+		let geoAttr = getRelation(objectProperties, consts.CUSTOM.HAS_LOCATION);
+		var geoId = consts.CUSTOM.INST_GEO_LOCATION + getUuid(country);
+		var objectProp = {};
+		if (!geoAttr) {
+			if (store.locations[geoId]) {
+				objectProp[consts.CUSTOM.HAS_LOCATION] = store.locations[geoId];
+			} else {
+				objectProp[consts.CUSTOM.HAS_LOCATION] = {
+					id: geoId,
+					label: 'hasGeographicLocation',
+					type: consts.CUSTOM.ONT_GEO_LOCATION,
+					datatypeProperties: {},
+					objectProperties: []
+				};
+				store.locations[geoId] = objectProp[consts.CUSTOM.HAS_LOCATION];
+			}
+			geoAttr = objectProp[consts.CUSTOM.HAS_LOCATION];
+			store.countries[countryId].objectProperties.push(objectProp);
+		}
 
         var geoGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
         if (geoGrd) {
@@ -29,16 +46,7 @@ var getGeography = function(cheerioElem, country, countryId) {
 			datatypeProp[consts.WGS84_POS.LONG] = lng;
 			datatypeProp[consts.WGS84_POS.LAT_LONG] = `${lat}, ${lng}`;
 
-			var objectProp = {};
-			objectProp[consts.CUSTOM.HAS_LOCATION] = {
-				id: consts.CUSTOM.INST_GEO_LOCATION + getUuid(country),
-				label: 'hasGeographicLocation',
-				type: consts.CUSTOM.ONT_GEO_LOCATION,
-				datatypeProperties: datatypeProp,
-				objectProperties: []
-			};
-
-            store.countries[countryId].objectProperties.push(objectProp);
+			objectProp[consts.CUSTOM.HAS_LOCATION].datatypeProperties = datatypeProp;
         }
     });
 	cheerioElem('#field-map-references').each(function() {

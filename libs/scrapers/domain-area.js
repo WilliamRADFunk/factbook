@@ -7,16 +7,21 @@ const getRelation = require('../utils/get-objectProperty.js');
 var getArea = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_DOMAIN_AREA);
+	var daId = consts.CUSTOM.INST_DOMAIN_AREA + getUuid(country);
+	var objectProp = {};
 	if (!map) {
-		var objectProp = {};
-		objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = {
-			id: consts.CUSTOM.INST_DOMAIN_AREA + getUuid(country),
-			label: 'hasDomainArea',
-			type: consts.CUSTOM.ONT_DOMAIN_AREA,
-			datatypeProperties: {},
-			objectProperties: []
-		};
-
+		if (store.domainAreas[daId]) {
+			objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = store.domainAreas[daId];
+		} else {
+			objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = {
+				id: daId,
+				label: 'hasDomainArea',
+				type: consts.CUSTOM.ONT_DOMAIN_AREA,
+				datatypeProperties: {},
+				objectProperties: []
+			};
+			store.domainAreas[daId] = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
+		}
 		map = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
 		store.countries[countryId].objectProperties.push(objectProp);
 	}
