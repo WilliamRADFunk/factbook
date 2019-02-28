@@ -5,6 +5,7 @@ const cheerio = require('cheerio');
 const consts = require('./libs/constants/constants');
 const store = require('./libs/constants/globalStore');
 const dataScrapers = require('./libs/scrapers/data-getters');
+const entityMaker = require('./libs/utils/entity-maker.js');
 const countryToId = require('./libs/utils/country-to-id.js');
 
 
@@ -198,14 +199,13 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 // Either already have it, or it's in the invalid list.
             } else {
                 store.countriesInList.push(countryName);
-                store.countries[id] = {
-                    id: id,
-                    label: countryName,
-                    datatypeProperties: {},
-                    objectProperties: [],
-                    metaScrapeData: {
-                        'data-place-code': a.attr('data-place-code')
-                    }
+                store.countries[id] = entityMaker(
+                    consts.CUSTOM.HAS_COUNTRY,
+                    consts.CUSTOM.ONT_COUNTRY,
+                    id,
+                    countryName)[consts.CUSTOM.HAS_COUNTRY];
+                store.countries[id].metaScrapeData = {
+                    'data-place-code': a.attr('data-place-code')
                 };
             }
         });

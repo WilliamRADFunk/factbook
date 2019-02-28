@@ -18,7 +18,7 @@ var getFlag = function(cheerioElem, country, countryId) {
 				consts.CUSTOM.HAS_FLAG,
 				consts.CUSTOM.ONT_FLAG,
 				fId,
-				'hasNationalFlag');
+				`National Flag of ${country}`);
 			store.nationalFlags[fId] = objectProp[consts.CUSTOM.HAS_FLAG];
 		}
 		flag = objectProp[consts.CUSTOM.HAS_FLAG];

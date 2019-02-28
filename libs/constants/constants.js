@@ -36,6 +36,7 @@ const ONT_CLIMATE_ZONE = MAIN_ONT_PATH + 'ClimateZone/';
 const HAS_BORDER = MAIN_ONT_PATH + 'hasBorder/';
 const HAS_BORDER_COUNTRY = MAIN_ONT_PATH + 'hasBorderCountryPair/';
 const HAS_BORDER_MAP = MAIN_ONT_PATH + 'hasBorderMap/';
+const HAS_COUNTRY = MAIN_ONT_PATH + 'hasCountry/';
 const HAS_FLAG = MAIN_ONT_PATH + 'hasNationalFlag/';
 const HAS_LOCATION = MAIN_ONT_PATH + 'hasLocation/';
 const HAS_REGION_MAP = MAIN_ONT_PATH + 'hasRegionMap/';
@@ -92,6 +93,7 @@ const CUSTOM = {
 	HAS_BORDER_COUNTRY,
 	ONT_COUNTRY,
 	INST_COUNTRY,
+	HAS_COUNTRY,
 	URL_BASE,
 	MAIN_INSTANCE_PATH,
 	MAIN_ONT_PATH,

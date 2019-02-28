@@ -2,8 +2,8 @@ const getUuid = require('uuid-by-string');
 
 const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
-const getRelation = require('../utils/get-objectProperty.js');
-const entityMaker = require('../utils/entity-maker.js');
+const getRelation = require('../utils/get-objectProperty');
+const entityMaker = require('../utils/entity-maker');
 
 var getCoastLength = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
@@ -18,7 +18,7 @@ var getCoastLength = function(cheerioElem, country, countryId) {
 				consts.CUSTOM.HAS_COAST,
 				consts.CUSTOM.ONT_COAST,
 				clId,
-				'hasCoast');
+				`Coast of ${country}`);
 			store.coasts[clId] = objectProp[consts.CUSTOM.HAS_COAST];
 		}
 		map = objectProp[consts.CUSTOM.HAS_COAST];

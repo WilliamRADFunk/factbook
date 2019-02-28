@@ -18,7 +18,7 @@ var getArea = function(cheerioElem, country, countryId) {
 				consts.CUSTOM.HAS_DOMAIN_AREA,
 				consts.CUSTOM.ONT_DOMAIN_AREA,
 				daId,
-				'hasDomainArea');
+				`Area of Domain for ${country}`);
 			store.domainAreas[daId] = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
 		}
 		map = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];

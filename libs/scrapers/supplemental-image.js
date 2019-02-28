@@ -32,7 +32,7 @@ var getSupllementalImages = function(cheerioElem, country, countryId) {
                     consts.CUSTOM.HAS_SUPPLEMENTAL_IMG,
                     consts.CUSTOM.ONT_IMAGE,
                     imgId,
-                    'hasSupplementalImage');
+                    `Supplemental Image for ${country}`);
 				store.images[imgId] = objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG];
 			}
 			store.countries[countryId].objectProperties.push(objectProp);

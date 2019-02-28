@@ -19,7 +19,7 @@ var getBorderMapImg = function(cheerioElem, country, countryId) {
                     consts.CUSTOM.HAS_BORDER_MAP,
                     consts.CUSTOM.ONT_BORDER_MAP,
                     bmId,
-                    'hasBorderMap');
+                    `Border Map of ${country}`);
                 store.borderMaps[bmId] = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
             }
             map = objectProp[consts.CUSTOM.HAS_BORDER_MAP];

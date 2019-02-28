@@ -2,7 +2,7 @@ var entityMaker = function(predicateURI, typeURI, instId, label) {
 	var objectProp = {};
 	objectProp[predicateURI] = {
 		id: instId,
-		label: 'label',
+		label: label,
 		type: typeURI,
 		datatypeProperties: {},
 		objectProperties: []

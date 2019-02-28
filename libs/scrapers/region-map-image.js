@@ -19,7 +19,7 @@ var getRegionMapImg = function(cheerioElem, country, countryId) {
                     consts.CUSTOM.HAS_REGION_MAP,
                     consts.CUSTOM.ONT_REGION_MAP,
                     rmId,
-                    'hasRegionMap');
+                    `Region Map of ${country}`);
                 store.regionMaps[rmId] = objectProp[consts.CUSTOM.HAS_REGION_MAP];
             }
             map = objectProp[consts.CUSTOM.HAS_REGION_MAP];

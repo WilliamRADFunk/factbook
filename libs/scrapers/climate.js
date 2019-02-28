@@ -18,7 +18,7 @@ var getClimate = function(cheerioElem, country, countryId) {
 				consts.CUSTOM.HAS_CLIMATE,
 				consts.CUSTOM.ONT_CLIMATE,
 				cId,
-				'hasClimate');
+				`Climate for ${country}`);
 			store.climates[cId] = objectProp[consts.CUSTOM.HAS_CLIMATE];
 		}
 		map = objectProp[consts.CUSTOM.HAS_CLIMATE];
@@ -38,13 +38,11 @@ var getClimate = function(cheerioElem, country, countryId) {
 			attr[consts.CUSTOM.CLIMATE_ZONE_DESCRIPTION] = 'N/A';
 
 			zone = {};
-			zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = {
-				id: czId,
-				label: 'hasClimateZone',
-				type: consts.CUSTOM.ONT_CLIMATE_ZONE,
-				datatypeProperties: attr,
-				objectProperties: []
-			};
+			zone = entityMaker(
+				consts.CUSTOM.HAS_CLIMATE_ZONE,
+				consts.CUSTOM.ONT_CLIMATE_ZONE,
+				czId,
+				`Climate Zone for ${country}`);
 			store.climateZones[czId] = zone[consts.CUSTOM.HAS_CLIMATE_ZONE];
 		}
 		mapZone = zone[consts.CUSTOM.HAS_CLIMATE_ZONE];

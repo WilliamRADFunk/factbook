@@ -25,7 +25,7 @@ var getGeography = function(cheerioElem, country, countryId) {
 					consts.CUSTOM.HAS_LOCATION,
 					consts.CUSTOM.ONT_GEO_LOCATION,
 					geoId,
-					'hasGeographicLocation');
+					`Geographic Location for ${country}`);
 				store.locations[geoId] = objectProp[consts.CUSTOM.HAS_LOCATION];
 			}
 			geoAttr = objectProp[consts.CUSTOM.HAS_LOCATION];

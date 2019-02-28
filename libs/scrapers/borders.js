@@ -5,6 +5,7 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 const entityMaker = require('../utils/entity-maker.js');
+const countryToId = require('../utils/country-to-id.js');
 
 var getBorders = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
@@ -21,7 +22,7 @@ var getBorders = function(cheerioElem, country, countryId) {
                         consts.CUSTOM.HAS_BORDER,
                         consts.CUSTOM.ONT_BORDER,
                         brdId,
-                        'hasBorder');
+                        `Border of ${country}`);
                     store.borders[brdId] = objectProp[consts.CUSTOM.HAS_BORDER];
                 }
                 brdMap = objectProp[consts.CUSTOM.HAS_BORDER];
@@ -62,20 +63,37 @@ var getBorders = function(cheerioElem, country, countryId) {
                     if (store.borderCountries[bcId]) {
                         objProp[consts.CUSTOM.HAS_BORDER_COUNTRY] = store.borderCountries[bcId];
                     } else {
-                        objectProp = entityMaker(
+                        objProp = entityMaker(
                             consts.CUSTOM.HAS_BORDER_COUNTRY,
                             consts.CUSTOM.ONT_BORDER_COUNTRY,
                             bcId,
-                            'hasBorderCountry');
+                            `Border Country Pair of ${orderedContrs[0]} and ${orderedContrs[1]}`);
                         
-                        objectProp[consts.CUSTOM.HAS_BORDER_COUNTRY]
+                        objProp[consts.CUSTOM.HAS_BORDER_COUNTRY]
                             .datatypeProperties[consts.CUSTOM.BORDER_LENGTH] = distance;
-                        objectProp[consts.CUSTOM.HAS_BORDER_COUNTRY]
-                            .datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'km';
-                        objectProp[consts.CUSTOM.HAS_BORDER_COUNTRY]
-                            .objectProperties[consts.CUSTOM.HAS_COUNTRY] = 'km';
-                    }
-                    store.borderCountries[bcId] = objectProp[consts.CUSTOM.HAS_BORDER_COUNTRY];
+                        objProp[consts.CUSTOM.HAS_BORDER_COUNTRY]
+							.datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'km';
+							
+						var borderCountryObj1 = {}
+						borderCountryObj1[consts.CUSTOM.HAS_COUNTRY] = {
+							id: store.countries[countryId].id,
+							label: store.countries[countryId].label,
+							type: store.countries[countryId].type
+						};
+                        objProp[consts.CUSTOM.HAS_BORDER_COUNTRY].objectProperties.push(borderCountryObj1);
+
+						var borderCountryObj2 = {}
+						const borderCountryId = countryToId(borderCountry);
+						borderCountryObj2[consts.CUSTOM.HAS_COUNTRY] = {
+							id: borderCountryId,
+							label: borderCountry,
+							type: consts.CUSTOM.INST_COUNTRY
+						};
+						objProp[consts.CUSTOM.HAS_BORDER_COUNTRY].objectProperties.push(borderCountryObj2);
+						
+						store.borderCountries[bcId] = objProp[consts.CUSTOM.HAS_BORDER_COUNTRY];
+					}
+					store.countries[countryId].objectProperties.push(objProp);
                 }
             });
         }
