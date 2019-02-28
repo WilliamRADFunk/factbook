@@ -22,6 +22,7 @@ const COUNTRY_BLACKLIST = [
 const ONT_COUNTRY = MAIN_ONT_PATH + 'Country/';
 const ONT_FLAG = MAIN_ONT_PATH + 'NationalFlag/';
 const ONT_BORDER = MAIN_ONT_PATH + 'Border/';
+const ONT_BORDER_COUNTRY = MAIN_ONT_PATH + 'BorderCountryPair/';
 const ONT_BORDER_MAP = MAIN_ONT_PATH + 'BorderMap/';
 const ONT_IMAGE = MAIN_ONT_PATH + 'Image/';
 const ONT_GEO_LOCATION = WGS84_POS.LOCATION;
@@ -33,6 +34,7 @@ const ONT_CLIMATE_ZONE = MAIN_ONT_PATH + 'ClimateZone/';
 
 // ObjectProperty Paths
 const HAS_BORDER = MAIN_ONT_PATH + 'hasBorder/';
+const HAS_BORDER_COUNTRY = MAIN_ONT_PATH + 'hasBorderCountryPair/';
 const HAS_BORDER_MAP = MAIN_ONT_PATH + 'hasBorderMap/';
 const HAS_FLAG = MAIN_ONT_PATH + 'hasNationalFlag/';
 const HAS_LOCATION = MAIN_ONT_PATH + 'hasLocation/';
@@ -47,6 +49,7 @@ const HAS_CLIMATE_ZONE = MAIN_ONT_PATH + 'hasClimateZone/';
 const BACKGROUND = MAIN_ONT_PATH + 'background/';
 const TOTAL_BORDER_COUNTRIES = MAIN_ONT_PATH + 'totalBorderCountries/';
 const TOTAL_BORDER = MAIN_ONT_PATH + 'totalLandBorder/';
+const BORDER_LENGTH = MAIN_ONT_PATH + 'borderLength/';
 const LOCATION_DESCRIPTION = MAIN_ONT_PATH + 'locationDescription/';
 const IMAGE_DIMENSIONS = MAIN_ONT_PATH + 'imageDimensions/';
 const IMAGE_SIZE = MAIN_ONT_PATH + 'imageSize/';
@@ -67,6 +70,7 @@ const CLIMATE_ZONE_DESCRIPTION = MAIN_ONT_PATH + 'climateZoneDescription/';
 // Instance Paths
 const INST_COUNTRY = MAIN_INSTANCE_PATH + 'Country/';
 const INST_BORDER = MAIN_INSTANCE_PATH + 'Border/';
+const INST_BORDER_COUNTRY = MAIN_INSTANCE_PATH + 'BorderCountryPair/';
 const INST_BORDER_MAP = MAIN_INSTANCE_PATH + 'BorderMap/';
 const INST_IMAGE = MAIN_INSTANCE_PATH + 'Image/';
 const INST_REGION_MAP = MAIN_INSTANCE_PATH + 'RegionMap/';
@@ -82,6 +86,10 @@ const CUSTOM = {
 	HAS_BORDER,
 	INST_BORDER,
 	TOTAL_BORDER_COUNTRIES,
+	BORDER_LENGTH,
+	ONT_BORDER_COUNTRY,
+	INST_BORDER_COUNTRY,
+	HAS_BORDER_COUNTRY,
 	ONT_COUNTRY,
 	INST_COUNTRY,
 	URL_BASE,
@@ -118,7 +126,6 @@ const CUSTOM = {
 	ONT_AREA_RANK,
 	ONT_UNIT,
 	ONT_LENGTH,
-	ONT_UNIT,
 	ONT_LENGTH_MODIFIER,
 	ONT_DOMAIN_AREA,
 	HAS_DOMAIN_AREA,
