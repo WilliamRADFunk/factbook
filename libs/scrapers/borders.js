@@ -5,6 +5,7 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 const entityMaker = require('../utils/entity-maker.js');
+const entityRefMaker = require('../utils/entity-ref-maker.js');
 const countryToId = require('../utils/country-to-id.js');
 
 var getBorders = function(cheerioElem, country, countryId) {
@@ -26,7 +27,7 @@ var getBorders = function(cheerioElem, country, countryId) {
                     store.borders[brdId] = objectProp[consts.CUSTOM.HAS_BORDER];
                 }
                 brdMap = objectProp[consts.CUSTOM.HAS_BORDER];
-                store.countries[countryId].objectProperties.push(objectProp);
+                store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_BORDER, objectProp));
             }
             var bordGrd = cheerioElem(this).find('span.subfield-number').text().trim();
             if (bordGrd) {
@@ -93,7 +94,7 @@ var getBorders = function(cheerioElem, country, countryId) {
 						
 						store.borderCountries[bcId] = objProp[consts.CUSTOM.HAS_BORDER_COUNTRY];
 					}
-					store.countries[countryId].objectProperties.push(objProp);
+					store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_BORDER_COUNTRY, objProp));
                 }
             });
         }

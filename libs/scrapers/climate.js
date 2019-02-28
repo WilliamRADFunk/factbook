@@ -4,6 +4,7 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 const entityMaker = require('../utils/entity-maker.js');
+const entityRefMaker = require('../utils/entity-ref-maker.js');
 
 var getClimate = function(cheerioElem, country, countryId) {
     var objectProperties = store.countries[countryId].objectProperties;
@@ -22,7 +23,7 @@ var getClimate = function(cheerioElem, country, countryId) {
 			store.climates[cId] = objectProp[consts.CUSTOM.HAS_CLIMATE];
 		}
 		map = objectProp[consts.CUSTOM.HAS_CLIMATE];
-		store.countries[countryId].objectProperties.push(objectProp);
+		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_CLIMATE, objectProp));
 	}
 
 	var mapZone = getRelation(map.objectProperties, consts.CUSTOM.HAS_CLIMATE_ZONE);
@@ -47,7 +48,7 @@ var getClimate = function(cheerioElem, country, countryId) {
 		}
 		mapZone = zone[consts.CUSTOM.HAS_CLIMATE_ZONE];
 	}
-	map.objectProperties.push(zone);
+	map.objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_CLIMATE_ZONE, zone));
 
 	cheerioElem('#field-climate').each(function() {
         var climGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim()

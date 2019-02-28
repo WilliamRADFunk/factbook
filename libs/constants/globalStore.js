@@ -10,6 +10,7 @@ const globalStore = {
 	domainAreas: {},
 	images: {},
 	locations: {},
+	maritimeClaims: {},
 	nationalFlags: {},
 	regionMaps: {},
 };

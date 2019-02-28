@@ -127,6 +127,16 @@
     <rdfs:comment>Total border belonging to a soverign nation.</rdfs:comment>
   </rdfs:Class>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim -->
+
+  <rdfs:Class rdf:about="&wfact;#MaritimeClaim">
+    <rdfs:label>Maritime Claim</rdfs:label>
+    <rdfs:comment>
+      The adjacent belt of sea that extends beyond a coastal state's land territory and internal waters.
+      Includes airspace over that belt of sea.
+    </rdfs:comment>
+  </rdfs:Class>
+
   <!-- 
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -212,6 +222,13 @@
       <rdfs:range rdf:resource="&wfact;#Border"/>
   </owl:ObjectProperty>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim -->
+
+  <owl:ObjectProperty rdf:about="&wfact;#hasMaritimeClaim">
+      <rdfs:domain rdf:resource="&wfact;#Country"/>
+      <rdfs:range rdf:resource="&wfact;#MaritimeClaim"/>
+  </owl:ObjectProperty>
+
   <!-- 
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -295,6 +312,7 @@
     <rdfs:domain rdf:resource="&asset;#Coast"/>
     <rdfs:domain rdf:resource="&asset;#BorderCountryPair"/>
     <rdfs:domain rdf:resource="&asset;#Border"/>
+    <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -404,6 +422,70 @@
     <rdfs:comment>Total number of countries sharing a border with this nation.</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;#Border"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#territorialSea -->
+
+  <DatatypeProperty rdf:about="&wfact;#territorialSea">
+    <rdfs:label>Territorial Sea</rdfs:label>
+    <rdfs:comment>Length of sea belt belonging to sovereign coastal state.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#exclusiveEconomicZone -->
+
+  <DatatypeProperty rdf:about="&wfact;#exclusiveEconomicZone">
+    <rdfs:label>Territorial Sea</rdfs:label>
+    <rdfs:comment>Length of sea belt belonging to sovereign coastal state for exclusive economic use.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#contiguousZone -->
+
+  <DatatypeProperty rdf:about="&wfact;#contiguousZone">
+    <rdfs:label>Contiguous Zone</rdfs:label>
+    <rdfs:comment>
+      Length of sea belt belonging to sovereign coastal state for legally protecting against infringement of its customs,
+      fiscal, immigration, or sanitary laws and regulations.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#continentalShelf -->
+
+  <DatatypeProperty rdf:about="&wfact;#continentalShelf">
+    <rdfs:label>Continental Shelf</rdfs:label>
+    <rdfs:comment>
+      Length of sea belt belonging to sovereign coastal state with exclusive jurisdiction for the purpose of exploring it
+      and exploiting its natural resources.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#continentalShelfModifier -->
+
+  <DatatypeProperty rdf:about="&wfact;#continentalShelfModifier">
+    <rdfs:label>Continental Shelf</rdfs:label>
+    <rdfs:comment>
+      Additions, subtractions, or exceptions that pertain to the length of sea belt belonging to a soverign coastal state.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#supplementalExplanation -->
+
+  <DatatypeProperty rdf:about="&wfact;#supplementalExplanation">
+    <rdfs:label>supplementalExplanation</rdfs:label>
+    <rdfs:comment>
+      When details are given that don't readily fit into any given category, they go here.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
 </rdf:RDF>

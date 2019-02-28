@@ -4,6 +4,7 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 const entityMaker = require('../utils/entity-maker.js');
+const entityRefMaker = require('../utils/entity-ref-maker.js');
 
 var getArea = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
@@ -22,7 +23,7 @@ var getArea = function(cheerioElem, country, countryId) {
 			store.domainAreas[daId] = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
 		}
 		map = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
-		store.countries[countryId].objectProperties.push(objectProp);
+		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_DOMAIN_AREA, objectProp));
 	}
 	cheerioElem('#field-area > div.category_data.subfield.numeric').each(function() {
 		let areaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();

@@ -4,8 +4,9 @@ const htmlToText = require('html-to-text');
 const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const entityMaker = require('../utils/entity-maker.js');
+const entityRefMaker = require('../utils/entity-ref-maker.js');
 
-var getSupllementalImages = function(cheerioElem, country, countryId) {
+var getSupplementalImages = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.item.photo-all').each(function() {
         let suppImages = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG]);
@@ -35,7 +36,7 @@ var getSupllementalImages = function(cheerioElem, country, countryId) {
                     `Supplemental Image for ${country}`);
 				store.images[imgId] = objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG];
 			}
-			store.countries[countryId].objectProperties.push(objectProp);
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_SUPPLEMENTAL_IMG, objectProp));
 
 			var datatypeProp = {};
 			datatypeProp[consts.CUSTOM.LOCATION_URI] = suppImgUrl;
@@ -49,4 +50,4 @@ var getSupllementalImages = function(cheerioElem, country, countryId) {
     });
 };
 
-module.exports = getSupllementalImages;
+module.exports = getSupplementalImages;

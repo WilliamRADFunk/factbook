@@ -4,6 +4,7 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 const entityMaker = require('../utils/entity-maker.js');
+const entityRefMaker = require('../utils/entity-ref-maker.js');
 
 var getBorderMapImg = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
@@ -23,7 +24,7 @@ var getBorderMapImg = function(cheerioElem, country, countryId) {
                 store.borderMaps[bmId] = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
             }
             map = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
-            store.countries[countryId].objectProperties.push(objectProp);
+            store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_BORDER_MAP, objectProp));
         }
         var a = cheerioElem(this).find('img').attr('src');
         var borderMapUrl;

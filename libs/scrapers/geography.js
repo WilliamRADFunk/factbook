@@ -4,6 +4,7 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 const entityMaker = require('../utils/entity-maker.js');
+const entityRefMaker = require('../utils/entity-ref-maker.js');
 
 var getGeography = function(cheerioElem, country, countryId) {
 	cheerioElem('#field-location').each(function() {
@@ -29,7 +30,7 @@ var getGeography = function(cheerioElem, country, countryId) {
 				store.locations[geoId] = objectProp[consts.CUSTOM.HAS_LOCATION];
 			}
 			geoAttr = objectProp[consts.CUSTOM.HAS_LOCATION];
-			store.countries[countryId].objectProperties.push(objectProp);
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_LOCATION, objectProp));
 		}
 
         var geoGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();

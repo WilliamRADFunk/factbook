@@ -4,6 +4,7 @@ const consts = require('../constants/constants');
 const store = require('../constants/globalStore');
 const getRelation = require('../utils/get-objectProperty.js');
 const entityMaker = require('../utils/entity-maker.js');
+const entityRefMaker = require('../utils/entity-ref-maker.js');
 
 var getFlag = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
@@ -22,7 +23,7 @@ var getFlag = function(cheerioElem, country, countryId) {
 			store.nationalFlags[fId] = objectProp[consts.CUSTOM.HAS_FLAG];
 		}
 		flag = objectProp[consts.CUSTOM.HAS_FLAG];
-		store.countries[countryId].objectProperties.push(objectProp);
+		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_FLAG, objectProp));
 	}
     cheerioElem('div.flagBox').each(function() {
         var a = cheerioElem(this).find('img').attr('src');
@@ -35,16 +36,14 @@ var getFlag = function(cheerioElem, country, countryId) {
 		}
         // TODO: scrape physical image from url and store it.
     });
-    cheerioElem('div.modalFlagDesc').each(function() {
-		let flag = getRelation(objectProperties, consts.CUSTOM.HAS_FLAG);
-    
-        var a = cheerioElem(this).find('div.photogallery_captiontext').text().trim();
-        if (!a) { return; }
+    cheerioElem('div.modalFlagDesc').each(function() {    
+        var b = cheerioElem(this).find('div.photogallery_captiontext').text().trim();
+        if (!b) { return; }
 
         if (flag) {
-			flag.datatypeProperties[consts.CUSTOM.CONTENT_DESCRIPTION] = a.replace(/\\n/g, '').trim();
+			flag.datatypeProperties[consts.CUSTOM.CONTENT_DESCRIPTION] = b.replace(/\\n/g, '').trim();
         } else {
-			flag.datatypeProperties[consts.CUSTOM.CONTENT_DESCRIPTION] = a.trim();
+			flag.datatypeProperties[consts.CUSTOM.CONTENT_DESCRIPTION] = b.trim();
         }
     });
 };

@@ -30,9 +30,9 @@ if (countriesRawData) {
 var borderMapsRawData;
 // If countries file exists, great. Otherwise make a blank one for later.
 try {
-    borderMapsRawData = fs.readFileSync('dist/borderMaps.json');
+    borderMapsRawData = fs.readFileSync('dist/border-maps.json');
 } catch (err) {
-    fs.closeSync(fs.openSync('dist/borderMaps.json', 'w'));
+    fs.closeSync(fs.openSync('dist/border-maps.json', 'w'));
 }
 // If preexisting borderMaps file, use it.
 if (borderMapsRawData) {
@@ -54,9 +54,9 @@ if (climatesRawData) {
 var climatesZonesRawData;
 // If countries file exists, great. Otherwise make a blank one for later.
 try {
-    climatesZonesRawData = fs.readFileSync('dist/climatesZones.json');
+    climatesZonesRawData = fs.readFileSync('dist/climates-zones.json');
 } catch (err) {
-    fs.closeSync(fs.openSync('dist/climatesZones.json', 'w'));
+    fs.closeSync(fs.openSync('dist/climates-zones.json', 'w'));
 }
 // If preexisting climatesZones file, use it.
 if (climatesZonesRawData) {
@@ -78,9 +78,9 @@ if (coastsRawData) {
 var domainAreasRawData;
 // If countries file exists, great. Otherwise make a blank one for later.
 try {
-    domainAreasRawData = fs.readFileSync('dist/domainAreas.json');
+    domainAreasRawData = fs.readFileSync('dist/domain-areas.json');
 } catch (err) {
-    fs.closeSync(fs.openSync('dist/domainAreas.json', 'w'));
+    fs.closeSync(fs.openSync('dist/domain-areas.json', 'w'));
 }
 // If preexisting domainAreas file, use it.
 if (domainAreasRawData) {
@@ -102,9 +102,9 @@ if (imagesRawData) {
 var nationalFlagsRawData;
 // If countries file exists, great. Otherwise make a blank one for later.
 try {
-    nationalFlagsRawData = fs.readFileSync('dist/nationalFlags.json');
+    nationalFlagsRawData = fs.readFileSync('dist/national-flags.json');
 } catch (err) {
-    fs.closeSync(fs.openSync('dist/nationalFlags.json', 'w'));
+    fs.closeSync(fs.openSync('dist/national-flags.json', 'w'));
 }
 // If preexisting nationalFlags file, use it.
 if (nationalFlagsRawData) {
@@ -114,9 +114,9 @@ if (nationalFlagsRawData) {
 var regionMapsRawData;
 // If countries file exists, great. Otherwise make a blank one for later.
 try {
-    regionMapsRawData = fs.readFileSync('dist/regionMaps.json');
+    regionMapsRawData = fs.readFileSync('dist/region-maps.json');
 } catch (err) {
-    fs.closeSync(fs.openSync('dist/regionMaps.json', 'w'));
+    fs.closeSync(fs.openSync('dist/region-maps.json', 'w'));
 }
 // If preexisting regionMaps file, use it.
 if (regionMapsRawData) {
@@ -126,9 +126,9 @@ if (regionMapsRawData) {
 var borderCountriesRawData;
 // If countries file exists, great. Otherwise make a blank one for later.
 try {
-    borderCountriesRawData = fs.readFileSync('dist/borderCountries.json');
+    borderCountriesRawData = fs.readFileSync('dist/border-countries.json');
 } catch (err) {
-    fs.closeSync(fs.openSync('dist/borderCountries.json', 'w'));
+    fs.closeSync(fs.openSync('dist/border-countries.json', 'w'));
 }
 // If preexisting borderCountries file, use it.
 if (borderCountriesRawData) {
@@ -147,6 +147,18 @@ if (bordersRawData) {
     store.borderCountries = JSON.parse(bordersRawData);
 }
 
+var maritimeClaimsRawData;
+// If countries file exists, great. Otherwise make a blank one for later.
+try {
+    maritimeClaimsRawData = fs.readFileSync('dist/maritime-claims.json');
+} catch (err) {
+    fs.closeSync(fs.openSync('dist/maritime-claims.json', 'w'));
+}
+// If preexisting maritime claims file, use it.
+if (maritimeClaimsRawData) {
+    store.maritimeClaims = JSON.parse(maritimeClaimsRawData);
+}
+
 var getCountryData = (country, url) => {
     if (country && url) {
         return rp(url, { timeout: consts.CUSTOM.DATA_REQUEST_TIMEOUT })
@@ -157,12 +169,13 @@ var getCountryData = (country, url) => {
 				dataScrapers.getBackground($, country, countryId);
 				dataScrapers.getBorderMapImg($, country, countryId);
 				dataScrapers.getRegionMapImg($, country, countryId);
-                dataScrapers.getSupllementalImages($, country, countryId);
+                dataScrapers.getSupplementalImages($, country, countryId);
                 dataScrapers.getGeography($, country, countryId);
                 dataScrapers.getArea($, country, countryId);
                 dataScrapers.getCoastLength($, country, countryId);
                 dataScrapers.getClimate($, country, countryId);
                 dataScrapers.getBorders($, country, countryId);
+                dataScrapers.getMaritimeClaims($, country, countryId);
                 console.log('Data scrape for ', country, ' is complete');
             })
             .catch(err => {
@@ -219,11 +232,11 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
 
                 file = JSON.stringify(store.borderCountries);
                 file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/borderCountries.json', file);
+                fs.writeFileSync('dist/border-countries.json', file);
 
                 file = JSON.stringify(store.borderMaps);
                 file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/borderMaps.json', file);
+                fs.writeFileSync('dist/border-maps.json', file);
 
                 file = JSON.stringify([store.climates]);
                 file = file.replace(/\\n/g, ' ');
@@ -231,7 +244,7 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
 
                 file = JSON.stringify(store.climateZones);
                 file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/climatesZones.json', file);
+                fs.writeFileSync('dist/climates-zones.json', file);
 
                 file = JSON.stringify(store.coasts);
                 file = file.replace(/\\n/g, ' ');
@@ -239,7 +252,7 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
 
                 file = JSON.stringify(store.domainAreas);
                 file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/domainAreas.json', file);
+                fs.writeFileSync('dist/domain-areas.json', file);
 
                 file = JSON.stringify(store.images);
                 file = file.replace(/\\n/g, ' ');
@@ -251,19 +264,23 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
 
                 file = JSON.stringify(store.nationalFlags);
                 file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/nationalFlags.json', file);
+                fs.writeFileSync('dist/national-flags.json', file);
 
                 file = JSON.stringify(store.regionMaps);
                 file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/regionMaps.json', file);
+                fs.writeFileSync('dist/region-maps.json', file);
 
                 file = JSON.stringify(store.borderCountries);
                 file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/borderCountries.json', file);
+                fs.writeFileSync('dist/border-countries.json', file);
 
                 file = JSON.stringify(store.borders);
                 file = file.replace(/\\n/g, ' ');
                 fs.writeFileSync('dist/borders.json', file);
+
+                file = JSON.stringify(store.maritimeClaims);
+                file = file.replace(/\\n/g, ' ');
+                fs.writeFileSync('dist/maritime-claims.json', file);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');

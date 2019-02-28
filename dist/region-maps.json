@@ -1,0 +1,2108 @@
+{
+  "http://williamrobertfunk.com/instance/RegionMap/eb2c2d40-05c9-3e45-abca-1314961def37": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/eb2c2d40-05c9-3e45-abca-1314961def37",
+    "label": "Region Map of Akrotiri",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AX-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/61ae692a-4a56-3b78-b6ac-ede72c5af0d3": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/61ae692a-4a56-3b78-b6ac-ede72c5af0d3",
+    "label": "Region Map of Southern Ocean",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/OO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/b2b04a7a-f56f-3781-8928-f9789bce0f6a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/b2b04a7a-f56f-3781-8928-f9789bce0f6a",
+    "label": "Region Map of Dhekelia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/DX-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e8dbbad7-1cb1-36a9-bcf3-881922784a9e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e8dbbad7-1cb1-36a9-bcf3-881922784a9e",
+    "label": "Region Map of South Georgia and South Sandwich Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SX-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/0b5cac30-54ad-33b7-a5da-977b1d9401f5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/0b5cac30-54ad-33b7-a5da-977b1d9401f5",
+    "label": "Region Map of Wake Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/WQ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/18740af5-bcec-3773-bd3c-059e0fc65703": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/18740af5-bcec-3773-bd3c-059e0fc65703",
+    "label": "Region Map of Eritrea",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ER-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/13044708-3d0b-36b6-914b-952751355ad3": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/13044708-3d0b-36b6-914b-952751355ad3",
+    "label": "Region Map of Heard Island and McDonald Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/HM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/545f7fe2-5e4e-37dc-88fb-143cc4963db1": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/545f7fe2-5e4e-37dc-88fb-143cc4963db1",
+    "label": "Region Map of Baker Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/95cb6272-4475-32d2-a872-dacc00642d50": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/95cb6272-4475-32d2-a872-dacc00642d50",
+    "label": "Region Map of Kosovo",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/baaaa8e8-a3aa-3e98-ba36-db005b856a6c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/baaaa8e8-a3aa-3e98-ba36-db005b856a6c",
+    "label": "Region Map of Pacific Ocean",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ZN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/cdf22ab3-9fd2-3380-bc07-d7fd2665cd7a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/cdf22ab3-9fd2-3380-bc07-d7fd2665cd7a",
+    "label": "Region Map of Midway Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/b6b237de-15c9-3f2d-90db-596b0056953e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/b6b237de-15c9-3f2d-90db-596b0056953e",
+    "label": "Region Map of Jan Mayen",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/JN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/58bb1c41-96e7-3a66-aa76-02354d7121e8": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/58bb1c41-96e7-3a66-aa76-02354d7121e8",
+    "label": "Region Map of Clipperton Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/180c97ab-db80-333b-91cb-32903dced0e8": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/180c97ab-db80-333b-91cb-32903dced0e8",
+    "label": "Region Map of Guernsey",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9a2248f7-c4de-37c1-bc8e-2688356857b5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9a2248f7-c4de-37c1-bc8e-2688356857b5",
+    "label": "Region Map of Tuvalu",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/df234ea5-9088-3ef0-8afd-8cdcca0fb761": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/df234ea5-9088-3ef0-8afd-8cdcca0fb761",
+    "label": "Region Map of Johnston Atoll",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/04674dda-9bab-3a8f-b4a2-ed0fa25f4cf3": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/04674dda-9bab-3a8f-b4a2-ed0fa25f4cf3",
+    "label": "Region Map of Spratly Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/861c476b-1e39-3ba5-92d0-7103eeb0809d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/861c476b-1e39-3ba5-92d0-7103eeb0809d",
+    "label": "Region Map of Gaza Strip",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GZ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/78b2b955-be91-36e9-8222-c7715240f4cf": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/78b2b955-be91-36e9-8222-c7715240f4cf",
+    "label": "Region Map of Holy See (Vatican City)",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/VT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/0e418aff-d41c-330d-8923-9e1aafe3d63d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/0e418aff-d41c-330d-8923-9e1aafe3d63d",
+    "label": "Region Map of Ashmore and Cartier Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/00f33fc5-30d3-3211-ae6a-b56f206622e2": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/00f33fc5-30d3-3211-ae6a-b56f206622e2",
+    "label": "Region Map of Antarctica",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AY-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/a187509a-a2af-36ef-9b1a-bbaed04d4bb5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/a187509a-a2af-36ef-9b1a-bbaed04d4bb5",
+    "label": "Region Map of Wallis and Futuna",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/WF-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d16ad2dc-c6af-3252-a554-ea5f1722abc5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d16ad2dc-c6af-3252-a554-ea5f1722abc5",
+    "label": "Region Map of Vanuatu",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NH-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bc1cd4f0-7d82-3693-b32f-9c95c491d6fb": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bc1cd4f0-7d82-3693-b32f-9c95c491d6fb",
+    "label": "Region Map of Dominica",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/DO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/a08c1ca2-fca3-3f1e-a2de-01c2de009926": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/a08c1ca2-fca3-3f1e-a2de-01c2de009926",
+    "label": "Region Map of Tokelau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TL-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/c6dfa97a-611d-3e45-bfdc-51c69a762488": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/c6dfa97a-611d-3e45-bfdc-51c69a762488",
+    "label": "Region Map of Christmas Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1fc1b5b2-9cef-334d-b2c7-e252ca386339": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1fc1b5b2-9cef-334d-b2c7-e252ca386339",
+    "label": "Region Map of British Virgin Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/VI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/6f49c311-92f5-3a1e-9053-a1d699956998": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/6f49c311-92f5-3a1e-9053-a1d699956998",
+    "label": "Region Map of Saudi Arabia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/259a6e93-5b84-3a23-a0c0-b76aced28030": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/259a6e93-5b84-3a23-a0c0-b76aced28030",
+    "label": "Region Map of El Salvador",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ES-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/58675230-3a18-3b65-b685-1615595c20db": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/58675230-3a18-3b65-b685-1615595c20db",
+    "label": "Region Map of Arctic Ocean",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/XQ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/a42522a0-cdd6-361a-9379-e6c95d08a9c4": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/a42522a0-cdd6-361a-9379-e6c95d08a9c4",
+    "label": "Region Map of Angola",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/76733f33-8bb2-3fd9-9ee8-304d05accb91": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/76733f33-8bb2-3fd9-9ee8-304d05accb91",
+    "label": "Region Map of Isle of Man",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/6d31bf00-d7ed-3e6a-a17a-6b16699f8ba9": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/6d31bf00-d7ed-3e6a-a17a-6b16699f8ba9",
+    "label": "Region Map of Serbia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/55957aeb-1714-3a91-9845-5cb9876e462d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/55957aeb-1714-3a91-9845-5cb9876e462d",
+    "label": "Region Map of Jarvis Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/3ad2dd82-9664-3a6f-a9ae-c0770e244c17": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/3ad2dd82-9664-3a6f-a9ae-c0770e244c17",
+    "label": "Region Map of Saint Kitts and Nevis",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/62ac59b7-255c-37ff-9fee-8ac49157bdd9": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/62ac59b7-255c-37ff-9fee-8ac49157bdd9",
+    "label": "Region Map of Bosnia and Herzegovina",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/290125ef-9fc2-3ea6-9f61-37e052316978": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/290125ef-9fc2-3ea6-9f61-37e052316978",
+    "label": "Region Map of Bouvet Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/db800e86-e9f3-33e7-ae11-02efb21d4595": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/db800e86-e9f3-33e7-ae11-02efb21d4595",
+    "label": "Region Map of Uzbekistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UZ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/17d53e0e-6a68-3edf-80b7-8d4f9d868c87": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/17d53e0e-6a68-3edf-80b7-8d4f9d868c87",
+    "label": "Region Map of Germany",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/c6bf8032-9471-3eb9-a153-ded1daed95f5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/c6bf8032-9471-3eb9-a153-ded1daed95f5",
+    "label": "Region Map of Howland Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/fbaa3c3e-9e1b-3f9f-a813-f2d4c038b295": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/fbaa3c3e-9e1b-3f9f-a813-f2d4c038b295",
+    "label": "Region Map of Papua New Guinea",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1ba0cfa5-5029-3f8b-ac5f-a44b8236639a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1ba0cfa5-5029-3f8b-ac5f-a44b8236639a",
+    "label": "Region Map of Greenland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GL-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/0e1d589f-58b7-3e2b-bd5d-8068156d1601": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/0e1d589f-58b7-3e2b-bd5d-8068156d1601",
+    "label": "Region Map of Nepal",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/b07cb9a2-b248-32a8-997c-d3dfa67d1d6a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/b07cb9a2-b248-32a8-997c-d3dfa67d1d6a",
+    "label": "Region Map of Guinea-Bissau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PU-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/cd6a7b87-6852-3685-a0db-cd459185091e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/cd6a7b87-6852-3685-a0db-cd459185091e",
+    "label": "Region Map of Canada",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/32e087f0-99be-321c-9211-285a1700ff83": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/32e087f0-99be-321c-9211-285a1700ff83",
+    "label": "Region Map of Morocco",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/f8aa3a93-4ee3-3a6c-86d1-b092624a9c38": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/f8aa3a93-4ee3-3a6c-86d1-b092624a9c38",
+    "label": "Region Map of Guam",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GQ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/acb3f2f8-a526-3628-a229-a70aa0fe6718": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/acb3f2f8-a526-3628-a229-a70aa0fe6718",
+    "label": "Region Map of United States Pacific Island Wildlife Refuges",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e5bb59a2-7319-3aca-a207-0f6fd4f2e075": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e5bb59a2-7319-3aca-a207-0f6fd4f2e075",
+    "label": "Region Map of Comoros",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d2dd2d43-fef0-33aa-980b-01e58e8a9c32": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d2dd2d43-fef0-33aa-980b-01e58e8a9c32",
+    "label": "Region Map of Cocos (Keeling) Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/ca0b36fe-c74b-3612-a6ad-ce2b5ce0e8ef": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/ca0b36fe-c74b-3612-a6ad-ce2b5ce0e8ef",
+    "label": "Region Map of American Samoa",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AQ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/36c57243-155b-32cf-b50c-59764354b20d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/36c57243-155b-32cf-b50c-59764354b20d",
+    "label": "Region Map of Peru",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/20c0b7bd-ab70-3a2c-89c8-44a0d74a3af0": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/20c0b7bd-ab70-3a2c-89c8-44a0d74a3af0",
+    "label": "Region Map of Singapore",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/fab1a523-9120-3253-934c-8cc0b956613c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/fab1a523-9120-3253-934c-8cc0b956613c",
+    "label": "Region Map of Western Sahara",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/WI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/42ab0c94-a1e3-3f61-b5a1-5dba215ccf5f": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/42ab0c94-a1e3-3f61-b5a1-5dba215ccf5f",
+    "label": "Region Map of Belize",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BH-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/923c8a23-a3eb-3f07-bd80-b8aca8e5ff85": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/923c8a23-a3eb-3f07-bd80-b8aca8e5ff85",
+    "label": "Region Map of Bahamas, The",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BF-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/a84f56f2-e6a7-3ecb-8b2f-89344446dd3f": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/a84f56f2-e6a7-3ecb-8b2f-89344446dd3f",
+    "label": "Region Map of Kenya",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/22066e1f-775c-3abe-bccd-2a03126060f6": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/22066e1f-775c-3abe-bccd-2a03126060f6",
+    "label": "Region Map of Kingman Reef",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/094d515b-3608-3efc-a759-a36412cee467": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/094d515b-3608-3efc-a759-a36412cee467",
+    "label": "Region Map of Taiwan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TW-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/4617585b-8749-371b-bb21-237cab6c2dc9": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/4617585b-8749-371b-bb21-237cab6c2dc9",
+    "label": "Region Map of Burundi",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BY-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bff21d90-ee3c-3a7a-91e4-43180897f2d7": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bff21d90-ee3c-3a7a-91e4-43180897f2d7",
+    "label": "Region Map of Palmyra Atoll",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/f92bcb6a-06d2-3e7c-8af7-c8a338f131bf": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/f92bcb6a-06d2-3e7c-8af7-c8a338f131bf",
+    "label": "Region Map of Madagascar",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/ff6b6871-509d-326c-a777-3d50c507db22": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/ff6b6871-509d-326c-a777-3d50c507db22",
+    "label": "Region Map of Falkland Islands (Islas Malvinas)",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/79b9d273-ac6d-3688-909d-1ea43e2bdb79": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/79b9d273-ac6d-3688-909d-1ea43e2bdb79",
+    "label": "Region Map of Albania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AL-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1ed5dd9d-833f-375b-b509-886681e2164d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1ed5dd9d-833f-375b-b509-886681e2164d",
+    "label": "Region Map of Liberia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/eb6d666b-573b-33d6-af55-27d62a777f36": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/eb6d666b-573b-33d6-af55-27d62a777f36",
+    "label": "Region Map of Navassa Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BQ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9cba5482-49f6-3e4a-b2f2-47084a2405a8": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9cba5482-49f6-3e4a-b2f2-47084a2405a8",
+    "label": "Region Map of Congo, Republic of the",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CF-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/fedb2073-6102-3b4c-a53a-f14fae039294": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/fedb2073-6102-3b4c-a53a-f14fae039294",
+    "label": "Region Map of Norfolk Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NF-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5cb4c9d8-2817-3ed3-931e-c52305b32f47": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5cb4c9d8-2817-3ed3-931e-c52305b32f47",
+    "label": "Region Map of Belgium",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/373616e3-9fb4-3f9a-9a4e-87dfd4ea9680": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/373616e3-9fb4-3f9a-9a4e-87dfd4ea9680",
+    "label": "Region Map of Benin",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/35f00515-7cfd-3338-b5b0-6f037eeeff3b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/35f00515-7cfd-3338-b5b0-6f037eeeff3b",
+    "label": "Region Map of Montserrat",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MH-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/35fda17f-f05f-33e9-8612-08c2dd2aaaf9": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/35fda17f-f05f-33e9-8612-08c2dd2aaaf9",
+    "label": "Region Map of South Africa",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SF-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/7e380be8-dc28-3725-b114-4716e95e598c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/7e380be8-dc28-3725-b114-4716e95e598c",
+    "label": "Region Map of Tanzania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TZ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/479fb34b-dbf4-3ba9-8d03-cca83f64ad4e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/479fb34b-dbf4-3ba9-8d03-cca83f64ad4e",
+    "label": "Region Map of Montenegro",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MJ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/045e2f1d-6c4d-33aa-acfd-1b2f30f30a97": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/045e2f1d-6c4d-33aa-acfd-1b2f30f30a97",
+    "label": "Region Map of Czechia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/EZ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/a2238e91-907f-3243-aa6a-50e0fd8cf97a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/a2238e91-907f-3243-aa6a-50e0fd8cf97a",
+    "label": "Region Map of New Zealand",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NZ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5f4599da-a341-3f78-8c1a-fc3db145f01b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5f4599da-a341-3f78-8c1a-fc3db145f01b",
+    "label": "Region Map of Armenia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e92904bc-e802-3b3c-9f88-28b0ce882e6b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e92904bc-e802-3b3c-9f88-28b0ce882e6b",
+    "label": "Region Map of Uganda",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/213598a7-e922-37be-a3a7-58f3c69aea09": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/213598a7-e922-37be-a3a7-58f3c69aea09",
+    "label": "Region Map of Azerbaijan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AJ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/681101d8-f9fa-3e5e-9fbe-8ac5a2c05504": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/681101d8-f9fa-3e5e-9fbe-8ac5a2c05504",
+    "label": "Region Map of Vietnam",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/VM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/f648c72a-69c3-3bb1-97c3-603ebd4a7514": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/f648c72a-69c3-3bb1-97c3-603ebd4a7514",
+    "label": "Region Map of Nauru",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NR-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/3f57adf2-c06c-3ed0-95ff-83ab72787889": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/3f57adf2-c06c-3ed0-95ff-83ab72787889",
+    "label": "Region Map of Kiribati",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KR-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e71b56d9-2347-3a6f-a762-39ce33f67aaa": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e71b56d9-2347-3a6f-a762-39ce33f67aaa",
+    "label": "Region Map of Burkina Faso",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/41937b20-fbe8-371d-9c6c-3346aff43c00": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/41937b20-fbe8-371d-9c6c-3346aff43c00",
+    "label": "Region Map of Mexico",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MX-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/852addab-901c-3e56-99d1-90285a009d7a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/852addab-901c-3e56-99d1-90285a009d7a",
+    "label": "Region Map of Cyprus",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CY-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1d39eea5-2e73-3ad4-a7b5-182f04617679": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1d39eea5-2e73-3ad4-a7b5-182f04617679",
+    "label": "Region Map of Atlantic Ocean",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ZH-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/60a8b0c6-de6f-3abe-9999-959a5c735275": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/60a8b0c6-de6f-3abe-9999-959a5c735275",
+    "label": "Region Map of Djibouti",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/DJ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/72ddd2b6-19af-3f6a-b3fe-bf80f7fcad22": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/72ddd2b6-19af-3f6a-b3fe-bf80f7fcad22",
+    "label": "Region Map of Sweden",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SW-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e5e0b68a-dfac-3669-b950-5bedf6d42407": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e5e0b68a-dfac-3669-b950-5bedf6d42407",
+    "label": "Region Map of Palau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/130e4a34-f1b8-37a8-b3bd-24b204c06ec4": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/130e4a34-f1b8-37a8-b3bd-24b204c06ec4",
+    "label": "Region Map of Brunei",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BX-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9d3bd1fb-5278-3a7b-aeb0-3b437e7b2ecb": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9d3bd1fb-5278-3a7b-aeb0-3b437e7b2ecb",
+    "label": "Region Map of Andorra",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/988455e6-7df7-3f81-9090-ea4bacdc05f3": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/988455e6-7df7-3f81-9090-ea4bacdc05f3",
+    "label": "Region Map of Norway",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/3fa9b2dd-85d2-37dd-8f64-07fbb7799287": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/3fa9b2dd-85d2-37dd-8f64-07fbb7799287",
+    "label": "Region Map of Saint Vincent and the Grenadines",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/VC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9113c6c0-c1f9-3b53-a354-3b53136ba30c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9113c6c0-c1f9-3b53-a354-3b53136ba30c",
+    "label": "Region Map of Georgia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/85fa355b-db4f-36fa-93a2-0a441623d53d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/85fa355b-db4f-36fa-93a2-0a441623d53d",
+    "label": "Region Map of Mauritania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MR-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/a001af75-ee89-3a2f-b1cb-4db6d3dd0b47": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/a001af75-ee89-3a2f-b1cb-4db6d3dd0b47",
+    "label": "Region Map of Bolivia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BL-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d115b8d5-acb8-3a6b-8012-aaf4cbb3812c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d115b8d5-acb8-3a6b-8012-aaf4cbb3812c",
+    "label": "Region Map of United Arab Emirates",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1f8dc1a6-076e-32fb-b1ef-a48a19e2d220": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1f8dc1a6-076e-32fb-b1ef-a48a19e2d220",
+    "label": "Region Map of Turkmenistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TX-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9d4ac43d-5e24-33d0-9e44-8ce01a277ba5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9d4ac43d-5e24-33d0-9e44-8ce01a277ba5",
+    "label": "Region Map of Venezuela",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/VE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bccccc24-9b84-3ade-940a-d4205e585326": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bccccc24-9b84-3ade-940a-d4205e585326",
+    "label": "Region Map of Saint Helena, Ascension, and Tristan da Cunha",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SH-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/58f76ad9-b377-36df-884c-2901abe54037": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/58f76ad9-b377-36df-884c-2901abe54037",
+    "label": "Region Map of Cote d'Ivoire",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bb2254a8-06f4-3ff2-8753-ca390143e2ca": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bb2254a8-06f4-3ff2-8753-ca390143e2ca",
+    "label": "Region Map of Bhutan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/530670dc-a740-3be8-9943-6ac4734296b8": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/530670dc-a740-3be8-9943-6ac4734296b8",
+    "label": "Region Map of Antigua and Barbuda",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/de58331a-6338-3bdb-b8c5-9e6a6788b72e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/de58331a-6338-3bdb-b8c5-9e6a6788b72e",
+    "label": "Region Map of Curacao",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/74a788ce-e27d-3690-95a0-786732c662e0": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/74a788ce-e27d-3690-95a0-786732c662e0",
+    "label": "Region Map of Lithuania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LH-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/854ccc29-cc22-3f95-bd1e-5ce961f30c1e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/854ccc29-cc22-3f95-bd1e-5ce961f30c1e",
+    "label": "Region Map of Saint Martin",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/3d91f763-1ba8-33c1-ba08-a208f1255b2e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/3d91f763-1ba8-33c1-ba08-a208f1255b2e",
+    "label": "Region Map of Ethiopia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ET-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/f54da380-bade-3f43-898f-d1f338cb8257": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/f54da380-bade-3f43-898f-d1f338cb8257",
+    "label": "Region Map of Mongolia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/daa6a489-dbca-3a13-8480-aaa1d0c34495": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/daa6a489-dbca-3a13-8480-aaa1d0c34495",
+    "label": "Region Map of Mali",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ML-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d8973b8e-dfe5-3321-9044-e39d5452523b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d8973b8e-dfe5-3321-9044-e39d5452523b",
+    "label": "Region Map of Senegal",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/2f737399-6064-3665-9401-cb27b066f465": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/2f737399-6064-3665-9401-cb27b066f465",
+    "label": "Region Map of Colombia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/8415fea7-e424-361d-ae7c-da45687dbb07": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/8415fea7-e424-361d-ae7c-da45687dbb07",
+    "label": "Region Map of Virgin Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/VQ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d887137d-c253-37e7-9147-cc2c2352a2d0": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d887137d-c253-37e7-9147-cc2c2352a2d0",
+    "label": "Region Map of Macau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/2f488ffc-82cc-367a-9616-e39fdfc53729": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/2f488ffc-82cc-367a-9616-e39fdfc53729",
+    "label": "Region Map of Hong Kong",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/HK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/b6c149c3-e004-37fb-a347-629a63ed02fe": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/b6c149c3-e004-37fb-a347-629a63ed02fe",
+    "label": "Region Map of Slovakia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e5133589-7c0e-36bb-9526-93d416690214": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e5133589-7c0e-36bb-9526-93d416690214",
+    "label": "Region Map of Gibraltar",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1082f891-1562-3b9c-831f-2176f832b3a7": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1082f891-1562-3b9c-831f-2176f832b3a7",
+    "label": "Region Map of Faroe Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/35536a41-b209-335d-9e3a-d440431fef26": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/35536a41-b209-335d-9e3a-d440431fef26",
+    "label": "Region Map of Indonesia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ID-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/4bacfe25-35ec-3eeb-9a04-a1b85c3a2e0b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/4bacfe25-35ec-3eeb-9a04-a1b85c3a2e0b",
+    "label": "Region Map of Cook Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CW-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5922f5ce-eff3-3bcf-9b99-3efd6cfd5c47": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5922f5ce-eff3-3bcf-9b99-3efd6cfd5c47",
+    "label": "Region Map of Zimbabwe",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ZI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bd6acc86-26d1-3aae-a603-31ce33bf000c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bd6acc86-26d1-3aae-a603-31ce33bf000c",
+    "label": "Region Map of Algeria",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/fb61c8a8-eba2-3317-8165-97fc7618f388": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/fb61c8a8-eba2-3317-8165-97fc7618f388",
+    "label": "Region Map of Netherlands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NL-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/0dc99667-bf50-32fd-8a5f-f20e33bec5d5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/0dc99667-bf50-32fd-8a5f-f20e33bec5d5",
+    "label": "Region Map of West Bank",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/WE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/2f36b6bb-1852-3243-92fb-3ee9a2879da2": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/2f36b6bb-1852-3243-92fb-3ee9a2879da2",
+    "label": "Region Map of Kazakhstan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KZ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bbb7ef7f-2ec9-377d-8895-c9da1c5cddd5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bbb7ef7f-2ec9-377d-8895-c9da1c5cddd5",
+    "label": "Region Map of Fiji",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FJ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e9e21c35-ab34-3ef7-9030-5554368ebf78": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e9e21c35-ab34-3ef7-9030-5554368ebf78",
+    "label": "Region Map of Cayman Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CJ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5076721c-4060-3eeb-a9bd-2c3dd9bdce11": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5076721c-4060-3eeb-a9bd-2c3dd9bdce11",
+    "label": "Region Map of Luxembourg",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LU-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/71a45296-474d-328f-b5d4-b49f3b10384f": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/71a45296-474d-328f-b5d4-b49f3b10384f",
+    "label": "Region Map of Paraguay",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/f0a96da3-f86a-334c-be8d-569110d65452": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/f0a96da3-f86a-334c-be8d-569110d65452",
+    "label": "Region Map of Estonia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/EN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/7266a1da-7e3a-3739-b245-ddfe74b0b682": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/7266a1da-7e3a-3739-b245-ddfe74b0b682",
+    "label": "Region Map of Rwanda",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RW-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bb130626-b42c-3ece-8603-34424aef9a14": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bb130626-b42c-3ece-8603-34424aef9a14",
+    "label": "Region Map of Marshall Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/967ce367-d89d-3ec1-b3d7-1049f1197d29": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/967ce367-d89d-3ec1-b3d7-1049f1197d29",
+    "label": "Region Map of India",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/83ef3e6c-ee83-3b88-a398-14638a94fa1a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/83ef3e6c-ee83-3b88-a398-14638a94fa1a",
+    "label": "Region Map of Qatar",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/QA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/349507e4-1dd8-371c-90c9-df6d2444b5e6": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/349507e4-1dd8-371c-90c9-df6d2444b5e6",
+    "label": "Region Map of Chile",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/37497aa5-a227-3e49-b14a-ee1b07e8edf9": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/37497aa5-a227-3e49-b14a-ee1b07e8edf9",
+    "label": "Region Map of Brazil",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BR-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/26160d23-fb07-3f8d-9dae-186eba322e9f": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/26160d23-fb07-3f8d-9dae-186eba322e9f",
+    "label": "Region Map of Mauritius",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/edf404d0-db32-372d-81a2-9b428a804405": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/edf404d0-db32-372d-81a2-9b428a804405",
+    "label": "Region Map of Tunisia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/027ed37f-00fb-3aad-b089-a91f2d52c7b9": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/027ed37f-00fb-3aad-b089-a91f2d52c7b9",
+    "label": "Region Map of Bermuda",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BD-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/6ddcb9e4-747f-3b58-868b-a556a81562d1": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/6ddcb9e4-747f-3b58-868b-a556a81562d1",
+    "label": "Region Map of Sao Tome and Principe",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/82d220df-17ce-3f5c-a489-7d780c354dd5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/82d220df-17ce-3f5c-a489-7d780c354dd5",
+    "label": "Region Map of Pakistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/027a12c2-fc85-3ae8-b70b-07ff536faf28": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/027a12c2-fc85-3ae8-b70b-07ff536faf28",
+    "label": "Region Map of Belarus",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/b9967e88-983d-3714-a8fa-745aa72bb8b4": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/b9967e88-983d-3714-a8fa-745aa72bb8b4",
+    "label": "Region Map of New Caledonia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/f1d5742d-e90d-3775-b749-36abf0934a05": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/f1d5742d-e90d-3775-b749-36abf0934a05",
+    "label": "Region Map of Congo, Democratic Republic of the",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/dcf25ed5-6c95-3618-9e0f-2d48d8854c04": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/dcf25ed5-6c95-3618-9e0f-2d48d8854c04",
+    "label": "Region Map of Zambia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/ZA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1e36b31e-7882-33fb-a035-77144de1d23b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1e36b31e-7882-33fb-a035-77144de1d23b",
+    "label": "Region Map of Panama",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bc88a240-30a1-3bde-a13c-8749ed93d30e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bc88a240-30a1-3bde-a13c-8749ed93d30e",
+    "label": "Region Map of Guyana",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GY-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/eb2131ec-e0ef-378e-a8bb-1ae98af60991": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/eb2131ec-e0ef-378e-a8bb-1ae98af60991",
+    "label": "Region Map of Ireland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/EI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/2d79f6db-ae28-3f57-b409-2d5370a518c3": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/2d79f6db-ae28-3f57-b409-2d5370a518c3",
+    "label": "Region Map of Timor-Leste",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/6c6b1b2b-3ecc-3e69-8000-0dabf4faae6f": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/6c6b1b2b-3ecc-3e69-8000-0dabf4faae6f",
+    "label": "Region Map of Chad",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CD-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/bfe79deb-cedd-33c1-a11f-7836c0fc13ad": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/bfe79deb-cedd-33c1-a11f-7836c0fc13ad",
+    "label": "Region Map of Namibia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/WA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/4dfdf195-ecb7-3a3f-a837-88deca6fd3b2": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/4dfdf195-ecb7-3a3f-a837-88deca6fd3b2",
+    "label": "Region Map of Somalia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/b3c92eec-f0aa-3b05-8860-59d9f6d3261d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/b3c92eec-f0aa-3b05-8860-59d9f6d3261d",
+    "label": "Region Map of Iceland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/c78791a3-f0e1-3bd3-8ba4-eac2afa35ec0": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/c78791a3-f0e1-3bd3-8ba4-eac2afa35ec0",
+    "label": "Region Map of Kyrgyzstan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/66b98924-b384-360a-aa84-4bf0fe399d5d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/66b98924-b384-360a-aa84-4bf0fe399d5d",
+    "label": "Region Map of Uruguay",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UY-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1a591a3e-91fc-37a4-bf2c-08e9e2e117f3": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1a591a3e-91fc-37a4-bf2c-08e9e2e117f3",
+    "label": "Region Map of Malta",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/197042c4-de91-3ae8-aeaf-a9a52dc8c3a5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/197042c4-de91-3ae8-aeaf-a9a52dc8c3a5",
+    "label": "Region Map of Sri Lanka",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/fe23c52d-c244-3a43-aa07-309218808960": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/fe23c52d-c244-3a43-aa07-309218808960",
+    "label": "Region Map of Puerto Rico",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RQ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/20a8df9b-7603-3617-8fca-425339ec1c7e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/20a8df9b-7603-3617-8fca-425339ec1c7e",
+    "label": "Region Map of Spain",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/f5680604-ea9e-3abb-a383-3339ee5a793c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/f5680604-ea9e-3abb-a383-3339ee5a793c",
+    "label": "Region Map of Samoa",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/WS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5722849f-2ccb-3a63-a8a0-7473e71e8df1": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5722849f-2ccb-3a63-a8a0-7473e71e8df1",
+    "label": "Region Map of Anguilla",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/593905b3-1972-36ff-a583-25abf98595ca": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/593905b3-1972-36ff-a583-25abf98595ca",
+    "label": "Region Map of Austria",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AU-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/611bc125-b7ad-36ad-9d51-03c6bfd968a7": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/611bc125-b7ad-36ad-9d51-03c6bfd968a7",
+    "label": "Region Map of Turks and Caicos Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/35ab1c3d-e6da-3348-8016-54e1ebf5dd93": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/35ab1c3d-e6da-3348-8016-54e1ebf5dd93",
+    "label": "Region Map of Monaco",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5ff03b72-73b1-328e-9ba8-52e230991bbf": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5ff03b72-73b1-328e-9ba8-52e230991bbf",
+    "label": "Region Map of Poland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PL-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/180c89bf-50c8-329d-ab45-e49d9dac62fc": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/180c89bf-50c8-329d-ab45-e49d9dac62fc",
+    "label": "Region Map of Botswana",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5c777263-58c5-3af9-8ad9-cdccd0882bca": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5c777263-58c5-3af9-8ad9-cdccd0882bca",
+    "label": "Region Map of Bulgaria",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BU-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/c484b137-e2d1-3229-a4e7-e677f1f8cfce": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/c484b137-e2d1-3229-a4e7-e677f1f8cfce",
+    "label": "Region Map of Cuba",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CU-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/93409af2-f208-3754-9f0f-26996e048113": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/93409af2-f208-3754-9f0f-26996e048113",
+    "label": "Region Map of Barbados",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BB-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/3d2d7b1c-3400-3b22-af97-a999decf652a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/3d2d7b1c-3400-3b22-af97-a999decf652a",
+    "label": "Region Map of Seychelles",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/6687e189-6dd8-37dc-9587-782149127ff0": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/6687e189-6dd8-37dc-9587-782149127ff0",
+    "label": "Region Map of Niger",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/55949d4c-1663-3f1c-a75d-7684a379b8f1": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/55949d4c-1663-3f1c-a75d-7684a379b8f1",
+    "label": "Region Map of Libya",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LY-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/c909b138-eba8-3ecf-bd86-df4c9d170ac7": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/c909b138-eba8-3ecf-bd86-df4c9d170ac7",
+    "label": "Region Map of Finland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/b47b54fd-3a46-3f43-abbc-abe5b10c1891": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/b47b54fd-3a46-3f43-abbc-abe5b10c1891",
+    "label": "Region Map of Guinea",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9742d008-c420-3e9d-84b1-794c03b9701c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9742d008-c420-3e9d-84b1-794c03b9701c",
+    "label": "Region Map of Nigeria",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/0ce65b26-dcd3-328e-9b32-9d9efbb6bbbc": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/0ce65b26-dcd3-328e-9b32-9d9efbb6bbbc",
+    "label": "Region Map of Malawi",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/a4842f02-34d7-370b-b57b-60b6f17a1b9f": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/a4842f02-34d7-370b-b57b-60b6f17a1b9f",
+    "label": "Region Map of Haiti",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/HA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5caa7f81-1b5a-3f6e-b999-3f309c4c0457": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5caa7f81-1b5a-3f6e-b999-3f309c4c0457",
+    "label": "Region Map of Lebanon",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/ac33d641-f4c9-3bde-9b29-bb95e7f90906": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/ac33d641-f4c9-3bde-9b29-bb95e7f90906",
+    "label": "Region Map of Yemen",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/YM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/09f199d2-5132-324e-99bf-b1a89916de24": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/09f199d2-5132-324e-99bf-b1a89916de24",
+    "label": "Region Map of Ecuador",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/EC-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/dbf2a2da-6458-3242-8072-85e7f1483aeb": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/dbf2a2da-6458-3242-8072-85e7f1483aeb",
+    "label": "Region Map of Grenada",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GJ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/213cb204-5092-36ff-aaed-eca9290b70a6": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/213cb204-5092-36ff-aaed-eca9290b70a6",
+    "label": "Region Map of Maldives",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/541212bb-30f1-322f-bdbc-1629698ba6f5": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/541212bb-30f1-322f-bdbc-1629698ba6f5",
+    "label": "Region Map of Gambia, The",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/93295b0c-76b9-32da-b60a-8e0f2e9a29a1": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/93295b0c-76b9-32da-b60a-8e0f2e9a29a1",
+    "label": "Region Map of Kuwait",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KU-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5eedd6a1-6ab8-32cb-9d6b-2e194e0bdf8b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5eedd6a1-6ab8-32cb-9d6b-2e194e0bdf8b",
+    "label": "Region Map of Jamaica",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/JM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/16cc7f84-3a3e-3bc1-95ff-6fa1925826e7": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/16cc7f84-3a3e-3bc1-95ff-6fa1925826e7",
+    "label": "Region Map of Eswatini",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/WZ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9791bc4d-7273-3a7d-a1fe-f79841bd3423": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9791bc4d-7273-3a7d-a1fe-f79841bd3423",
+    "label": "Region Map of Moldova",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MD-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5aa58871-4ab4-3bfd-a15d-238fd9778c3a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5aa58871-4ab4-3bfd-a15d-238fd9778c3a",
+    "label": "Region Map of Honduras",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/HO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/8067364d-44f5-337b-aba7-e13ba124e934": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/8067364d-44f5-337b-aba7-e13ba124e934",
+    "label": "Region Map of Philippines",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/44e46ba3-0eab-3e96-965a-c52eb27f1318": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/44e46ba3-0eab-3e96-965a-c52eb27f1318",
+    "label": "Region Map of French Southern and Antarctic Lands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/f14e46ce-7d09-3f93-a616-7acc49969812": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/f14e46ce-7d09-3f93-a616-7acc49969812",
+    "label": "Region Map of Hungary",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/HU-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/c5f5bb3b-3507-36d7-8da5-7104c55fb6c8": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/c5f5bb3b-3507-36d7-8da5-7104c55fb6c8",
+    "label": "Region Map of Latvia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/40f39cdc-d3ac-3771-931e-4269e54caeff": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/40f39cdc-d3ac-3771-931e-4269e54caeff",
+    "label": "Region Map of French Polynesia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/3ed10433-7eb1-3fb7-9010-7978743cbf25": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/3ed10433-7eb1-3fb7-9010-7978743cbf25",
+    "label": "Region Map of Syria",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SY-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/8a4bf12e-17b2-3e59-8b12-721ef8d5d024": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/8a4bf12e-17b2-3e59-8b12-721ef8d5d024",
+    "label": "Region Map of Dominican Republic",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/DR-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/87fd3bef-cce6-3242-a18f-49ec496c2b09": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/87fd3bef-cce6-3242-a18f-49ec496c2b09",
+    "label": "Region Map of San Marino",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/6544b2fe-cc0e-3a58-9bb6-80e2a1e04ac8": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/6544b2fe-cc0e-3a58-9bb6-80e2a1e04ac8",
+    "label": "Region Map of Korea, South",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/ecae78ab-ec52-3f0f-a00d-db3666aa9db9": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/ecae78ab-ec52-3f0f-a00d-db3666aa9db9",
+    "label": "Region Map of Solomon Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BP-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d1aa0503-612a-3616-8939-b77b59ca7453": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d1aa0503-612a-3616-8939-b77b59ca7453",
+    "label": "Region Map of Slovenia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SI-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/77dcd849-e550-3fec-bc83-d38fcc8cbc72": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/77dcd849-e550-3fec-bc83-d38fcc8cbc72",
+    "label": "Region Map of Switzerland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SZ-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/5990a835-34fb-3b2b-91fa-6b17a6a0bc5b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/5990a835-34fb-3b2b-91fa-6b17a6a0bc5b",
+    "label": "Region Map of Micronesia, Federated States of",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/93b12bf5-7f18-333c-9ad2-f55e33a8e3fd": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/93b12bf5-7f18-333c-9ad2-f55e33a8e3fd",
+    "label": "Region Map of Lesotho",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9bb835f4-f91b-33fa-a328-6529520eecae": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9bb835f4-f91b-33fa-a328-6529520eecae",
+    "label": "Region Map of British Indian Ocean Territory",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/fcf29f6c-ad32-3270-8b33-e962ef5194fa": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/fcf29f6c-ad32-3270-8b33-e962ef5194fa",
+    "label": "Region Map of Japan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/JA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/b17fc6f0-5c07-3b63-928a-6d19c2abe091": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/b17fc6f0-5c07-3b63-928a-6d19c2abe091",
+    "label": "Region Map of Suriname",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/11760e1a-ac43-36e1-8d31-5e93ad3df3e9": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/11760e1a-ac43-36e1-8d31-5e93ad3df3e9",
+    "label": "Region Map of Guatemala",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e2ac50f5-a2be-3f73-987e-c8afb3ab3b90": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e2ac50f5-a2be-3f73-987e-c8afb3ab3b90",
+    "label": "Region Map of North Macedonia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/MK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/4c197dfd-67f1-3f79-911a-8b0218cc368b": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/4c197dfd-67f1-3f79-911a-8b0218cc368b",
+    "label": "Region Map of Israel",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/674027e1-7b0e-364e-b6cd-e2005cb8e76f": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/674027e1-7b0e-364e-b6cd-e2005cb8e76f",
+    "label": "Region Map of Jordan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/JO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/2133c452-55e5-332c-b5d7-8e83461fd69a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/2133c452-55e5-332c-b5d7-8e83461fd69a",
+    "label": "Region Map of Korea, North",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d7e0453b-b4af-3700-a533-f4d77ad9546d": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d7e0453b-b4af-3700-a533-f4d77ad9546d",
+    "label": "Region Map of Croatia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/HR-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/7998be8d-446d-368c-99ab-ca446cb3bd79": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/7998be8d-446d-368c-99ab-ca446cb3bd79",
+    "label": "Region Map of Laos",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/LA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/354bf989-2583-3ea6-8611-b950e2a37ebd": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/354bf989-2583-3ea6-8611-b950e2a37ebd",
+    "label": "Region Map of Argentina",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AR-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/6754fe3c-d831-3f20-ad04-b8c7b66abebc": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/6754fe3c-d831-3f20-ad04-b8c7b66abebc",
+    "label": "Region Map of Russia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d6b897fd-145a-36fb-ad36-ff7cb1c47a00": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d6b897fd-145a-36fb-ad36-ff7cb1c47a00",
+    "label": "Region Map of Romania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/30949d5f-4a69-366c-aa7a-be5e6fd99930": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/30949d5f-4a69-366c-aa7a-be5e6fd99930",
+    "label": "Region Map of Togo",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TO-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/96b26252-097e-32ab-a127-7318bd55adcd": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/96b26252-097e-32ab-a127-7318bd55adcd",
+    "label": "Region Map of Burma",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BM-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/ceafb51e-2b07-33d5-bdd6-20019dff3aa6": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/ceafb51e-2b07-33d5-bdd6-20019dff3aa6",
+    "label": "Region Map of Australia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AS-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/c6915368-7791-3b52-812c-e7cca2f4d03a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/c6915368-7791-3b52-812c-e7cca2f4d03a",
+    "label": "Region Map of Afghanistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AF-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/89da124e-04df-33ad-9946-cd37d91a119e": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/89da124e-04df-33ad-9946-cd37d91a119e",
+    "label": "Region Map of Denmark",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/DA-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/6981f402-6cf8-3b35-b630-141d375a9455": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/6981f402-6cf8-3b35-b630-141d375a9455",
+    "label": "Region Map of South Sudan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/OD-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/fa6c3752-cd00-37f1-a77f-d7e5604ab8d2": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/fa6c3752-cd00-37f1-a77f-d7e5604ab8d2",
+    "label": "Region Map of Bangladesh",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/50df2d65-8581-3b9e-a96e-34b53f6280fd": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/50df2d65-8581-3b9e-a96e-34b53f6280fd",
+    "label": "Region Map of Sierra Leone",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/SL-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/ad79ef0f-076d-3a68-aab9-738925f4dd2c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/ad79ef0f-076d-3a68-aab9-738925f4dd2c",
+    "label": "Region Map of Italy",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IT-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/1c39abf6-8e93-3638-ae5d-ca946e2d6a98": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/1c39abf6-8e93-3638-ae5d-ca946e2d6a98",
+    "label": "Region Map of Egypt",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/EG-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/314ccd96-4ef6-3ae6-8ac5-f9bb89f751a1": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/314ccd96-4ef6-3ae6-8ac5-f9bb89f751a1",
+    "label": "Region Map of Cambodia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CB-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/768685ca-582a-3f0a-b2fb-b57ca37752aa": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/768685ca-582a-3f0a-b2fb-b57ca37752aa",
+    "label": "Region Map of United States",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/US-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e3772ac4-b4db-37b4-a8db-fa59ef43cd1a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e3772ac4-b4db-37b4-a8db-fa59ef43cd1a",
+    "label": "Region Map of France",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FR-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/d2eaf2aa-1512-3659-ae0a-5bae633537c6": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/d2eaf2aa-1512-3659-ae0a-5bae633537c6",
+    "label": "Region Map of China",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CH-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/9769121f-10f7-3279-b27e-b08e9ffa488c": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/9769121f-10f7-3279-b27e-b08e9ffa488c",
+    "label": "Region Map of United Kingdom",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UK-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/ff4636d0-caf6-3f70-a7df-a437d80aab75": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/ff4636d0-caf6-3f70-a7df-a437d80aab75",
+    "label": "Region Map of Jersey",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/JE-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/e8a1234b-8442-329d-8965-e48d93a16e10": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/e8a1234b-8442-329d-8965-e48d93a16e10",
+    "label": "Region Map of Tonga",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TN-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/07dee45e-a568-3bca-a08c-e72ea01e985a": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/07dee45e-a568-3bca-a08c-e72ea01e985a",
+    "label": "Region Map of Cabo Verde",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CV-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/ebdfc8c7-7200-360b-a2cd-305955dae2eb": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/ebdfc8c7-7200-360b-a2cd-305955dae2eb",
+    "label": "Region Map of Saint Barthelemy",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TB-map.gif"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/instance/RegionMap/3ae11c72-5c30-329d-8d34-18bc6b30789f": {
+    "id": "http://williamrobertfunk.com/instance/RegionMap/3ae11c72-5c30-329d-8d34-18bc6b30789f",
+    "label": "Region Map of Bahrain",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
+    "datatypeProperties": {
+      "http://williamrobertfunk.com/ontologies/world-factbook#locatorURI/": "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BA-map.gif"
+    },
+    "objectProperties": []
+  }
+}

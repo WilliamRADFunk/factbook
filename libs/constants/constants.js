@@ -31,6 +31,7 @@ const ONT_DOMAIN_AREA = MAIN_ONT_PATH + 'DomainArea/';
 const ONT_COAST = MAIN_ONT_PATH + 'Coast/';
 const ONT_CLIMATE = MAIN_ONT_PATH + 'Climate/';
 const ONT_CLIMATE_ZONE = MAIN_ONT_PATH + 'ClimateZone/';
+const ONT_MARITIME_CLAIM = MAIN_ONT_PATH + 'MaritimeClaim/';
 
 // ObjectProperty Paths
 const HAS_BORDER = MAIN_ONT_PATH + 'hasBorder/';
@@ -45,6 +46,7 @@ const HAS_DOMAIN_AREA = MAIN_ONT_PATH + 'hasDomainArea/';
 const HAS_COAST = MAIN_ONT_PATH + 'hasCoast/';
 const HAS_CLIMATE = MAIN_ONT_PATH + 'hasClimate/';
 const HAS_CLIMATE_ZONE = MAIN_ONT_PATH + 'hasClimateZone/';
+const HAS_MARITIME_CLAIM = MAIN_ONT_PATH + 'hasMaritimeClaim/';
 
 // DatatypeProperty Paths
 const BACKGROUND = MAIN_ONT_PATH + 'background/';
@@ -67,6 +69,12 @@ const ONT_LENGTH = MAIN_ONT_PATH + 'length/';
 const ONT_LENGTH_MODIFIER = MAIN_ONT_PATH + 'lengthModifier/';
 const CLIMATE_ZONE_NAME = MAIN_ONT_PATH + 'climateZoneName/';
 const CLIMATE_ZONE_DESCRIPTION = MAIN_ONT_PATH + 'climateZoneDescription/';
+const TERRITORIAL_SEA = MAIN_ONT_PATH + 'territorialSea/';
+const EXCLUSIVE_ECONOMIC_ZONE = MAIN_ONT_PATH + 'exclusiveEconomicZone/';
+const CONTIGUOUS_ZONE = MAIN_ONT_PATH + 'contiguousZone/';
+const CONTINENTAL_SHELF = MAIN_ONT_PATH + 'continentalShelf/';
+const CONTINENTAL_SHELF_MODIFIER = MAIN_ONT_PATH + 'continentalShelfModifier/';
+const SUPPLEMENTAL_EXPLANATION = MAIN_ONT_PATH + 'supplementalExplanation/';
 
 // Instance Paths
 const INST_COUNTRY = MAIN_INSTANCE_PATH + 'Country/';
@@ -81,8 +89,18 @@ const INST_COAST = MAIN_INSTANCE_PATH + 'Coast/';
 const INST_CLIMATE = MAIN_INSTANCE_PATH + 'Climate/';
 const INST_CLIMATE_ZONE = MAIN_INSTANCE_PATH + 'ClimateZone/';
 const INST_GEO_LOCATION = GEO_ONT_PATH + 'Location/';
+const INST_MARITIME_CLAIM = MAIN_INSTANCE_PATH + 'MaritimeClaim/';
 
 const CUSTOM = {
+	ONT_MARITIME_CLAIM,
+	INST_MARITIME_CLAIM,
+	HAS_MARITIME_CLAIM,
+	TERRITORIAL_SEA,
+	EXCLUSIVE_ECONOMIC_ZONE,
+	CONTIGUOUS_ZONE,
+	CONTINENTAL_SHELF,
+	CONTINENTAL_SHELF_MODIFIER,
+	SUPPLEMENTAL_EXPLANATION,
 	ONT_BORDER,
 	HAS_BORDER,
 	INST_BORDER,

@@ -7,7 +7,8 @@ const getArea = require('./domain-area');
 const getGeography = require('./geography');
 const getFlag = require('./national-flag');
 const getRegionMapImg = require('./region-map-image');
-const getSupllementalImages = require('./supplemental-image');
+const getSupplementalImages = require('./supplemental-image');
+const getMaritimeClaims = require('./maritime-claims');
 
 module.exports = {
 	getArea,
@@ -19,5 +20,6 @@ module.exports = {
 	getFlag,
 	getGeography,
 	getRegionMapImg,
-	getSupllementalImages
+	getSupplementalImages,
+	getMaritimeClaims
 };
