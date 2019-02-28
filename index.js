@@ -10,6 +10,7 @@ const countryToId = require('./libs/utils/country-to-id.js');
 
 const LOG_FILE_NAME = ('logs/log-' + new Date().toISOString() + '.txt').replace(':', '-');
 fs.closeSync(fs.openSync(LOG_FILE_NAME, 'w'));
+store['LOG_FILE_NAME'] = LOG_FILE_NAME;
 
 var countriesRawData;
 // If countries file exists, great. Otherwise make a blank one for later.
@@ -23,18 +24,6 @@ if (countriesRawData) {
     var countryFile = JSON.parse(countriesRawData);
     store.countries = countryFile.countries;
     store.countriesInList = countryFile.countriesInList;
-}
-
-var borderCountriesRawData;
-// If countries file exists, great. Otherwise make a blank one for later.
-try {
-    borderCountriesRawData = fs.readFileSync('dist/borderCountries.json');
-} catch (err) {
-    fs.closeSync(fs.openSync('dist/borderCountries.json', 'w'));
-}
-// If preexisting borderCountries file, use it.
-if (borderCountriesRawData) {
-    store.borderCountries = JSON.parse(borderCountriesRawData);
 }
 
 var borderMapsRawData;
@@ -133,16 +122,28 @@ if (regionMapsRawData) {
     store.regionMaps = JSON.parse(regionMapsRawData);
 }
 
-var borderRawData;
+var borderCountriesRawData;
 // If countries file exists, great. Otherwise make a blank one for later.
 try {
-    borderRawData = fs.readFileSync('dist/borderCountries.json');
+    borderCountriesRawData = fs.readFileSync('dist/borderCountries.json');
 } catch (err) {
     fs.closeSync(fs.openSync('dist/borderCountries.json', 'w'));
 }
 // If preexisting borderCountries file, use it.
-if (borderRawData) {
-    store.borderCountries = JSON.parse(borderRawData);
+if (borderCountriesRawData) {
+    store.borderCountries = JSON.parse(borderCountriesRawData);
+}
+
+var bordersRawData;
+// If countries file exists, great. Otherwise make a blank one for later.
+try {
+    bordersRawData = fs.readFileSync('dist/borders.json');
+} catch (err) {
+    fs.closeSync(fs.openSync('dist/borders.json', 'w'));
+}
+// If preexisting borders file, use it.
+if (bordersRawData) {
+    store.borderCountries = JSON.parse(bordersRawData);
 }
 
 var getCountryData = (country, url) => {
@@ -259,6 +260,10 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 file = JSON.stringify(store.borderCountries);
                 file = file.replace(/\\n/g, ' ');
                 fs.writeFileSync('dist/borderCountries.json', file);
+
+                file = JSON.stringify(store.borders);
+                file = file.replace(/\\n/g, ' ');
+                fs.writeFileSync('dist/borders.json', file);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');

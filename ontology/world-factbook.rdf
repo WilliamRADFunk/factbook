@@ -120,6 +120,13 @@
     <rdfs:comment>Two countries that share a land border.</rdfs:comment>
   </rdfs:Class>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Border -->
+
+  <rdfs:Class rdf:about="&wfact;#Border">
+    <rdfs:label>National Border</rdfs:label>
+    <rdfs:comment>Total border belonging to a soverign nation.</rdfs:comment>
+  </rdfs:Class>
+
   <!-- 
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -196,6 +203,13 @@
   <owl:ObjectProperty rdf:about="&wfact;#hasCountry">
       <rdfs:domain rdf:resource="&wfact;#BorderCountryPair"/>
       <rdfs:range rdf:resource="&wfact;#Country"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasBorder -->
+
+  <owl:ObjectProperty rdf:about="&wfact;#hasBorder">
+      <rdfs:domain rdf:resource="&wfact;#Country"/>
+      <rdfs:range rdf:resource="&wfact;#Border"/>
   </owl:ObjectProperty>
 
   <!-- 
@@ -280,6 +294,7 @@
     <rdfs:domain rdf:resource="&asset;#DomainArea"/>
     <rdfs:domain rdf:resource="&asset;#Coast"/>
     <rdfs:domain rdf:resource="&asset;#BorderCountryPair"/>
+    <rdfs:domain rdf:resource="&asset;#Border"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -368,18 +383,27 @@
 
   <DatatypeProperty rdf:about="&wfact;#borderLength">
     <rdfs:label>Border Length</rdfs:label>
-    <rdfs:comment>Length of distance by land that one country shares a border with another.</rdfs:comment>
+    <rdfs:comment>Length of distance by land that one country shares with other countries.</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;#BorderCountryPair"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
-  <!-- http://williamrobertfunk.com/ontologies/world-factbook#totalBorderLength -->
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#totalLandBorder -->
 
-  <DatatypeProperty rdf:about="&wfact;#totalBorderLength">
-    <rdfs:label>Total Border Length</rdfs:label>
+  <DatatypeProperty rdf:about="&wfact;#totalLandBorder">
+    <rdfs:label>Total Land Border</rdfs:label>
     <rdfs:comment>Total length of distance by land of a country's border.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;#Country"/>
+    <rdfs:domain rdf:resource="&asset;#Border"/>
     <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#totalBorderCountries -->
+
+  <DatatypeProperty rdf:about="&wfact;#totalBorderCountries">
+    <rdfs:label>Total Border Countries</rdfs:label>
+    <rdfs:comment>Total number of countries sharing a border with this nation.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#Border"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
 </rdf:RDF>

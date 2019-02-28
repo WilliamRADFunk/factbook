@@ -1,4 +1,5 @@
 const getBackground = require('./background');
+const getBorders = require('./borders');
 const getBorderMapImg = require('./border-map-image');
 const getClimate = require('./climate');
 const getCoastLength = require('./coast-length');
@@ -12,6 +13,7 @@ module.exports = {
 	getArea,
 	getBackground,
 	getBorderMapImg,
+	getBorders,
 	getClimate,
 	getCoastLength,
 	getFlag,

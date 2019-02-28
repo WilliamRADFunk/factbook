@@ -1,6 +1,7 @@
 const globalStore = {
 	borderCountries: {},
 	borderMaps: {},
+	borders: {},
 	climates: {},
 	climateZones: {},
 	coasts: {},

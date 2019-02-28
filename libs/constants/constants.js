@@ -21,6 +21,7 @@ const COUNTRY_BLACKLIST = [
 // Class Paths
 const ONT_COUNTRY = MAIN_ONT_PATH + 'Country/';
 const ONT_FLAG = MAIN_ONT_PATH + 'NationalFlag/';
+const ONT_BORDER = MAIN_ONT_PATH + 'Border/';
 const ONT_BORDER_MAP = MAIN_ONT_PATH + 'BorderMap/';
 const ONT_IMAGE = MAIN_ONT_PATH + 'Image/';
 const ONT_GEO_LOCATION = WGS84_POS.LOCATION;
@@ -31,6 +32,7 @@ const ONT_CLIMATE = MAIN_ONT_PATH + 'Climate/';
 const ONT_CLIMATE_ZONE = MAIN_ONT_PATH + 'ClimateZone/';
 
 // ObjectProperty Paths
+const HAS_BORDER = MAIN_ONT_PATH + 'hasBorder/';
 const HAS_BORDER_MAP = MAIN_ONT_PATH + 'hasBorderMap/';
 const HAS_FLAG = MAIN_ONT_PATH + 'hasNationalFlag/';
 const HAS_LOCATION = MAIN_ONT_PATH + 'hasLocation/';
@@ -43,6 +45,8 @@ const HAS_CLIMATE_ZONE = MAIN_ONT_PATH + 'hasClimateZone/';
 
 // DatatypeProperty Paths
 const BACKGROUND = MAIN_ONT_PATH + 'background/';
+const TOTAL_BORDER_COUNTRIES = MAIN_ONT_PATH + 'totalBorderCountries/';
+const TOTAL_BORDER = MAIN_ONT_PATH + 'totalLandBorder/';
 const LOCATION_DESCRIPTION = MAIN_ONT_PATH + 'locationDescription/';
 const IMAGE_DIMENSIONS = MAIN_ONT_PATH + 'imageDimensions/';
 const IMAGE_SIZE = MAIN_ONT_PATH + 'imageSize/';
@@ -62,6 +66,7 @@ const CLIMATE_ZONE_DESCRIPTION = MAIN_ONT_PATH + 'climateZoneDescription/';
 
 // Instance Paths
 const INST_COUNTRY = MAIN_INSTANCE_PATH + 'Country/';
+const INST_BORDER = MAIN_INSTANCE_PATH + 'Border/';
 const INST_BORDER_MAP = MAIN_INSTANCE_PATH + 'BorderMap/';
 const INST_IMAGE = MAIN_INSTANCE_PATH + 'Image/';
 const INST_REGION_MAP = MAIN_INSTANCE_PATH + 'RegionMap/';
@@ -73,6 +78,10 @@ const INST_CLIMATE_ZONE = MAIN_INSTANCE_PATH + 'ClimateZone/';
 const INST_GEO_LOCATION = GEO_ONT_PATH + 'Location/';
 
 const CUSTOM = {
+	ONT_BORDER,
+	HAS_BORDER,
+	INST_BORDER,
+	TOTAL_BORDER_COUNTRIES,
 	ONT_COUNTRY,
 	INST_COUNTRY,
 	URL_BASE,
@@ -124,7 +133,8 @@ const CUSTOM = {
 	INST_CLIMATE,
 	INST_CLIMATE_ZONE,
 	CLIMATE_ZONE_NAME,
-	CLIMATE_ZONE_DESCRIPTION
+	CLIMATE_ZONE_DESCRIPTION,
+	TOTAL_BORDER
 };
 
 module.exports = {
