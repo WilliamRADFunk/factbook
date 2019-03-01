@@ -10,9 +10,9 @@ const countryToId = require('../utils/country-to-id.js');
 
 var getBorders = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
+    let brdMap = getRelation(objectProperties, consts.CUSTOM.HAS_BORDER);
     cheerioElem('#field-land-boundaries').each(function() {
         cheerioElem(this).find('div.category_data.subfield.numeric').each(function() {
-            let brdMap = getRelation(objectProperties, consts.CUSTOM.HAS_BORDER);
             var brdId = consts.CUSTOM.INST_BORDER + getUuid(country);
             var objectProp = {};
             if (!brdMap) {
