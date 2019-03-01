@@ -46,7 +46,7 @@ var getMaritimeClaims = function(cheerioElem, country, countryId) {
 	});
 	map.datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'nm';
 	cheerioElem('#field-maritime-claims > div.category_data.note').each(function() {
-		map.datatypeProperties[consts.CUSTOM.SUPPLEMENTAL_EXPLANATION] = cheerioElem(this).text().replace(/,|[a-z]/g, '').trim();
+		map.datatypeProperties[consts.CUSTOM.SUPPLEMENTAL_EXPLANATION] = cheerioElem(this).text().replace(/\\n/g, ' ').trim();
 	});
 };
 
