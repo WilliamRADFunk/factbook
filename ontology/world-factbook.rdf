@@ -488,4 +488,16 @@
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#exclusiveFishingZone -->
+
+  <DatatypeProperty rdf:about="&wfact;#exclusiveFishingZone">
+    <rdfs:label>exclusiveFishingZone</rdfs:label>
+    <rdfs:comment>
+      An area beyond the outer limit of the territorial sea in which the coastal State has the right to fish,
+      subject to any concessions which may be granted to foreign fishermen.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
 </rdf:RDF>

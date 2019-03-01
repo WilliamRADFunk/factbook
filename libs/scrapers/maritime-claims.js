@@ -38,6 +38,9 @@ var getMaritimeClaims = function(cheerioElem, country, countryId) {
 			case 'contiguous zone:':
 				map.datatypeProperties[consts.CUSTOM.CONTIGUOUS_ZONE] = seaData.replace(/,|[a-z]/g, '').trim();
 				break;
+			case 'exclusive fishing zone:':
+				map.datatypeProperties[consts.CUSTOM.EXCLUSIVE_FISHING_ZONE] = seaData.replace(/,|[a-z]/g, '').trim();
+				break;
 			case 'continental shelf:':
 				map.datatypeProperties[consts.CUSTOM.CONTINENTAL_SHELF] = seaData.replace(/,|[a-z]/g, '').trim();
 				map.datatypeProperties[consts.CUSTOM.CONTINENTAL_SHELF_MODIFIER] = seaData.substring(seaData.indexOf('nm or') + 5).trim();
