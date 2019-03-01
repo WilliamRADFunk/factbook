@@ -159,6 +159,18 @@ if (maritimeClaimsRawData) {
     store.maritimeClaims = JSON.parse(maritimeClaimsRawData);
 }
 
+var naturalResourcesRawData;
+// If countries file exists, great. Otherwise make a blank one for later.
+try {
+    naturalResourcesRawData = fs.readFileSync('dist/natural-resources.json');
+} catch (err) {
+    fs.closeSync(fs.openSync('dist/natural-resources.json', 'w'));
+}
+// If preexisting maritime claims file, use it.
+if (naturalResourcesRawData) {
+    store.naturalResources = JSON.parse(naturalResourcesRawData);
+}
+
 var getCountryData = (country, url) => {
     if (country && url) {
         return rp(url, { timeout: consts.CUSTOM.DATA_REQUEST_TIMEOUT })
@@ -166,16 +178,28 @@ var getCountryData = (country, url) => {
                 let $ = cheerio.load(html);
                 var countryId = countryToId(country);
 				dataScrapers.getFlag($, country, countryId);
+                console.log('getFlag for ', country);
 				dataScrapers.getBackground($, country, countryId);
+                console.log('getBackground for ', country);
 				dataScrapers.getBorderMapImg($, country, countryId);
+                console.log('getBorderMapImg for ', country);
 				dataScrapers.getRegionMapImg($, country, countryId);
+                console.log('getRegionMapImg for ', country);
                 dataScrapers.getSupplementalImages($, country, countryId);
+                console.log('getSupplementalImages for ', country);
                 dataScrapers.getGeography($, country, countryId);
+                console.log('getGeography for ', country);
                 dataScrapers.getArea($, country, countryId);
+                console.log('getArea for ', country);
                 dataScrapers.getCoastLength($, country, countryId);
+                console.log('getCoastLength for ', country);
                 dataScrapers.getClimate($, country, countryId);
+                console.log('getClimate for ', country);
                 dataScrapers.getBorders($, country, countryId);
+                console.log('getBorders for ', country);
                 dataScrapers.getMaritimeClaims($, country, countryId);
+                console.log('getMaritimeClaims for ', country);
+                dataScrapers.getNaturalResources($, country, countryId);
                 console.log('Data scrape for ', country, ' is complete');
             })
             .catch(err => {
@@ -281,6 +305,10 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 file = JSON.stringify(store.maritimeClaims);
                 file = file.replace(/\\n/g, ' ');
                 fs.writeFileSync('dist/maritime-claims.json', file);
+
+                file = JSON.stringify(store.naturalResources);
+                file = file.replace(/\\n/g, ' ');
+                fs.writeFileSync('dist/natural-resources.json', file);
             })
             .catch(err => {
                 fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');

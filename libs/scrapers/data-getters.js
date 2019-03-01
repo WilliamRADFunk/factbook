@@ -9,6 +9,7 @@ const getFlag = require('./national-flag');
 const getRegionMapImg = require('./region-map-image');
 const getSupplementalImages = require('./supplemental-image');
 const getMaritimeClaims = require('./maritime-claims');
+const getNaturalResources = require('./natural-resources');
 
 module.exports = {
 	getArea,
@@ -21,5 +22,6 @@ module.exports = {
 	getGeography,
 	getRegionMapImg,
 	getSupplementalImages,
-	getMaritimeClaims
+	getMaritimeClaims,
+	getNaturalResources
 };

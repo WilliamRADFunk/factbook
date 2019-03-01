@@ -7,6 +7,7 @@
     <!ENTITY wfact "http://williamrobertfunk.com/ontologies/world-factbook#" >
     <!ENTITY pos "http://www.w3.org/2003/01/geo/wgs84_pos#">
     <!ENTITY asset "http://www.daedafusion.com/Asset#">
+    <!ENTITY dbpCountry="http://dbpedia.org/ontology/Country#">
 ]>
 
 
@@ -19,6 +20,7 @@
   xmlns:wfact="http://williamrobertfunk.com/ontologies/world-factbook#"
   xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
   xmlns:asset="http://www.daedafusion.com/Asset#"
+  xmlns:dbpCountry="http://dbpedia.org/ontology/Country#"
 >
 
   <Ontology rdf:about="http://williamrobertfunk.com/ontologies/world-factbook">
@@ -46,6 +48,7 @@
   <rdfs:Class rdf:about="&wfact;#Country">
     <rdfs:label>Country</rdfs:label>
     <rdfs:comment>a nation with its own government, occupying a particular territory.</rdfs:comment>
+    <owl:equivalentClass rdf:resource="&dbpCountry;" />
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag -->
@@ -134,6 +137,16 @@
     <rdfs:comment>
       The adjacent belt of sea that extends beyond a coastal state's land territory and internal waters.
       Includes airspace over that belt of sea.
+    </rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource -->
+
+  <rdfs:Class rdf:about="&wfact;#NaturalResource">
+    <rdfs:label>Natural Resource</rdfs:label>
+    <rdfs:comment>
+      Material or substance such as minerals, forests, water,and fertile land
+      that occur in nature and can be used for economic gain.
     </rdfs:comment>
   </rdfs:Class>
 
@@ -227,6 +240,13 @@
   <owl:ObjectProperty rdf:about="&wfact;#hasMaritimeClaim">
       <rdfs:domain rdf:resource="&wfact;#Country"/>
       <rdfs:range rdf:resource="&wfact;#MaritimeClaim"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasNaturalResource -->
+
+  <owl:ObjectProperty rdf:about="&wfact;#hasNaturalResource">
+      <rdfs:domain rdf:resource="&wfact;#Country"/>
+      <rdfs:range rdf:resource="&wfact;#NaturalResource"/>
   </owl:ObjectProperty>
 
   <!-- 
@@ -497,6 +517,15 @@
       subject to any concessions which may be granted to foreign fishermen.
     </rdfs:comment>
     <rdfs:domain rdf:resource="&asset;#MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#resourceName -->
+
+  <DatatypeProperty rdf:about="&wfact;#resourceName">
+    <rdfs:label>resourceName</rdfs:label>
+    <rdfs:comment>The name of the resource (ie. coal, copper, salt, fish)</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#NaturalResource"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 

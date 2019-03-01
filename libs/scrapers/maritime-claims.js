@@ -25,7 +25,7 @@ var getMaritimeClaims = function(cheerioElem, country, countryId) {
 		map = objectProp[consts.CUSTOM.HAS_MARITIME_CLAIM];
 		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_MARITIME_CLAIM, objectProp));
 	}
-    cheerioElem('#field-maritime-claims > div.category_data.subfield.numeric').each(function() {
+  cheerioElem('#field-maritime-claims > div.category_data.subfield.numeric').each(function() {
 		let seaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
 		let seaData = cheerioElem(this).find('span.subfield-number').text().trim();
 		switch (seaSwitch) {

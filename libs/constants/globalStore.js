@@ -12,6 +12,7 @@ const globalStore = {
 	locations: {},
 	maritimeClaims: {},
 	nationalFlags: {},
+	naturalResources: {},
 	regionMaps: {},
 };
 

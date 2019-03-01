@@ -32,6 +32,7 @@ const ONT_COAST = MAIN_ONT_PATH + 'Coast/';
 const ONT_CLIMATE = MAIN_ONT_PATH + 'Climate/';
 const ONT_CLIMATE_ZONE = MAIN_ONT_PATH + 'ClimateZone/';
 const ONT_MARITIME_CLAIM = MAIN_ONT_PATH + 'MaritimeClaim/';
+const ONT_NATURAL_RESOURCE = MAIN_ONT_PATH + 'NaturalResource/';
 
 // ObjectProperty Paths
 const HAS_BORDER = MAIN_ONT_PATH + 'hasBorder/';
@@ -47,6 +48,7 @@ const HAS_COAST = MAIN_ONT_PATH + 'hasCoast/';
 const HAS_CLIMATE = MAIN_ONT_PATH + 'hasClimate/';
 const HAS_CLIMATE_ZONE = MAIN_ONT_PATH + 'hasClimateZone/';
 const HAS_MARITIME_CLAIM = MAIN_ONT_PATH + 'hasMaritimeClaim/';
+const HAS_NATURAL_RESOURCE = MAIN_ONT_PATH + 'hasNaturalResource/';
 
 // DatatypeProperty Paths
 const BACKGROUND = MAIN_ONT_PATH + 'background/';
@@ -76,6 +78,7 @@ const CONTINENTAL_SHELF = MAIN_ONT_PATH + 'continentalShelf/';
 const CONTINENTAL_SHELF_MODIFIER = MAIN_ONT_PATH + 'continentalShelfModifier/';
 const SUPPLEMENTAL_EXPLANATION = MAIN_ONT_PATH + 'supplementalExplanation/';
 const EXCLUSIVE_FISHING_ZONE = MAIN_ONT_PATH + 'exclusiveFishingZone/';
+const RESOURCE_NAME = MAIN_ONT_PATH + 'resourceName/';
 
 // Instance Paths
 const INST_COUNTRY = MAIN_INSTANCE_PATH + 'Country/';
@@ -91,8 +94,13 @@ const INST_CLIMATE = MAIN_INSTANCE_PATH + 'Climate/';
 const INST_CLIMATE_ZONE = MAIN_INSTANCE_PATH + 'ClimateZone/';
 const INST_GEO_LOCATION = GEO_ONT_PATH + 'Location/';
 const INST_MARITIME_CLAIM = MAIN_INSTANCE_PATH + 'MaritimeClaim/';
+const INST_NATURAL_RESOURCE = MAIN_ONT_PATH + 'NaturalResource/';
 
 const CUSTOM = {
+	ONT_NATURAL_RESOURCE,
+	INST_NATURAL_RESOURCE,
+	HAS_NATURAL_RESOURCE,
+	RESOURCE_NAME,
 	ONT_MARITIME_CLAIM,
 	INST_MARITIME_CLAIM,
 	HAS_MARITIME_CLAIM,

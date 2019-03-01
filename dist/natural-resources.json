@@ -1,0 +1,1585 @@
+{
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ebdfc8c7-7200-360b-a2cd-305955dae2eb": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ebdfc8c7-7200-360b-a2cd-305955dae2eb",
+    "label": "Natural Resource for Saint Barthelemy",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "few natural resources; beaches foster tourism"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/00f33fc5-30d3-3211-ae6a-b56f206622e2": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/00f33fc5-30d3-3211-ae6a-b56f206622e2",
+    "label": "Natural Resource for Antarctica",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "iron ore" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/58bb1c41-96e7-3a66-aa76-02354d7121e8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/58bb1c41-96e7-3a66-aa76-02354d7121e8",
+    "label": "Natural Resource for Clipperton Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/13044708-3d0b-36b6-914b-952751355ad3": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/13044708-3d0b-36b6-914b-952751355ad3",
+    "label": "Natural Resource for Heard Island and McDonald Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/130e4a34-f1b8-37a8-b3bd-24b204c06ec4": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/130e4a34-f1b8-37a8-b3bd-24b204c06ec4",
+    "label": "Natural Resource for Brunei",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ecae78ab-ec52-3f0f-a00d-db3666aa9db9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ecae78ab-ec52-3f0f-a00d-db3666aa9db9",
+    "label": "Natural Resource for Solomon Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/60a8b0c6-de6f-3abe-9999-959a5c735275": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/60a8b0c6-de6f-3abe-9999-959a5c735275",
+    "label": "Natural Resource for Djibouti",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "potential geothermal power" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/861c476b-1e39-3ba5-92d0-7103eeb0809d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/861c476b-1e39-3ba5-92d0-7103eeb0809d",
+    "label": "Natural Resource for Gaza Strip",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/eb6d666b-573b-33d6-af55-27d62a777f36": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/eb6d666b-573b-33d6-af55-27d62a777f36",
+    "label": "Natural Resource for Navassa Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "guano (mining discontinued in 1898)"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a08c1ca2-fca3-3f1e-a2de-01c2de009926": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a08c1ca2-fca3-3f1e-a2de-01c2de009926",
+    "label": "Natural Resource for Tokelau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "NEGL" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6f49c311-92f5-3a1e-9053-a1d699956998": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6f49c311-92f5-3a1e-9053-a1d699956998",
+    "label": "Natural Resource for Saudi Arabia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5f4599da-a341-3f78-8c1a-fc3db145f01b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5f4599da-a341-3f78-8c1a-fc3db145f01b",
+    "label": "Natural Resource for Armenia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "small deposits of gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/180c97ab-db80-333b-91cb-32903dced0e8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/180c97ab-db80-333b-91cb-32903dced0e8",
+    "label": "Natural Resource for Guernsey",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "cropland" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bff21d90-ee3c-3a7a-91e4-43180897f2d7": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bff21d90-ee3c-3a7a-91e4-43180897f2d7",
+    "label": "Natural Resource for Palmyra Atoll",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "terrestrial and aquatic wildlife"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/66b98924-b384-360a-aa84-4bf0fe399d5d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/66b98924-b384-360a-aa84-4bf0fe399d5d",
+    "label": "Natural Resource for Uruguay",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ff4636d0-caf6-3f70-a7df-a437d80aab75": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ff4636d0-caf6-3f70-a7df-a437d80aab75",
+    "label": "Natural Resource for Jersey",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/854ccc29-cc22-3f95-bd1e-5ce961f30c1e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/854ccc29-cc22-3f95-bd1e-5ce961f30c1e",
+    "label": "Natural Resource for Saint Martin",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "salt" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/26fca583-3370-377f-a859-b76441b7327a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/26fca583-3370-377f-a859-b76441b7327a",
+    "label": "Natural Resource for Coral Sea Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/58675230-3a18-3b65-b685-1615595c20db": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/58675230-3a18-3b65-b685-1615595c20db",
+    "label": "Natural Resource for Arctic Ocean",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "sand and gravel aggregates" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/213598a7-e922-37be-a3a7-58f3c69aea09": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/213598a7-e922-37be-a3a7-58f3c69aea09",
+    "label": "Natural Resource for Azerbaijan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c6dfa97a-611d-3e45-bfdc-51c69a762488": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c6dfa97a-611d-3e45-bfdc-51c69a762488",
+    "label": "Natural Resource for Christmas Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "phosphate" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e8dbbad7-1cb1-36a9-bcf3-881922784a9e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e8dbbad7-1cb1-36a9-bcf3-881922784a9e",
+    "label": "Natural Resource for South Georgia and South Sandwich Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c909b138-eba8-3ecf-bd86-df4c9d170ac7": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c909b138-eba8-3ecf-bd86-df4c9d170ac7",
+    "label": "Natural Resource for Finland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/279c771a-e60c-33fc-b4bd-e4627bb56ee8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/279c771a-e60c-33fc-b4bd-e4627bb56ee8",
+    "label": "Natural Resource for Tajikistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fa6c3752-cd00-37f1-a77f-d7e5604ab8d2": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fa6c3752-cd00-37f1-a77f-d7e5604ab8d2",
+    "label": "Natural Resource for Bangladesh",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "natural gas" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c14c36df-fca6-3b07-810f-5e3630ba5d99": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c14c36df-fca6-3b07-810f-5e3630ba5d99",
+    "label": "Natural Resource for Oman",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ca0b36fe-c74b-3612-a6ad-ce2b5ce0e8ef": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ca0b36fe-c74b-3612-a6ad-ce2b5ce0e8ef",
+    "label": "Natural Resource for American Samoa",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "pumice" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f5680604-ea9e-3abb-a383-3339ee5a793c": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f5680604-ea9e-3abb-a383-3339ee5a793c",
+    "label": "Natural Resource for Samoa",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hardwood forests" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bc88a240-30a1-3bde-a13c-8749ed93d30e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bc88a240-30a1-3bde-a13c-8749ed93d30e",
+    "label": "Natural Resource for Guyana",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "bauxite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1aed9ecc-6e1b-3aea-aadd-c5ffb6ba3ed8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1aed9ecc-6e1b-3aea-aadd-c5ffb6ba3ed8",
+    "label": "Natural Resource for Iraq",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/027ed37f-00fb-3aad-b089-a91f2d52c7b9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/027ed37f-00fb-3aad-b089-a91f2d52c7b9",
+    "label": "Natural Resource for Bermuda",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "limestone" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3f57adf2-c06c-3ed0-95ff-83ab72787889": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3f57adf2-c06c-3ed0-95ff-83ab72787889",
+    "label": "Natural Resource for Kiribati",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "phosphate (production discontinued in 1979)"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b17fc6f0-5c07-3b63-928a-6d19c2abe091": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b17fc6f0-5c07-3b63-928a-6d19c2abe091",
+    "label": "Natural Resource for Suriname",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9cba5482-49f6-3e4a-b2f2-47084a2405a8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9cba5482-49f6-3e4a-b2f2-47084a2405a8",
+    "label": "Natural Resource for Congo, Republic of the",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3d91f763-1ba8-33c1-ba08-a208f1255b2e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3d91f763-1ba8-33c1-ba08-a208f1255b2e",
+    "label": "Natural Resource for Ethiopia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "small reserves of gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fab1a523-9120-3253-934c-8cc0b956613c": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fab1a523-9120-3253-934c-8cc0b956613c",
+    "label": "Natural Resource for Western Sahara",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "phosphates" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e9e21c35-ab34-3ef7-9030-5554368ebf78": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e9e21c35-ab34-3ef7-9030-5554368ebf78",
+    "label": "Natural Resource for Cayman Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/35f00515-7cfd-3338-b5b0-6f037eeeff3b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/35f00515-7cfd-3338-b5b0-6f037eeeff3b",
+    "label": "Natural Resource for Montserrat",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "NEGL" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d8973b8e-dfe5-3321-9044-e39d5452523b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d8973b8e-dfe5-3321-9044-e39d5452523b",
+    "label": "Natural Resource for Senegal",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0311d743-a395-337f-9490-fa8a89013d4b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0311d743-a395-337f-9490-fa8a89013d4b",
+    "label": "Natural Resource for Pitcairn Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "miro trees (used for handicrafts)"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9d3bd1fb-5278-3a7b-aeb0-3b437e7b2ecb": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9d3bd1fb-5278-3a7b-aeb0-3b437e7b2ecb",
+    "label": "Natural Resource for Andorra",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1e36b31e-7882-33fb-a035-77144de1d23b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1e36b31e-7882-33fb-a035-77144de1d23b",
+    "label": "Natural Resource for Panama",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "copper" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/04674dda-9bab-3a8f-b4a2-ed0fa25f4cf3": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/04674dda-9bab-3a8f-b4a2-ed0fa25f4cf3",
+    "label": "Natural Resource for Spratly Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5aa58871-4ab4-3bfd-a15d-238fd9778c3a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5aa58871-4ab4-3bfd-a15d-238fd9778c3a",
+    "label": "Natural Resource for Honduras",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6ddcb9e4-747f-3b58-868b-a556a81562d1": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6ddcb9e4-747f-3b58-868b-a556a81562d1",
+    "label": "Natural Resource for Sao Tome and Principe",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/61ae692a-4a56-3b78-b6ac-ede72c5af0d3": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/61ae692a-4a56-3b78-b6ac-ede72c5af0d3",
+    "label": "Natural Resource for Southern Ocean",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "probable large oil and gas fields on the continental margin; manganese nodules"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d115b8d5-acb8-3a6b-8012-aaf4cbb3812c": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d115b8d5-acb8-3a6b-8012-aaf4cbb3812c",
+    "label": "Natural Resource for United Arab Emirates",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0ce65b26-dcd3-328e-9b32-9d9efbb6bbbc": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0ce65b26-dcd3-328e-9b32-9d9efbb6bbbc",
+    "label": "Natural Resource for Malawi",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "limestone" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bc1cd4f0-7d82-3693-b32f-9c95c491d6fb": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bc1cd4f0-7d82-3693-b32f-9c95c491d6fb",
+    "label": "Natural Resource for Dominica",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fedb2073-6102-3b4c-a53a-f14fae039294": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fedb2073-6102-3b4c-a53a-f14fae039294",
+    "label": "Natural Resource for Norfolk Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6687e189-6dd8-37dc-9587-782149127ff0": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6687e189-6dd8-37dc-9587-782149127ff0",
+    "label": "Natural Resource for Niger",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "uranium" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b9967e88-983d-3714-a8fa-745aa72bb8b4": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b9967e88-983d-3714-a8fa-745aa72bb8b4",
+    "label": "Natural Resource for New Caledonia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "nickel" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/73a7ddd5-05f2-3e2c-aad1-522e54a79432": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/73a7ddd5-05f2-3e2c-aad1-522e54a79432",
+    "label": "Natural Resource for Cameroon",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a40a9be0-0a9a-3b56-acd6-7011c0d96758": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a40a9be0-0a9a-3b56-acd6-7011c0d96758",
+    "label": "Natural Resource for Mozambique",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/7e380be8-dc28-3725-b114-4716e95e598c": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/7e380be8-dc28-3725-b114-4716e95e598c",
+    "label": "Natural Resource for Tanzania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/de58331a-6338-3bdb-b8c5-9e6a6788b72e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/de58331a-6338-3bdb-b8c5-9e6a6788b72e",
+    "label": "Natural Resource for Curacao",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "calcium phosphates" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/96b26252-097e-32ab-a127-7318bd55adcd": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/96b26252-097e-32ab-a127-7318bd55adcd",
+    "label": "Natural Resource for Burma",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6981f402-6cf8-3b35-b630-141d375a9455": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6981f402-6cf8-3b35-b630-141d375a9455",
+    "label": "Natural Resource for South Sudan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4d206a81-03d3-320a-8685-314dbba1c88f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4d206a81-03d3-320a-8685-314dbba1c88f",
+    "label": "Natural Resource for Trinidad and Tobago",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3d2d7b1c-3400-3b22-af97-a999decf652a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3d2d7b1c-3400-3b22-af97-a999decf652a",
+    "label": "Natural Resource for Seychelles",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fe23c52d-c244-3a43-aa07-309218808960": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fe23c52d-c244-3a43-aa07-309218808960",
+    "label": "Natural Resource for Puerto Rico",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "some copper and nickel; potential for onshore and offshore oil"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0dc99667-bf50-32fd-8a5f-f20e33bec5d5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0dc99667-bf50-32fd-8a5f-f20e33bec5d5",
+    "label": "Natural Resource for West Bank",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/18740af5-bcec-3773-bd3c-059e0fc65703": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/18740af5-bcec-3773-bd3c-059e0fc65703",
+    "label": "Natural Resource for Eritrea",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/77dcd849-e550-3fec-bc83-d38fcc8cbc72": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/77dcd849-e550-3fec-bc83-d38fcc8cbc72",
+    "label": "Natural Resource for Switzerland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower potential" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/32e087f0-99be-321c-9211-285a1700ff83": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/32e087f0-99be-321c-9211-285a1700ff83",
+    "label": "Natural Resource for Morocco",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "phosphates" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/dcf25ed5-6c95-3618-9e0f-2d48d8854c04": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/dcf25ed5-6c95-3618-9e0f-2d48d8854c04",
+    "label": "Natural Resource for Zambia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "copper" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/93409af2-f208-3754-9f0f-26996e048113": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/93409af2-f208-3754-9f0f-26996e048113",
+    "label": "Natural Resource for Barbados",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d16ad2dc-c6af-3252-a554-ea5f1722abc5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d16ad2dc-c6af-3252-a554-ea5f1722abc5",
+    "label": "Natural Resource for Vanuatu",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "manganese" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/41937b20-fbe8-371d-9c6c-3346aff43c00": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/41937b20-fbe8-371d-9c6c-3346aff43c00",
+    "label": "Natural Resource for Mexico",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1ed5dd9d-833f-375b-b509-886681e2164d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1ed5dd9d-833f-375b-b509-886681e2164d",
+    "label": "Natural Resource for Liberia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "iron ore" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1d39eea5-2e73-3ad4-a7b5-182f04617679": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1d39eea5-2e73-3ad4-a7b5-182f04617679",
+    "label": "Natural Resource for Atlantic Ocean",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "oil and gas fields" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/95cb6272-4475-32d2-a872-dacc00642d50": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/95cb6272-4475-32d2-a872-dacc00642d50",
+    "label": "Natural Resource for Kosovo",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "nickel" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a4842f02-34d7-370b-b57b-60b6f17a1b9f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a4842f02-34d7-370b-b57b-60b6f17a1b9f",
+    "label": "Natural Resource for Haiti",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "bauxite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3ae11c72-5c30-329d-8d34-18bc6b30789f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3ae11c72-5c30-329d-8d34-18bc6b30789f",
+    "label": "Natural Resource for Bahrain",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "oil" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/8067364d-44f5-337b-aba7-e13ba124e934": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/8067364d-44f5-337b-aba7-e13ba124e934",
+    "label": "Natural Resource for Philippines",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f648c72a-69c3-3bb1-97c3-603ebd4a7514": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f648c72a-69c3-3bb1-97c3-603ebd4a7514",
+    "label": "Natural Resource for Nauru",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "phosphates" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bfe79deb-cedd-33c1-a11f-7836c0fc13ad": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bfe79deb-cedd-33c1-a11f-7836c0fc13ad",
+    "label": "Natural Resource for Namibia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "diamonds" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/852addab-901c-3e56-99d1-90285a009d7a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/852addab-901c-3e56-99d1-90285a009d7a",
+    "label": "Natural Resource for Cyprus",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "copper" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/317dbac9-0743-33e5-a82b-2ddf122cd076": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/317dbac9-0743-33e5-a82b-2ddf122cd076",
+    "label": "Natural Resource for Ghana",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c6bf8032-9471-3eb9-a153-ded1daed95f5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c6bf8032-9471-3eb9-a153-ded1daed95f5",
+    "label": "Natural Resource for Howland Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "terrestrial and aquatic wildlife"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a42522a0-cdd6-361a-9379-e6c95d08a9c4": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a42522a0-cdd6-361a-9379-e6c95d08a9c4",
+    "label": "Natural Resource for Angola",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9bb835f4-f91b-33fa-a328-6529520eecae": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9bb835f4-f91b-33fa-a328-6529520eecae",
+    "label": "Natural Resource for British Indian Ocean Territory",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coconuts" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/df234ea5-9088-3ef0-8afd-8cdcca0fb761": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/df234ea5-9088-3ef0-8afd-8cdcca0fb761",
+    "label": "Natural Resource for Johnston Atoll",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "terrestrial and aquatic wildlife"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b0ddce0f-54c9-36c1-8611-7e280aead4f9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b0ddce0f-54c9-36c1-8611-7e280aead4f9",
+    "label": "Natural Resource for Liechtenstein",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydroelectric potential" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/83ef3e6c-ee83-3b88-a398-14638a94fa1a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/83ef3e6c-ee83-3b88-a398-14638a94fa1a",
+    "label": "Natural Resource for Qatar",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/49fb9b1c-4509-3318-928b-8cdd7265253a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/49fb9b1c-4509-3318-928b-8cdd7265253a",
+    "label": "Natural Resource for Svalbard",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0e418aff-d41c-330d-8923-9e1aafe3d63d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0e418aff-d41c-330d-8923-9e1aafe3d63d",
+    "label": "Natural Resource for Ashmore and Cartier Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/373616e3-9fb4-3f9a-9a4e-87dfd4ea9680": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/373616e3-9fb4-3f9a-9a4e-87dfd4ea9680",
+    "label": "Natural Resource for Benin",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "small offshore oil deposits" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/7998be8d-446d-368c-99ab-ca446cb3bd79": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/7998be8d-446d-368c-99ab-ca446cb3bd79",
+    "label": "Natural Resource for Laos",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/314ccd96-4ef6-3ae6-8ac5-f9bb89f751a1": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/314ccd96-4ef6-3ae6-8ac5-f9bb89f751a1",
+    "label": "Natural Resource for Cambodia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "oil and gas" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/acb3f2f8-a526-3628-a229-a70aa0fe6718": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/acb3f2f8-a526-3628-a229-a70aa0fe6718",
+    "label": "Natural Resource for United States Pacific Island Wildlife Refuges",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "terrestrial and aquatic wildlife"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/09f199d2-5132-324e-99bf-b1a89916de24": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/09f199d2-5132-324e-99bf-b1a89916de24",
+    "label": "Natural Resource for Ecuador",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bd6acc86-26d1-3aae-a603-31ce33bf000c": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bd6acc86-26d1-3aae-a603-31ce33bf000c",
+    "label": "Natural Resource for Algeria",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/82d220df-17ce-3f5c-a489-7d780c354dd5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/82d220df-17ce-3f5c-a489-7d780c354dd5",
+    "label": "Natural Resource for Pakistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/55949d4c-1663-3f1c-a75d-7684a379b8f1": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/55949d4c-1663-3f1c-a75d-7684a379b8f1",
+    "label": "Natural Resource for Libya",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/22066e1f-775c-3abe-bccd-2a03126060f6": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/22066e1f-775c-3abe-bccd-2a03126060f6",
+    "label": "Natural Resource for Kingman Reef",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "terrestrial and aquatic wildlife"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/58f76ad9-b377-36df-884c-2901abe54037": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/58f76ad9-b377-36df-884c-2901abe54037",
+    "label": "Natural Resource for Cote d'Ivoire",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/197042c4-de91-3ae8-aeaf-a9a52dc8c3a5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/197042c4-de91-3ae8-aeaf-a9a52dc8c3a5",
+    "label": "Natural Resource for Sri Lanka",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "limestone" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/545f7fe2-5e4e-37dc-88fb-143cc4963db1": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/545f7fe2-5e4e-37dc-88fb-143cc4963db1",
+    "label": "Natural Resource for Baker Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "terrestrial and aquatic wildlife"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e8a1234b-8442-329d-8965-e48d93a16e10": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e8a1234b-8442-329d-8965-e48d93a16e10",
+    "label": "Natural Resource for Tonga",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5990a835-34fb-3b2b-91fa-6b17a6a0bc5b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5990a835-34fb-3b2b-91fa-6b17a6a0bc5b",
+    "label": "Natural Resource for Micronesia, Federated States of",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fbaa3c3e-9e1b-3f9f-a813-f2d4c038b295": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fbaa3c3e-9e1b-3f9f-a813-f2d4c038b295",
+    "label": "Natural Resource for Papua New Guinea",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d6b897fd-145a-36fb-ad36-ff7cb1c47a00": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d6b897fd-145a-36fb-ad36-ff7cb1c47a00",
+    "label": "Natural Resource for Romania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum (reserves declining)" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/93b12bf5-7f18-333c-9ad2-f55e33a8e3fd": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/93b12bf5-7f18-333c-9ad2-f55e33a8e3fd",
+    "label": "Natural Resource for Lesotho",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "water" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a187509a-a2af-36ef-9b1a-bbaed04d4bb5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a187509a-a2af-36ef-9b1a-bbaed04d4bb5",
+    "label": "Natural Resource for Wallis and Futuna",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "NEGL" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/35fda17f-f05f-33e9-8612-08c2dd2aaaf9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/35fda17f-f05f-33e9-8612-08c2dd2aaaf9",
+    "label": "Natural Resource for South Africa",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9113c6c0-c1f9-3b53-a354-3b53136ba30c": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9113c6c0-c1f9-3b53-a354-3b53136ba30c",
+    "label": "Natural Resource for Georgia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9791bc4d-7273-3a7d-a1fe-f79841bd3423": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9791bc4d-7273-3a7d-a1fe-f79841bd3423",
+    "label": "Natural Resource for Moldova",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "lignite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/74a788ce-e27d-3690-95a0-786732c662e0": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/74a788ce-e27d-3690-95a0-786732c662e0",
+    "label": "Natural Resource for Lithuania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "peat" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/20a8df9b-7603-3617-8fca-425339ec1c7e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/20a8df9b-7603-3617-8fca-425339ec1c7e",
+    "label": "Natural Resource for Spain",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b6c149c3-e004-37fb-a347-629a63ed02fe": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b6c149c3-e004-37fb-a347-629a63ed02fe",
+    "label": "Natural Resource for Slovakia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "lignite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ac33d641-f4c9-3bde-9b29-bb95e7f90906": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ac33d641-f4c9-3bde-9b29-bb95e7f90906",
+    "label": "Natural Resource for Yemen",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b47b54fd-3a46-3f43-abbc-abe5b10c1891": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b47b54fd-3a46-3f43-abbc-abe5b10c1891",
+    "label": "Natural Resource for Guinea",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "bauxite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/8a4bf12e-17b2-3e59-8b12-721ef8d5d024": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/8a4bf12e-17b2-3e59-8b12-721ef8d5d024",
+    "label": "Natural Resource for Dominican Republic",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "nickel" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/2133c452-55e5-332c-b5d7-8e83461fd69a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/2133c452-55e5-332c-b5d7-8e83461fd69a",
+    "label": "Natural Resource for Korea, North",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e2ac50f5-a2be-3f73-987e-c8afb3ab3b90": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e2ac50f5-a2be-3f73-987e-c8afb3ab3b90",
+    "label": "Natural Resource for North Macedonia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "low-grade iron ore" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/80eaf308-7b0b-3614-b3c6-c223f1e09197": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/80eaf308-7b0b-3614-b3c6-c223f1e09197",
+    "label": "Natural Resource for Equatorial Guinea",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a06dcd71-328f-32b4-8fa7-f84012096e8f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a06dcd71-328f-32b4-8fa7-f84012096e8f",
+    "label": "Natural Resource for Gabon",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/681101d8-f9fa-3e5e-9fbe-8ac5a2c05504": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/681101d8-f9fa-3e5e-9fbe-8ac5a2c05504",
+    "label": "Natural Resource for Vietnam",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "antimony" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f0a96da3-f86a-334c-be8d-569110d65452": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f0a96da3-f86a-334c-be8d-569110d65452",
+    "label": "Natural Resource for Estonia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "oil shale" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/dba86789-b53e-36df-8477-a589a5729889": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/dba86789-b53e-36df-8477-a589a5729889",
+    "label": "Natural Resource for Central African Republic",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "diamonds" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/62ac59b7-255c-37ff-9fee-8ac49157bdd9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/62ac59b7-255c-37ff-9fee-8ac49157bdd9",
+    "label": "Natural Resource for Bosnia and Herzegovina",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5c777263-58c5-3af9-8ad9-cdccd0882bca": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5c777263-58c5-3af9-8ad9-cdccd0882bca",
+    "label": "Natural Resource for Bulgaria",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "bauxite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/44e46ba3-0eab-3e96-965a-c52eb27f1318": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/44e46ba3-0eab-3e96-965a-c52eb27f1318",
+    "label": "Natural Resource for French Southern and Antarctic Lands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f14e46ce-7d09-3f93-a616-7acc49969812": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f14e46ce-7d09-3f93-a616-7acc49969812",
+    "label": "Natural Resource for Hungary",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "bauxite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/967ce367-d89d-3ec1-b3d7-1049f1197d29": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/967ce367-d89d-3ec1-b3d7-1049f1197d29",
+    "label": "Natural Resource for India",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "coal (fourth-largest reserves in the world)"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/2f36b6bb-1852-3243-92fb-3ee9a2879da2": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/2f36b6bb-1852-3243-92fb-3ee9a2879da2",
+    "label": "Natural Resource for Kazakhstan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "major deposits of petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/674027e1-7b0e-364e-b6cd-e2005cb8e76f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/674027e1-7b0e-364e-b6cd-e2005cb8e76f",
+    "label": "Natural Resource for Jordan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "phosphates" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f1d5742d-e90d-3775-b749-36abf0934a05": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f1d5742d-e90d-3775-b749-36abf0934a05",
+    "label": "Natural Resource for Congo, Democratic Republic of the",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "cobalt" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ad7c3cc7-3f9c-33c0-89d3-208aac984c49": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ad7c3cc7-3f9c-33c0-89d3-208aac984c49",
+    "label": "Natural Resource for Sint Maarten",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/daa6a489-dbca-3a13-8480-aaa1d0c34495": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/daa6a489-dbca-3a13-8480-aaa1d0c34495",
+    "label": "Natural Resource for Mali",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c635e301-48c3-3213-a61c-d3147f9ff8c7": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c635e301-48c3-3213-a61c-d3147f9ff8c7",
+    "label": "Natural Resource for Niue",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a2238e91-907f-3243-aa6a-50e0fd8cf97a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a2238e91-907f-3243-aa6a-50e0fd8cf97a",
+    "label": "Natural Resource for New Zealand",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "natural gas" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f92bcb6a-06d2-3e7c-8af7-c8a338f131bf": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f92bcb6a-06d2-3e7c-8af7-c8a338f131bf",
+    "label": "Natural Resource for Madagascar",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "graphite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fb61c8a8-eba2-3317-8165-97fc7618f388": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/fb61c8a8-eba2-3317-8165-97fc7618f388",
+    "label": "Natural Resource for Netherlands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "natural gas" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/55957aeb-1714-3a91-9845-5cb9876e462d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/55957aeb-1714-3a91-9845-5cb9876e462d",
+    "label": "Natural Resource for Jarvis Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "terrestrial and aquatic wildlife"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/93295b0c-76b9-32da-b60a-8e0f2e9a29a1": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/93295b0c-76b9-32da-b60a-8e0f2e9a29a1",
+    "label": "Natural Resource for Kuwait",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9a2248f7-c4de-37c1-bc8e-2688356857b5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9a2248f7-c4de-37c1-bc8e-2688356857b5",
+    "label": "Natural Resource for Tuvalu",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d2dd2d43-fef0-33aa-980b-01e58e8a9c32": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d2dd2d43-fef0-33aa-980b-01e58e8a9c32",
+    "label": "Natural Resource for Cocos (Keeling) Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4dfdf195-ecb7-3a3f-a837-88deca6fd3b2": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4dfdf195-ecb7-3a3f-a837-88deca6fd3b2",
+    "label": "Natural Resource for Somalia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "uranium and largely unexploited reserves of iron ore"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/7266a1da-7e3a-3739-b245-ddfe74b0b682": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/7266a1da-7e3a-3739-b245-ddfe74b0b682",
+    "label": "Natural Resource for Rwanda",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4812648c-8a89-3e18-9830-5642f6a01fa1": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4812648c-8a89-3e18-9830-5642f6a01fa1",
+    "label": "Natural Resource for Nicaragua",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/40f39cdc-d3ac-3771-931e-4269e54caeff": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/40f39cdc-d3ac-3771-931e-4269e54caeff",
+    "label": "Natural Resource for French Polynesia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a495190b-cc2e-3611-a725-616d321016a7": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a495190b-cc2e-3611-a725-616d321016a7",
+    "label": "Natural Resource for Portugal",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/85fa355b-db4f-36fa-93a2-0a441623d53d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/85fa355b-db4f-36fa-93a2-0a441623d53d",
+    "label": "Natural Resource for Mauritania",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "iron ore" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d7e0453b-b4af-3700-a533-f4d77ad9546d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d7e0453b-b4af-3700-a533-f4d77ad9546d",
+    "label": "Natural Resource for Croatia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "oil" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5ff03b72-73b1-328e-9ba8-52e230991bbf": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5ff03b72-73b1-328e-9ba8-52e230991bbf",
+    "label": "Natural Resource for Poland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c78791a3-f0e1-3bd3-8ba4-eac2afa35ec0": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c78791a3-f0e1-3bd3-8ba4-eac2afa35ec0",
+    "label": "Natural Resource for Kyrgyzstan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "abundant hydropower; gold" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/26160d23-fb07-3f8d-9dae-186eba322e9f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/26160d23-fb07-3f8d-9dae-186eba322e9f",
+    "label": "Natural Resource for Mauritius",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9d4ac43d-5e24-33d0-9e44-8ce01a277ba5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9d4ac43d-5e24-33d0-9e44-8ce01a277ba5",
+    "label": "Natural Resource for Venezuela",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/530670dc-a740-3be8-9943-6ac4734296b8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/530670dc-a740-3be8-9943-6ac4734296b8",
+    "label": "Natural Resource for Antigua and Barbuda",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "NEGL; pleasant climate fosters tourism"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/28a117f1-7363-3e3c-9742-31e0cfb011aa": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/28a117f1-7363-3e3c-9742-31e0cfb011aa",
+    "label": "Natural Resource for Northern Mariana Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1ba0cfa5-5029-3f8b-ac5f-a44b8236639a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1ba0cfa5-5029-3f8b-ac5f-a44b8236639a",
+    "label": "Natural Resource for Greenland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5922f5ce-eff3-3bcf-9b99-3efd6cfd5c47": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5922f5ce-eff3-3bcf-9b99-3efd6cfd5c47",
+    "label": "Natural Resource for Zimbabwe",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/eb2131ec-e0ef-378e-a8bb-1ae98af60991": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/eb2131ec-e0ef-378e-a8bb-1ae98af60991",
+    "label": "Natural Resource for Ireland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "natural gas" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/dbf2a2da-6458-3242-8072-85e7f1483aeb": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/dbf2a2da-6458-3242-8072-85e7f1483aeb",
+    "label": "Natural Resource for Grenada",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/027a12c2-fc85-3ae8-b70b-07ff536faf28": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/027a12c2-fc85-3ae8-b70b-07ff536faf28",
+    "label": "Natural Resource for Belarus",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f54da380-bade-3f43-898f-d1f338cb8257": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f54da380-bade-3f43-898f-d1f338cb8257",
+    "label": "Natural Resource for Mongolia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "oil" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c5f5bb3b-3507-36d7-8da5-7104c55fb6c8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c5f5bb3b-3507-36d7-8da5-7104c55fb6c8",
+    "label": "Natural Resource for Latvia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "peat" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c484b137-e2d1-3229-a4e7-e677f1f8cfce": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c484b137-e2d1-3229-a4e7-e677f1f8cfce",
+    "label": "Natural Resource for Cuba",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "cobalt" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6544b2fe-cc0e-3a58-9bb6-80e2a1e04ac8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6544b2fe-cc0e-3a58-9bb6-80e2a1e04ac8",
+    "label": "Natural Resource for Korea, South",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1f8dc1a6-076e-32fb-b1ef-a48a19e2d220": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1f8dc1a6-076e-32fb-b1ef-a48a19e2d220",
+    "label": "Natural Resource for Turkmenistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/36c57243-155b-32cf-b50c-59764354b20d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/36c57243-155b-32cf-b50c-59764354b20d",
+    "label": "Natural Resource for Peru",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "copper" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a2b7c120-c93a-33e6-bdcd-4d984d2a781c": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/a2b7c120-c93a-33e6-bdcd-4d984d2a781c",
+    "label": "Natural Resource for Thailand",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "tin" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bb130626-b42c-3ece-8603-34424aef9a14": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bb130626-b42c-3ece-8603-34424aef9a14",
+    "label": "Natural Resource for Marshall Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coconut products" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5076721c-4060-3eeb-a9bd-2c3dd9bdce11": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5076721c-4060-3eeb-a9bd-2c3dd9bdce11",
+    "label": "Natural Resource for Luxembourg",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "iron ore (no longer exploited)" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/213cb204-5092-36ff-aaed-eca9290b70a6": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/213cb204-5092-36ff-aaed-eca9290b70a6",
+    "label": "Natural Resource for Maldives",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/673b1cf8-63c8-32d1-8109-731b098b19ba": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/673b1cf8-63c8-32d1-8109-731b098b19ba",
+    "label": "Natural Resource for Saint Lucia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "forests" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5caa7f81-1b5a-3f6e-b999-3f309c4c0457": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5caa7f81-1b5a-3f6e-b999-3f309c4c0457",
+    "label": "Natural Resource for Lebanon",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "limestone" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/42ab0c94-a1e3-3f61-b5a1-5dba215ccf5f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/42ab0c94-a1e3-3f61-b5a1-5dba215ccf5f",
+    "label": "Natural Resource for Belize",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "arable land potential" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d887137d-c253-37e7-9147-cc2c2352a2d0": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d887137d-c253-37e7-9147-cc2c2352a2d0",
+    "label": "Natural Resource for Macau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "NEGL" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4617585b-8749-371b-bb21-237cab6c2dc9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4617585b-8749-371b-bb21-237cab6c2dc9",
+    "label": "Natural Resource for Burundi",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "nickel" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/180c89bf-50c8-329d-ab45-e49d9dac62fc": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/180c89bf-50c8-329d-ab45-e49d9dac62fc",
+    "label": "Natural Resource for Botswana",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "diamonds" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c6915368-7791-3b52-812c-e7cca2f4d03a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c6915368-7791-3b52-812c-e7cca2f4d03a",
+    "label": "Natural Resource for Afghanistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "natural gas" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bbb7ef7f-2ec9-377d-8895-c9da1c5cddd5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bbb7ef7f-2ec9-377d-8895-c9da1c5cddd5",
+    "label": "Natural Resource for Fiji",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1bf429f9-4068-320b-912a-ca3888b58aec": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1bf429f9-4068-320b-912a-ca3888b58aec",
+    "label": "Natural Resource for Costa Rica",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f3a82610-1b9a-37f3-973c-b0f1a7505587": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/f3a82610-1b9a-37f3-973c-b0f1a7505587",
+    "label": "Natural Resource for Aruba",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "NEGL; white sandy beaches foster tourism"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e71b56d9-2347-3a6f-a762-39ce33f67aaa": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e71b56d9-2347-3a6f-a762-39ce33f67aaa",
+    "label": "Natural Resource for Burkina Faso",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "manganese" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/71a45296-474d-328f-b5d4-b49f3b10384f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/71a45296-474d-328f-b5d4-b49f3b10384f",
+    "label": "Natural Resource for Paraguay",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4bacfe25-35ec-3eeb-9a04-a1b85c3a2e0b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4bacfe25-35ec-3eeb-9a04-a1b85c3a2e0b",
+    "label": "Natural Resource for Cook Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coconuts (copra)" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1c39abf6-8e93-3638-ae5d-ca946e2d6a98": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1c39abf6-8e93-3638-ae5d-ca946e2d6a98",
+    "label": "Natural Resource for Egypt",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b3c92eec-f0aa-3b05-8860-59d9f6d3261d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b3c92eec-f0aa-3b05-8860-59d9f6d3261d",
+    "label": "Natural Resource for Iceland",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/045e2f1d-6c4d-33aa-acfd-1b2f30f30a97": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/045e2f1d-6c4d-33aa-acfd-1b2f30f30a97",
+    "label": "Natural Resource for Czechia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hard coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/094d515b-3608-3efc-a759-a36412cee467": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/094d515b-3608-3efc-a759-a36412cee467",
+    "label": "Natural Resource for Taiwan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "small deposits of coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d2eaf2aa-1512-3659-ae0a-5bae633537c6": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/d2eaf2aa-1512-3659-ae0a-5bae633537c6",
+    "label": "Natural Resource for China",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3fa9b2dd-85d2-37dd-8f64-07fbb7799287": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3fa9b2dd-85d2-37dd-8f64-07fbb7799287",
+    "label": "Natural Resource for Saint Vincent and the Grenadines",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3ed10433-7eb1-3fb7-9010-7978743cbf25": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/3ed10433-7eb1-3fb7-9010-7978743cbf25",
+    "label": "Natural Resource for Syria",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ff3ea3be-c182-3787-a665-0a6fd2872d92": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ff3ea3be-c182-3787-a665-0a6fd2872d92",
+    "label": "Natural Resource for Malaysia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "tin" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/2f488ffc-82cc-367a-9616-e39fdfc53729": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/2f488ffc-82cc-367a-9616-e39fdfc53729",
+    "label": "Natural Resource for Hong Kong",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "outstanding deepwater harbor" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1082f891-1562-3b9c-831f-2176f832b3a7": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1082f891-1562-3b9c-831f-2176f832b3a7",
+    "label": "Natural Resource for Faroe Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/70e53283-edb6-373a-8cd2-1aa7731dfe1f": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/70e53283-edb6-373a-8cd2-1aa7731dfe1f",
+    "label": "Natural Resource for Saint Pierre and Miquelon",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/349507e4-1dd8-371c-90c9-df6d2444b5e6": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/349507e4-1dd8-371c-90c9-df6d2444b5e6",
+    "label": "Natural Resource for Chile",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "copper" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/cd6a7b87-6852-3685-a0db-cd459185091e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/cd6a7b87-6852-3685-a0db-cd459185091e",
+    "label": "Natural Resource for Canada",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "bauxite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bb2254a8-06f4-3ff2-8753-ca390143e2ca": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/bb2254a8-06f4-3ff2-8753-ca390143e2ca",
+    "label": "Natural Resource for Bhutan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "timber" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ceafb51e-2b07-33d5-bdd6-20019dff3aa6": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ceafb51e-2b07-33d5-bdd6-20019dff3aa6",
+    "label": "Natural Resource for Australia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "alumina" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1a591a3e-91fc-37a4-bf2c-08e9e2e117f3": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/1a591a3e-91fc-37a4-bf2c-08e9e2e117f3",
+    "label": "Natural Resource for Malta",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "limestone" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/923c8a23-a3eb-3f07-bd80-b8aca8e5ff85": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/923c8a23-a3eb-3f07-bd80-b8aca8e5ff85",
+    "label": "Natural Resource for Bahamas, The",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "salt" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/37497aa5-a227-3e49-b14a-ee1b07e8edf9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/37497aa5-a227-3e49-b14a-ee1b07e8edf9",
+    "label": "Natural Resource for Brazil",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "bauxite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5cb4c9d8-2817-3ed3-931e-c52305b32f47": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/5cb4c9d8-2817-3ed3-931e-c52305b32f47",
+    "label": "Natural Resource for Belgium",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "construction materials" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/479fb34b-dbf4-3ba9-8d03-cca83f64ad4e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/479fb34b-dbf4-3ba9-8d03-cca83f64ad4e",
+    "label": "Natural Resource for Montenegro",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "bauxite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4902a456-caa9-36ea-b463-ce526c9df0f6": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/4902a456-caa9-36ea-b463-ce526c9df0f6",
+    "label": "Natural Resource for Greece",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "lignite" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/11760e1a-ac43-36e1-8d31-5e93ad3df3e9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/11760e1a-ac43-36e1-8d31-5e93ad3df3e9",
+    "label": "Natural Resource for Guatemala",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b07cb9a2-b248-32a8-997c-d3dfa67d1d6a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/b07cb9a2-b248-32a8-997c-d3dfa67d1d6a",
+    "label": "Natural Resource for Guinea-Bissau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ff6b6871-509d-326c-a777-3d50c507db22": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/ff6b6871-509d-326c-a777-3d50c507db22",
+    "label": "Natural Resource for Falkland Islands (Islas Malvinas)",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/8415fea7-e424-361d-ae7c-da45687dbb07": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/8415fea7-e424-361d-ae7c-da45687dbb07",
+    "label": "Natural Resource for Virgin Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "pleasant climate" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/07dee45e-a568-3bca-a08c-e72ea01e985a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/07dee45e-a568-3bca-a08c-e72ea01e985a",
+    "label": "Natural Resource for Cabo Verde",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "salt" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/db800e86-e9f3-33e7-ae11-02efb21d4595": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/db800e86-e9f3-33e7-ae11-02efb21d4595",
+    "label": "Natural Resource for Uzbekistan",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "natural gas" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0e1d589f-58b7-3e2b-bd5d-8068156d1601": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/0e1d589f-58b7-3e2b-bd5d-8068156d1601",
+    "label": "Natural Resource for Nepal",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "quartz" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/16cc7f84-3a3e-3bc1-95ff-6fa1925826e7": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/16cc7f84-3a3e-3bc1-95ff-6fa1925826e7",
+    "label": "Natural Resource for Eswatini",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "asbestos" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c951ec00-f123-330a-80d1-e3d9539b11b4": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/c951ec00-f123-330a-80d1-e3d9539b11b4",
+    "label": "Natural Resource for Ukraine",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "iron ore" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/17d53e0e-6a68-3edf-80b7-8d4f9d868c87": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/17d53e0e-6a68-3edf-80b7-8d4f9d868c87",
+    "label": "Natural Resource for Germany",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6d31bf00-d7ed-3e6a-a17a-6b16699f8ba9": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6d31bf00-d7ed-3e6a-a17a-6b16699f8ba9",
+    "label": "Natural Resource for Serbia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "oil" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6754fe3c-d831-3f20-ad04-b8c7b66abebc": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/6754fe3c-d831-3f20-ad04-b8c7b66abebc",
+    "label": "Natural Resource for Russia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": {
+      "resourceName": "wide natural resource base including major deposits of oil"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/72ddd2b6-19af-3f6a-b3fe-bf80f7fcad22": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/72ddd2b6-19af-3f6a-b3fe-bf80f7fcad22",
+    "label": "Natural Resource for Sweden",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "iron ore" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/259a6e93-5b84-3a23-a0c0-b76aced28030": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/259a6e93-5b84-3a23-a0c0-b76aced28030",
+    "label": "Natural Resource for El Salvador",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "hydropower" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/988455e6-7df7-3f81-9090-ea4bacdc05f3": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/988455e6-7df7-3f81-9090-ea4bacdc05f3",
+    "label": "Natural Resource for Norway",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/541212bb-30f1-322f-bdbc-1629698ba6f5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/541212bb-30f1-322f-bdbc-1629698ba6f5",
+    "label": "Natural Resource for Gambia, The",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e3772ac4-b4db-37b4-a8db-fa59ef43cd1a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e3772ac4-b4db-37b4-a8db-fa59ef43cd1a",
+    "label": "Natural Resource for France",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "metropolitan France" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/2f737399-6064-3665-9401-cb27b066f465": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/2f737399-6064-3665-9401-cb27b066f465",
+    "label": "Natural Resource for Colombia",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "petroleum" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9769121f-10f7-3279-b27e-b08e9ffa488c": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/9769121f-10f7-3279-b27e-b08e9ffa488c",
+    "label": "Natural Resource for United Kingdom",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "coal" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e5bb59a2-7319-3aca-a207-0f6fd4f2e075": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/e5bb59a2-7319-3aca-a207-0f6fd4f2e075",
+    "label": "Natural Resource for Comoros",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource/",
+    "datatypeProperties": { "resourceName": "fish" },
+    "objectProperties": []
+  }
+}
