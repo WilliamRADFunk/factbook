@@ -14,6 +14,7 @@ const globalStore = {
 	nationalFlags: {},
 	naturalResources: {},
 	regionMaps: {},
+	terrains: {}
 };
 
 module.exports = globalStore;

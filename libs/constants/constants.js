@@ -33,6 +33,7 @@ const ONT_CLIMATE = MAIN_ONT_PATH + 'Climate/';
 const ONT_CLIMATE_ZONE = MAIN_ONT_PATH + 'ClimateZone/';
 const ONT_MARITIME_CLAIM = MAIN_ONT_PATH + 'MaritimeClaim/';
 const ONT_NATURAL_RESOURCE = MAIN_ONT_PATH + 'NaturalResource/';
+const ONT_TERRAIN = MAIN_ONT_PATH + 'Terrain/';
 
 // ObjectProperty Paths
 const HAS_BORDER = MAIN_ONT_PATH + 'hasBorder/';
@@ -49,6 +50,7 @@ const HAS_CLIMATE = MAIN_ONT_PATH + 'hasClimate/';
 const HAS_CLIMATE_ZONE = MAIN_ONT_PATH + 'hasClimateZone/';
 const HAS_MARITIME_CLAIM = MAIN_ONT_PATH + 'hasMaritimeClaim/';
 const HAS_NATURAL_RESOURCE = MAIN_ONT_PATH + 'hasNaturalResource/';
+const HAS_TERRAIN = MAIN_ONT_PATH + 'hasTerrain/';
 
 // DatatypeProperty Paths
 const BACKGROUND = MAIN_ONT_PATH + 'background/';
@@ -59,6 +61,7 @@ const LOCATION_DESCRIPTION = MAIN_ONT_PATH + 'locationDescription/';
 const IMAGE_DIMENSIONS = MAIN_ONT_PATH + 'imageDimensions/';
 const IMAGE_SIZE = MAIN_ONT_PATH + 'imageSize/';
 const MAP_REFERENCES = MAIN_ONT_PATH + 'mapReferences/';
+const DESCRIPTION = MAIN_ONT_PATH + 'description/';
 const LOCATION_URI = MAIN_ONT_PATH + 'locatorURI/';
 const CONTENT_DESCRIPTION = ASSET_ONT_PATH + 'contentDescription/';
 const ONT_TOTAL_AREA = MAIN_ONT_PATH + 'totalArea/';
@@ -95,8 +98,13 @@ const INST_CLIMATE_ZONE = MAIN_INSTANCE_PATH + 'ClimateZone/';
 const INST_GEO_LOCATION = GEO_ONT_PATH + 'Location/';
 const INST_MARITIME_CLAIM = MAIN_INSTANCE_PATH + 'MaritimeClaim/';
 const INST_NATURAL_RESOURCE = MAIN_ONT_PATH + 'NaturalResource/';
+const INST_TERRAIN = MAIN_ONT_PATH + 'Terrain/';
 
 const CUSTOM = {
+	ONT_TERRAIN,
+	HAS_TERRAIN,
+	DESCRIPTION,
+	INST_TERRAIN,
 	ONT_NATURAL_RESOURCE,
 	INST_NATURAL_RESOURCE,
 	HAS_NATURAL_RESOURCE,

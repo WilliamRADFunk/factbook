@@ -35,7 +35,7 @@
     <rdfs:label>Funk Ontology</rdfs:label>
   </Ontology>
 
-  <!-- 
+  <!--
   ///////////////////////////////////////////////////////////////////////////////////////
   //
   // Classes
@@ -150,7 +150,14 @@
     </rdfs:comment>
   </rdfs:Class>
 
-  <!-- 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Terrain -->
+
+  <rdfs:Class rdf:about="&wfact;#Terrain">
+    <rdfs:label>Natural Resource</rdfs:label>
+    <rdfs:comment>A stretch of land, especially with regard to its physical features.</rdfs:comment>
+  </rdfs:Class>
+
+  <!--
   ///////////////////////////////////////////////////////////////////////////////////////
   //
   // Object Properties
@@ -249,7 +256,14 @@
       <rdfs:range rdf:resource="&wfact;#NaturalResource"/>
   </owl:ObjectProperty>
 
-  <!-- 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain -->
+
+  <owl:ObjectProperty rdf:about="&wfact;#hasTerrain">
+      <rdfs:domain rdf:resource="&wfact;#Country"/>
+      <rdfs:range rdf:resource="&wfact;#Terrain"/>
+  </owl:ObjectProperty>
+
+  <!--
   ///////////////////////////////////////////////////////////////////////////////////////
   //
   // Datatype Properties
@@ -525,6 +539,15 @@
   <DatatypeProperty rdf:about="&wfact;#resourceName">
     <rdfs:label>resourceName</rdfs:label>
     <rdfs:comment>The name of the resource (ie. coal, copper, salt, fish)</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;#NaturalResource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#description -->
+
+  <DatatypeProperty rdf:about="&wfact;#description">
+    <rdfs:label>description</rdfs:label>
+    <rdfs:comment>Description of the terrain</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;#NaturalResource"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>

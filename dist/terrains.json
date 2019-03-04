@@ -1,0 +1,290 @@
+{
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/545f7fe2-5e4e-37dc-88fb-143cc4963db1": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/545f7fe2-5e4e-37dc-88fb-143cc4963db1",
+    "label": "Terrain for Baker Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "low and nearly flat sandy coral islands with narrow fringing reefs that have developed at the top of submerged volcanic mountains, which in most cases rise steeply from the ocean floor"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/cdf22ab3-9fd2-3380-bc07-d7fd2665cd7a": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/cdf22ab3-9fd2-3380-bc07-d7fd2665cd7a",
+    "label": "Terrain for Midway Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "low and nearly flat sandy coral islands with narrow fringing reefs that have developed at the top of submerged volcanic mountains, which in most cases rise steeply from the ocean floor"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/eb6d666b-573b-33d6-af55-27d62a777f36": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/eb6d666b-573b-33d6-af55-27d62a777f36",
+    "label": "Terrain for Navassa Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "raised flat to undulating coral and limestone plateau"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/530670dc-a740-3be8-9943-6ac4734296b8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/530670dc-a740-3be8-9943-6ac4734296b8",
+    "label": "Terrain for Antigua and Barbuda",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "mostly low-lying limestone and coral islands, with some higher volcanic areas"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/1bf429f9-4068-320b-912a-ca3888b58aec": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/1bf429f9-4068-320b-912a-ca3888b58aec",
+    "label": "Terrain for Costa Rica",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "coastal plains separated by rugged mountains including over 100 volcanic cones, of which several are major active volcanoes"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/0e418aff-d41c-330d-8923-9e1aafe3d63d": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/0e418aff-d41c-330d-8923-9e1aafe3d63d",
+    "label": "Terrain for Ashmore and Cartier Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "low with sand and coral" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/13044708-3d0b-36b6-914b-952751355ad3": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/13044708-3d0b-36b6-914b-952751355ad3",
+    "label": "Terrain for Heard Island and McDonald Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "Heard Island - 80% ice-covered, bleak and mountainous, dominated by a large massif (Big Ben) and an active volcano (Mawson Peak)"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/bff21d90-ee3c-3a7a-91e4-43180897f2d7": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/bff21d90-ee3c-3a7a-91e4-43180897f2d7",
+    "label": "Terrain for Palmyra Atoll",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "low and nearly flat sandy coral islands with narrow fringing reefs that have developed at the top of submerged volcanic mountains, which in most cases rise steeply from the ocean floor"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/fe23c52d-c244-3a43-aa07-309218808960": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/fe23c52d-c244-3a43-aa07-309218808960",
+    "label": "Terrain for Puerto Rico",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "mostly mountains with coastal plain in north"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/c6bf8032-9471-3eb9-a153-ded1daed95f5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/c6bf8032-9471-3eb9-a153-ded1daed95f5",
+    "label": "Terrain for Howland Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "low and nearly flat sandy coral islands with narrow fringing reefs that have developed at the top of submerged volcanic mountains, which in most cases rise steeply from the ocean floor"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/4bacfe25-35ec-3eeb-9a04-a1b85c3a2e0b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/4bacfe25-35ec-3eeb-9a04-a1b85c3a2e0b",
+    "label": "Terrain for Cook Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "low coral atolls in north" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/ff4636d0-caf6-3f70-a7df-a437d80aab75": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/ff4636d0-caf6-3f70-a7df-a437d80aab75",
+    "label": "Terrain for Jersey",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "gently rolling plain with low, rugged hills along north coast"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/e8dbbad7-1cb1-36a9-bcf3-881922784a9e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/e8dbbad7-1cb1-36a9-bcf3-881922784a9e",
+    "label": "Terrain for South Georgia and South Sandwich Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "most of the islands are rugged and mountainous rising steeply from the sea"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/ebdfc8c7-7200-360b-a2cd-305955dae2eb": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/ebdfc8c7-7200-360b-a2cd-305955dae2eb",
+    "label": "Terrain for Saint Barthelemy",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "hilly, almost completely surrounded by shallow-water reefs, with plentiful beaches"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/180c97ab-db80-333b-91cb-32903dced0e8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/180c97ab-db80-333b-91cb-32903dced0e8",
+    "label": "Terrain for Guernsey",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "mostly flat with low hills in southwest"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/d887137d-c253-37e7-9147-cc2c2352a2d0": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/d887137d-c253-37e7-9147-cc2c2352a2d0",
+    "label": "Terrain for Macau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "generally flat" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/35f00515-7cfd-3338-b5b0-6f037eeeff3b": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/35f00515-7cfd-3338-b5b0-6f037eeeff3b",
+    "label": "Terrain for Montserrat",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "volcanic island, mostly mountainous, with small coastal lowland"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/e5133589-7c0e-36bb-9526-93d416690214": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/e5133589-7c0e-36bb-9526-93d416690214",
+    "label": "Terrain for Gibraltar",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "a narrow coastal lowland borders the Rock of Gibraltar"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/87fd3bef-cce6-3242-a18f-49ec496c2b09": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/87fd3bef-cce6-3242-a18f-49ec496c2b09",
+    "label": "Terrain for San Marino",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "rugged mountains" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/58bb1c41-96e7-3a66-aa76-02354d7121e8": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/58bb1c41-96e7-3a66-aa76-02354d7121e8",
+    "label": "Terrain for Clipperton Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "coral atoll" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/0dc99667-bf50-32fd-8a5f-f20e33bec5d5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/0dc99667-bf50-32fd-8a5f-f20e33bec5d5",
+    "label": "Terrain for West Bank",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "mostly rugged, dissected upland in west, flat plains descending to Jordan River Valley to the east"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/0b5cac30-54ad-33b7-a5da-977b1d9401f5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/0b5cac30-54ad-33b7-a5da-977b1d9401f5",
+    "label": "Terrain for Wake Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "atoll of three low coral islands, Peale, Wake, and Wilkes, built up on an underwater volcano"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/4c281987-22a6-3325-8dc0-4467490cb8fc": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/4c281987-22a6-3325-8dc0-4467490cb8fc",
+    "label": "Terrain for Paracel Islands",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "mostly low and flat" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/a187509a-a2af-36ef-9b1a-bbaed04d4bb5": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/a187509a-a2af-36ef-9b1a-bbaed04d4bb5",
+    "label": "Terrain for Wallis and Futuna",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "volcanic origin" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/213cb204-5092-36ff-aaed-eca9290b70a6": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/213cb204-5092-36ff-aaed-eca9290b70a6",
+    "label": "Terrain for Maldives",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "flat, with white sandy beaches"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/acb3f2f8-a526-3628-a229-a70aa0fe6718": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/acb3f2f8-a526-3628-a229-a70aa0fe6718",
+    "label": "Terrain for United States Pacific Island Wildlife Refuges",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "low and nearly flat sandy coral islands with narrow fringing reefs that have developed at the top of submerged volcanic mountains, which in most cases rise steeply from the ocean floor"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/3ad2dd82-9664-3a6f-a9ae-c0770e244c17": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/3ad2dd82-9664-3a6f-a9ae-c0770e244c17",
+    "label": "Terrain for Saint Kitts and Nevis",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "volcanic with mountainous interiors"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/fedb2073-6102-3b4c-a53a-f14fae039294": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/fedb2073-6102-3b4c-a53a-f14fae039294",
+    "label": "Terrain for Norfolk Island",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "volcanic island with mostly rolling plains"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/e5bb59a2-7319-3aca-a207-0f6fd4f2e075": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/e5bb59a2-7319-3aca-a207-0f6fd4f2e075",
+    "label": "Terrain for Comoros",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "volcanic islands, interiors vary from steep mountains to low hills"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/78b2b955-be91-36e9-8222-c7715240f4cf": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/78b2b955-be91-36e9-8222-c7715240f4cf",
+    "label": "Terrain for Holy See (Vatican City)",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "urban" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/df234ea5-9088-3ef0-8afd-8cdcca0fb761": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/df234ea5-9088-3ef0-8afd-8cdcca0fb761",
+    "label": "Terrain for Johnston Atoll",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "low and nearly flat sandy coral islands with narrow fringing reefs that have developed at the top of submerged volcanic mountains, which in most cases rise steeply from the ocean floor"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/f3a82610-1b9a-37f3-973c-b0f1a7505587": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/f3a82610-1b9a-37f3-973c-b0f1a7505587",
+    "label": "Terrain for Aruba",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": { "terrainDescription": "flat with a few hills" },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/a08c1ca2-fca3-3f1e-a2de-01c2de009926": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/a08c1ca2-fca3-3f1e-a2de-01c2de009926",
+    "label": "Terrain for Tokelau",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "low-lying coral atolls enclosing large lagoons"
+    },
+    "objectProperties": []
+  },
+  "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/b6b237de-15c9-3f2d-90db-596b0056953e": {
+    "id": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/b6b237de-15c9-3f2d-90db-596b0056953e",
+    "label": "Terrain for Jan Mayen",
+    "type": "http://williamrobertfunk.com/ontologies/world-factbook#Terrain/",
+    "datatypeProperties": {
+      "terrainDescription": "volcanic island, partly covered by glaciers"
+    },
+    "objectProperties": []
+  }
+}

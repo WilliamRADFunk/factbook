@@ -10,6 +10,7 @@ const getRegionMapImg = require('./region-map-image');
 const getSupplementalImages = require('./supplemental-image');
 const getMaritimeClaims = require('./maritime-claims');
 const getNaturalResources = require('./natural-resources');
+const getTerrains = require('./terrain');
 
 module.exports = {
 	getArea,
@@ -23,5 +24,6 @@ module.exports = {
 	getRegionMapImg,
 	getSupplementalImages,
 	getMaritimeClaims,
-	getNaturalResources
+	getNaturalResources,
+	getTerrains
 };
