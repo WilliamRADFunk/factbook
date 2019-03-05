@@ -17,14 +17,13 @@ var getSupplementalImages = function(cheerioElem, country, countryId) {
 		var imageProps = [];
 		c.each(function() { imageProps.push(cheerioElem(this).text().trim()); });
 		b = b && htmlToText.fromString(b);
-		var suppImgId, suppImgUrl;
+		var imgId, suppImgUrl;
         if (a && a.replace('../', '')) {
 			var cleanSrc = a.replace('../', '');
-			suppImgId = getUuid(cleanSrc);
+			imgId = consts.CUSTOM.INST_IMAGE + getUuid(cleanSrc);
             suppImgUrl = consts.CUSTOM.URL_BASE + cleanSrc;
 		}
-        if (suppImgUrl && !suppImages.some(img => img[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG].id.includes(suppImgId))) {
-			var imgId = consts.CUSTOM.INST_IMAGE + getUuid(country);
+        if (suppImgUrl && !suppImages.some(img => img[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG].id.includes(imgId))) {
 			var objectProp = {};
 			if (store.images[imgId]) {
 				objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG] = store.images[imgId];
@@ -33,7 +32,7 @@ var getSupplementalImages = function(cheerioElem, country, countryId) {
                     consts.CUSTOM.HAS_SUPPLEMENTAL_IMG,
                     consts.CUSTOM.ONT_IMAGE,
                     imgId,
-                    `Supplemental Image for ${country}`);
+                    'Supplemental Image');
 				store.images[imgId] = objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG];
 			}
 			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_SUPPLEMENTAL_IMG, objectProp));

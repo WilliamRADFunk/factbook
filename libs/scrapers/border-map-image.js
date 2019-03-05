@@ -10,7 +10,13 @@ var getBorderMapImg = function(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.locatorBox').each(function() {
         let map = getRelation(objectProperties, consts.CUSTOM.HAS_BORDER_MAP);
-        var bmId = consts.CUSTOM.INST_BORDER_MAP + getUuid(country);
+        var a = cheerioElem(this).find('img').attr('src');
+        var borderMapUrl, bmId;
+        if (a && a.replace('../', '')) {
+            const borderMapId = a.replace('../', '');
+            borderMapUrl = consts.CUSTOM.URL_BASE + a.replace('../', '');
+            bmId = consts.CUSTOM.INST_BORDER_MAP + getUuid(borderMapId);
+        }
         var objectProp = {};
         if (!map) {
             if (store.borderMaps[bmId]) {
@@ -20,16 +26,11 @@ var getBorderMapImg = function(cheerioElem, country, countryId) {
                     consts.CUSTOM.HAS_BORDER_MAP,
                     consts.CUSTOM.ONT_BORDER_MAP,
                     bmId,
-                    `Border Map of ${country}`);
+                    'Border Map');
                 store.borderMaps[bmId] = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
             }
             map = objectProp[consts.CUSTOM.HAS_BORDER_MAP];
             store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_BORDER_MAP, objectProp));
-        }
-        var a = cheerioElem(this).find('img').attr('src');
-        var borderMapUrl;
-        if (a && a.replace('../', '')) {
-            borderMapUrl = consts.CUSTOM.URL_BASE + a.replace('../', '');
         }
         if (borderMapUrl) {
 			var datatypeProp = {};

@@ -20,7 +20,7 @@ var getRegionMapImg = function(cheerioElem, country, countryId) {
                     consts.CUSTOM.HAS_REGION_MAP,
                     consts.CUSTOM.ONT_REGION_MAP,
                     rmId,
-                    `Region Map of ${country}`);
+                    'Region Map');
             }
         }
         var a = cheerioElem(this).find('img').attr('src');

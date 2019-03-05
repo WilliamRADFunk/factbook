@@ -7,19 +7,16 @@ const entityRefMaker = require('../utils/entity-ref-maker.js');
 
 var getTerrains = function(cheerioElem, country, countryId) {
 	let objectProperties = store.countries[countryId].objectProperties;
+	let terr = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_TERRAIN]);
 	cheerioElem('#field-terrain').each(function() {
 		var terrainList = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
-		console.log('terrain - 1', country, terrainList);
         if (terrainList) {
 			const terrains = terrainList.split(';').map(t => t.trim());
-			console.log('terrain - 2', country, terrains);
 			terrains.forEach(resource => {
-				console.log('terrain - 3', country, resource);
-				let terrainDescription = resource.trim();
-				let doesResourceExist = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_TERRAIN])[0];
-				console.log('terrain - 4', country, doesResourceExist);
-				if (!doesResourceExist || (doesResourceExist && doesResourceExist.datatypeProperties.terrainDescription !== terrainDescription)) {
-					var tId = consts.CUSTOM.INST_TERRAIN + getUuid(country);
+				const terrainDescription = resource.trim();
+				var tId = consts.CUSTOM.INST_TERRAIN + getUuid(terrainDescription);
+				const doesResourceExist = terr.some(t => t[consts.CUSTOM.HAS_TERRAIN].id.includes(tId));
+				if (terrainDescription && !doesResourceExist) {
 					var objectProp = {};
 					if (store.terrains[tId]) {
 						objectProp[consts.CUSTOM.HAS_TERRAIN] = store.terrains[tId];
@@ -28,7 +25,7 @@ var getTerrains = function(cheerioElem, country, countryId) {
 							consts.CUSTOM.HAS_TERRAIN,
 							consts.CUSTOM.ONT_TERRAIN,
 							tId,
-							`Terrain for ${country}`);
+							'Terrain');
 						store.terrains[tId] = objectProp[consts.CUSTOM.HAS_TERRAIN];
 					}
 					objectProp[consts.CUSTOM.HAS_TERRAIN].datatypeProperties.terrainDescription = terrainDescription;

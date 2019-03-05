@@ -19,7 +19,7 @@ var getFlag = function(cheerioElem, country, countryId) {
 				consts.CUSTOM.HAS_FLAG,
 				consts.CUSTOM.ONT_FLAG,
 				fId,
-				`National Flag of ${country}`);
+				'National Flag');
 			store.nationalFlags[fId] = objectProp[consts.CUSTOM.HAS_FLAG];
 		}
 		flag = objectProp[consts.CUSTOM.HAS_FLAG];
@@ -36,7 +36,7 @@ var getFlag = function(cheerioElem, country, countryId) {
 		}
         // TODO: scrape physical image from url and store it.
     });
-    cheerioElem('div.modalFlagDesc').each(function() {    
+    cheerioElem('div.modalFlagDesc').each(function() {
         var b = cheerioElem(this).find('div.photogallery_captiontext').text().trim();
         if (!b) { return; }
 
