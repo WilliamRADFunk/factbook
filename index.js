@@ -1,4 +1,3 @@
-const fs = require('fs');
 const rp = require('request-promise');
 const cheerio = require('cheerio');
 
@@ -8,6 +7,9 @@ const dataScrapers = require('./libs/scrapers/data-getters');
 const entityMaker = require('./libs/utils/entity-maker.js');
 const countryToId = require('./libs/utils/country-to-id.js');
 const loadFiles = require('./libs/utils/load-files.js');
+const saveFiles = require('./libs/utils/save-files.js');
+
+const failedCountries = [];
 
 loadFiles();
 
@@ -40,16 +42,29 @@ var getCountryData = (country, url) => {
                 dataScrapers.getMaritimeClaims($, country, countryId);
                 // console.log('getMaritimeClaims for ', country);
                 dataScrapers.getNaturalResources($, country, countryId);
-                console.log('getNaturalResources for ', country);
+                // console.log('getNaturalResources for ', country);
                 dataScrapers.getTerrains($, country, countryId);
                 console.log('Data scrape for ', country, ' is complete');
             })
             .catch(err => {
-                fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+                console.error('Individual country query failed:', country, url);
+                failedCountries.push(country);
+                const errMsg = `${
+                    new Date().toISOString()
+                }\n\nIndividual country query failed:  ${
+                    country
+                }\n${
+                    url
+                }\n${
+                    err.toString().trim()
+                }\n\n`;
+                console.log('errMsg', errMsg);
+                store.LOG_STREAM.write(errMsg);
             });
     } else {
         return new Promise(function(resolve) {
-            fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString()
+            console.error('Bad Country or URL:', country, url);
+            store.LOG_STREAM.write(new Date().toISOString()
                 + '\n\nFailure to scrape data for ' + country + ' at \n' + url + '\n\n');
             resolve(null);
         }).then(() => {});
@@ -92,74 +107,25 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
         let promises = getCountriesData();
         Promise.all(promises)
             .then(function() {
-                let file = JSON.stringify(store.countries);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/countries.json', file);
-
-                file = JSON.stringify(store.borderCountries);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/border-countries.json', file);
-
-                file = JSON.stringify(store.borderMaps);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/border-maps.json', file);
-
-                file = JSON.stringify([store.climates]);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/climates.json', file);
-
-                file = JSON.stringify(store.climateZones);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/climates-zones.json', file);
-
-                file = JSON.stringify(store.coasts);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/coasts.json', file);
-
-                file = JSON.stringify(store.domainAreas);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/domain-areas.json', file);
-
-                file = JSON.stringify(store.images);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/images.json', file);
-
-                file = JSON.stringify(store.locations);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/locations.json', file);
-
-                file = JSON.stringify(store.nationalFlags);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/national-flags.json', file);
-
-                file = JSON.stringify(store.regionMaps);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/region-maps.json', file);
-
-                file = JSON.stringify(store.borderCountries);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/border-countries.json', file);
-
-                file = JSON.stringify(store.borders);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/borders.json', file);
-
-                file = JSON.stringify(store.maritimeClaims);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/maritime-claims.json', file);
-
-                file = JSON.stringify(store.naturalResources);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/natural-resources.json', file);
-
-                file = JSON.stringify(store.terrains);
-                file = file.replace(/\\n/g, ' ');
-                fs.writeFileSync('dist/terrains.json', file);
+                console.log('Countries that failed to get parsed: [');
+                failedCountries.forEach(c => {
+                    console.log(c);
+                });
+                console.log(']');
+                saveFiles();
+                process.stdout.write('Did you want to retry scraping on those failed countries?');
+                process.stdin.once('data', function (data) {
+                    console.log(`You said: ${data.toString().trim()}`);
+                    process.exit(0);
+                });
+                process.stdin.resume();
             })
             .catch(err => {
-                fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+                console.error('Failed to resolve all promises:', err);
+                store.LOG_STREAM.write(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
             });
     })
     .catch(err => {
-        fs.appendFileSync(LOG_FILE_NAME, new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+        console.error('Failed to retrieve data from world-factbook:', err);
+        store.LOG_STREAM.write(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
     });

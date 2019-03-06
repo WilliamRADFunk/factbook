@@ -1,4 +1,6 @@
 const globalStore = {
+	LOG_FILE_NAME: '',
+	LOG_STREAM: null,
 	borderCountries: {},
 	borderMaps: {},
 	borders: {},

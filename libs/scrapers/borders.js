@@ -1,4 +1,3 @@
-const fs = require('fs');
 const getUuid = require('uuid-by-string');
 
 const consts = require('../constants/constants');
@@ -43,11 +42,11 @@ var getBorders = function(cheerioElem, country, countryId) {
             try {
                 brdMap.datatypeProperties[consts.CUSTOM.TOTAL_BORDER_COUNTRIES] = Number(num);
             } catch (err) {
-                fs.appendFileSync(store['LOG_FILE_NAME'], new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+                store.LOG_STREAM.write(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
             }
         }
         var brderContrs = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
-        if (brderContrs) {   
+        if (brderContrs) {
             const existBrdContrs = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_BORDER_COUNTRY]);
             brderContrs = brderContrs.substring(brderContrs.indexOf(':') + 1).replace(/\\n/g, '').trim();
             const brdrContrsArr = brderContrs.split(',').map(bc => bc.trim());
@@ -58,7 +57,7 @@ var getBorders = function(cheerioElem, country, countryId) {
                 const distance = bc.substring(endingNameIndex, endingNameIndex + endingDistIndex).trim();
                 const orderedContrs = [country, borderCountry].sort();
                 const bcId = consts.CUSTOM.INST_BORDER_COUNTRY + getUuid(`${orderedContrs[0]}-${orderedContrs[1]}`);
-                
+
                 if (!existBrdContrs.some(brco => brco[consts.CUSTOM.HAS_BORDER_COUNTRY].id.includes(bcId))) {
                     var objProp = {};
                     if (store.borderCountries[bcId]) {
@@ -69,12 +68,12 @@ var getBorders = function(cheerioElem, country, countryId) {
                             consts.CUSTOM.ONT_BORDER_COUNTRY,
                             bcId,
                             `Border Country Pair of ${orderedContrs[0]} and ${orderedContrs[1]}`);
-                        
+
                         objProp[consts.CUSTOM.HAS_BORDER_COUNTRY]
                             .datatypeProperties[consts.CUSTOM.BORDER_LENGTH] = distance;
                         objProp[consts.CUSTOM.HAS_BORDER_COUNTRY]
 							.datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'km';
-							
+
 						var borderCountryObj1 = {}
 						borderCountryObj1[consts.CUSTOM.HAS_COUNTRY] = {
 							id: store.countries[countryId].id,
@@ -91,7 +90,7 @@ var getBorders = function(cheerioElem, country, countryId) {
 							type: consts.CUSTOM.INST_COUNTRY
 						};
 						objProp[consts.CUSTOM.HAS_BORDER_COUNTRY].objectProperties.push(borderCountryObj2);
-						
+
 						store.borderCountries[bcId] = objProp[consts.CUSTOM.HAS_BORDER_COUNTRY];
 					}
 					store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_BORDER_COUNTRY, objProp));
