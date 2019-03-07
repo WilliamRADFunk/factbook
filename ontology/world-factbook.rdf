@@ -7,9 +7,8 @@
     <!ENTITY wfact "http://williamrobertfunk.com/ontologies/world-factbook#" >
     <!ENTITY pos "http://www.w3.org/2003/01/geo/wgs84_pos#">
     <!ENTITY asset "http://www.daedafusion.com/Asset#">
-    <!ENTITY dbpCountry="http://dbpedia.org/ontology/Country#">
+    <!ENTITY dbpCountry "http://dbpedia.org/ontology/Country#">
 ]>
-
 
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
