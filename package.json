@@ -30,6 +30,7 @@
     "request": "^2.34.0",
     "request-promise": "^4.2.4",
     "rimraf": "^2.6.3",
+    "simple-node-logger": "^18.12.22",
     "uuid-by-string": "^2.1.0"
   }
 }

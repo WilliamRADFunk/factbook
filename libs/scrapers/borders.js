@@ -42,7 +42,7 @@ var getBorders = function(cheerioElem, country, countryId) {
             try {
                 brdMap.datatypeProperties[consts.CUSTOM.TOTAL_BORDER_COUNTRIES] = Number(num);
             } catch (err) {
-                store.LOG_STREAM.write(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+                store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
             }
         }
         var brderContrs = cheerioElem(this).find('div.category_data.subfield.text').text().trim();

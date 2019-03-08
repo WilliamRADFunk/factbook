@@ -1,4 +1,3 @@
-const store = require('../constants/globalStore');
 const saveFile = require('./save-file.js');
 
 var saveFiles = function() {
@@ -17,8 +16,6 @@ var saveFiles = function() {
 	saveFile('maritime-claims', 'maritimeClaims');
 	saveFile('natural-resources', 'naturalResources');
 	saveFile('terrains', 'terrains');
-
-	store.LOG_STREAM.end('Log ends here...');
 };
 
 module.exports = saveFiles;

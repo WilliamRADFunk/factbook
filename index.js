@@ -47,7 +47,6 @@ var getCountryData = (country, url) => {
                 console.log('Data scrape for ', country, ' is complete');
             })
             .catch(err => {
-                console.error('Individual country query failed:', country, url);
                 failedCountries.push(country);
                 const errMsg = `${
                     new Date().toISOString()
@@ -58,13 +57,11 @@ var getCountryData = (country, url) => {
                 }\n${
                     err.toString().trim()
                 }\n\n`;
-                console.log('errMsg', errMsg);
-                store.LOG_STREAM.write(errMsg);
+                store.LOG_STREAM.error(errMsg);
             });
     } else {
         return new Promise(function(resolve) {
-            console.error('Bad Country or URL:', country, url);
-            store.LOG_STREAM.write(new Date().toISOString()
+            store.LOG_STREAM.error(new Date().toISOString()
                 + '\n\nFailure to scrape data for ' + country + ' at \n' + url + '\n\n');
             resolve(null);
         }).then(() => {});
@@ -121,11 +118,9 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 process.stdin.resume();
             })
             .catch(err => {
-                console.error('Failed to resolve all promises:', err);
-                store.LOG_STREAM.write(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+                store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
             });
     })
     .catch(err => {
-        console.error('Failed to retrieve data from world-factbook:', err);
-        store.LOG_STREAM.write(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+        store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
     });

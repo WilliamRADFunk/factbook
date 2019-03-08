@@ -4,8 +4,9 @@ const store = require('../constants/globalStore');
 const loadFile = require('./load-file.js');
 
 var loadFiles = function() {
-    const LOG_FILE_NAME = ('logs/log-' + new Date().toISOString() + '.txt').replace(':', '-');
-    store.LOG_STREAM = fs.createWriteStream(LOG_FILE_NAME, {'flag': 'w'});
+    const LOG_FILE_NAME = 'logs/log-' + ((new Date()).toISOString()).replace(':', '-').replace(':', '-').replace('.', '-').trim() + '.log';
+    console.log('Opening file name', LOG_FILE_NAME);
+    store.LOG_STREAM = require('simple-node-logger').createSimpleFileLogger(LOG_FILE_NAME);
     store.LOG_FILE_NAME = LOG_FILE_NAME;
 
     loadFile('countries', 'countries', true);
