@@ -34,6 +34,7 @@
     "uuid-by-string": "^2.1.0"
   },
   "devDependencies": {
+    "formatter-json": "^0.1.1",
     "ts-node": "^8.0.3",
     "typescript": "^3.3.3333"
   }
