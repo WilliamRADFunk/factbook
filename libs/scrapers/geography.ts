@@ -1,12 +1,12 @@
-const getUuid = require('uuid-by-string');
+import * as getUuid from 'uuid-by-string';
 
-const consts = require('../constants/constants');
-const store = require('../constants/globalStore');
-const getRelation = require('../utils/get-objectProperty.js');
-const entityMaker = require('../utils/entity-maker.js');
-const entityRefMaker = require('../utils/entity-ref-maker.js');
+import { consts } from '../constants/constants';
+import { store } from '../constants/globalStore';
+import { getRelation } from '../utils/get-objectProperty';
+import { entityMaker } from '../utils/entity-maker';
+import { entityRefMaker } from '../utils/entity-ref-maker';
 
-var getGeography = function(cheerioElem, country, countryId) {
+export function getGeography(cheerioElem, country, countryId) {
 	cheerioElem('#field-location').each(function() {
         var locGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
         if (locGrd) {
@@ -56,5 +56,3 @@ var getGeography = function(cheerioElem, country, countryId) {
         }
 	});
 };
-
-module.exports = getGeography;

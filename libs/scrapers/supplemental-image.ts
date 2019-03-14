@@ -1,12 +1,12 @@
-const getUuid = require('uuid-by-string');
-const htmlToText = require('html-to-text');
+import * as getUuid from 'uuid-by-string';
+import * as htmlToText from 'html-to-text';
 
-const consts = require('../constants/constants');
-const store = require('../constants/globalStore');
-const entityMaker = require('../utils/entity-maker.js');
-const entityRefMaker = require('../utils/entity-ref-maker.js');
+import { consts } from '../constants/constants';
+import { store } from '../constants/globalStore';
+import { entityMaker } from '../utils/entity-maker';
+import { entityRefMaker } from '../utils/entity-ref-maker';
 
-var getSupplementalImages = function(cheerioElem, country, countryId) {
+export function getSupplementalImages(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.item.photo-all').each(function() {
         let suppImages = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG]);
@@ -48,5 +48,3 @@ var getSupplementalImages = function(cheerioElem, country, countryId) {
         // TODO: scrape physical image from url and store it.
     });
 };
-
-module.exports = getSupplementalImages;

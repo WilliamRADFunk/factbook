@@ -1,7 +1,7 @@
-const consts = require('../constants/constants');
-const store = require('../constants/globalStore');
+import { consts } from '../constants/constants';
+import { store } from '../constants/globalStore';
 
-var getBackground = function(cheerioElem, country, countryId) {
+export function getBackground(cheerioElem, country, countryId) {
 	cheerioElem('#field-background').each(function() {
         var bckGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (bckGrd) {
@@ -9,5 +9,3 @@ var getBackground = function(cheerioElem, country, countryId) {
         }
     });
 };
-
-module.exports = getBackground;

@@ -1,4 +1,4 @@
-var hasProp = function(base, propName) {
+export function hasProp(base, propName) {
     if (!propName[0]) {
         return base;
     } else if (base && !base[propName[0]]) {
@@ -6,5 +6,3 @@ var hasProp = function(base, propName) {
     }
     return hasProp(base[propName[0]], propName.slice(1));
 };
-
-module.exports = hasProp;

@@ -1,11 +1,8 @@
-const fs = require('graceful-fs');
+import { store } from '../constants/globalStore';
+import { loadFile } from './load-file';
 
-const store = require('../constants/globalStore');
-const loadFile = require('./load-file.js');
-
-var loadFiles = function() {
+export function loadFiles() {
     const LOG_FILE_NAME = 'logs/log-' + ((new Date()).toISOString()).replace(':', '-').replace(':', '-').replace('.', '-').trim() + '.log';
-    console.log('Opening file name', LOG_FILE_NAME);
     store.LOG_STREAM = require('simple-node-logger').createSimpleFileLogger(LOG_FILE_NAME);
     store.LOG_FILE_NAME = LOG_FILE_NAME;
 
@@ -25,5 +22,3 @@ var loadFiles = function() {
     loadFile('locations', 'locations');
     loadFile('terrains', 'terrains');
 };
-
-module.exports = loadFiles;

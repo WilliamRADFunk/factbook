@@ -1,11 +1,11 @@
-const getUuid = require('uuid-by-string');
+import * as getUuid from 'uuid-by-string';
 
-const consts = require('../../constants/constants');
-const store = require('../../constants/globalStore');
-const entityMaker = require('../../utils/entity-maker.js');
-const entityRefMaker = require('../../utils/entity-ref-maker.js');
+import { consts } from '../../constants/constants';
+import { store } from '../../constants/globalStore';
+import { entityMaker } from '../../utils/entity-maker';
+import { entityRefMaker } from '../../utils/entity-ref-maker';
 
-const parsedSingleLine = function(origParams, dataId, hasProp, instProp, baseOntProp, storeKey, dataPropName, label, delimiter) {
+export function parsedSingleLine(origParams, dataId, hasProp, instProp, baseOntProp, storeKey, dataPropName, label, delimiter) {
 	let objectProperties = store.countries[origParams.countryId].objectProperties;
 	let prevHasList = objectProperties.filter(rel => rel[consts.CUSTOM[hasProp]]);
 	origParams.cheerioElem(dataId).each(function() {
@@ -37,5 +37,3 @@ const parsedSingleLine = function(origParams, dataId, hasProp, instProp, baseOnt
 		}
 	});
 };
-
-module.exports = parsedSingleLine;

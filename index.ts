@@ -1,13 +1,13 @@
-const rp = require('request-promise');
-const cheerio = require('cheerio');
+import * as rp from 'request-promise';
+import * as cheerio from 'cheerio';
 
-const consts = require('./libs/constants/constants');
-const store = require('./libs/constants/globalStore');
-const dataScrapers = require('./libs/scrapers/data-getters');
-const entityMaker = require('./libs/utils/entity-maker.js');
-const countryToId = require('./libs/utils/country-to-id.js');
-const loadFiles = require('./libs/utils/load-files.js');
-const saveFiles = require('./libs/utils/save-files.js');
+import { consts } from './libs/constants/constants';
+import { store } from './libs/constants/globalStore';
+import { dataScrapers } from './libs/scrapers/data-getters';
+import { entityMaker } from './libs/utils/entity-maker';
+import { countryToId } from './libs/utils/country-to-id';
+import { loadFiles } from './libs/utils/load-files';
+import { saveFiles } from './libs/utils/save-files';
 
 const failedCountries = [];
 
@@ -79,6 +79,40 @@ var getCountriesData = () => {
     return countryDataPromises;
 };
 
+var promisesResolutionForCountries = () => {
+    store.countriesInList.sort();
+    let promises = getCountriesData();
+    Promise.all(promises)
+        .then(function() {
+            if (failedCountries.length) {
+                console.log('Countries that failed to get parsed: [');
+                failedCountries.forEach(c => {
+                    console.log(c);
+                });
+                console.log(']');
+                process.stdout.write('Did you want to retry scraping on those failed countries?');
+                process.stdin.once('data', function (data) {
+                    console.log(`You said: ${data.toString().trim()}`);
+                    if (data.toString().trim().toLowerCase().includes('y')) {
+                        store.countriesInList = failedCountries.slice();
+                        failedCountries.length = 0;
+                        promisesResolutionForCountries();
+                    } else {
+                        saveFiles();
+                        process.exit(0);
+                    }
+                });
+                process.stdin.resume();
+            } else {
+                saveFiles();
+                process.exit(0);
+            }
+        })
+        .catch(err => {
+            store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+        });
+}
+
 rp('https://www.cia.gov/library/publications/the-world-factbook/')
     .then((html) => {
         let $ = cheerio.load(html);
@@ -100,26 +134,7 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                 };
             }
         });
-        store.countriesInList.sort();
-        let promises = getCountriesData();
-        Promise.all(promises)
-            .then(function() {
-                console.log('Countries that failed to get parsed: [');
-                failedCountries.forEach(c => {
-                    console.log(c);
-                });
-                console.log(']');
-                saveFiles();
-                process.stdout.write('Did you want to retry scraping on those failed countries?');
-                process.stdin.once('data', function (data) {
-                    console.log(`You said: ${data.toString().trim()}`);
-                    process.exit(0);
-                });
-                process.stdin.resume();
-            })
-            .catch(err => {
-                store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
-            });
+        promisesResolutionForCountries();
     })
     .catch(err => {
         store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');

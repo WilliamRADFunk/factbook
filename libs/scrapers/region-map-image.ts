@@ -1,12 +1,12 @@
-const getUuid = require('uuid-by-string');
+import * as getUuid from 'uuid-by-string';
 
-const consts = require('../constants/constants');
-const store = require('../constants/globalStore');
-const getRelation = require('../utils/get-objectProperty.js');
-const entityMaker = require('../utils/entity-maker.js');
-const entityRefMaker = require('../utils/entity-ref-maker.js');
+import { consts } from '../constants/constants';
+import { store } from '../constants/globalStore';
+import { getRelation } from '../utils/get-objectProperty';
+import { entityMaker } from '../utils/entity-maker';
+import { entityRefMaker } from '../utils/entity-ref-maker';
 
-var getRegionMapImg = function(cheerioElem, country, countryId) {
+export function getRegionMapImg(cheerioElem, country, countryId) {
     let objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.mapBox').each(function() {
         let map = getRelation(objectProperties, consts.CUSTOM.HAS_REGION_MAP);
@@ -39,5 +39,3 @@ var getRegionMapImg = function(cheerioElem, country, countryId) {
         // TODO: scrape physical image from url and store it.
     });
 };
-
-module.exports = getRegionMapImg;

@@ -1,8 +1,8 @@
-const fs = require('graceful-fs');
+import * as fs from 'graceful-fs';
 
-const store = require('../constants/globalStore');
+import { store } from '../constants/globalStore';
 
-var loadFile = function(fileName, storeName, isCountry) {
+export function loadFile(fileName: string, storeName: string, isCountry?: boolean) {
     var fileData;
     // If file exists, great. Otherwise make a blank one for later.
     try {
@@ -19,5 +19,3 @@ var loadFile = function(fileName, storeName, isCountry) {
         }
     }
 };
-
-module.exports = loadFile;

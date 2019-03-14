@@ -1,12 +1,12 @@
-const getUuid = require('uuid-by-string');
+import * as getUuid from 'uuid-by-string';
 
-const consts = require('../constants/constants');
-const store = require('../constants/globalStore');
-const getRelation = require('../utils/get-objectProperty.js');
-const entityMaker = require('../utils/entity-maker.js');
-const entityRefMaker = require('../utils/entity-ref-maker.js');
+import { consts } from '../constants/constants';
+import { store } from '../constants/globalStore';
+import { getRelation } from '../utils/get-objectProperty';
+import { entityMaker } from '../utils/entity-maker';
+import { entityRefMaker } from '../utils/entity-ref-maker';
 
-var getClimate = function(cheerioElem, country, countryId) {
+export function getClimate(cheerioElem, country, countryId) {
     var objectProperties = store.countries[countryId].objectProperties;
 	var map = getRelation(objectProperties, consts.CUSTOM.HAS_CLIMATE);
 	if (!map) {
@@ -30,7 +30,7 @@ var getClimate = function(cheerioElem, country, countryId) {
 	var zone;
 	if (!mapZone) {
 		var czId = consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country);
-		var zone = {};
+		var zone: any = {};
 		if (store.climateZones[czId]) {
 			zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = store.climateZones[czId];
 		} else {
@@ -59,5 +59,3 @@ var getClimate = function(cheerioElem, country, countryId) {
         }
 	});
 };
-
-module.exports = getClimate;

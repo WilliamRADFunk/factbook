@@ -1,6 +1,6 @@
-const saveFile = require('./save-file.js');
+import { saveFile } from './save-file';
 
-var saveFiles = function() {
+export function saveFiles() {
 	saveFile('countries', 'countries');
 	saveFile('border-countries', 'borderCountries');
 	saveFile('border-maps', 'borderMaps');
@@ -17,5 +17,3 @@ var saveFiles = function() {
 	saveFile('natural-resources', 'naturalResources');
 	saveFile('terrains', 'terrains');
 };
-
-module.exports = saveFiles;

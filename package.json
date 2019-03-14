@@ -6,7 +6,7 @@
   "scripts": {
     "clean:dist": "rimraf dist/*.json",
     "clean:logs": "rimraf logs/*log*",
-    "scrape": "node index.js",
+    "scrape": "ts-node index.ts",
     "start": "run-s clean:logs clean:dist scrape",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,5 +32,9 @@
     "rimraf": "^2.6.3",
     "simple-node-logger": "^18.12.22",
     "uuid-by-string": "^2.1.0"
+  },
+  "devDependencies": {
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3333"
   }
 }

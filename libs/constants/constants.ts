@@ -182,7 +182,9 @@ const CUSTOM = {
 	TOTAL_BORDER
 };
 
-module.exports = {
-	WGS84_POS,
-	CUSTOM
+class Constants {
+	WGS84_POS = WGS84_POS;
+	CUSTOM = CUSTOM;
 };
+
+export const consts = new Constants();

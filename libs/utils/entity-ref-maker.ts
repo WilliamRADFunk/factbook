@@ -1,4 +1,4 @@
-var entityRefMaker = function(predicateURI, entity) {
+export function entityRefMaker(predicateURI, entity) {
 	var objectProp = {};
 	objectProp[predicateURI] = {
 		id: entity[predicateURI].id,
@@ -7,5 +7,3 @@ var entityRefMaker = function(predicateURI, entity) {
 	};
 	return objectProp;
 };
-
-module.exports = entityRefMaker;

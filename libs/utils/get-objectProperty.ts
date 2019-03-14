@@ -1,6 +1,6 @@
-const hasProp = require('./has-prop');
+import { hasProp } from './has-prop';
 
-module.exports = function(objectPropertyList, propName) {
+export function getRelation(objectPropertyList, propName) {
     let propNameChain = Array.isArray(propName) ? propName : [propName];
     let rel = objectPropertyList.find(objectProperty => { return !!hasProp(objectProperty, propNameChain); });
     return rel && rel[propNameChain[0]];

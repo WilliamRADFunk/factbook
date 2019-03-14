@@ -1,6 +1,6 @@
-const parsedSingleLine = require('./scraper-forms/parsed-single-line.js');
+import { parsedSingleLine } from './scraper-forms/parsed-single-line';
 
-var getNaturalResources = function(cheerioElem, country, countryId) {
+export function getNaturalResources(cheerioElem, country, countryId) {
 	let origParams = {
 		cheerioElem,
 		country,
@@ -17,5 +17,3 @@ var getNaturalResources = function(cheerioElem, country, countryId) {
 		'Natural Resource',
 		',');
 };
-
-module.exports = getNaturalResources;

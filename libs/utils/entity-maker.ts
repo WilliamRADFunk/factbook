@@ -1,4 +1,4 @@
-var entityMaker = function(predicateURI, typeURI, instId, label) {
+export function entityMaker(predicateURI, typeURI, instId, label) {
 	var objectProp = {};
 	objectProp[predicateURI] = {
 		id: instId,
@@ -9,5 +9,3 @@ var entityMaker = function(predicateURI, typeURI, instId, label) {
 	};
 	return objectProp;
 };
-
-module.exports = entityMaker;
