@@ -7,10 +7,10 @@ import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getMaritimeClaims(cheerioElem, country, countryId) {
-	let objectProperties = store.countries[countryId].objectProperties;
+	const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_MARITIME_CLAIM);
-	var mcId = consts.CUSTOM.INST_MARITIME_CLAIM + getUuid(country);
-	var objectProp = {};
+	const mcId = consts.CUSTOM.INST_MARITIME_CLAIM + getUuid(country);
+	let objectProp = {};
 	if (!map) {
 		if (store.maritimeClaims[mcId]) {
 			objectProp[consts.CUSTOM.HAS_MARITIME_CLAIM] = store.maritimeClaims[mcId];
@@ -26,8 +26,8 @@ export function getMaritimeClaims(cheerioElem, country, countryId) {
 		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_MARITIME_CLAIM, objectProp));
 	}
   cheerioElem('#field-maritime-claims > div.category_data.subfield.numeric').each(function() {
-		let seaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
-		let seaData = cheerioElem(this).find('span.subfield-number').text().trim();
+		const seaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
+		const seaData = cheerioElem(this).find('span.subfield-number').text().trim();
 		switch (seaSwitch) {
 			case 'territorial sea:':
 				map.datatypeProperties[consts.CUSTOM.TERRITORIAL_SEA] = seaData.replace(/,|[a-z]/g, '').trim();

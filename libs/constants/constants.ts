@@ -182,9 +182,13 @@ const CUSTOM = {
 	TOTAL_BORDER
 };
 
+const RDFS = {
+	label: 'http://www.w3.org/2000/01/rdf-schema#label'
+};
 class Constants {
 	WGS84_POS = WGS84_POS;
 	CUSTOM = CUSTOM;
+	RDFS = RDFS;
 };
 
 export const consts = new Constants();

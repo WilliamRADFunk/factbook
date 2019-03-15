@@ -6,18 +6,18 @@ import { entityMaker } from '../../utils/entity-maker';
 import { entityRefMaker } from '../../utils/entity-ref-maker';
 
 export function parsedSingleLine(origParams, dataId, hasProp, instProp, baseOntProp, storeKey, dataPropName, label, delimiter) {
-	let objectProperties = store.countries[origParams.countryId].objectProperties;
-	let prevHasList = objectProperties.filter(rel => rel[consts.CUSTOM[hasProp]]);
+	const objectProperties = store.countries[origParams.countryId].objectProperties;
+	const prevHasList = objectProperties.filter(rel => rel[consts.CUSTOM[hasProp]]);
 	origParams.cheerioElem(dataId).each(function() {
-		var rawScrapedList = origParams.cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
+		const rawScrapedList = origParams.cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (rawScrapedList) {
 			const splitList = rawScrapedList.split(delimiter).map(x => x.trim());
 			splitList.forEach(resource => {
 				const dataPropItem = resource.trim();
-				var guid = consts.CUSTOM[instProp] + getUuid(dataPropItem);
-				const hasPropAlready = prevHasList.some(p => p[consts.CUSTOM[hasProp]].id.includes(guid));
+				const guid = consts.CUSTOM[instProp] + getUuid(dataPropItem);
+				const hasPropAlready = prevHasList.some(p => p[consts.CUSTOM[hasProp]]['@id'].includes(guid));
 				if (dataPropItem && !hasPropAlready) {
-					var objectProp = {};
+					let objectProp = {};
 					if (store[storeKey][guid]) {
 						objectProp[consts.CUSTOM[hasProp]] = store[storeKey][guid];
 					} else {

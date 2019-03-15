@@ -13,12 +13,12 @@ const failedCountries = [];
 
 loadFiles();
 
-var getCountryData = (country, url) => {
+const getCountryData = (country, url) => {
     if (country && url) {
         return rp(url, { timeout: consts.CUSTOM.DATA_REQUEST_TIMEOUT })
             .then((html) => {
-                let $ = cheerio.load(html);
-                var countryId = countryToId(country);
+                const $ = cheerio.load(html);
+                const countryId = countryToId(country);
 				dataScrapers.getFlag($, country, countryId);
                 // console.log('getFlag for ', country);
 				dataScrapers.getBackground($, country, countryId);
@@ -68,20 +68,20 @@ var getCountryData = (country, url) => {
     }
 };
 
-var getCountriesData = () => {
-    let countryDataPromises = [];
-    let countries = store.countriesInList.slice();
+const getCountriesData = () => {
+    const countryDataPromises = [];
+    const countries = store.countriesInList.slice();
     countries.forEach(country => {
-        let abbrev = store.countries[countryToId(country)].metaScrapeData['data-place-code'];
-        let url = 'https://www.cia.gov/library/publications/the-world-factbook/geos/' + abbrev + '.html';
+        const abbrev = store.countries[countryToId(country)].metaScrapeData['data-place-code'];
+        const url = 'https://www.cia.gov/library/publications/the-world-factbook/geos/' + abbrev + '.html';
         countryDataPromises.push(getCountryData(country, url));
     });
     return countryDataPromises;
 };
 
-var promisesResolutionForCountries = () => {
+const promisesResolutionForCountries = () => {
     store.countriesInList.sort();
-    let promises = getCountriesData();
+    const promises = getCountriesData();
     Promise.all(promises)
         .then(function() {
             if (failedCountries.length) {
@@ -115,11 +115,11 @@ var promisesResolutionForCountries = () => {
 
 rp('https://www.cia.gov/library/publications/the-world-factbook/')
     .then((html) => {
-        let $ = cheerio.load(html);
+        const $ = cheerio.load(html);
         $('#search-place option').each(function() {
-            var a = $(this).prev()
-            var countryName = a.text().replace(/\\n/g, ' ').trim();
-            var id = countryToId(countryName);
+            const a = $(this).prev()
+            const countryName = a.text().replace(/\\n/g, ' ').trim();
+            const id = countryToId(countryName);
             if (!countryName || store.countries[id] || consts.CUSTOM.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
                 // Either already have it, or it's in the invalid list.
             } else {

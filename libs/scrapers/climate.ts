@@ -7,11 +7,11 @@ import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getClimate(cheerioElem, country, countryId) {
-    var objectProperties = store.countries[countryId].objectProperties;
-	var map = getRelation(objectProperties, consts.CUSTOM.HAS_CLIMATE);
+    const objectProperties = store.countries[countryId].objectProperties;
+	let map = getRelation(objectProperties, consts.CUSTOM.HAS_CLIMATE);
 	if (!map) {
-		var cId = consts.CUSTOM.INST_CLIMATE + getUuid(country);
-		var objectProp = {};
+		const cId = consts.CUSTOM.INST_CLIMATE + getUuid(country);
+		let objectProp = {};
 		if (store.climates[cId]) {
 			objectProp[consts.CUSTOM.HAS_CLIMATE] = store.climates[cId];
 		} else {
@@ -26,15 +26,15 @@ export function getClimate(cheerioElem, country, countryId) {
 		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_CLIMATE, objectProp));
 	}
 
-	var mapZone = getRelation(map.objectProperties, consts.CUSTOM.HAS_CLIMATE_ZONE);
-	var zone;
+	let mapZone = getRelation(map.objectProperties, consts.CUSTOM.HAS_CLIMATE_ZONE);
+	let zone;
 	if (!mapZone) {
-		var czId = consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country);
-		var zone: any = {};
+		const czId = consts.CUSTOM.INST_CLIMATE_ZONE + getUuid(country);
+		zone = {};
 		if (store.climateZones[czId]) {
 			zone[consts.CUSTOM.HAS_CLIMATE_ZONE] = store.climateZones[czId];
 		} else {
-			var attr = {};
+			const attr = {};
 			attr[consts.CUSTOM.CLIMATE_ZONE_NAME] = 'N/A';
 			attr[consts.CUSTOM.CLIMATE_ZONE_DESCRIPTION] = 'N/A';
 
@@ -51,9 +51,9 @@ export function getClimate(cheerioElem, country, countryId) {
 	map.objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_CLIMATE_ZONE, zone));
 
 	cheerioElem('#field-climate').each(function() {
-        var climGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim()
+        const climGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim()
         if (climGrd) {
-			var tempSplit = climGrd.replace(/\\n/g, '').trim().split(';');
+			const tempSplit = climGrd.replace(/\\n/g, '').trim().split(';');
 			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_NAME] = tempSplit[0].trim();
 			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_DESCRIPTION] = tempSplit.slice(1).join(';').trim();
         }

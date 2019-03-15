@@ -7,24 +7,24 @@ import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getSupplementalImages(cheerioElem, country, countryId) {
-    let objectProperties = store.countries[countryId].objectProperties;
+    const objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.item.photo-all').each(function() {
-        let suppImages = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG]);
+        const suppImages = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG]);
 
-		var a = cheerioElem(this).find('img').attr('src');
-		var b = cheerioElem(this).find('img').attr('alt');
-		var c = cheerioElem(this).find(cheerioElem('div.carousel-photo-info .photoInfo .flag_description_text'));
-		var imageProps = [];
+		const a = cheerioElem(this).find('img').attr('src');
+		let b = cheerioElem(this).find('img').attr('alt');
+		const c = cheerioElem(this).find(cheerioElem('div.carousel-photo-info .photoInfo .flag_description_text'));
+		const imageProps = [];
 		c.each(function() { imageProps.push(cheerioElem(this).text().trim()); });
 		b = b && htmlToText.fromString(b);
-		var imgId, suppImgUrl;
+		let imgId, suppImgUrl;
         if (a && a.replace('../', '')) {
-			var cleanSrc = a.replace('../', '');
+			const cleanSrc = a.replace('../', '');
 			imgId = consts.CUSTOM.INST_IMAGE + getUuid(cleanSrc);
             suppImgUrl = consts.CUSTOM.URL_BASE + cleanSrc;
 		}
-        if (suppImgUrl && !suppImages.some(img => img[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG].id.includes(imgId))) {
-			var objectProp = {};
+        if (suppImgUrl && !suppImages.some(img => img[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG]['@id'].includes(imgId))) {
+			let objectProp = {};
 			if (store.images[imgId]) {
 				objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG] = store.images[imgId];
 			} else {
@@ -37,7 +37,7 @@ export function getSupplementalImages(cheerioElem, country, countryId) {
 			}
 			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_SUPPLEMENTAL_IMG, objectProp));
 
-			var datatypeProp = {};
+			const datatypeProp = {};
 			datatypeProp[consts.CUSTOM.LOCATION_URI] = suppImgUrl;
 			datatypeProp[consts.CUSTOM.CONTENT_DESCRIPTION] = b || null;
 			datatypeProp[consts.CUSTOM.IMAGE_DIMENSIONS] = imageProps[0] || 'N/A';

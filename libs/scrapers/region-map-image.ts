@@ -7,11 +7,11 @@ import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getRegionMapImg(cheerioElem, country, countryId) {
-    let objectProperties = store.countries[countryId].objectProperties;
+    const objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.mapBox').each(function() {
         let map = getRelation(objectProperties, consts.CUSTOM.HAS_REGION_MAP);
-        let rmId = consts.CUSTOM.INST_REGION_MAP + getUuid(country);
-        var objectProp = {};
+        const rmId = consts.CUSTOM.INST_REGION_MAP + getUuid(country);
+        let objectProp = {};
         if (!map) {
             if (store.regionMaps[rmId]) {
                 objectProp[consts.CUSTOM.HAS_REGION_MAP] = store.regionMaps[rmId];
@@ -23,13 +23,13 @@ export function getRegionMapImg(cheerioElem, country, countryId) {
                     'Region Map');
             }
         }
-        var a = cheerioElem(this).find('img').attr('src');
-        var regionMapImgUrl;
+        const a = cheerioElem(this).find('img').attr('src');
+        let regionMapImgUrl;
         if (a && a.replace('../', '')) {
             regionMapImgUrl = consts.CUSTOM.URL_BASE + a.replace('../', '');
             if (regionMapImgUrl.includes('locator-map')) { }
             if (regionMapImgUrl && !regionMapImgUrl.includes('locator-map')) {
-                var datatypeProp = {};
+                const datatypeProp = {};
                 datatypeProp[consts.CUSTOM.LOCATION_URI] = regionMapImgUrl;
                 objectProp[consts.CUSTOM.HAS_REGION_MAP].datatypeProperties = datatypeProp;
                 store.regionMaps[rmId] = objectProp[consts.CUSTOM.HAS_REGION_MAP];

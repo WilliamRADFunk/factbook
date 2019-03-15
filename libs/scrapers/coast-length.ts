@@ -7,10 +7,10 @@ import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getCoastLength(cheerioElem, country, countryId) {
-    let objectProperties = store.countries[countryId].objectProperties;
+    const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_COAST);
-	var clId = consts.CUSTOM.INST_COAST + getUuid(country);
-	var objectProp = {};
+	const clId = consts.CUSTOM.INST_COAST + getUuid(country);
+	let objectProp = {};
 	if (!map) {
 		if (store.coasts[clId]) {
 			objectProp[consts.CUSTOM.HAS_COAST] = store.coasts[clId];
@@ -26,9 +26,9 @@ export function getCoastLength(cheerioElem, country, countryId) {
 		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_COAST, objectProp));
 	}
 	cheerioElem('#field-coastline').each(function() {
-        var coastGrd = cheerioElem(this).find('div.category_data.subfield.numeric').text().trim()
+        const coastGrd = cheerioElem(this).find('div.category_data.subfield.numeric').text().trim()
         if (coastGrd) {
-			let coastGrdSplit = coastGrd.split('km');
+			const coastGrdSplit = coastGrd.split('km');
 			map.datatypeProperties[consts.CUSTOM.ONT_LENGTH] = coastGrdSplit[0].trim();
 			map.datatypeProperties[consts.CUSTOM.ONT_LENGTH_MODIFIER] = coastGrdSplit.slice(1).join('km').replace(/\\n/g, '').trim() || null;
         }

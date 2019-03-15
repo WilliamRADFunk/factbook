@@ -7,10 +7,10 @@ import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getArea(cheerioElem, country, countryId) {
-    let objectProperties = store.countries[countryId].objectProperties;
+    const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_DOMAIN_AREA);
-	var daId = consts.CUSTOM.INST_DOMAIN_AREA + getUuid(country);
-	var objectProp = {};
+	const daId = consts.CUSTOM.INST_DOMAIN_AREA + getUuid(country);
+	let objectProp = {};
 	if (!map) {
 		if (store.domainAreas[daId]) {
 			objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = store.domainAreas[daId];
@@ -26,8 +26,8 @@ export function getArea(cheerioElem, country, countryId) {
 		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_DOMAIN_AREA, objectProp));
 	}
 	cheerioElem('#field-area > div.category_data.subfield.numeric').each(function() {
-		let areaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
-		let areaData = cheerioElem(this).find('span.subfield-number').text().trim();
+		const areaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
+		const areaData = cheerioElem(this).find('span.subfield-number').text().trim();
 		switch (areaSwitch) {
 			case 'total:':
 				map.datatypeProperties[consts.CUSTOM.ONT_TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
@@ -41,7 +41,7 @@ export function getArea(cheerioElem, country, countryId) {
 		}
     });
 	cheerioElem('#field-area > div > span.category_data').each(function() {
-        let areaRank = cheerioElem(this).find('a').text().trim();
+        const areaRank = cheerioElem(this).find('a').text().trim();
 		if (areaRank) {
 			map.datatypeProperties[consts.CUSTOM.ONT_AREA_RANK] = areaRank;
 		}
@@ -49,7 +49,7 @@ export function getArea(cheerioElem, country, countryId) {
 	});
 	map.datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'sq km';
 	cheerioElem('#field-area-comparative').each(function() {
-        var areaGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
+        const areaGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (areaGrd) {
             map.datatypeProperties[consts.CUSTOM.ONT_AREA_COMPARATIVE] = areaGrd;
         }

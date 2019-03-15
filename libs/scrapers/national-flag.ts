@@ -7,10 +7,10 @@ import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getFlag(cheerioElem, country, countryId) {
-    let objectProperties = store.countries[countryId].objectProperties;
+    const objectProperties = store.countries[countryId].objectProperties;
 	let flag = getRelation(objectProperties, consts.CUSTOM.HAS_FLAG);
-	var fId = consts.CUSTOM.INST_FLAG + getUuid(country);
-	var objectProp = {};
+	const fId = consts.CUSTOM.INST_FLAG + getUuid(country);
+	let objectProp = {};
 	if (!flag) {
 		if (store.nationalFlags[fId]) {
 			objectProp[consts.CUSTOM.HAS_FLAG] = store.nationalFlags[fId];
@@ -26,8 +26,8 @@ export function getFlag(cheerioElem, country, countryId) {
 		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_FLAG, objectProp));
 	}
     cheerioElem('div.flagBox').each(function() {
-        var a = cheerioElem(this).find('img').attr('src');
-        var flagImgUrl;
+        const a = cheerioElem(this).find('img').attr('src');
+        let flagImgUrl;
         if (a && a.replace('../', '')) {
             flagImgUrl = consts.CUSTOM.URL_BASE + a.replace('../', '');
 		}
@@ -37,7 +37,7 @@ export function getFlag(cheerioElem, country, countryId) {
         // TODO: scrape physical image from url and store it.
     });
     cheerioElem('div.modalFlagDesc').each(function() {
-        var b = cheerioElem(this).find('div.photogallery_captiontext').text().trim();
+        const b = cheerioElem(this).find('div.photogallery_captiontext').text().trim();
         if (!b) { return; }
 
         if (flag) {

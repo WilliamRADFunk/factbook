@@ -1,11 +1,13 @@
+import { consts } from '../../libs/constants/constants';
+
 export function entityMaker(predicateURI, typeURI, instId, label) {
-	var objectProp = {};
+	const objectProp = {};
 	objectProp[predicateURI] = {
-		id: instId,
-		label: label,
-		type: typeURI,
+		'@id': instId,
+		'@type': typeURI,
 		datatypeProperties: {},
 		objectProperties: []
 	};
+	objectProp[predicateURI][consts.RDFS.label] = label;
 	return objectProp;
 };

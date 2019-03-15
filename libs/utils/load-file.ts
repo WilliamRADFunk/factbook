@@ -3,7 +3,7 @@ import * as fs from 'graceful-fs';
 import { store } from '../constants/globalStore';
 
 export function loadFile(fileName: string, storeName: string, isCountry?: boolean) {
-    var fileData;
+    let fileData;
     // If file exists, great. Otherwise make a blank one for later.
     try {
         fileData = fs.readFileSync(`dist/${fileName}.json`);
@@ -12,7 +12,7 @@ export function loadFile(fileName: string, storeName: string, isCountry?: boolea
     }
     // If preexisting file data, use it.
     if (fileData) {
-        var file = JSON.parse(fileData);
+        const file = JSON.parse(fileData);
         store[storeName] = file[storeName];
         if (isCountry) {
             store.countriesInList = file.countriesInList;
