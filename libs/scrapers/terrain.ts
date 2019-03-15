@@ -1,6 +1,13 @@
 import { parsedSingleLine } from './scraper-forms/parsed-single-line';
 
 export function getTerrains(cheerioElem, country, countryId) {
+    let bailOut = true;
+    cheerioElem('#field-terrain').each(function() {
+        bailOut = false;
+    });
+    if (bailOut) {
+        return;
+    }
 	let origParams = {
 		cheerioElem,
 		country,

@@ -11,21 +11,28 @@ export function getMaritimeClaims(cheerioElem, country, countryId) {
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_MARITIME_CLAIM);
 	const mcId = consts.CUSTOM.INST_MARITIME_CLAIM + getUuid(country);
 	let objectProp = {};
-	if (!map) {
-		if (store.maritimeClaims[mcId]) {
-			objectProp[consts.CUSTOM.HAS_MARITIME_CLAIM] = store.maritimeClaims[mcId];
-		} else {
-			objectProp = entityMaker(
-				consts.CUSTOM.HAS_MARITIME_CLAIM,
-				consts.CUSTOM.ONT_MARITIME_CLAIM,
-				mcId,
-				`Maritime Claim for ${country}`);
-			store.maritimeClaims[mcId] = objectProp[consts.CUSTOM.HAS_MARITIME_CLAIM];
+    let bailOut = true;
+    cheerioElem('#field-maritime-claims').each(function() {
+		if (!map) {
+			if (store.maritimeClaims[mcId]) {
+				objectProp[consts.CUSTOM.HAS_MARITIME_CLAIM] = store.maritimeClaims[mcId];
+			} else {
+				objectProp = entityMaker(
+					consts.CUSTOM.HAS_MARITIME_CLAIM,
+					consts.CUSTOM.ONT_MARITIME_CLAIM,
+					mcId,
+					`Maritime Claim for ${country}`);
+				store.maritimeClaims[mcId] = objectProp[consts.CUSTOM.HAS_MARITIME_CLAIM];
+			}
+			map = objectProp[consts.CUSTOM.HAS_MARITIME_CLAIM];
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_MARITIME_CLAIM, objectProp));
 		}
-		map = objectProp[consts.CUSTOM.HAS_MARITIME_CLAIM];
-		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_MARITIME_CLAIM, objectProp));
-	}
-  cheerioElem('#field-maritime-claims > div.category_data.subfield.numeric').each(function() {
+        bailOut = false;
+    });
+    if (bailOut) {
+        return;
+    }
+	cheerioElem('#field-maritime-claims > div.category_data.subfield.numeric').each(function() {
 		const seaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
 		const seaData = cheerioElem(this).find('span.subfield-number').text().trim();
 		switch (seaSwitch) {

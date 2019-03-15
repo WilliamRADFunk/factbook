@@ -11,20 +11,27 @@ export function getFlag(cheerioElem, country, countryId) {
 	let flag = getRelation(objectProperties, consts.CUSTOM.HAS_FLAG);
 	const fId = consts.CUSTOM.INST_FLAG + getUuid(country);
 	let objectProp = {};
-	if (!flag) {
-		if (store.nationalFlags[fId]) {
-			objectProp[consts.CUSTOM.HAS_FLAG] = store.nationalFlags[fId];
-		} else {
-			objectProp = entityMaker(
-				consts.CUSTOM.HAS_FLAG,
-				consts.CUSTOM.ONT_FLAG,
-				fId,
-				`National Flag of ${country}`);
-			store.nationalFlags[fId] = objectProp[consts.CUSTOM.HAS_FLAG];
+    let bailOut = true;
+    cheerioElem('div.flagBox').each(function() {
+		if (!flag) {
+			if (store.nationalFlags[fId]) {
+				objectProp[consts.CUSTOM.HAS_FLAG] = store.nationalFlags[fId];
+			} else {
+				objectProp = entityMaker(
+					consts.CUSTOM.HAS_FLAG,
+					consts.CUSTOM.ONT_FLAG,
+					fId,
+					`National Flag of ${country}`);
+				store.nationalFlags[fId] = objectProp[consts.CUSTOM.HAS_FLAG];
+			}
+			flag = objectProp[consts.CUSTOM.HAS_FLAG];
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_FLAG, objectProp));
 		}
-		flag = objectProp[consts.CUSTOM.HAS_FLAG];
-		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_FLAG, objectProp));
-	}
+        bailOut = false;
+    });
+    if (bailOut) {
+        return;
+    }
     cheerioElem('div.flagBox').each(function() {
         const a = cheerioElem(this).find('img').attr('src');
         let flagImgUrl;

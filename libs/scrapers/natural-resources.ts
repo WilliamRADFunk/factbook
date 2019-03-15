@@ -1,6 +1,13 @@
 import { parsedSingleLine } from './scraper-forms/parsed-single-line';
 
 export function getNaturalResources(cheerioElem, country, countryId) {
+    let bailOut = true;
+    cheerioElem('#field-natural-resources').each(function() {
+        bailOut = false;
+    });
+    if (bailOut) {
+        return;
+    }
 	let origParams = {
 		cheerioElem,
 		country,

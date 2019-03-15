@@ -11,20 +11,27 @@ export function getArea(cheerioElem, country, countryId) {
 	let map = getRelation(objectProperties, consts.CUSTOM.HAS_DOMAIN_AREA);
 	const daId = consts.CUSTOM.INST_DOMAIN_AREA + getUuid(country);
 	let objectProp = {};
-	if (!map) {
-		if (store.domainAreas[daId]) {
-			objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = store.domainAreas[daId];
-		} else {
-			objectProp = entityMaker(
-				consts.CUSTOM.HAS_DOMAIN_AREA,
-				consts.CUSTOM.ONT_DOMAIN_AREA,
-				daId,
-				`Area of Domain for ${country}`);
-			store.domainAreas[daId] = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
+    let bailOut = true;
+    cheerioElem('#field-area').each(function() {
+		if (!map) {
+			if (store.domainAreas[daId]) {
+				objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = store.domainAreas[daId];
+			} else {
+				objectProp = entityMaker(
+					consts.CUSTOM.HAS_DOMAIN_AREA,
+					consts.CUSTOM.ONT_DOMAIN_AREA,
+					daId,
+					`Area of Domain for ${country}`);
+				store.domainAreas[daId] = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
+			}
+			map = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_DOMAIN_AREA, objectProp));
 		}
-		map = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
-		store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_DOMAIN_AREA, objectProp));
-	}
+        bailOut = false;
+    });
+    if (bailOut) {
+        return;
+    }
 	cheerioElem('#field-area > div.category_data.subfield.numeric').each(function() {
 		const areaSwitch = cheerioElem(this).find('span.subfield-name').text().trim();
 		const areaData = cheerioElem(this).find('span.subfield-number').text().trim();

@@ -420,13 +420,6 @@
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderCountryPair/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Border Country Pair of Akrotiri and Cyprus"
         }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/eb2c2d40-05c9-3e45-abca-1314961def37",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Akrotiri"
-        }
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": "Akrotiri"
@@ -1724,13 +1717,6 @@
     },
     "objectProperties": [
       {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/00f33fc5-30d3-3211-ae6a-b56f206622e2",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Antarctica"
-        }
-      }, 
-      {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/00f33fc5-30d3-3211-ae6a-b56f206622e2",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
@@ -2163,13 +2149,6 @@
     },
     "objectProperties": [
       {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/58675230-3a18-3b65-b685-1615595c20db",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Arctic Ocean"
-        }
-      }, 
-      {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/58675230-3a18-3b65-b685-1615595c20db",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
@@ -2223,13 +2202,6 @@
           "@id": "http://williamrobertfunk.com/instance/Climate/58675230-3a18-3b65-b685-1615595c20db",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Climate/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Climate for Arctic Ocean"
-        }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/58675230-3a18-3b65-b685-1615595c20db",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Arctic Ocean"
         }
       }, 
       {
@@ -3110,13 +3082,6 @@
     },
     "objectProperties": [
       {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/1d39eea5-2e73-3ad4-a7b5-182f04617679",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Atlantic Ocean"
-        }
-      }, 
-      {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/1d39eea5-2e73-3ad4-a7b5-182f04617679",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
@@ -3331,13 +3296,6 @@
           "@id": "http://williamrobertfunk.com/instance/Climate/1d39eea5-2e73-3ad4-a7b5-182f04617679",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Climate/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Climate for Atlantic Ocean"
-        }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/1d39eea5-2e73-3ad4-a7b5-182f04617679",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Atlantic Ocean"
         }
       }, 
       {
@@ -5480,7 +5438,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Palmyra Atoll"
         }
       }, 
       {
@@ -5494,63 +5452,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
@@ -15529,13 +15487,6 @@
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderCountryPair/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Border Country Pair of Cyprus and Dhekelia"
         }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/b2b04a7a-f56f-3781-8928-f9789bce0f6a",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Dhekelia"
-        }
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": "Dhekelia"
@@ -21306,13 +21257,6 @@
     },
     "objectProperties": [
       {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/861c476b-1e39-3ba5-92d0-7103eeb0809d",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Gaza Strip"
-        }
-      }, 
-      {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/861c476b-1e39-3ba5-92d0-7103eeb0809d",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
@@ -25287,7 +25231,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Palmyra Atoll"
         }
       }, 
       {
@@ -25301,63 +25245,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
@@ -26470,13 +26414,6 @@
     },
     "objectProperties": [
       {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/12b400ec-be75-3761-aaf8-a505d042327d",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Indian Ocean"
-        }
-      }, 
-      {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/12b400ec-be75-3761-aaf8-a505d042327d",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
@@ -26558,13 +26495,6 @@
           "@id": "http://williamrobertfunk.com/instance/Climate/12b400ec-be75-3761-aaf8-a505d042327d",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Climate/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Climate for Indian Ocean"
-        }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/12b400ec-be75-3761-aaf8-a505d042327d",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Indian Ocean"
         }
       }, 
       {
@@ -29962,7 +29892,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Palmyra Atoll"
         }
       }, 
       {
@@ -29976,63 +29906,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
@@ -30226,7 +30156,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Palmyra Atoll"
         }
       }, 
       {
@@ -30240,63 +30170,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
@@ -31300,7 +31230,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Palmyra Atoll"
         }
       }, 
       {
@@ -31314,63 +31244,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
@@ -36487,7 +36417,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Palmyra Atoll"
         }
       }, 
       {
@@ -36501,63 +36431,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
@@ -40954,13 +40884,6 @@
     },
     "objectProperties": [
       {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/baaaa8e8-a3aa-3e98-ba36-db005b856a6c",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Pacific Ocean"
-        }
-      }, 
-      {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/baaaa8e8-a3aa-3e98-ba36-db005b856a6c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
@@ -41119,13 +41042,6 @@
           "@id": "http://williamrobertfunk.com/instance/Climate/baaaa8e8-a3aa-3e98-ba36-db005b856a6c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Climate/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Climate for Pacific Ocean"
-        }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/baaaa8e8-a3aa-3e98-ba36-db005b856a6c",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Pacific Ocean"
         }
       }, 
       {
@@ -41570,7 +41486,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Palmyra Atoll"
         }
       }, 
       {
@@ -41584,63 +41500,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
@@ -42144,13 +42060,6 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#mapReferences/": "Southeast Asia"
     },
     "objectProperties": [
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/4c281987-22a6-3325-8dc0-4467490cb8fc",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Paracel Islands"
-        }
-      }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/4c281987-22a6-3325-8dc0-4467490cb8fc",
@@ -45339,13 +45248,6 @@
         }
       }, 
       {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasCoast/": {
-          "@id": "http://williamrobertfunk.com/instance/Coast/ebdfc8c7-7200-360b-a2cd-305955dae2eb",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Coast/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Coast of Saint Barthelemy"
-        }
-      }, 
-      {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasClimate/": {
           "@id": "http://williamrobertfunk.com/instance/Climate/ebdfc8c7-7200-360b-a2cd-305955dae2eb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Climate/",
@@ -45357,13 +45259,6 @@
           "@id": "http://williamrobertfunk.com/instance/Border/ebdfc8c7-7200-360b-a2cd-305955dae2eb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Border/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Border of Saint Barthelemy"
-        }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/ebdfc8c7-7200-360b-a2cd-305955dae2eb",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Saint Barthelemy"
         }
       }, 
       {
@@ -45864,13 +45759,6 @@
           "@id": "http://williamrobertfunk.com/instance/BorderCountryPair/aab3e0d4-8512-33c6-8f31-6f6a81f7ff86",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderCountryPair/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Border Country Pair of Saint Martin and Sint Maarten"
-        }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/854ccc29-cc22-3f95-bd1e-5ce961f30c1e",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Saint Martin"
         }
       }, 
       {
@@ -49200,13 +49088,6 @@
     },
     "objectProperties": [
       {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/61ae692a-4a56-3b78-b6ac-ede72c5af0d3",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Southern Ocean"
-        }
-      }, 
-      {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/61ae692a-4a56-3b78-b6ac-ede72c5af0d3",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#RegionMap/",
@@ -49246,13 +49127,6 @@
           "@id": "http://williamrobertfunk.com/instance/Climate/61ae692a-4a56-3b78-b6ac-ede72c5af0d3",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Climate/",
           "http://www.w3.org/2000/01/rdf-schema#label": "Climate for Southern Ocean"
-        }
-      }, 
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim/": {
-          "@id": "http://williamrobertfunk.com/instance/MaritimeClaim/61ae692a-4a56-3b78-b6ac-ede72c5af0d3",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Maritime Claim for Southern Ocean"
         }
       }, 
       {
@@ -50058,13 +49932,6 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#mapReferences/": "Southeast Asia"
     },
     "objectProperties": [
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/04674dda-9bab-3a8f-b4a2-ed0fa25f4cf3",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of Spratly Islands"
-        }
-      }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/04674dda-9bab-3a8f-b4a2-ed0fa25f4cf3",
@@ -58701,7 +58568,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Palmyra Atoll"
         }
       }, 
       {
@@ -58715,63 +58582,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Palmyra Atoll"
         }
       }, 
       {
@@ -60592,13 +60459,6 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#mapReferences/": "Middle East"
     },
     "objectProperties": [
-      {
-        "http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag/": {
-          "@id": "http://williamrobertfunk.com/instance/NationalFlag/0dc99667-bf50-32fd-8a5f-f20e33bec5d5",
-          "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "National Flag of West Bank"
-        }
-      }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap/": {
           "@id": "http://williamrobertfunk.com/instance/RegionMap/0dc99667-bf50-32fd-8a5f-f20e33bec5d5",
