@@ -8,24 +8,24 @@ import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getFlag(cheerioElem, country, countryId) {
     const objectProperties = store.countries[countryId].objectProperties;
-	let flag = getRelation(objectProperties, consts.CUSTOM.HAS_FLAG);
-	const fId = consts.CUSTOM.INST_FLAG + getUuid(country);
+	let flag = getRelation(objectProperties, consts.ONTOLOGY.HAS_FLAG);
+	const fId = consts.ONTOLOGY.INST_FLAG + getUuid(country);
 	let objectProp = {};
     let bailOut = true;
     cheerioElem('div.flagBox').each(function() {
 		if (!flag) {
 			if (store.nationalFlags[fId]) {
-				objectProp[consts.CUSTOM.HAS_FLAG] = store.nationalFlags[fId];
+				objectProp[consts.ONTOLOGY.HAS_FLAG] = store.nationalFlags[fId];
 			} else {
 				objectProp = entityMaker(
-					consts.CUSTOM.HAS_FLAG,
-					consts.CUSTOM.ONT_FLAG,
+					consts.ONTOLOGY.HAS_FLAG,
+					consts.ONTOLOGY.ONT_FLAG,
 					fId,
 					`National Flag of ${country}`);
-				store.nationalFlags[fId] = objectProp[consts.CUSTOM.HAS_FLAG];
+				store.nationalFlags[fId] = objectProp[consts.ONTOLOGY.HAS_FLAG];
 			}
-			flag = objectProp[consts.CUSTOM.HAS_FLAG];
-			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_FLAG, objectProp));
+			flag = objectProp[consts.ONTOLOGY.HAS_FLAG];
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_FLAG, objectProp));
 		}
         bailOut = false;
     });
@@ -36,10 +36,10 @@ export function getFlag(cheerioElem, country, countryId) {
         const a = cheerioElem(this).find('img').attr('src');
         let flagImgUrl;
         if (a && a.replace('../', '')) {
-            flagImgUrl = consts.CUSTOM.URL_BASE + a.replace('../', '');
+            flagImgUrl = consts.BASE.URL_BASE + a.replace('../', '');
 		}
         if (flagImgUrl) {
-			flag.datatypeProperties[consts.CUSTOM.LOCATION_URI] = flagImgUrl;
+			flag.datatypeProperties[consts.ONTOLOGY.LOCATION_URI] = flagImgUrl;
 		}
         // TODO: scrape physical image from url and store it.
     });
@@ -48,9 +48,9 @@ export function getFlag(cheerioElem, country, countryId) {
         if (!b) { return; }
 
         if (flag) {
-			flag.datatypeProperties[consts.CUSTOM.CONTENT_DESCRIPTION] = b.replace(/\\n/g, '').trim();
+			flag.datatypeProperties[consts.ONTOLOGY.CONTENT_DESCRIPTION] = b.replace(/\\n/g, '').trim();
         } else {
-			flag.datatypeProperties[consts.CUSTOM.CONTENT_DESCRIPTION] = b.trim();
+			flag.datatypeProperties[consts.ONTOLOGY.CONTENT_DESCRIPTION] = b.trim();
         }
     });
 };

@@ -8,24 +8,24 @@ import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getCoastLength(cheerioElem, country, countryId) {
     const objectProperties = store.countries[countryId].objectProperties;
-	let map = getRelation(objectProperties, consts.CUSTOM.HAS_COAST);
-	const clId = consts.CUSTOM.INST_COAST + getUuid(country);
+	let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_COAST);
+	const clId = consts.ONTOLOGY.INST_COAST + getUuid(country);
 	let objectProp = {};
     let bailOut = true;
     cheerioElem('#field-coastline').each(function() {
 		if (!map) {
 			if (store.coasts[clId]) {
-				objectProp[consts.CUSTOM.HAS_COAST] = store.coasts[clId];
+				objectProp[consts.ONTOLOGY.HAS_COAST] = store.coasts[clId];
 			} else {
 				objectProp = entityMaker(
-					consts.CUSTOM.HAS_COAST,
-					consts.CUSTOM.ONT_COAST,
+					consts.ONTOLOGY.HAS_COAST,
+					consts.ONTOLOGY.ONT_COAST,
 					clId,
 					`Coast of ${country}`);
-				store.coasts[clId] = objectProp[consts.CUSTOM.HAS_COAST];
+				store.coasts[clId] = objectProp[consts.ONTOLOGY.HAS_COAST];
 			}
-			map = objectProp[consts.CUSTOM.HAS_COAST];
-			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_COAST, objectProp));
+			map = objectProp[consts.ONTOLOGY.HAS_COAST];
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_COAST, objectProp));
 		}
         bailOut = false;
     });
@@ -36,9 +36,9 @@ export function getCoastLength(cheerioElem, country, countryId) {
         const coastGrd = cheerioElem(this).find('div.category_data.subfield.numeric').text().trim()
         if (coastGrd) {
 			const coastGrdSplit = coastGrd.split('km');
-			map.datatypeProperties[consts.CUSTOM.ONT_LENGTH] = coastGrdSplit[0].trim();
-			map.datatypeProperties[consts.CUSTOM.ONT_LENGTH_MODIFIER] = coastGrdSplit.slice(1).join('km').replace(/\\n/g, '').trim() || null;
+			map.datatypeProperties[consts.ONTOLOGY.LENGTH] = coastGrdSplit[0].trim();
+			map.datatypeProperties[consts.ONTOLOGY.LENGTH_MODIFIER] = coastGrdSplit.slice(1).join('km').replace(/\\n/g, '').trim() || null;
         }
 	});
-	map.datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'km';
+	map.datatypeProperties[consts.ONTOLOGY.UNIT] = 'km';
 };

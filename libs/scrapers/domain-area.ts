@@ -8,24 +8,24 @@ import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getArea(cheerioElem, country, countryId) {
     const objectProperties = store.countries[countryId].objectProperties;
-	let map = getRelation(objectProperties, consts.CUSTOM.HAS_DOMAIN_AREA);
-	const daId = consts.CUSTOM.INST_DOMAIN_AREA + getUuid(country);
+	let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_DOMAIN_AREA);
+	const daId = consts.ONTOLOGY.INST_DOMAIN_AREA + getUuid(country);
 	let objectProp = {};
     let bailOut = true;
     cheerioElem('#field-area').each(function() {
 		if (!map) {
 			if (store.domainAreas[daId]) {
-				objectProp[consts.CUSTOM.HAS_DOMAIN_AREA] = store.domainAreas[daId];
+				objectProp[consts.ONTOLOGY.HAS_DOMAIN_AREA] = store.domainAreas[daId];
 			} else {
 				objectProp = entityMaker(
-					consts.CUSTOM.HAS_DOMAIN_AREA,
-					consts.CUSTOM.ONT_DOMAIN_AREA,
+					consts.ONTOLOGY.HAS_DOMAIN_AREA,
+					consts.ONTOLOGY.ONT_DOMAIN_AREA,
 					daId,
 					`Area of Domain for ${country}`);
-				store.domainAreas[daId] = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
+				store.domainAreas[daId] = objectProp[consts.ONTOLOGY.HAS_DOMAIN_AREA];
 			}
-			map = objectProp[consts.CUSTOM.HAS_DOMAIN_AREA];
-			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_DOMAIN_AREA, objectProp));
+			map = objectProp[consts.ONTOLOGY.HAS_DOMAIN_AREA];
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_DOMAIN_AREA, objectProp));
 		}
         bailOut = false;
     });
@@ -37,28 +37,28 @@ export function getArea(cheerioElem, country, countryId) {
 		const areaData = cheerioElem(this).find('span.subfield-number').text().trim();
 		switch (areaSwitch) {
 			case 'total:':
-				map.datatypeProperties[consts.CUSTOM.ONT_TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
 				break;
 			case 'land:':
-				map.datatypeProperties[consts.CUSTOM.ONT_LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
 				break;
 			case 'water:':
-				map.datatypeProperties[consts.CUSTOM.ONT_WATER_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.WATER_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
 				break;
 		}
     });
 	cheerioElem('#field-area > div > span.category_data').each(function() {
         const areaRank = cheerioElem(this).find('a').text().trim();
 		if (areaRank) {
-			map.datatypeProperties[consts.CUSTOM.ONT_AREA_RANK] = areaRank;
+			map.datatypeProperties[consts.ONTOLOGY.AREA_RANK] = areaRank;
 		}
 		
 	});
-	map.datatypeProperties[consts.CUSTOM.ONT_UNIT] = 'sq km';
+	map.datatypeProperties[consts.ONTOLOGY.UNIT] = 'sq km';
 	cheerioElem('#field-area-comparative').each(function() {
         const areaGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (areaGrd) {
-            map.datatypeProperties[consts.CUSTOM.ONT_AREA_COMPARATIVE] = areaGrd;
+            map.datatypeProperties[consts.ONTOLOGY.AREA_COMPARATIVE] = areaGrd;
         }
     });
 };

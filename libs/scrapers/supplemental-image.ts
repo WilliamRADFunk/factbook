@@ -9,7 +9,7 @@ import { entityRefMaker } from '../utils/entity-ref-maker';
 export function getSupplementalImages(cheerioElem, country, countryId) {
     const objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.item.photo-all').each(function() {
-        const suppImages = objectProperties.filter(rel => rel[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG]);
+        const suppImages = objectProperties.filter(rel => rel[consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG]);
 
 		const a = cheerioElem(this).find('img').attr('src');
 		let b = cheerioElem(this).find('img').attr('alt');
@@ -20,30 +20,30 @@ export function getSupplementalImages(cheerioElem, country, countryId) {
 		let imgId, suppImgUrl;
         if (a && a.replace('../', '')) {
 			const cleanSrc = a.replace('../', '');
-			imgId = consts.CUSTOM.INST_IMAGE + getUuid(cleanSrc);
-            suppImgUrl = consts.CUSTOM.URL_BASE + cleanSrc;
+			imgId = consts.ONTOLOGY.INST_IMAGE + getUuid(cleanSrc);
+            suppImgUrl = consts.BASE.URL_BASE + cleanSrc;
 		}
-        if (suppImgUrl && !suppImages.some(img => img[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG]['@id'].includes(imgId))) {
+        if (suppImgUrl && !suppImages.some(img => img[consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG]['@id'].includes(imgId))) {
 			let objectProp = {};
 			if (store.images[imgId]) {
-				objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG] = store.images[imgId];
+				objectProp[consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG] = store.images[imgId];
 			} else {
                 objectProp = entityMaker(
-                    consts.CUSTOM.HAS_SUPPLEMENTAL_IMG,
-                    consts.CUSTOM.ONT_IMAGE,
+                    consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG,
+                    consts.ONTOLOGY.ONT_IMAGE,
                     imgId,
                     `Supplemental Image for ${country}`);
-				store.images[imgId] = objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG];
+				store.images[imgId] = objectProp[consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG];
 			}
-			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_SUPPLEMENTAL_IMG, objectProp));
+			store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG, objectProp));
 
 			const datatypeProp = {};
-			datatypeProp[consts.CUSTOM.LOCATION_URI] = suppImgUrl;
-			datatypeProp[consts.CUSTOM.CONTENT_DESCRIPTION] = b || null;
-			datatypeProp[consts.CUSTOM.IMAGE_DIMENSIONS] = imageProps[0] || 'N/A';
-			datatypeProp[consts.CUSTOM.IMAGE_SIZE] = imageProps[1] || 'N/A';
+			datatypeProp[consts.ONTOLOGY.LOCATION_URI] = suppImgUrl;
+			datatypeProp[consts.ONTOLOGY.CONTENT_DESCRIPTION] = b || null;
+			datatypeProp[consts.ONTOLOGY.IMAGE_DIMENSIONS] = imageProps[0] || 'N/A';
+			datatypeProp[consts.ONTOLOGY.IMAGE_SIZE] = imageProps[1] || 'N/A';
 
-			objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG].datatypeProperties = datatypeProp;
+			objectProp[consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG].datatypeProperties = datatypeProp;
 		}
         // TODO: scrape physical image from url and store it.
     });

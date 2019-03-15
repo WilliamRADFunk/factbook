@@ -12,21 +12,6 @@
   },
   "@graph": [
     {
-      "@id": "wfact:background",
-      "@type": [
-        "owl:DatatypeProperty",
-        "owl:FunctionalProperty"
-      ],
-      "rdfs:comment": "Description of variable length that summarizes the history of a thing.",
-      "rdfs:domain": {
-        "@id": "wfact:Country"
-      },
-      "rdfs:label": "Background information",
-      "rdfs:range": {
-        "@id": "xsd:string"
-      }
-    },
-    {
       "@id": "wfact:hasClimate",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
@@ -37,13 +22,30 @@
       }
     },
     {
-      "@id": "wfact:hasRegionMap",
-      "@type": "owl:ObjectProperty",
+      "@id": "wfact:meanElevation",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      The vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a mountain.\n    ",
+      "rdfs:domain": {
+        "@id": "asset:Elevation"
+      },
+      "rdfs:label": "mean elevation",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "wfact:countryCodeISO",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "\n      Two digit country code assigned by the International Organization for Standardization\n    ",
       "rdfs:domain": {
         "@id": "wfact:Country"
       },
+      "rdfs:label": "ISO Country Code",
       "rdfs:range": {
-        "@id": "wfact:RegionMap"
+        "@id": "xsd:string"
       }
     },
     {
@@ -81,16 +83,10 @@
       }
     },
     {
-      "@id": "wfact:locationDescription",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "A description of where in the world the country is located.",
-      "rdfs:domain": {
-        "@id": "wfact:Country"
-      },
-      "rdfs:label": "Location Description",
-      "rdfs:range": {
-        "@id": "xsd:string"
-      }
+      "@id": "wfact:Border",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Total border belonging to a soverign nation.",
+      "rdfs:label": "National Border"
     },
     {
       "@id": "wfact:description",
@@ -103,6 +99,15 @@
       "rdfs:range": {
         "@id": "xsd:string"
       }
+    },
+    {
+      "@id": "wfact:Country",
+      "@type": "rdfs:Class",
+      "owl:equivalentClass": {
+        "@id": "dbpCountry:"
+      },
+      "rdfs:comment": "a nation with its own government, occupying a particular territory.",
+      "rdfs:label": "Country"
     },
     {
       "@id": "wfact:hasMaritimeClaim",
@@ -121,15 +126,6 @@
       "rdfs:label": "Coast"
     },
     {
-      "@id": "wfact:Country",
-      "@type": "rdfs:Class",
-      "owl:equivalentClass": {
-        "@id": "dbpCountry:"
-      },
-      "rdfs:comment": "a nation with its own government, occupying a particular territory.",
-      "rdfs:label": "Country"
-    },
-    {
       "@id": "http://williamrobertfunk.com/ontologies/world-factbook",
       "@type": "owl:Ontology",
       "dc:contributor": "William R.A.D. Funk",
@@ -141,6 +137,12 @@
       },
       "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
       "rdfs:label": "Funk Ontology"
+    },
+    {
+      "@id": "wfact:DomainArea",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Area within a country's borders (ie. Land, Water, Total).",
+      "rdfs:label": "Domain Area"
     },
     {
       "@id": "wfact:contiguousZone",
@@ -155,10 +157,14 @@
       }
     },
     {
-      "@id": "wfact:DomainArea",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Area within a country's borders (ie. Land, Water, Total).",
-      "rdfs:label": "Domain Area"
+      "@id": "wfact:hasClimateZone",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wfact:Climate"
+      },
+      "rdfs:range": {
+        "@id": "wfact:ClimateZone"
+      }
     },
     {
       "@id": "wfact:Terrain",
@@ -183,22 +189,25 @@
       "rdfs:label": "Border Country Pair"
     },
     {
-      "@id": "wfact:Image",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "a digitally stored image",
-      "rdfs:label": "Image",
-      "rdfs:subClassOf": {
-        "@id": "asset:Asset"
+      "@id": "wfact:continentalShelfModifier",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      Additions, subtractions, or exceptions that pertain to the length of sea belt belonging to a soverign coastal state.\n    ",
+      "rdfs:domain": {
+        "@id": "asset:MaritimeClaim"
+      },
+      "rdfs:label": "Continental Shelf",
+      "rdfs:range": {
+        "@id": "xsd:string"
       }
     },
     {
-      "@id": "wfact:totalBorderCountries",
+      "@id": "wfact:highestPoint",
       "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Total number of countries sharing a border with this nation.",
+      "rdfs:comment": "\n      The highest vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a mountain.\n    ",
       "rdfs:domain": {
-        "@id": "asset:Border"
+        "@id": "asset:Elevation"
       },
-      "rdfs:label": "Total Border Countries",
+      "rdfs:label": "highest point",
       "rdfs:range": {
         "@id": "xsd:integer"
       }
@@ -228,10 +237,22 @@
       }
     },
     {
+      "@id": "wfact:lowestPointDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Supplemental description for the lowest elevation point",
+      "rdfs:domain": {
+        "@id": "asset:Elevation"
+      },
+      "rdfs:label": "lowest point description",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
       "@id": "wfact:imageSize",
       "@type": [
-        "owl:FunctionalProperty",
-        "owl:DatatypeProperty"
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
       ],
       "rdfs:comment": "The amount of computer memory the image requires.",
       "rdfs:domain": {
@@ -243,13 +264,16 @@
       }
     },
     {
-      "@id": "wfact:continentalShelfModifier",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "\n      Additions, subtractions, or exceptions that pertain to the length of sea belt belonging to a soverign coastal state.\n    ",
+      "@id": "wfact:background",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "Description of variable length that summarizes the history of a thing.",
       "rdfs:domain": {
-        "@id": "asset:MaritimeClaim"
+        "@id": "wfact:Country"
       },
-      "rdfs:label": "Continental Shelf",
+      "rdfs:label": "Background information",
       "rdfs:range": {
         "@id": "xsd:string"
       }
@@ -267,18 +291,13 @@
       }
     },
     {
-      "@id": "wfact:countryCodeISO",
-      "@type": [
-        "owl:DatatypeProperty",
-        "owl:FunctionalProperty"
-      ],
-      "rdfs:comment": "\n      Two digit country code assigned by the International Organization for Standardization\n    ",
+      "@id": "wfact:hasRegionMap",
+      "@type": "owl:ObjectProperty",
       "rdfs:domain": {
         "@id": "wfact:Country"
       },
-      "rdfs:label": "ISO Country Code",
       "rdfs:range": {
-        "@id": "xsd:string"
+        "@id": "wfact:RegionMap"
       }
     },
     {
@@ -304,10 +323,20 @@
       }
     },
     {
+      "@id": "wfact:hasBorder",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
+      "rdfs:range": {
+        "@id": "wfact:Border"
+      }
+    },
+    {
       "@id": "wfact:imageDimensions",
       "@type": [
-        "owl:DatatypeProperty",
-        "owl:FunctionalProperty"
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
       ],
       "rdfs:comment": "The width and height of the image, usually in pixels",
       "rdfs:domain": {
@@ -379,13 +408,15 @@
       }
     },
     {
-      "@id": "wfact:hasBorder",
-      "@type": "owl:ObjectProperty",
+      "@id": "wfact:highestPointDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Supplemental description for the highest elevation point",
       "rdfs:domain": {
-        "@id": "wfact:Country"
+        "@id": "asset:Elevation"
       },
+      "rdfs:label": "highest point description",
       "rdfs:range": {
-        "@id": "wfact:Border"
+        "@id": "xsd:string"
       }
     },
     {
@@ -411,15 +442,18 @@
       "rdfs:label": "NationalFlag"
     },
     {
-      "@id": "wfact:areaComparative",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Comparative association with a well-known area to better define scale qualitatively.",
-      "rdfs:domain": {
-        "@id": "asset:DomainArea"
-      },
-      "rdfs:label": "Comparative Area",
-      "rdfs:range": {
-        "@id": "xsd:string"
+      "@id": "wfact:Elevation",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "\n      The vertical distance above the reference geoid,\n      a mathematical model of the Earth's sea level as an equipotential gravitational surface.\n    ",
+      "rdfs:label": "Elevation"
+    },
+    {
+      "@id": "wfact:BorderMap",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "an image showing a country's full border and direct neighbors.",
+      "rdfs:label": "Border Map Image",
+      "rdfs:subClassOf": {
+        "@id": "wfact:Image"
       }
     },
     {
@@ -475,19 +509,15 @@
       "rdfs:label": "Climate"
     },
     {
-      "@id": "wfact:Border",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Total border belonging to a soverign nation.",
-      "rdfs:label": "National Border"
-    },
-    {
-      "@id": "wfact:hasClimateZone",
-      "@type": "owl:ObjectProperty",
+      "@id": "wfact:locationDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "A description of where in the world the country is located.",
       "rdfs:domain": {
-        "@id": "wfact:Climate"
+        "@id": "wfact:Country"
       },
+      "rdfs:label": "Location Description",
       "rdfs:range": {
-        "@id": "wfact:ClimateZone"
+        "@id": "xsd:string"
       }
     },
     {
@@ -535,6 +565,28 @@
       }
     },
     {
+      "@id": "wfact:lowestPoint",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      The lowest vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a canyon.\n    ",
+      "rdfs:domain": {
+        "@id": "asset:Elevation"
+      },
+      "rdfs:label": "lowest point",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "wfact:hasElevation",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
+      "rdfs:range": {
+        "@id": "wfact:Elevation"
+      }
+    },
+    {
       "@id": "wfact:length",
       "@type": "owl:DatatypeProperty",
       "rdfs:comment": "The measurement or extent of something from end to end",
@@ -544,6 +596,15 @@
       "rdfs:label": "Length",
       "rdfs:range": {
         "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "wfact:Image",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "a digitally stored image",
+      "rdfs:label": "Image",
+      "rdfs:subClassOf": {
+        "@id": "asset:Asset"
       }
     },
     {
@@ -580,12 +641,27 @@
       "rdfs:label": "Maritime Claim"
     },
     {
-      "@id": "wfact:BorderMap",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "an image showing a country's full border and direct neighbors.",
-      "rdfs:label": "Border Map Image",
-      "rdfs:subClassOf": {
-        "@id": "wfact:Image"
+      "@id": "wfact:totalBorderCountries",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Total number of countries sharing a border with this nation.",
+      "rdfs:domain": {
+        "@id": "asset:Border"
+      },
+      "rdfs:label": "Total Border Countries",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "wfact:areaComparative",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Comparative association with a well-known area to better define scale qualitatively.",
+      "rdfs:domain": {
+        "@id": "asset:DomainArea"
+      },
+      "rdfs:label": "Comparative Area",
+      "rdfs:range": {
+        "@id": "xsd:string"
       }
     },
     {
@@ -608,32 +684,35 @@
       },
       "rdfs:range": [
         {
-          "@id": "wfact:Image"
+          "@id": "wfact:DomainArea"
         },
         {
-          "@id": "wfact:DomainArea"
+          "@id": "wfact:Image"
         }
       ]
     },
     {
       "@id": "wfact:unit",
       "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Unit of measurement (ie. km, mi, sq km, celcius, etc.).",
+      "rdfs:comment": "Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).",
       "rdfs:domain": [
-        {
-          "@id": "asset:Border"
-        },
-        {
-          "@id": "asset:MaritimeClaim"
-        },
-        {
-          "@id": "asset:Coast"
-        },
         {
           "@id": "asset:DomainArea"
         },
         {
           "@id": "asset:BorderCountryPair"
+        },
+        {
+          "@id": "asset:Coast"
+        },
+        {
+          "@id": "asset:MaritimeClaim"
+        },
+        {
+          "@id": "asset:Elevation"
+        },
+        {
+          "@id": "asset:Border"
         }
       ],
       "rdfs:label": "Unit",

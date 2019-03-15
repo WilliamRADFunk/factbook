@@ -15,7 +15,7 @@ loadFiles();
 
 const getCountryData = (country, url) => {
     if (country && url) {
-        return rp(url, { timeout: consts.CUSTOM.DATA_REQUEST_TIMEOUT })
+        return rp(url, { timeout: consts.BASE.DATA_REQUEST_TIMEOUT })
             .then((html) => {
                 const $ = cheerio.load(html);
                 const countryId = countryToId(country);
@@ -74,7 +74,7 @@ const getCountriesData = () => {
     const countryDataPromises = [];
     const countries = store.countriesInList.slice();
     countries.forEach(country => {
-        const abbrev = store.countries[countryToId(country)].datatypeProperties[consts.CUSTOM.ISO_CODE];
+        const abbrev = store.countries[countryToId(country)].datatypeProperties[consts.ONTOLOGY.ISO_CODE];
         const url = 'https://www.cia.gov/library/publications/the-world-factbook/geos/' + abbrev + '.html';
         countryDataPromises.push(getCountryData(country, url));
     });
@@ -122,16 +122,16 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
             const a = $(this).prev()
             const countryName = a.text().replace(/\\n/g, ' ').trim();
             const id = countryToId(countryName);
-            if (!countryName || store.countries[id] || consts.CUSTOM.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
+            if (!countryName || store.countries[id] || consts.BASE.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
                 // Either already have it, or it's in the invalid list.
             } else {
                 store.countriesInList.push(countryName);
                 store.countries[id] = entityMaker(
-                    consts.CUSTOM.HAS_COUNTRY,
-                    consts.CUSTOM.ONT_COUNTRY,
+                    consts.ONTOLOGY.HAS_COUNTRY,
+                    consts.ONTOLOGY.ONT_COUNTRY,
                     id,
-                    countryName)[consts.CUSTOM.HAS_COUNTRY];
-                store.countries[id].datatypeProperties[consts.CUSTOM.ISO_CODE] = a.attr('data-place-code');
+                    countryName)[consts.ONTOLOGY.HAS_COUNTRY];
+                store.countries[id].datatypeProperties[consts.ONTOLOGY.ISO_CODE] = a.attr('data-place-code');
             }
         });
         promisesResolutionForCountries();
