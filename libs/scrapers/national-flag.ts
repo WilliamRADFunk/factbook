@@ -19,7 +19,7 @@ export function getFlag(cheerioElem, country, countryId) {
 				consts.CUSTOM.HAS_FLAG,
 				consts.CUSTOM.ONT_FLAG,
 				fId,
-				'National Flag');
+				`National Flag of ${country}`);
 			store.nationalFlags[fId] = objectProp[consts.CUSTOM.HAS_FLAG];
 		}
 		flag = objectProp[consts.CUSTOM.HAS_FLAG];

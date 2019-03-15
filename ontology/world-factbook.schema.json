@@ -47,10 +47,14 @@
       }
     },
     {
-      "@id": "wfact:Climate",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "The weather conditions prevailing in an area in general or over a long period.",
-      "rdfs:label": "Climate"
+      "@id": "wfact:hasBorderMap",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
+      "rdfs:range": {
+        "@id": "wfact:BorderMap"
+      }
     },
     {
       "@id": "wfact:mapReferences",
@@ -101,29 +105,13 @@
       }
     },
     {
-      "@id": "wfact:unit",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Unit of measurement (ie. km, mi, sq km, celcius, etc.).",
-      "rdfs:domain": [
-        {
-          "@id": "asset:DomainArea"
-        },
-        {
-          "@id": "asset:Border"
-        },
-        {
-          "@id": "asset:Coast"
-        },
-        {
-          "@id": "asset:BorderCountryPair"
-        },
-        {
-          "@id": "asset:MaritimeClaim"
-        }
-      ],
-      "rdfs:label": "Unit",
+      "@id": "wfact:hasMaritimeClaim",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
       "rdfs:range": {
-        "@id": "xsd:string"
+        "@id": "wfact:MaritimeClaim"
       }
     },
     {
@@ -142,10 +130,17 @@
       "rdfs:label": "Country"
     },
     {
-      "@id": "wfact:DomainArea",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "Area within a country's borders (ie. Land, Water, Total).",
-      "rdfs:label": "Domain Area"
+      "@id": "http://williamrobertfunk.com/ontologies/world-factbook",
+      "@type": "owl:Ontology",
+      "dc:contributor": "William R.A.D. Funk",
+      "dc:creator": "William R.A.D. Funk",
+      "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
+      "owl:versionInfo": {
+        "@type": "xsd:decimal",
+        "@value": "1.0.2"
+      },
+      "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
+      "rdfs:label": "Funk Ontology"
     },
     {
       "@id": "wfact:contiguousZone",
@@ -160,14 +155,10 @@
       }
     },
     {
-      "@id": "wfact:hasClimateZone",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "wfact:Climate"
-      },
-      "rdfs:range": {
-        "@id": "wfact:ClimateZone"
-      }
+      "@id": "wfact:DomainArea",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Area within a country's borders (ie. Land, Water, Total).",
+      "rdfs:label": "Domain Area"
     },
     {
       "@id": "wfact:Terrain",
@@ -192,10 +183,13 @@
       "rdfs:label": "Border Country Pair"
     },
     {
-      "@id": "wfact:ClimateZone",
+      "@id": "wfact:Image",
       "@type": "rdfs:Class",
-      "rdfs:comment": "\n      Divisions of the Earth's climates into general climate zones according to average temperatures and average rainfall.\n      The three major climate zones on the Earth are the polar, temperate, and tropical zones.\n    ",
-      "rdfs:label": "Climate Zone"
+      "rdfs:comment": "a digitally stored image",
+      "rdfs:label": "Image",
+      "rdfs:subClassOf": {
+        "@id": "asset:Asset"
+      }
     },
     {
       "@id": "wfact:totalBorderCountries",
@@ -205,6 +199,18 @@
         "@id": "asset:Border"
       },
       "rdfs:label": "Total Border Countries",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "wfact:territorialSea",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Length of sea belt belonging to sovereign coastal state.",
+      "rdfs:domain": {
+        "@id": "asset:MaritimeClaim"
+      },
+      "rdfs:label": "Territorial Sea",
       "rdfs:range": {
         "@id": "xsd:integer"
       }
@@ -261,6 +267,21 @@
       }
     },
     {
+      "@id": "wfact:countryCodeISO",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:comment": "\n      Two digit country code assigned by the International Organization for Standardization\n    ",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
+      "rdfs:label": "ISO Country Code",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
       "@id": "wfact:hasNaturalResource",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
@@ -271,13 +292,15 @@
       }
     },
     {
-      "@id": "wfact:hasBorderCountryPair",
-      "@type": "owl:ObjectProperty",
+      "@id": "wfact:exclusiveFishingZone",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      An area beyond the outer limit of the territorial sea in which the coastal State has the right to fish,\n      subject to any concessions which may be granted to foreign fishermen.\n    ",
       "rdfs:domain": {
-        "@id": "wfact:Country"
+        "@id": "asset:MaritimeClaim"
       },
+      "rdfs:label": "exclusiveFishingZone",
       "rdfs:range": {
-        "@id": "wfact:BorderCountryPair"
+        "@id": "xsd:string"
       }
     },
     {
@@ -291,6 +314,18 @@
         "@id": "wfact:Image"
       },
       "rdfs:label": "Width by Height Dimensions",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "wfact:totalArea",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Total area associated with the entity to which it's attached.",
+      "rdfs:domain": {
+        "@id": "asset:DomainArea"
+      },
+      "rdfs:label": "Total Area",
       "rdfs:range": {
         "@id": "xsd:string"
       }
@@ -376,12 +411,15 @@
       "rdfs:label": "NationalFlag"
     },
     {
-      "@id": "wfact:BorderMap",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "an image showing a country's full border and direct neighbors.",
-      "rdfs:label": "Border Map Image",
-      "rdfs:subClassOf": {
-        "@id": "wfact:Image"
+      "@id": "wfact:areaComparative",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Comparative association with a well-known area to better define scale qualitatively.",
+      "rdfs:domain": {
+        "@id": "asset:DomainArea"
+      },
+      "rdfs:label": "Comparative Area",
+      "rdfs:range": {
+        "@id": "xsd:string"
       }
     },
     {
@@ -397,15 +435,13 @@
       }
     },
     {
-      "@id": "wfact:landArea",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Total land area associated with the entity to which it's attached.",
+      "@id": "wfact:hasCountry",
+      "@type": "owl:ObjectProperty",
       "rdfs:domain": {
-        "@id": "asset:DomainArea"
+        "@id": "wfact:BorderCountryPair"
       },
-      "rdfs:label": "Land Area",
       "rdfs:range": {
-        "@id": "xsd:string"
+        "@id": "wfact:Country"
       }
     },
     {
@@ -433,45 +469,26 @@
       }
     },
     {
-      "@id": "wfact:hasBorderMap",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "wfact:Country"
-      },
-      "rdfs:range": {
-        "@id": "wfact:BorderMap"
-      }
-    },
-    {
-      "@id": "http://williamrobertfunk.com/ontologies/world-factbook",
-      "@type": "owl:Ontology",
-      "dc:contributor": "William R.A.D. Funk",
-      "dc:creator": "William R.A.D. Funk",
-      "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
-      "owl:versionInfo": {
-        "@type": "xsd:decimal",
-        "@value": "1.0.2"
-      },
-      "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
-      "rdfs:label": "Funk Ontology"
-    },
-    {
-      "@id": "wfact:exclusiveFishingZone",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "\n      An area beyond the outer limit of the territorial sea in which the coastal State has the right to fish,\n      subject to any concessions which may be granted to foreign fishermen.\n    ",
-      "rdfs:domain": {
-        "@id": "asset:MaritimeClaim"
-      },
-      "rdfs:label": "exclusiveFishingZone",
-      "rdfs:range": {
-        "@id": "xsd:string"
-      }
+      "@id": "wfact:Climate",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The weather conditions prevailing in an area in general or over a long period.",
+      "rdfs:label": "Climate"
     },
     {
       "@id": "wfact:Border",
       "@type": "rdfs:Class",
       "rdfs:comment": "Total border belonging to a soverign nation.",
       "rdfs:label": "National Border"
+    },
+    {
+      "@id": "wfact:hasClimateZone",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wfact:Climate"
+      },
+      "rdfs:range": {
+        "@id": "wfact:ClimateZone"
+      }
     },
     {
       "@id": "wfact:contentDescription",
@@ -486,15 +503,13 @@
       }
     },
     {
-      "@id": "wfact:territorialSea",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Length of sea belt belonging to sovereign coastal state.",
+      "@id": "wfact:hasBorderCountryPair",
+      "@type": "owl:ObjectProperty",
       "rdfs:domain": {
-        "@id": "asset:MaritimeClaim"
+        "@id": "wfact:Country"
       },
-      "rdfs:label": "Territorial Sea",
       "rdfs:range": {
-        "@id": "xsd:integer"
+        "@id": "wfact:BorderCountryPair"
       }
     },
     {
@@ -532,25 +547,10 @@
       }
     },
     {
-      "@id": "wfact:Image",
+      "@id": "wfact:ClimateZone",
       "@type": "rdfs:Class",
-      "rdfs:comment": "a digitally stored image",
-      "rdfs:label": "Image",
-      "rdfs:subClassOf": {
-        "@id": "asset:Asset"
-      }
-    },
-    {
-      "@id": "wfact:totalArea",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Total area associated with the entity to which it's attached.",
-      "rdfs:domain": {
-        "@id": "asset:DomainArea"
-      },
-      "rdfs:label": "Total Area",
-      "rdfs:range": {
-        "@id": "xsd:string"
-      }
+      "rdfs:comment": "\n      Divisions of the Earth's climates into general climate zones according to average temperatures and average rainfall.\n      The three major climate zones on the Earth are the polar, temperate, and tropical zones.\n    ",
+      "rdfs:label": "Climate Zone"
     },
     {
       "@id": "wfact:RegionMap",
@@ -562,13 +562,15 @@
       }
     },
     {
-      "@id": "wfact:hasCountry",
-      "@type": "owl:ObjectProperty",
+      "@id": "wfact:landArea",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Total land area associated with the entity to which it's attached.",
       "rdfs:domain": {
-        "@id": "wfact:BorderCountryPair"
+        "@id": "asset:DomainArea"
       },
+      "rdfs:label": "Land Area",
       "rdfs:range": {
-        "@id": "wfact:Country"
+        "@id": "xsd:string"
       }
     },
     {
@@ -578,15 +580,12 @@
       "rdfs:label": "Maritime Claim"
     },
     {
-      "@id": "wfact:areaComparative",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Comparative association with a well-known area to better define scale qualitatively.",
-      "rdfs:domain": {
-        "@id": "asset:DomainArea"
-      },
-      "rdfs:label": "Comparative Area",
-      "rdfs:range": {
-        "@id": "xsd:string"
+      "@id": "wfact:BorderMap",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "an image showing a country's full border and direct neighbors.",
+      "rdfs:label": "Border Map Image",
+      "rdfs:subClassOf": {
+        "@id": "wfact:Image"
       }
     },
     {
@@ -617,13 +616,29 @@
       ]
     },
     {
-      "@id": "wfact:hasMaritimeClaim",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "wfact:Country"
-      },
+      "@id": "wfact:unit",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Unit of measurement (ie. km, mi, sq km, celcius, etc.).",
+      "rdfs:domain": [
+        {
+          "@id": "asset:Border"
+        },
+        {
+          "@id": "asset:MaritimeClaim"
+        },
+        {
+          "@id": "asset:Coast"
+        },
+        {
+          "@id": "asset:DomainArea"
+        },
+        {
+          "@id": "asset:BorderCountryPair"
+        }
+      ],
+      "rdfs:label": "Unit",
       "rdfs:range": {
-        "@id": "wfact:MaritimeClaim"
+        "@id": "xsd:string"
       }
     }
   ]

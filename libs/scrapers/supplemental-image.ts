@@ -32,7 +32,7 @@ export function getSupplementalImages(cheerioElem, country, countryId) {
                     consts.CUSTOM.HAS_SUPPLEMENTAL_IMG,
                     consts.CUSTOM.ONT_IMAGE,
                     imgId,
-                    'Supplemental Image');
+                    `Supplemental Image for ${country}`);
 				store.images[imgId] = objectProp[consts.CUSTOM.HAS_SUPPLEMENTAL_IMG];
 			}
 			store.countries[countryId].objectProperties.push(entityRefMaker(consts.CUSTOM.HAS_SUPPLEMENTAL_IMG, objectProp));

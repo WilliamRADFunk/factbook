@@ -16,7 +16,7 @@ export function parsedSingleLine(origParams, dataId, hasProp, instProp, baseOntP
 				const dataPropItem = resource.trim();
 				const guid = consts.CUSTOM[instProp] + getUuid(dataPropItem);
 				const hasPropAlready = prevHasList.some(p => p[consts.CUSTOM[hasProp]]['@id'].includes(guid));
-				if (dataPropItem && !hasPropAlready) {
+				if (dataPropItem && dataPropItem !== 'none' && !hasPropAlready) {
 					let objectProp = {};
 					if (store[storeKey][guid]) {
 						objectProp[consts.CUSTOM[hasProp]] = store[storeKey][guid];
@@ -25,7 +25,7 @@ export function parsedSingleLine(origParams, dataId, hasProp, instProp, baseOntP
 							consts.CUSTOM[hasProp],
 							consts.CUSTOM[baseOntProp],
 							guid,
-							label);
+							`${label} (${dataPropItem})`);
 						store[storeKey][guid] = objectProp[consts.CUSTOM[hasProp]];
 					}
 					objectProp[consts.CUSTOM[hasProp]].datatypeProperties[dataPropName] = dataPropItem;

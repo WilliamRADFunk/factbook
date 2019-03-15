@@ -72,7 +72,7 @@ const getCountriesData = () => {
     const countryDataPromises = [];
     const countries = store.countriesInList.slice();
     countries.forEach(country => {
-        const abbrev = store.countries[countryToId(country)].metaScrapeData['data-place-code'];
+        const abbrev = store.countries[countryToId(country)].datatypeProperties[consts.CUSTOM.ISO_CODE];
         const url = 'https://www.cia.gov/library/publications/the-world-factbook/geos/' + abbrev + '.html';
         countryDataPromises.push(getCountryData(country, url));
     });
@@ -129,9 +129,7 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
                     consts.CUSTOM.ONT_COUNTRY,
                     id,
                     countryName)[consts.CUSTOM.HAS_COUNTRY];
-                store.countries[id].metaScrapeData = {
-                    'data-place-code': a.attr('data-place-code')
-                };
+                store.countries[id].datatypeProperties[consts.CUSTOM.ISO_CODE] = a.attr('data-place-code');
             }
         });
         promisesResolutionForCountries();

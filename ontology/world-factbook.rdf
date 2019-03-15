@@ -270,6 +270,18 @@
   ///////////////////////////////////////////////////////////////////////////////////////
   -->
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#countryCodeISO -->
+
+  <DatatypeProperty rdf:about="&wfact;countryCodeISO">
+    <rdfs:label>ISO Country Code</rdfs:label>
+    <rdfs:comment>
+      Two digit country code assigned by the International Organization for Standardization
+    </rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#background -->
 
   <DatatypeProperty rdf:about="&wfact;background">

@@ -56,6 +56,7 @@ export function getClimate(cheerioElem, country, countryId) {
 			const tempSplit = climGrd.replace(/\\n/g, '').trim().split(';');
 			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_NAME] = tempSplit[0].trim();
 			mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_DESCRIPTION] = tempSplit.slice(1).join(';').trim();
+			mapZone[consts.RDFS.label] = `Climate Zone (${mapZone.datatypeProperties[consts.CUSTOM.CLIMATE_ZONE_NAME]})`
         }
 	});
 };

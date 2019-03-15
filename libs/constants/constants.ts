@@ -53,6 +53,7 @@ const HAS_NATURAL_RESOURCE = MAIN_ONT_PATH + 'hasNaturalResource/';
 const HAS_TERRAIN = MAIN_ONT_PATH + 'hasTerrain/';
 
 // DatatypeProperty Paths
+const ISO_CODE = MAIN_ONT_PATH + 'countryCodeISO/';
 const BACKGROUND = MAIN_ONT_PATH + 'background/';
 const TOTAL_BORDER_COUNTRIES = MAIN_ONT_PATH + 'totalBorderCountries/';
 const TOTAL_BORDER = MAIN_ONT_PATH + 'totalLandBorder/';
@@ -141,6 +142,7 @@ const CUSTOM = {
 	HAS_REGION_MAP,
 	HAS_SUPPLEMENTAL_IMG,
 	LOCATION_URI,
+	ISO_CODE,
 	BACKGROUND,
 	ONT_BORDER_MAP,
 	INST_BORDER_MAP,

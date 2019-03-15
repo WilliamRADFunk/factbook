@@ -4,7 +4,7 @@
   "description": "Simple service to scrape data and store it.",
   "main": "index.js",
   "scripts": {
-    "clean:dist": "rimraf dist/*.json",
+    "clean:dist": "rimraf dist/**/*.json",
     "clean:logs": "rimraf logs/*log*",
     "scrape": "ts-node index.ts",
     "start": "run-s clean:logs clean:dist scrape",

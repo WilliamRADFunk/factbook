@@ -1,30 +1,51 @@
 import * as fs from 'graceful-fs';
 import * as fj from 'formatter-json';
 
+import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
 
-const context = {
-	'asset': 'http://www.daedafusion.com/Asset#',
-	'dbpCountry': 'http://dbpedia.org/ontology/Country#',
-	'dc': 'http://purl.org/dc/elements/1.1/',
-	'owl': 'http://www.w3.org/2002/07/owl#',
-	'pos': 'http://www.w3.org/2003/01/geo/wgs84_pos#',
-	'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-	'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',
-	'wfact': 'http://williamrobertfunk.com/ontologies/world-factbook#',
-	'xsd': 'http://www.w3.org/2001/XMLSchema#'
-};
-
-export function saveFile(fileName: string, storeName: string) {
+export function saveFile(fileName: string, storeName: string, context: string) {
+	// Normal JSON file.
+    let file = fj(JSON.stringify(store[storeName]));
+	file = file.replace(/\\n/g, ' ');
+	fs.writeFileSync(`dist/json/${fileName}.json`, file);
+	// JSON-LD file construction.
 	const jsonLD = {
 		'@context': context,
 		'@graph': []
 	};
 	Object.keys(store[storeName]).forEach(key => {
-		jsonLD['@graph'].push(store[storeName][key]);
+		// Grab the basic @id, @type, and rdfs label
+		const mainObj = {
+			'@id': store[storeName][key]['@id'],
+			'@type': store[storeName][key]['@type']
+		};
+		mainObj[consts.RDFS.label] = store[storeName][key][consts.RDFS.label];
+		// Pull datatype properties out of their singleton object and make them direct props.
+		const dataProps = store[storeName][key].datatypeProperties;
+		Object.keys(dataProps).forEach(key => {
+			mainObj[key] = dataProps[key];
+		});
+		// Pull out object properties, and make them direct properties but with array groups for multiples.
+		const objectProps = store[storeName][key].objectProperties;
+		objectProps.forEach(objP => {
+			// Should be one key per object
+			const key = Object.keys(objP)[0];
+			if (mainObj[key]) {
+				if (Array.isArray(mainObj[key])) {
+					mainObj[key].push(objP[key]);
+				} else {
+					mainObj[key] = [mainObj[key], objP[key]];
+				}
+			} else {
+				mainObj[key] = objP[key];
+			}
+		})
+		// Add it to the graph that belongs to this entity type.
+		jsonLD['@graph'].push(mainObj);
 	});
 
-    let file = fj(JSON.stringify(jsonLD));
-	file = file.replace(/\\n/g, ' ');
-	fs.writeFileSync(`dist/${fileName}.json`, file);
+    let fileLD = fj(JSON.stringify(jsonLD));
+	fileLD = fileLD.replace(/\\n/g, ' ');
+	fs.writeFileSync(`dist/jsonld/${fileName}.schema.json`, fileLD);
 };
