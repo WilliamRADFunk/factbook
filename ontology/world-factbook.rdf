@@ -149,6 +149,16 @@
     </rdfs:comment>
   </rdfs:Class>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Elevation -->
+
+  <rdfs:Class rdf:about="&wfact;Elevation">
+    <rdfs:label>Elevation</rdfs:label>
+    <rdfs:comment>
+      The vertical distance above the reference geoid,
+      a mathematical model of the Earth's sea level as an equipotential gravitational surface.
+    </rdfs:comment>
+  </rdfs:Class>
+
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#Terrain -->
 
   <rdfs:Class rdf:about="&wfact;Terrain">
@@ -255,6 +265,13 @@
       <rdfs:range rdf:resource="&wfact;NaturalResource"/>
   </owl:ObjectProperty>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasElevation -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasElevation">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;Elevation"/>
+  </owl:ObjectProperty>
+
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain -->
 
   <owl:ObjectProperty rdf:about="&wfact;hasTerrain">
@@ -352,12 +369,13 @@
 
   <DatatypeProperty rdf:about="&wfact;unit">
     <rdfs:label>Unit</rdfs:label>
-    <rdfs:comment>Unit of measurement (ie. km, mi, sq km, celcius, etc.).</rdfs:comment>
+    <rdfs:comment>Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;DomainArea"/>
     <rdfs:domain rdf:resource="&asset;Coast"/>
     <rdfs:domain rdf:resource="&asset;BorderCountryPair"/>
     <rdfs:domain rdf:resource="&asset;Border"/>
     <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&asset;Elevation"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -560,6 +578,60 @@
     <rdfs:label>description</rdfs:label>
     <rdfs:comment>Description of the terrain</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;NaturalResource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#meanElevation -->
+
+  <DatatypeProperty rdf:about="&wfact;meanElevation">
+    <rdfs:label>mean elevation</rdfs:label>
+    <rdfs:comment>
+      The vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a mountain.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#lowestPoint -->
+
+  <DatatypeProperty rdf:about="&wfact;lowestPoint">
+    <rdfs:label>lowest point</rdfs:label>
+    <rdfs:comment>
+      The lowest vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a canyon.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#highestPoint -->
+
+  <DatatypeProperty rdf:about="&wfact;highestPoint">
+    <rdfs:label>highest point</rdfs:label>
+    <rdfs:comment>
+      The highest vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a mountain.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#lowestPointDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;lowestPointDescription">
+    <rdfs:label>lowest point description</rdfs:label>
+    <rdfs:comment>Supplemental description for the lowest elevation point</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#highestPointDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;highestPointDescription">
+    <rdfs:label>highest point description</rdfs:label>
+    <rdfs:comment>Supplemental description for the highest elevation point</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;Elevation"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 

@@ -16,5 +16,6 @@ export function saveFiles() {
 	saveFile('borders', 'borders', consts.CUSTOM.ONT_BORDER);
 	saveFile('maritime-claims', 'maritimeClaims', consts.CUSTOM.ONT_MARITIME_CLAIM);
 	saveFile('natural-resources', 'naturalResources', consts.CUSTOM.ONT_NATURAL_RESOURCE);
+	saveFile('elevations', 'elevations', consts.CUSTOM.ONT_ELEVATION);
 	saveFile('terrains', 'terrains', consts.CUSTOM.ONT_TERRAIN);
 };

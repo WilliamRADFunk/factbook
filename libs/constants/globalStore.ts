@@ -17,6 +17,7 @@ class GlobalStore {
 	naturalResources = {};
 	regionMaps = {};
 	terrains = {};
+	elevations = {};
 }
 
 export const store = new GlobalStore();

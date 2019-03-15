@@ -20,5 +20,6 @@ export function loadFiles() {
     loadFile('maritime-claims', 'maritimeClaims');
     loadFile('natural-resources', 'naturalResources');
     loadFile('locations', 'locations');
+    loadFile('elevations', 'elevations');
     loadFile('terrains', 'terrains');
 };

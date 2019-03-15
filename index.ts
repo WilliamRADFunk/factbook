@@ -43,6 +43,8 @@ const getCountryData = (country, url) => {
                 // console.log('getMaritimeClaims for ', country);
                 dataScrapers.getNaturalResources($, country, countryId);
                 // console.log('getNaturalResources for ', country);
+                dataScrapers.getElevation($, country, countryId);
+                // console.log('getElevation for ', country);
                 dataScrapers.getTerrains($, country, countryId);
                 console.log('Data scrape for ', country, ' is complete');
             })

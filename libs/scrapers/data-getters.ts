@@ -10,6 +10,7 @@ import { getRegionMapImg } from './region-map-image';
 import { getSupplementalImages } from './supplemental-image';
 import { getMaritimeClaims } from './maritime-claims';
 import { getNaturalResources } from './natural-resources';
+import { getElevation } from './elevation';
 import { getTerrains } from './terrain';
 
 export const dataScrapers = {
@@ -25,5 +26,6 @@ export const dataScrapers = {
 	getSupplementalImages,
 	getMaritimeClaims,
 	getNaturalResources,
+	getElevation,
 	getTerrains
 };

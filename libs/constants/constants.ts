@@ -33,6 +33,7 @@ const ONT_CLIMATE = MAIN_ONT_PATH + 'Climate/';
 const ONT_CLIMATE_ZONE = MAIN_ONT_PATH + 'ClimateZone/';
 const ONT_MARITIME_CLAIM = MAIN_ONT_PATH + 'MaritimeClaim/';
 const ONT_NATURAL_RESOURCE = MAIN_ONT_PATH + 'NaturalResource/';
+const ONT_ELEVATION = MAIN_ONT_PATH + 'Elevation/';
 const ONT_TERRAIN = MAIN_ONT_PATH + 'Terrain/';
 
 // ObjectProperty Paths
@@ -50,6 +51,7 @@ const HAS_CLIMATE = MAIN_ONT_PATH + 'hasClimate/';
 const HAS_CLIMATE_ZONE = MAIN_ONT_PATH + 'hasClimateZone/';
 const HAS_MARITIME_CLAIM = MAIN_ONT_PATH + 'hasMaritimeClaim/';
 const HAS_NATURAL_RESOURCE = MAIN_ONT_PATH + 'hasNaturalResource/';
+const HAS_ELEVATION = MAIN_ONT_PATH + 'hasElevation/';
 const HAS_TERRAIN = MAIN_ONT_PATH + 'hasTerrain/';
 
 // DatatypeProperty Paths
@@ -83,6 +85,11 @@ const CONTINENTAL_SHELF_MODIFIER = MAIN_ONT_PATH + 'continentalShelfModifier/';
 const SUPPLEMENTAL_EXPLANATION = MAIN_ONT_PATH + 'supplementalExplanation/';
 const EXCLUSIVE_FISHING_ZONE = MAIN_ONT_PATH + 'exclusiveFishingZone/';
 const RESOURCE_NAME = MAIN_ONT_PATH + 'resourceName/';
+const MEAN_ELEVATION = MAIN_ONT_PATH + 'meanElevation/';
+const LOWEST_POINT = MAIN_ONT_PATH + 'lowestPoint/';
+const LOWEST_POINT_DESCRIPTION = MAIN_ONT_PATH + 'lowestPointDescription/';
+const HIGHEST_POINT = MAIN_ONT_PATH + 'highestPoint/';
+const HIGHEST_POINT_DESCRIPTION = MAIN_ONT_PATH + 'highestPointDescription/';
 
 // Instance Paths
 const INST_COUNTRY = MAIN_INSTANCE_PATH + 'Country/';
@@ -99,9 +106,18 @@ const INST_CLIMATE_ZONE = MAIN_INSTANCE_PATH + 'ClimateZone/';
 const INST_GEO_LOCATION = GEO_ONT_PATH + 'Location/';
 const INST_MARITIME_CLAIM = MAIN_INSTANCE_PATH + 'MaritimeClaim/';
 const INST_NATURAL_RESOURCE = MAIN_ONT_PATH + 'NaturalResource/';
+const INST_ELEVATION = MAIN_ONT_PATH + 'Elevation/';
 const INST_TERRAIN = MAIN_ONT_PATH + 'Terrain/';
 
 const CUSTOM = {
+	ONT_ELEVATION,
+	HAS_ELEVATION,
+	INST_ELEVATION,
+	MEAN_ELEVATION,
+	LOWEST_POINT,
+	LOWEST_POINT_DESCRIPTION,
+	HIGHEST_POINT,
+	HIGHEST_POINT_DESCRIPTION,
 	ONT_TERRAIN,
 	HAS_TERRAIN,
 	DESCRIPTION,
