@@ -6,7 +6,7 @@ import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
-export function getElevation(cheerioElem, country, countryId) {
+export function getElevation(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_ELEVATION);
 	const eId = consts.ONTOLOGY.INST_ELEVATION + getUuid(country);

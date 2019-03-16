@@ -13,7 +13,7 @@ const failedCountries = [];
 
 loadFiles();
 
-const getCountryData = (country, url) => {
+const getCountryData = (country: string, url: string) => {
     if (country && url) {
         return rp(url, { timeout: consts.BASE.DATA_REQUEST_TIMEOUT })
             .then((html) => {
@@ -31,6 +31,7 @@ const getCountryData = (country, url) => {
                 dataScrapers.getLandUses($, country, countryId);
                 dataScrapers.getMaritimeClaims($, country, countryId);
                 dataScrapers.getNaturalResources($, country, countryId);
+                dataScrapers.getPopDist($, country, countryId);
 				dataScrapers.getRegionMapImg($, country, countryId);
                 dataScrapers.getSupplementalImages($, country, countryId);
                 dataScrapers.getTerrains($, country, countryId);

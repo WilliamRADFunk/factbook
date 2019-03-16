@@ -6,7 +6,7 @@ import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
-export function getCoastLength(cheerioElem, country, countryId) {
+export function getCoastLength(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_COAST);
 	const clId = consts.ONTOLOGY.INST_COAST + getUuid(country);

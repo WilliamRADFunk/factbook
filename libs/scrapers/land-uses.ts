@@ -6,7 +6,7 @@ import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
-export function getLandUses(cheerioElem, country, countryId) {
+export function getLandUses(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_LAND_USE);
 	const luId = consts.ONTOLOGY.INST_LAND_USE + getUuid(country);

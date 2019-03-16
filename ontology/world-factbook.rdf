@@ -391,6 +391,18 @@
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#populationDistribution -->
+
+  <DatatypeProperty rdf:about="&wfact;populationDistribution">
+    <rdfs:label>Population Distribution</rdfs:label>
+    <rdfs:comment>
+      The pattern of where people live.
+    </rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#background -->
 
   <DatatypeProperty rdf:about="&wfact;background">

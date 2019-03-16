@@ -1,6 +1,6 @@
 import { parsedSingleLine } from './scraper-forms/parsed-single-line';
 
-export function getTerrains(cheerioElem, country, countryId) {
+export function getTerrains(cheerioElem: CheerioSelector, country: string, countryId: string) {
     let bailOut = true;
     cheerioElem('#field-terrain').each(function() {
         bailOut = false;

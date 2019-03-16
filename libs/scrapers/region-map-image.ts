@@ -6,7 +6,7 @@ import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
-export function getRegionMapImg(cheerioElem, country, countryId) {
+export function getRegionMapImg(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.mapBox').each(function() {
         let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_REGION_MAP);

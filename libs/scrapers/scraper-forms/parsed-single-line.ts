@@ -5,7 +5,17 @@ import { store } from '../../constants/globalStore';
 import { entityMaker } from '../../utils/entity-maker';
 import { entityRefMaker } from '../../utils/entity-ref-maker';
 
-export function parsedSingleLine(origParams, dataId, hasProp, instProp, baseOntProp, storeKey, dataPropName, label, delimiter) {
+export function parsedSingleLine(
+	origParams: { cheerioElem: CheerioSelector; country: string; countryId: string; },
+	dataId: string,
+	hasProp: string,
+	instProp: string,
+	baseOntProp: string,
+	storeKey: string,
+	dataPropName: string,
+	label: string,
+	delimiter: string
+) {
 	const objectProperties = store.countries[origParams.countryId].objectProperties;
 	const prevHasList = objectProperties.filter(rel => rel[consts.ONTOLOGY[hasProp]]);
 	origParams.cheerioElem(dataId).each(function() {

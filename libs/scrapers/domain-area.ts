@@ -6,7 +6,7 @@ import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
-export function getArea(cheerioElem, country, countryId) {
+export function getArea(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_DOMAIN_AREA);
 	const daId = consts.ONTOLOGY.INST_DOMAIN_AREA + getUuid(country);

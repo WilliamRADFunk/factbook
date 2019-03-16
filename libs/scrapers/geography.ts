@@ -6,7 +6,7 @@ import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
-export function getGeography(cheerioElem, country, countryId) {
+export function getGeography(cheerioElem: CheerioSelector, country: string, countryId: string) {
 	cheerioElem('#field-location').each(function() {
         const locGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
         if (locGrd) {

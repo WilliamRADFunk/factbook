@@ -6,7 +6,7 @@ import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
-export function getMaritimeClaims(cheerioElem, country, countryId) {
+export function getMaritimeClaims(cheerioElem: CheerioSelector, country: string, countryId: string) {
 	const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_MARITIME_CLAIM);
 	const mcId = consts.ONTOLOGY.INST_MARITIME_CLAIM + getUuid(country);

@@ -128,6 +128,7 @@ const ONTOLOGY = {
 	MAP_REFERENCES: MAIN_ONT_PATH + 'mapReferences/',
 	MEAN_ELEVATION: MAIN_ONT_PATH + 'meanElevation/',
 	PERCENTAGE: MAIN_ONT_PATH + 'percentage/',
+	POPULATION_DISTRIBUTION: MAIN_ONT_PATH + 'populationDistribution/',
 	RESOURCE_NAME: MAIN_ONT_PATH + 'resourceName/',
 	SUPPLEMENTAL_EXPLANATION: MAIN_ONT_PATH + 'supplementalExplanation/',
 	TERRITORIAL_SEA: MAIN_ONT_PATH + 'territorialSea/',

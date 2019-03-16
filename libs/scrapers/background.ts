@@ -1,7 +1,7 @@
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
 
-export function getBackground(cheerioElem, country, countryId) {
+export function getBackground(cheerioElem: CheerioSelector, country: string, countryId: string) {
 	cheerioElem('#field-background').each(function() {
         const bckGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (bckGrd) {

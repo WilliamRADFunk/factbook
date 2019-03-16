@@ -7,7 +7,7 @@ import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 import { countryToId } from '../utils/country-to-id';
 
-export function getBorders(cheerioElem, country, countryId) {
+export function getBorders(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
     let brdMap = getRelation(objectProperties, consts.ONTOLOGY.HAS_BORDER);
     cheerioElem('#field-land-boundaries').each(function() {
@@ -38,7 +38,7 @@ export function getBorders(cheerioElem, country, countryId) {
         if (numBrdGrd) {
             const openParam = numBrdGrd.indexOf('(');
             const closeParam = numBrdGrd.indexOf(')');
-            const num = (openParam > -1 < closeParam) ? numBrdGrd.substring(openParam + 1, closeParam) : 0;
+            const num = (openParam > -1 && -1 < closeParam) ? numBrdGrd.substring(openParam + 1, closeParam) : 0;
             try {
                 brdMap.datatypeProperties[consts.ONTOLOGY.TOTAL_BORDER_COUNTRIES] = Number(num);
             } catch (err) {

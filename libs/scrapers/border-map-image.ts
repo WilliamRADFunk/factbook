@@ -6,7 +6,7 @@ import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
-export function getBorderMapImg(cheerioElem, country, countryId) {
+export function getBorderMapImg(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.locatorBox').each(function() {
         let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_BORDER_MAP);
