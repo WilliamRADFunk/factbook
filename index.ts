@@ -19,32 +19,20 @@ const getCountryData = (country, url) => {
             .then((html) => {
                 const $ = cheerio.load(html);
                 const countryId = countryToId(country);
-				dataScrapers.getFlag($, country, countryId);
-                // console.log('getFlag for ', country);
-				dataScrapers.getBackground($, country, countryId);
-                // console.log('getBackground for ', country);
-				dataScrapers.getBorderMapImg($, country, countryId);
-                // console.log('getBorderMapImg for ', country);
-				dataScrapers.getRegionMapImg($, country, countryId);
-                // console.log('getRegionMapImg for ', country);
-                dataScrapers.getSupplementalImages($, country, countryId);
-                // console.log('getSupplementalImages for ', country);
-                dataScrapers.getGeography($, country, countryId);
-                // console.log('getGeography for ', country);
                 dataScrapers.getArea($, country, countryId);
-                // console.log('getArea for ', country);
-                dataScrapers.getCoastLength($, country, countryId);
-                // console.log('getCoastLength for ', country);
-                dataScrapers.getClimate($, country, countryId);
-                // console.log('getClimate for ', country);
+				dataScrapers.getBackground($, country, countryId);
+				dataScrapers.getBorderMapImg($, country, countryId);
                 dataScrapers.getBorders($, country, countryId);
-                // console.log('getBorders for ', country);
-                dataScrapers.getMaritimeClaims($, country, countryId);
-                // console.log('getMaritimeClaims for ', country);
-                dataScrapers.getNaturalResources($, country, countryId);
-                // console.log('getNaturalResources for ', country);
+                dataScrapers.getClimate($, country, countryId);
+                dataScrapers.getCoastLength($, country, countryId);
                 dataScrapers.getElevation($, country, countryId);
-                // console.log('getElevation for ', country);
+				dataScrapers.getFlag($, country, countryId);
+                dataScrapers.getGeography($, country, countryId);
+                dataScrapers.getLandUses($, country, countryId);
+                dataScrapers.getMaritimeClaims($, country, countryId);
+                dataScrapers.getNaturalResources($, country, countryId);
+				dataScrapers.getRegionMapImg($, country, countryId);
+                dataScrapers.getSupplementalImages($, country, countryId);
                 dataScrapers.getTerrains($, country, countryId);
                 console.log('Data scrape for ', country, ' is complete');
             })
@@ -92,7 +80,7 @@ const promisesResolutionForCountries = () => {
                     console.log(c);
                 });
                 console.log(']');
-                process.stdout.write('Did you want to retry scraping on those failed countries?');
+                process.stdout.write('Did you want to retry scraping on those failed countries? (y/n)');
                 process.stdin.once('data', function (data) {
                     console.log(`You said: ${data.toString().trim()}`);
                     if (data.toString().trim().toLowerCase().includes('y')) {

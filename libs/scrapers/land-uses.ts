@@ -32,7 +32,7 @@ export function getLandUses(cheerioElem, country, countryId) {
     if (bailOut) {
         return;
     }
-	cheerioElem('#field-land-use > div.category_data.subfield.numeric').each(function() {
+	cheerioElem('#field-land-use div.category_data.subfield.numeric').each(function() {
 		const landUse1Switch = cheerioElem(this).find('span.subfield-name').text().trim();
         const landUse1Data = cheerioElem(this).find('span.subfield-number').text().trim();
         const date1Data = cheerioElem(this).find('span.subfield-date').text().trim();
@@ -47,41 +47,83 @@ export function getLandUses(cheerioElem, country, countryId) {
                         consts.ONTOLOGY.ONT_AGRICULTURAL_LAND,
                         alId,
                         `Agricultural Land Use for ${country}`);
-                    store.agriculturalLands[alId] = objectProp[consts.ONTOLOGY.HAS_AGRICULTURAL_LAND];
                     const agLandRef = objectProp[consts.ONTOLOGY.HAS_AGRICULTURAL_LAND];
+                    store.agriculturalLands[alId] = agLandRef;
                     store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_AGRICULTURAL_LAND, objectProp));
-                    // map.datatypeProperties[consts.ONTOLOGY.AGRICULTURAL_LAND] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    agLandRef.datatypeProperties[consts.ONTOLOGY.PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    agLandRef.datatypeProperties[consts.ONTOLOGY.LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;
                 case 'forest:':
-                    map.datatypeProperties[consts.ONTOLOGY.FOREST_LAND] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    const fId = consts.ONTOLOGY.INST_FOREST_LAND + getUuid(country);
+                    objectProp = entityMaker(
+                        consts.ONTOLOGY.HAS_FOREST_LAND,
+                        consts.ONTOLOGY.ONT_FOREST_LAND,
+                        fId,
+                        `Forest Land Use for ${country}`);
+                    const fLandRef = objectProp[consts.ONTOLOGY.HAS_FOREST_LAND];
+                    store.forestLands[fId] = fLandRef;
+                    store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_FOREST_LAND, objectProp));
+                    fLandRef.datatypeProperties[consts.ONTOLOGY.PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    fLandRef.datatypeProperties[consts.ONTOLOGY.LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;
                 case 'other:':
-                    map.datatypeProperties[consts.ONTOLOGY.OTHER_LAND] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    const oId = consts.ONTOLOGY.INST_OTHER_LAND + getUuid(country);
+                    objectProp = entityMaker(
+                        consts.ONTOLOGY.HAS_OTHER_LAND,
+                        consts.ONTOLOGY.ONT_OTHER_LAND,
+                        oId,
+                        `Other Land Use for ${country}`);
+                    const oLandRef = objectProp[consts.ONTOLOGY.HAS_OTHER_LAND];
+                    store.otherLands[oId] = oLandRef;
+                    store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_OTHER_LAND, objectProp));
+                    oLandRef.datatypeProperties[consts.ONTOLOGY.PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    oLandRef.datatypeProperties[consts.ONTOLOGY.LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;
             }
         }
     });
-	cheerioElem('#field-land-use > div.category_data.subfield.grouped_subfield').each(function() {
-		const landUse2Switch = cheerioElem(this).find('span.subfield-name').text().trim();
+	cheerioElem('#field-land-use div.category_data.subfield.grouped_subfield').each(function() {
         const landUse2Data = cheerioElem(this).text().trim();
-        const date2Data = cheerioElem(this).find('span.subfield-date').text().trim();
-        const refinedValue2 = landUse2Data.replace(/[^0-9\-\.]/g, '').trim() || null;
-        if (refinedValue2) {
-            switch (landUse2Switch) {
-                case 'arable land:':
-                map.datatypeProperties[consts.ONTOLOGY.ARABLE_LAND] = landUse2Data.replace(/[^0-9\-\.]/g, '').trim() || null;
-                if (date2Data) {
-                    map.datatypeProperties[consts.ONTOLOGY.LAST_ESTIMATED] = date2Data.trim() || null;
-                }
-                break;
-            case 'permanent crops:':
-                map.datatypeProperties[consts.ONTOLOGY.PERMANENT_CROPS_LAND] = landUse2Data.replace(/[^0-9\-\.]/g, '').trim() || null;
-                break;
-            case 'permanent pasture:':
-                map.datatypeProperties[consts.ONTOLOGY.PERMANENT_PASTURE_LAND] = landUse2Data.replace(/[^0-9\-\.]/g, '').trim() || null;
-                break;
-            }
+        const groupSplit = landUse2Data.split('/').map(land => land.trim());
+        const percentages = groupSplit.map(land => land.substring(0, land.indexOf('%')).replace(/[^0-9\-\.]/g, '').trim());
+        const dates = groupSplit.map(land => land.substring(land.indexOf('('), land.indexOf(')') + 1).trim());
+        if (percentages.length) {
+            // Arable Land
+            const arbId = consts.ONTOLOGY.INST_ARABLE_LAND + getUuid(country);
+            const objectPropArable = entityMaker(
+                consts.ONTOLOGY.HAS_ARABLE_LAND,
+                consts.ONTOLOGY.ONT_ARABLE_LAND,
+                arbId,
+                `Arable Land Use for ${country}`);
+            const arbLandRef = objectPropArable[consts.ONTOLOGY.HAS_ARABLE_LAND];
+            store.arableLands[arbId] = arbLandRef;
+            store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_ARABLE_LAND, objectPropArable));
+            arbLandRef.datatypeProperties[consts.ONTOLOGY.PERCENTAGE] = percentages[0] || null;
+            arbLandRef.datatypeProperties[consts.ONTOLOGY.LAST_ESTIMATED] = dates[0] || 'N/A';
+            // Permanent Crops Land
+            const pcId = consts.ONTOLOGY.INST_PERMANENT_CROPS_LAND + getUuid(country);
+            const objectPropPermCrop = entityMaker(
+                consts.ONTOLOGY.HAS_PERMANENT_CROPS_LAND,
+                consts.ONTOLOGY.ONT_PERMANENT_CROPS_LAND,
+                pcId,
+                `Permanent Crops Land Use for ${country}`);
+            const pcLandRef = objectPropPermCrop[consts.ONTOLOGY.HAS_PERMANENT_CROPS_LAND];
+            store.permanentCropsLands[pcId] = pcLandRef;
+            store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_PERMANENT_CROPS_LAND, objectPropPermCrop));
+            pcLandRef.datatypeProperties[consts.ONTOLOGY.PERCENTAGE] = percentages[1] || null;
+            pcLandRef.datatypeProperties[consts.ONTOLOGY.LAST_ESTIMATED] = dates[1] || 'N/A';
+            // Permanent Pasture Land
+            const ppId = consts.ONTOLOGY.INST_PERMANENT_PASTURE_LAND + getUuid(country);
+            const objectPropPermPast = entityMaker(
+                consts.ONTOLOGY.HAS_PERMANENT_PASTURE_LAND,
+                consts.ONTOLOGY.ONT_PERMANENT_PASTURE_LAND,
+                ppId,
+                `Permanent Pasture Land Use for ${country}`);
+            const ppLandRef = objectPropPermPast[consts.ONTOLOGY.HAS_PERMANENT_PASTURE_LAND];
+            store.permanentPastureLands[ppId] = ppLandRef;
+            store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_PERMANENT_PASTURE_LAND, objectPropPermPast));
+            ppLandRef.datatypeProperties[consts.ONTOLOGY.PERCENTAGE] = percentages[2] || null;
+            ppLandRef.datatypeProperties[consts.ONTOLOGY.LAST_ESTIMATED] = dates[2] || 'N/A';
         }
     });
-	map.datatypeProperties[consts.ONTOLOGY.UNIT] = '%';
 };
