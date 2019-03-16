@@ -162,8 +162,51 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#Terrain -->
 
   <rdfs:Class rdf:about="&wfact;Terrain">
-    <rdfs:label>Natural Resource</rdfs:label>
+    <rdfs:label>Terrain</rdfs:label>
     <rdfs:comment>A stretch of land, especially with regard to its physical features.</rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#LandUse -->
+
+  <rdfs:Class rdf:about="&wfact;LandUse">
+    <rdfs:label>Land Use</rdfs:label>
+    <rdfs:comment>A break down of uses for the land (ie. agricultural, forest, pasture, etc.).</rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#AgriculturalLand -->
+
+  <rdfs:Class rdf:about="&wfact;AgriculturalLand">
+    <rdfs:label>Agricultural Land</rdfs:label>
+    <rdfs:comment>Percentage of land used for agricultural purposes.</rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#ArableLand -->
+
+  <rdfs:Class rdf:about="&wfact;ArableLand">
+    <rdfs:label>Arable Land</rdfs:label>
+    <rdfs:comment>Percentage of land set aside to be arable.</rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#PermanentCropsLand -->
+
+  <rdfs:Class rdf:about="&wfact;PermanentCropsLand">
+    <rdfs:label>Permanent Crops Land</rdfs:label>
+    <rdfs:comment>Percentage of land set aside permanently for use in growing crops.</rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#PermanentPastureLand -->
+
+  <rdfs:Class rdf:about="&wfact;PermanentPastureLand">
+    <rdfs:label>Permanent Pasture Land</rdfs:label>
+    <rdfs:comment>Percentage of land set aside permanently for use as pasture.</rdfs:comment>
+  </rdfs:Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#OtherLand -->
+
+  <rdfs:Class rdf:about="&wfact;OtherLand">
+    <rdfs:subClassOf rdf:resource="&wfact;LandUse"/>
+    <rdfs:label>Other Land</rdfs:label>
+    <rdfs:comment>Percentage of land used for purposes other that agricultural, grazing, or forest.</rdfs:comment>
   </rdfs:Class>
 
   <!--
@@ -277,6 +320,55 @@
   <owl:ObjectProperty rdf:about="&wfact;hasTerrain">
       <rdfs:domain rdf:resource="&wfact;Country"/>
       <rdfs:range rdf:resource="&wfact;Terrain"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasLandUse -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasLandUse">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;LandUse"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasAgriculturalLand -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasAgriculturalLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;AgriculturalLand"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasArableLand -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasArableLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;ArableLand"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasForestLand -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasForestLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;ForestLand"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasOtherLand -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasOtherLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;OtherLand"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasPermanentCropsLand -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasPermanentCropsLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;PermanentCropsLand"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasPermanentPastureLand -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasPermanentPastureLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;PermanentPastureLand"/>
   </owl:ObjectProperty>
 
   <!--
@@ -632,6 +724,34 @@
     <rdfs:label>highest point description</rdfs:label>
     <rdfs:comment>Supplemental description for the highest elevation point</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#percentage -->
+
+  <DatatypeProperty rdf:about="&wfact;percentage">
+    <rdfs:label>percentage</rdfs:label>
+    <rdfs:comment>The percentage belonging to the parent entity</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;LandUse"/>
+    <rdfs:domain rdf:resource="&asset;AgriculturalLand"/>
+    <rdfs:domain rdf:resource="&asset;ArableLand"/>
+    <rdfs:domain rdf:resource="&asset;OtherLand"/>
+    <rdfs:domain rdf:resource="&asset;PermanentCropsLand"/>
+    <rdfs:domain rdf:resource="&asset;PermanentPastureLand"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated -->
+
+  <DatatypeProperty rdf:about="&wfact;lastEstimated">
+    <rdfs:label>last estimated</rdfs:label>
+    <rdfs:comment>The last date/year the field was last estimated</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;LandUse"/>
+    <rdfs:domain rdf:resource="&asset;AgriculturalLand"/>
+    <rdfs:domain rdf:resource="&asset;ArableLand"/>
+    <rdfs:domain rdf:resource="&asset;OtherLand"/>
+    <rdfs:domain rdf:resource="&asset;PermanentCropsLand"/>
+    <rdfs:domain rdf:resource="&asset;PermanentPastureLand"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 

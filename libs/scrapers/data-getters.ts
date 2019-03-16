@@ -1,16 +1,17 @@
+import { getArea } from './domain-area';
 import { getBackground } from './background';
-import { getBorders } from './borders';
 import { getBorderMapImg } from './border-map-image';
+import { getBorders } from './borders';
 import { getClimate } from './climate';
 import { getCoastLength } from './coast-length';
-import { getArea } from './domain-area';
 import { getGeography } from './geography';
+import { getElevation } from './elevation';
 import { getFlag } from './national-flag';
-import { getRegionMapImg } from './region-map-image';
-import { getSupplementalImages } from './supplemental-image';
+import { getLandUses } from './land-uses';
 import { getMaritimeClaims } from './maritime-claims';
 import { getNaturalResources } from './natural-resources';
-import { getElevation } from './elevation';
+import { getRegionMapImg } from './region-map-image';
+import { getSupplementalImages } from './supplemental-image';
 import { getTerrains } from './terrain';
 
 export const dataScrapers = {
@@ -20,12 +21,13 @@ export const dataScrapers = {
 	getBorders,
 	getClimate,
 	getCoastLength,
+	getElevation,
 	getFlag,
 	getGeography,
-	getRegionMapImg,
-	getSupplementalImages,
+	getLandUses,
 	getMaritimeClaims,
 	getNaturalResources,
-	getElevation,
+	getRegionMapImg,
+	getSupplementalImages,
 	getTerrains
 };
