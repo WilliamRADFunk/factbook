@@ -23,7 +23,17 @@
     "scraping",
     "ontology",
     "json",
-    "json-ld"
+    "json-ld",
+    "CIA",
+    "factbook",
+    "world",
+    "factbook",
+    "world-factbook",
+    "factbook.json",
+    "countries",
+    "data",
+    "big",
+    "data"
   ],
   "author": "William RAD Funk",
   "license": "UNLICENSED",
