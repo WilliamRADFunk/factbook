@@ -227,6 +227,16 @@
     </rdfs:comment>
   </rdfs:Class>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#GeographicNote -->
+
+  <rdfs:Class rdf:about="&wfact;GeographicNote">
+    <rdfs:label>Geographic Note</rdfs:label>
+    <rdfs:comment>
+      An additional description on a place's geography.
+      The significance of it's physical location in the larger world.
+    </rdfs:comment>
+  </rdfs:Class>
+
   <!--
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -401,6 +411,13 @@
   <owl:ObjectProperty rdf:about="&wfact;hasNaturalHazard">
       <rdfs:domain rdf:resource="&wfact;Country"/>
       <rdfs:range rdf:resource="&wfact;NaturalHazard"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasGeographicNote -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasGeographicNote">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;GeographicNote"/>
   </owl:ObjectProperty>
 
   <!--
@@ -715,6 +732,7 @@
   <DatatypeProperty rdf:about="&wfact;description">
     <rdfs:label>Description</rdfs:label>
     <rdfs:comment>Description of the terrain</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;GeographicNote"/>
     <rdfs:domain rdf:resource="&asset;NaturalResource"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>

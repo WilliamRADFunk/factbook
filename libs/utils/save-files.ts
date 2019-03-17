@@ -15,6 +15,7 @@ export function saveFiles() {
 	saveFile('domain-areas', 'domainAreas', consts.ONTOLOGY.ONT_DOMAIN_AREA);
 	saveFile('elevations', 'elevations', consts.ONTOLOGY.ONT_ELEVATION);
 	saveFile('forest-lands', 'forestLands', consts.ONTOLOGY.ONT_FOREST_LAND);
+	saveFile('geographic-notes', 'geographicNotes', consts.ONTOLOGY.ONT_GEOGRAPHIC_NOTE);
 	saveFile('images', 'images', consts.ONTOLOGY.ONT_IMAGE);
 	saveFile('land-uses', 'landUses', consts.ONTOLOGY.ONT_LAND_USE);
 	saveFile('locations', 'locations', consts.ONTOLOGY.ONT_GEO_LOCATION);

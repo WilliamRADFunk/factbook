@@ -16,6 +16,7 @@ class GlobalStore {
 	elevations = {};
 	forestLands = {};
 	images = {};
+	geographicNotes: {};
 	landUses = {};
 	locations = {};
 	maritimeClaims = {};

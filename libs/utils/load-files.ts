@@ -18,6 +18,7 @@ export function loadFiles() {
     loadFile('countries', 'countries', true);
     loadFile('domain-areas', 'domainAreas');
     loadFile('forest-lands', 'forestLands');
+	loadFile('geographic-notes', 'geographicNotes');
     loadFile('images', 'images');
     loadFile('land-uses', 'landUses');
     loadFile('locations', 'locations');
