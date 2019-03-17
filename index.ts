@@ -28,6 +28,7 @@ const getCountryData = (country: string, url: string) => {
                 dataScrapers.getElevation($, country, countryId);
 				dataScrapers.getFlag($, country, countryId);
                 dataScrapers.getGeography($, country, countryId);
+                dataScrapers.getIrrigatedLand($, country, countryId);
                 dataScrapers.getLandUses($, country, countryId);
                 dataScrapers.getMaritimeClaims($, country, countryId);
                 dataScrapers.getNaturalResources($, country, countryId);

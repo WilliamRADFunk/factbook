@@ -209,6 +209,15 @@
     <rdfs:comment>Percentage of land used for purposes other that agricultural, grazing, or forest.</rdfs:comment>
   </rdfs:Class>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#ArtificiallyIrrigatedLand -->
+
+  <rdfs:Class rdf:about="&wfact;ArtificiallyIrrigatedLand">
+    <rdfs:label>Artificially Irrigated Land</rdfs:label>
+    <rdfs:comment>
+      Percentage of land artificially irrigated.
+    </rdfs:comment>
+  </rdfs:Class>
+
   <!--
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -371,6 +380,13 @@
       <rdfs:range rdf:resource="&wfact;PermanentPastureLand"/>
   </owl:ObjectProperty>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasArtificiallyIrrigatedLand -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasArtificiallyIrrigatedLand">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+  </owl:ObjectProperty>
+
   <!--
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -474,12 +490,13 @@
   <DatatypeProperty rdf:about="&wfact;unit">
     <rdfs:label>Unit</rdfs:label>
     <rdfs:comment>Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;DomainArea"/>
-    <rdfs:domain rdf:resource="&asset;Coast"/>
-    <rdfs:domain rdf:resource="&asset;BorderCountryPair"/>
+    <rdfs:domain rdf:resource="&asset;ArtificiallyIrrigatedLand"/>
     <rdfs:domain rdf:resource="&asset;Border"/>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&asset;BorderCountryPair"/>
+    <rdfs:domain rdf:resource="&asset;Coast"/>
+    <rdfs:domain rdf:resource="&asset;DomainArea"/>
     <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -488,6 +505,7 @@
   <DatatypeProperty rdf:about="&wfact;totalArea">
     <rdfs:label>Total Area</rdfs:label>
     <rdfs:comment>Total area associated with the entity to which it's attached.</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;ArtificiallyIrrigatedLand"/>
     <rdfs:domain rdf:resource="&asset;DomainArea"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
@@ -761,6 +779,7 @@
     <rdfs:domain rdf:resource="&asset;LandUse"/>
     <rdfs:domain rdf:resource="&asset;AgriculturalLand"/>
     <rdfs:domain rdf:resource="&asset;ArableLand"/>
+    <rdfs:domain rdf:resource="&asset;ArtificiallyIrrigatedLand"/>
     <rdfs:domain rdf:resource="&asset;OtherLand"/>
     <rdfs:domain rdf:resource="&asset;PermanentCropsLand"/>
     <rdfs:domain rdf:resource="&asset;PermanentPastureLand"/>

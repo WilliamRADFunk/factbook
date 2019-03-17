@@ -3,6 +3,7 @@ class GlobalStore {
 	LOG_STREAM = null;
 	agriculturalLands = {};
 	arableLands = {};
+	artificiallyIrrigatedLands = {};
 	borderCountries = {};
 	borderMaps = {};
 	borders = {};

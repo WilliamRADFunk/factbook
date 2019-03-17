@@ -27,6 +27,7 @@ const ONTOLOGY = {
 	// Ontology class definition paths
 	ONT_AGRICULTURAL_LAND: MAIN_ONT_PATH + 'AgriculturalLand/',
 	ONT_ARABLE_LAND: MAIN_ONT_PATH + 'ArableLand/',
+	ONT_ARTIFICIALLY_IRRIGATED_LAND: MAIN_ONT_PATH + 'ArtificiallyIrrigatedLand/',
 	ONT_BORDER: MAIN_ONT_PATH + 'Border/',
 	ONT_BORDER_COUNTRY: MAIN_ONT_PATH + 'BorderCountryPair/',
 	ONT_BORDER_MAP: MAIN_ONT_PATH + 'BorderMap/',
@@ -51,6 +52,7 @@ const ONTOLOGY = {
 	// Ontology definition paths for (predicate) object/relation properties
 	HAS_AGRICULTURAL_LAND: MAIN_ONT_PATH + 'hasAgriculturalLand/',
 	HAS_ARABLE_LAND: MAIN_ONT_PATH + 'hasArableLand/',
+	HAS_ARTIFICIALLY_IRRIGATED_LAND: MAIN_ONT_PATH + 'hasArtificiallyIrrigatedLand/',
 	HAS_BORDER: MAIN_ONT_PATH + 'hasBorder/',
 	HAS_BORDER_COUNTRY: MAIN_ONT_PATH + 'hasBorderCountryPair/',
 	HAS_BORDER_MAP: MAIN_ONT_PATH + 'hasBorderMap/',
@@ -77,6 +79,7 @@ const ONTOLOGY = {
 	// Instance definition paths
 	INST_AGRICULTURAL_LAND: MAIN_INSTANCE_PATH + 'AgriculturalLand/',
 	INST_ARABLE_LAND: MAIN_INSTANCE_PATH + 'ArableLand/',
+	INST_ARTIFICIALLY_IRRIGATED_LAND: MAIN_INSTANCE_PATH + 'ArtificiallyIrrigatedLand/',
 	INST_BORDER: MAIN_INSTANCE_PATH + 'Border/',
 	INST_BORDER_COUNTRY: MAIN_INSTANCE_PATH + 'BorderCountryPair/',
 	INST_BORDER_MAP: MAIN_INSTANCE_PATH + 'BorderMap/',

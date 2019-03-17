@@ -8,6 +8,7 @@ export function loadFiles() {
 
     loadFile('agricultural-lands', 'agriculturalLands');
     loadFile('arable-lands', 'arableLands');
+	loadFile('artificially-irrigated-lands', 'artificiallyIrrigatedLands');
     loadFile('border-countries', 'borderCountries');
     loadFile('border-maps', 'borderMaps');
     loadFile('borders', 'borders');

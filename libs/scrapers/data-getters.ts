@@ -5,6 +5,7 @@ import { getBorders } from './borders';
 import { getClimate } from './climate';
 import { getCoastLength } from './coast-length';
 import { getGeography } from './geography';
+import { getIrrigatedLand } from './irrigated-land';
 import { getElevation } from './elevation';
 import { getFlag } from './national-flag';
 import { getLandUses } from './land-uses';
@@ -25,6 +26,7 @@ export const dataScrapers = {
 	getElevation,
 	getFlag,
 	getGeography,
+	getIrrigatedLand,
 	getLandUses,
 	getMaritimeClaims,
 	getNaturalResources,

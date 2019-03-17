@@ -4,6 +4,7 @@ import { saveFile } from './save-file';
 export function saveFiles() {
 	saveFile('agricultural-lands', 'agriculturalLands', consts.ONTOLOGY.ONT_AGRICULTURAL_LAND);
 	saveFile('arable-lands', 'arableLands', consts.ONTOLOGY.ONT_ARABLE_LAND);
+	saveFile('artificially-irrigated-lands', 'artificiallyIrrigatedLands', consts.ONTOLOGY.ONT_ARTIFICIALLY_IRRIGATED_LAND);
 	saveFile('border-countries', 'borderCountries', consts.ONTOLOGY.ONT_BORDER_COUNTRY);
 	saveFile('border-maps', 'borderMaps', consts.ONTOLOGY.ONT_BORDER_MAP);
 	saveFile('borders', 'borders', consts.ONTOLOGY.ONT_BORDER);
