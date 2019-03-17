@@ -5684,7 +5684,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
         }
       }, 
       {
@@ -5761,63 +5761,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
@@ -26578,7 +26578,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
         }
       }, 
       {
@@ -26655,63 +26655,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
@@ -31433,7 +31433,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
         }
       }, 
       {
@@ -31510,63 +31510,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
@@ -31712,7 +31712,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
         }
       }, 
       {
@@ -31789,63 +31789,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
@@ -32838,7 +32838,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
         }
       }, 
       {
@@ -32915,63 +32915,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
@@ -38430,7 +38430,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
         }
       }, 
       {
@@ -38507,63 +38507,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
@@ -43873,7 +43873,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
         }
       }, 
       {
@@ -43950,63 +43950,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
@@ -61892,7 +61892,7 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap/": {
           "@id": "http://williamrobertfunk.com/instance/BorderMap/de1708cf-1227-3e54-9ff2-6a911c56cb99",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Johnston Atoll"
         }
       }, 
       {
@@ -61969,63 +61969,63 @@
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/bc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/89d4c2c5-2099-3e40-8e70-d544b6411abb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/be842261-074f-3ad3-83c5-2a9f6b6d38fb",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/15cdea37-9269-32c3-9741-f7d41326bf9c",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/a65d4b15-b92b-37a3-a820-937249311065",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/c163173d-de08-3b34-92dd-170a2a00b8ad",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/cbd42303-a3bf-3f7f-8778-e43be0789970",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {
         "http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage/": {
           "@id": "http://williamrobertfunk.com/instance/Image/d2b0b086-7cb0-36a7-a706-cf6c32182a42",
           "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image/",
-          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
+          "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Johnston Atoll"
         }
       }, 
       {

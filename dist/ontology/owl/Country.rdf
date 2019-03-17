@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:wdrs="http://www.w3.org/2007/05/powder-s#"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:ns5="http://open.vocab.org/terms/" >
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/">
+    <ns5:defines rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/Country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class" />
+    <owl:equivalentClass rdf:resource="http://schema.org/Country" />
+    <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q6256" />
+    <rdfs:label xml:lang="fr">pays</rdfs:label>
+    <rdfs:label xml:lang="ga">tír</rdfs:label>
+    <rdfs:label xml:lang="nl">land</rdfs:label>
+    <rdfs:label xml:lang="sl">država</rdfs:label>
+    <rdfs:label xml:lang="ko">나라</rdfs:label>
+    <rdfs:label xml:lang="ja">国</rdfs:label>
+    <rdfs:label xml:lang="el">χώρα</rdfs:label>
+    <rdfs:label xml:lang="de">Staat</rdfs:label>
+    <rdfs:label xml:lang="es">país</rdfs:label>
+    <rdfs:label xml:lang="en">country</rdfs:label>
+    <rdfs:label xml:lang="ru">Государство</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/" />
+    <owl:sameAs rdf:resource="http://dbpedia.org/ontology/Country" />
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/PopulatedPlace" />
+    <wdrs:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl" />
+    <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/HistoricalCountry">
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/capitalCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/continent">
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/country">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/countryOrigin">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/countryWithFirstAstronaut">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/countryWithFirstSatellite">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/countryWithFirstSatelliteLaunched">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/countryWithFirstSpaceflight">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/europeanUnionEntranceDate">
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/fastestDriverCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/firstDriverCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/governmentCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/locationCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/managementCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/mouthCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/nationality">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/numberOfMinistries">
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/poleDriverCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/secondDriverCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/sourceConfluenceCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/sourceCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/sportCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/stateOfOrigin">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/thirdDriverCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/topLevelDomain">
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/twinCountry">
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Country" />
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/usingCountry">
+    <rdfs:range rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/wordBefore">
+    <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/ontology/data/definitions.ttl">
+    <ns5:describes rdf:resource="http://dbpedia.org/ontology/Country" />
+  </rdf:Description>
+</rdf:RDF>
