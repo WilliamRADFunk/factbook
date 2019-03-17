@@ -20,7 +20,7 @@ export function getTerrains(cheerioElem: CheerioSelector, country: string, count
 		'INST_TERRAIN',
 		'ONT_TERRAIN',
 		'terrains',
-		'terrainDescription',
+		'DESCRIPTION',
 		'Terrain',
 		';');
 };

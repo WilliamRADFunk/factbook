@@ -10,14 +10,14 @@ export function getGeographicNotes(cheerioElem: CheerioSelector, country: string
     const objectProperties = store.countries[countryId].objectProperties;
 	const prevHasList = objectProperties.filter(rel => rel[consts.ONTOLOGY.HAS_GEOGRAPHIC_NOTE]);
     let bailOut = true;
-    cheerioElem('#field-geographic-note').each(function() {
+    cheerioElem('#field-geography-note').each(function() {
         bailOut = false;
     });
     if (bailOut) {
         return;
     }
     let useOptionA = false;
-    cheerioElem('#field-geographic-note > div.category_data.subfield.text').each(function() {
+    cheerioElem('#field-geography-note > div.category_data.subfield.text').each(function() {
         useOptionA = true;
     });
     if (useOptionA) {
@@ -28,16 +28,16 @@ export function getGeographicNotes(cheerioElem: CheerioSelector, country: string
         };
         parsedSingleLine(
             origParams,
-            '#field-geographic-note',
-            'HAS_GEOGAPHIC_NOTE',
-            'INST_GEOGAPHIC_NOTE',
-            'ONT_GEOGAPHIC_NOTE',
+            '#field-geography-note',
+            'HAS_GEOGRAPHIC_NOTE',
+            'INST_GEOGRAPHIC_NOTE',
+            'ONT_GEOGRAPHIC_NOTE',
             'geographicNotes',
-            'description',
+            'DESCRIPTION',
             'Geographic Note',
             ';');
     } else {
-        cheerioElem('#field-geographic-note > div.category_data.note').each(function() {
+        cheerioElem('#field-geography-note > div.category_data.note').each(function() {
             let geographicalNotes = cheerioElem(this).text().trim().replace(/\\n/g, '').trim();
             const notes = geographicalNotes.split(/note [0-9]+\:/);
             if (notes.length) {

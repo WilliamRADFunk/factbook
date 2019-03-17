@@ -20,7 +20,7 @@ export function getNaturalResources(cheerioElem: CheerioSelector, country: strin
 		'INST_NATURAL_RESOURCE',
 		'ONT_NATURAL_RESOURCE',
 		'naturalResources',
-		'resourceName',
+		'RESOURCE_NAME',
 		'Natural Resource',
 		',');
 };

@@ -2,13 +2,6 @@
   "@context": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
   "@graph": [
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/e8dbbad7-1cb1-36a9-bcf3-881922784a9e",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for South Georgia and South Sandwich Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
       "@id": "http://williamrobertfunk.com/instance/ForestLand/290125ef-9fc2-3ea6-9f61-37e052316978",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
       "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bouvet Island",
@@ -23,9 +16,9 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/13044708-3d0b-36b6-914b-952751355ad3",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/eb6d666b-573b-33d6-af55-27d62a777f36",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Heard Island and McDonald Islands",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Navassa Island",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
@@ -51,23 +44,9 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/eb6d666b-573b-33d6-af55-27d62a777f36",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/13044708-3d0b-36b6-914b-952751355ad3",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Navassa Island",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/04674dda-9bab-3a8f-b4a2-ed0fa25f4cf3",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Spratly Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c6bf8032-9471-3eb9-a153-ded1daed95f5",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Howland Island",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Heard Island and McDonald Islands",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
@@ -79,16 +58,9 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/55957aeb-1714-3a91-9845-5cb9876e462d",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/04674dda-9bab-3a8f-b4a2-ed0fa25f4cf3",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Jarvis Island",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/df234ea5-9088-3ef0-8afd-8cdcca0fb761",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Johnston Atoll",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Spratly Islands",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
@@ -100,30 +72,16 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/0b5cac30-54ad-33b7-a5da-977b1d9401f5",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/e8dbbad7-1cb1-36a9-bcf3-881922784a9e",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Wake Island",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for South Georgia and South Sandwich Islands",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/bff21d90-ee3c-3a7a-91e4-43180897f2d7",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/df234ea5-9088-3ef0-8afd-8cdcca0fb761",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Palmyra Atoll",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/22066e1f-775c-3abe-bccd-2a03126060f6",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kingman Reef",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/acb3f2f8-a526-3628-a229-a70aa0fe6718",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for United States Pacific Island Wildlife Refuges",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Johnston Atoll",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
@@ -135,16 +93,30 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/fedb2073-6102-3b4c-a53a-f14fae039294",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/0b5cac30-54ad-33b7-a5da-977b1d9401f5",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Norfolk Island",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Wake Island",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/49fb9b1c-4509-3318-928b-8cdd7265253a",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c6bf8032-9471-3eb9-a153-ded1daed95f5",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Svalbard",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Howland Island",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/55957aeb-1714-3a91-9845-5cb9876e462d",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Jarvis Island",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/22066e1f-775c-3abe-bccd-2a03126060f6",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kingman Reef",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
@@ -156,10 +128,17 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/0311d743-a395-337f-9490-fa8a89013d4b",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/fedb2073-6102-3b4c-a53a-f14fae039294",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Pitcairn Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "74.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Norfolk Island",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/acb3f2f8-a526-3628-a229-a70aa0fe6718",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for United States Pacific Island Wildlife Refuges",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -170,10 +149,59 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/0311d743-a395-337f-9490-fa8a89013d4b",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Pitcairn Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "74.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/49fb9b1c-4509-3318-928b-8cdd7265253a",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Svalbard",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/bff21d90-ee3c-3a7a-91e4-43180897f2d7",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Palmyra Atoll",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
       "@id": "http://williamrobertfunk.com/instance/ForestLand/a08c1ca2-fca3-3f1e-a2de-01c2de009926",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
       "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tokelau",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/28a117f1-7363-3e3c-9742-31e0cfb011aa",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Northern Mariana Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "65.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c635e301-48c3-3213-a61c-d3147f9ff8c7",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Niue",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "71.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/ff4636d0-caf6-3f70-a7df-a437d80aab75",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Jersey",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/b0ddce0f-54c9-36c1-8611-7e280aead4f9",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Liechtenstein",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -191,87 +219,10 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/ff4636d0-caf6-3f70-a7df-a437d80aab75",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Jersey",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/fab1a523-9120-3253-934c-8cc0b956613c",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Western Sahara",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
       "@id": "http://williamrobertfunk.com/instance/ForestLand/35ab1c3d-e6da-3348-8016-54e1ebf5dd93",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
       "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Monaco",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/b0ddce0f-54c9-36c1-8611-7e280aead4f9",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Liechtenstein",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/28a117f1-7363-3e3c-9742-31e0cfb011aa",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Northern Mariana Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "65.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/9a2248f7-c4de-37c1-bc8e-2688356857b5",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tuvalu",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/e5e0b68a-dfac-3669-b950-5bedf6d42407",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Palau",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "87.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/ff6b6871-509d-326c-a777-3d50c507db22",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Falkland Islands (Islas Malvinas)",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/611bc125-b7ad-36ad-9d51-03c6bfd968a7",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Turks and Caicos Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/70e53283-edb6-373a-8cd2-1aa7731dfe1f",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saint Pierre and Miquelon",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "12.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/f8aa3a93-4ee3-3a6c-86d1-b092624a9c38",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guam",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "47.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1fc1b5b2-9cef-334d-b2c7-e252ca386339",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for British Virgin Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "24.3",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -282,17 +233,87 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/87fd3bef-cce6-3242-a18f-49ec496c2b09",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1fc1b5b2-9cef-334d-b2c7-e252ca386339",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for San Marino",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for British Virgin Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "24.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/fab1a523-9120-3253-934c-8cc0b956613c",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Western Sahara",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/e5e0b68a-dfac-3669-b950-5bedf6d42407",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Palau",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "87.6",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/f8aa3a93-4ee3-3a6c-86d1-b092624a9c38",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guam",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "47.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/70e53283-edb6-373a-8cd2-1aa7731dfe1f",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saint Pierre and Miquelon",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "12.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/35f00515-7cfd-3338-b5b0-6f037eeeff3b",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Montserrat",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "25",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/ca0b36fe-c74b-3612-a6ad-ce2b5ce0e8ef",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for American Samoa",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "78.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/ff6b6871-509d-326c-a777-3d50c507db22",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Falkland Islands (Islas Malvinas)",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c635e301-48c3-3213-a61c-d3147f9ff8c7",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5722849f-2ccb-3a63-a8a0-7473e71e8df1",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Niue",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "71.2",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Anguilla",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "61.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/611bc125-b7ad-36ad-9d51-03c6bfd968a7",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Turks and Caicos Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/b9967e88-983d-3714-a8fa-745aa72bb8b4",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for New Caledonia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "45.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/027ed37f-00fb-3aad-b089-a91f2d52c7b9",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bermuda",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "20",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -310,31 +331,10 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2001 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/027ed37f-00fb-3aad-b089-a91f2d52c7b9",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/bccccc24-9b84-3ade-940a-d4205e585326",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bermuda",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "20",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/e5133589-7c0e-36bb-9526-93d416690214",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Gibraltar",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/b9967e88-983d-3714-a8fa-745aa72bb8b4",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for New Caledonia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "45.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/e9e21c35-ab34-3ef7-9030-5554368ebf78",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cayman Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "52.9",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saint Helena, Ascension, and Tristan da Cunha",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "5.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -345,13 +345,6 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5722849f-2ccb-3a63-a8a0-7473e71e8df1",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Anguilla",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "61.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
       "@id": "http://williamrobertfunk.com/instance/ForestLand/f648c72a-69c3-3bb1-97c3-603ebd4a7514",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
       "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Nauru",
@@ -359,39 +352,18 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/8415fea7-e424-361d-ae7c-da45687dbb07",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/80eaf308-7b0b-3614-b3c6-c223f1e09197",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Virgin Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "57.4",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Equatorial Guinea",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "57.5",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/35f00515-7cfd-3338-b5b0-6f037eeeff3b",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/e9e21c35-ab34-3ef7-9030-5554368ebf78",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Montserrat",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "25",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cayman Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "52.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/4bacfe25-35ec-3eeb-9a04-a1b85c3a2e0b",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cook Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "64.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/ca0b36fe-c74b-3612-a6ad-ce2b5ce0e8ef",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for American Samoa",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "78.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/6981f402-6cf8-3b35-b630-141d375a9455",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for South Sudan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "N/A"
     }, 
     {
       "@id": "http://williamrobertfunk.com/instance/ForestLand/bc1cd4f0-7d82-3693-b32f-9c95c491d6fb",
@@ -408,45 +380,31 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/673b1cf8-63c8-32d1-8109-731b098b19ba",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/4bacfe25-35ec-3eeb-9a04-a1b85c3a2e0b",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saint Lucia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "77",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cook Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "64.6",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/dba86789-b53e-36df-8477-a589a5729889",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/87fd3bef-cce6-3242-a18f-49ec496c2b09",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Central African Republic",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.2",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for San Marino",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/fe23c52d-c244-3a43-aa07-309218808960",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/9a2248f7-c4de-37c1-bc8e-2688356857b5",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Puerto Rico",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "63.2",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tuvalu",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.3",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/f5680604-ea9e-3abb-a383-3339ee5a793c",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/e5133589-7c0e-36bb-9526-93d416690214",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Samoa",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "60.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/16cc7f84-3a3e-3bc1-95ff-6fa1925826e7",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Eswatini",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/e2ac50f5-a2be-3f73-987e-c8afb3ab3b90",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for North Macedonia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "39.8",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Gibraltar",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -457,17 +415,31 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/3f57adf2-c06c-3ed0-95ff-83ab72787889",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/bb130626-b42c-3ece-8603-34424aef9a14",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kiribati",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "15",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Marshall Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "49.3",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/0dc99667-bf50-32fd-8a5f-f20e33bec5d5",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/673b1cf8-63c8-32d1-8109-731b098b19ba",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for West Bank",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saint Lucia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "77",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/07dee45e-a568-3bca-a08c-e72ea01e985a",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cabo Verde",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "21",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/8415fea7-e424-361d-ae7c-da45687dbb07",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Virgin Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "57.4",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -478,44 +450,86 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/3fa9b2dd-85d2-37dd-8f64-07fbb7799287",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/18740af5-bcec-3773-bd3c-059e0fc65703",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saint Vincent and the Grenadines",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "68.7",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Eritrea",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "15.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/b07cb9a2-b248-32a8-997c-d3dfa67d1d6a",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/479fb34b-dbf4-3ba9-8d03-cca83f64ad4e",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guinea-Bissau",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "55.2",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Montenegro",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "40.4",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/bb130626-b42c-3ece-8603-34424aef9a14",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/923c8a23-a3eb-3f07-bd80-b8aca8e5ff85",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Marshall Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "49.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bahamas, The",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "51.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/ecae78ab-ec52-3f0f-a00d-db3666aa9db9",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/6981f402-6cf8-3b35-b630-141d375a9455",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Solomon Islands",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "78.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for South Sudan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "N/A"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/2133c452-55e5-332c-b5d7-8e83461fd69a",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/530670dc-a740-3be8-9943-6ac4734296b8",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Korea, North",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "46",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Antigua and Barbuda",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "22.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/f3a82610-1b9a-37f3-973c-b0f1a7505587",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Aruba",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
     }, 
     {
       "@id": "http://williamrobertfunk.com/instance/ForestLand/1ba0cfa5-5029-3f8b-ac5f-a44b8236639a",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
       "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Greenland",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d8973b8e-dfe5-3321-9044-e39d5452523b",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Senegal",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/77dcd849-e550-3fec-bc83-d38fcc8cbc72",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Switzerland",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/35536a41-b209-335d-9e3a-d440431fef26",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Indonesia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "51.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/a42522a0-cdd6-361a-9379-e6c95d08a9c4",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Angola",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "46.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/83ef3e6c-ee83-3b88-a398-14638a94fa1a",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Qatar",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
@@ -527,122 +541,59 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/2d79f6db-ae28-3f57-b409-2d5370a518c3",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d115b8d5-acb8-3a6b-8012-aaf4cbb3812c",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Timor-Leste",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "49.1",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for United Arab Emirates",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "3.8",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/530670dc-a740-3be8-9943-6ac4734296b8",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1a591a3e-91fc-37a4-bf2c-08e9e2e117f3",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Antigua and Barbuda",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "22.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/6ddcb9e4-747f-3b58-868b-a556a81562d1",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sao Tome and Principe",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "28.1",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Malta",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/541212bb-30f1-322f-bdbc-1629698ba6f5",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/674027e1-7b0e-364e-b6cd-e2005cb8e76f",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Gambia, The",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.9",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Jordan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/18740af5-bcec-3773-bd3c-059e0fc65703",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/2133c452-55e5-332c-b5d7-8e83461fd69a",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Eritrea",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "15.1",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Korea, North",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "46",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/e5bb59a2-7319-3aca-a207-0f6fd4f2e075",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/74a788ce-e27d-3690-95a0-786732c662e0",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Comoros",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.4",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Lithuania",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34.6",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/923c8a23-a3eb-3f07-bd80-b8aca8e5ff85",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/3f57adf2-c06c-3ed0-95ff-83ab72787889",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bahamas, The",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "51.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/07dee45e-a568-3bca-a08c-e72ea01e985a",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cabo Verde",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "21",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kiribati",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "15",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/bb2254a8-06f4-3ff2-8753-ca390143e2ca",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/7998be8d-446d-368c-99ab-ca446cb3bd79",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bhutan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "85.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Laos",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "67.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/bccccc24-9b84-3ade-940a-d4205e585326",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/fbaa3c3e-9e1b-3f9f-a813-f2d4c038b295",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saint Helena, Ascension, and Tristan da Cunha",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "5.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/60a8b0c6-de6f-3abe-9999-959a5c735275",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Djibouti",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/e8a1234b-8442-329d-8965-e48d93a16e10",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tonga",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "12.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/50df2d65-8581-3b9e-a96e-34b53f6280fd",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sierra Leone",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "37.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/4812648c-8a89-3e18-9830-5642f6a01fa1",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Nicaragua",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "25.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/93b12bf5-7f18-333c-9ad2-f55e33a8e3fd",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Lesotho",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/dbf2a2da-6458-3242-8072-85e7f1483aeb",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Grenada",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "50",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/80eaf308-7b0b-3614-b3c6-c223f1e09197",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Equatorial Guinea",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "57.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Papua New Guinea",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "63.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -653,10 +604,10 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c14c36df-fca6-3b07-810f-5e3630ba5d99",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/9d4ac43d-5e24-33d0-9e44-8ce01a277ba5",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Oman",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Venezuela",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "52.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -667,80 +618,17 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/180c89bf-50c8-329d-ab45-e49d9dac62fc",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5c777263-58c5-3af9-8ad9-cdccd0882bca",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Botswana",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "19.8",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bulgaria",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.7",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/37497aa5-a227-3e49-b14a-ee1b07e8edf9",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/fe23c52d-c244-3a43-aa07-309218808960",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Brazil",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "61.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/a06dcd71-328f-32b4-8fa7-f84012096e8f",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Gabon",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "81",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/ac33d641-f4c9-3bde-9b29-bb95e7f90906",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Yemen",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/3ae11c72-5c30-329d-8d34-18bc6b30789f",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bahrain",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/a42522a0-cdd6-361a-9379-e6c95d08a9c4",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Angola",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "46.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5922f5ce-eff3-3bcf-9b99-3efd6cfd5c47",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Zimbabwe",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "39.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5076721c-4060-3eeb-a9bd-2c3dd9bdce11",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Luxembourg",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/35fda17f-f05f-33e9-8612-08c2dd2aaaf9",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for South Africa",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "7.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5990a835-34fb-3b2b-91fa-6b17a6a0bc5b",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Micronesia, Federated States of",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "74.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/77dcd849-e550-3fec-bc83-d38fcc8cbc72",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Switzerland",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Puerto Rico",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "63.2",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -751,59 +639,10 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/2f36b6bb-1852-3243-92fb-3ee9a2879da2",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/55949d4c-1663-3f1c-a75d-7684a379b8f1",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kazakhstan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d115b8d5-acb8-3a6b-8012-aaf4cbb3812c",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for United Arab Emirates",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "3.8",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/ff3ea3be-c182-3787-a665-0a6fd2872d92",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Malaysia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "62",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/6f49c311-92f5-3a1e-9053-a1d699956998",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saudi Arabia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/7e380be8-dc28-3725-b114-4716e95e598c",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tanzania",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "37.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/f0a96da3-f86a-334c-be8d-569110d65452",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Estonia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "52.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/852addab-901c-3e56-99d1-90285a009d7a",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cyprus",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "18.8",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/edf404d0-db32-372d-81a2-9b428a804405",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tunisia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "6.6",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Libya",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -814,38 +653,45 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5aa58871-4ab4-3bfd-a15d-238fd9778c3a",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/bbb7ef7f-2ec9-377d-8895-c9da1c5cddd5",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Honduras",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "45.3",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Fiji",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "55.7",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/93295b0c-76b9-32da-b60a-8e0f2e9a29a1",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c484b137-e2d1-3229-a4e7-e677f1f8cfce",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kuwait",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.4",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cuba",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "27.3",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/f1d5742d-e90d-3775-b749-36abf0934a05",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/541212bb-30f1-322f-bdbc-1629698ba6f5",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Congo, Democratic Republic of the",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "67.9",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Gambia, The",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d887137d-c253-37e7-9147-cc2c2352a2d0",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/66b98924-b384-360a-aa84-4bf0fe399d5d",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Macau",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Uruguay",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "10.2",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/889224e3-fca2-3a6a-b17d-01fe47a45bc8",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/ac33d641-f4c9-3bde-9b29-bb95e7f90906",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Iran",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "6.8",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Yemen",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/93b12bf5-7f18-333c-9ad2-f55e33a8e3fd",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Lesotho",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.5",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -856,45 +702,38 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/4c197dfd-67f1-3f79-911a-8b0218cc368b",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/373616e3-9fb4-3f9a-9a4e-87dfd4ea9680",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Israel",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "7.1",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Benin",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "40",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5ff03b72-73b1-328e-9ba8-52e230991bbf",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/58f76ad9-b377-36df-884c-2901abe54037",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Poland",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "30.6",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cote d'Ivoire",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "32.7",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/0ce65b26-dcd3-328e-9b32-9d9efbb6bbbc",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/9791bc4d-7273-3a7d-a1fe-f79841bd3423",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Malawi",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Moldova",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c909b138-eba8-3ecf-bd86-df4c9d170ac7",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/b07cb9a2-b248-32a8-997c-d3dfa67d1d6a",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Finland",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "72.9",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guinea-Bissau",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "55.2",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d7153e67-02b4-3a48-87c0-d01affdef0e1",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1e36b31e-7882-33fb-a035-77144de1d23b",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Turkey",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "14.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/6c6b1b2b-3ecc-3e69-8000-0dabf4faae6f",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Chad",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "9.1",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Panama",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.6",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -905,73 +744,199 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/3d2d7b1c-3400-3b22-af97-a999decf652a",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/213cb204-5092-36ff-aaed-eca9290b70a6",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Seychelles",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "88.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Maldives",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "3",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1ed5dd9d-833f-375b-b509-886681e2164d",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5990a835-34fb-3b2b-91fa-6b17a6a0bc5b",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Liberia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "44.6",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Micronesia, Federated States of",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "74.5",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d8973b8e-dfe5-3321-9044-e39d5452523b",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/f5680604-ea9e-3abb-a383-3339ee5a793c",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Senegal",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.8",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Samoa",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "60.4",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/83ef3e6c-ee83-3b88-a398-14638a94fa1a",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1193ba31-f109-3efd-bab7-6f13cc2b5e44",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Qatar",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sudan",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/967ce367-d89d-3ec1-b3d7-1049f1197d29",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/130e4a34-f1b8-37a8-b3bd-24b204c06ec4",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for India",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "23.1",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Brunei",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "71.8",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/f54da380-bade-3f43-898f-d1f338cb8257",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/7e380be8-dc28-3725-b114-4716e95e598c",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mongolia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "7",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tanzania",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "37.3",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c951ec00-f123-330a-80d1-e3d9539b11b4",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/96b26252-097e-32ab-a127-7318bd55adcd",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ukraine",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "16.8",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Burma",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "48.2",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/a84f56f2-e6a7-3ecb-8b2f-89344446dd3f",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/314ccd96-4ef6-3ae6-8ac5-f9bb89f751a1",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kenya",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "6.1",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cambodia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "56.5",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5caa7f81-1b5a-3f6e-b999-3f309c4c0457",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d887137d-c253-37e7-9147-cc2c2352a2d0",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Lebanon",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "13.4",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Macau",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/373616e3-9fb4-3f9a-9a4e-87dfd4ea9680",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/b47b54fd-3a46-3f43-abbc-abe5b10c1891",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Benin",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "40",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guinea",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "26.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/6d31bf00-d7ed-3e6a-a17a-6b16699f8ba9",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Serbia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.6",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/f1d5742d-e90d-3775-b749-36abf0934a05",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Congo, Democratic Republic of the",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "67.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/2f737399-6064-3665-9401-cb27b066f465",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Colombia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "54.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c78791a3-f0e1-3bd3-8ba4-eac2afa35ec0",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kyrgyzstan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "5.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/3ae11c72-5c30-329d-8d34-18bc6b30789f",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bahrain",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/f14e46ce-7d09-3f93-a616-7acc49969812",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Hungary",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "22.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/dcf25ed5-6c95-3618-9e0f-2d48d8854c04",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Zambia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "66.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d1aa0503-612a-3616-8939-b77b59ca7453",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Slovenia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "62.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/0e1d589f-58b7-3e2b-bd5d-8068156d1601",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Nepal",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "25.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/6c6b1b2b-3ecc-3e69-8000-0dabf4faae6f",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Chad",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "9.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5aa58871-4ab4-3bfd-a15d-238fd9778c3a",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Honduras",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "45.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/a06dcd71-328f-32b4-8fa7-f84012096e8f",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Gabon",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "81",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/dbf2a2da-6458-3242-8072-85e7f1483aeb",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Grenada",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "50",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/349507e4-1dd8-371c-90c9-df6d2444b5e6",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Chile",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "21.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/4d206a81-03d3-320a-8685-314dbba1c88f",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Trinidad and Tobago",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "44",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/41937b20-fbe8-371d-9c6c-3346aff43c00",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mexico",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/ff3ea3be-c182-3787-a665-0a6fd2872d92",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Malaysia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "62",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/30949d5f-4a69-366c-aa7a-be5e6fd99930",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Togo",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "4.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -982,10 +947,472 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/73a7ddd5-05f2-3e2c-aad1-522e54a79432",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/0dc99667-bf50-32fd-8a5f-f20e33bec5d5",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cameroon",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "41.7",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for West Bank",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/2f488ffc-82cc-367a-9616-e39fdfc53729",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Hong Kong",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/4c197dfd-67f1-3f79-911a-8b0218cc368b",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Israel",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "7.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/edf404d0-db32-372d-81a2-9b428a804405",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tunisia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "6.6",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/e5bb59a2-7319-3aca-a207-0f6fd4f2e075",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Comoros",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/967ce367-d89d-3ec1-b3d7-1049f1197d29",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for India",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "23.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/16cc7f84-3a3e-3bc1-95ff-6fa1925826e7",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Eswatini",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/6ddcb9e4-747f-3b58-868b-a556a81562d1",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sao Tome and Principe",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "28.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/60a8b0c6-de6f-3abe-9999-959a5c735275",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Djibouti",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/42ab0c94-a1e3-3f61-b5a1-5dba215ccf5f",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Belize",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "60.6",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/3d91f763-1ba8-33c1-ba08-a208f1255b2e",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ethiopia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "12.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/a495190b-cc2e-3611-a725-616d321016a7",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Portugal",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "37.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5caa7f81-1b5a-3f6e-b999-3f309c4c0457",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Lebanon",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "13.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/82d220df-17ce-3f5c-a489-7d780c354dd5",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Pakistan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/197042c4-de91-3ae8-aeaf-a9a52dc8c3a5",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sri Lanka",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "29.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1ed5dd9d-833f-375b-b509-886681e2164d",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Liberia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "44.6",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c5f5bb3b-3507-36d7-8da5-7104c55fb6c8",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Latvia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "54.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/e8a1234b-8442-329d-8965-e48d93a16e10",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Tonga",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "12.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/bb2254a8-06f4-3ff2-8753-ca390143e2ca",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bhutan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "85.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/9113c6c0-c1f9-3b53-a354-3b53136ba30c",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Georgia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "39.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/37497aa5-a227-3e49-b14a-ee1b07e8edf9",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Brazil",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "61.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/2d79f6db-ae28-3f57-b409-2d5370a518c3",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Timor-Leste",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "49.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/dba86789-b53e-36df-8477-a589a5729889",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Central African Republic",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/2f36b6bb-1852-3243-92fb-3ee9a2879da2",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kazakhstan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/e2ac50f5-a2be-3f73-987e-c8afb3ab3b90",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for North Macedonia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "39.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/317dbac9-0743-33e5-a82b-2ddf122cd076",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ghana",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "21.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d6b897fd-145a-36fb-ad36-ff7cb1c47a00",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Romania",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "28.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/09f199d2-5132-324e-99bf-b1a89916de24",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ecuador",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "38.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/8067364d-44f5-337b-aba7-e13ba124e934",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Philippines",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "25.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/6754fe3c-d831-3f20-ad04-b8c7b66abebc",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Russia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "49.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/e3772ac4-b4db-37b4-a8db-fa59ef43cd1a",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for France",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "29.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/681101d8-f9fa-3e5e-9fbe-8ac5a2c05504",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Vietnam",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "45",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5ff03b72-73b1-328e-9ba8-52e230991bbf",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Poland",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "30.6",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/593905b3-1972-36ff-a583-25abf98595ca",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Austria",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "47.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/4902a456-caa9-36ea-b463-ce526c9df0f6",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Greece",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "30.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d2eaf2aa-1512-3659-ae0a-5bae633537c6",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for China",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "22.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/85fa355b-db4f-36fa-93a2-0a441623d53d",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mauritania",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/89da124e-04df-33ad-9946-cd37d91a119e",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Denmark",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "12.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c951ec00-f123-330a-80d1-e3d9539b11b4",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ukraine",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "16.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/35fda17f-f05f-33e9-8612-08c2dd2aaaf9",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for South Africa",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "7.6",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/045e2f1d-6c4d-33aa-acfd-1b2f30f30a97",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Czechia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d7e0453b-b4af-3700-a533-f4d77ad9546d",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Croatia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/eb2131ec-e0ef-378e-a8bb-1ae98af60991",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ireland",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "10.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/a84f56f2-e6a7-3ecb-8b2f-89344446dd3f",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kenya",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "6.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/11760e1a-ac43-36e1-8d31-5e93ad3df3e9",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guatemala",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.6",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/b3c92eec-f0aa-3b05-8860-59d9f6d3261d",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Iceland",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/ceafb51e-2b07-33d5-bdd6-20019dff3aa6",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Australia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "16.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/354bf989-2583-3ea6-8611-b950e2a37ebd",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Argentina",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "10.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5076721c-4060-3eeb-a9bd-2c3dd9bdce11",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Luxembourg",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1c39abf6-8e93-3638-ae5d-ca946e2d6a98",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Egypt",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/768685ca-582a-3f0a-b2fb-b57ca37752aa",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for United States",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1bf429f9-4068-320b-912a-ca3888b58aec",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Costa Rica",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "51.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/3fa9b2dd-85d2-37dd-8f64-07fbb7799287",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saint Vincent and the Grenadines",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "68.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/180c89bf-50c8-329d-ab45-e49d9dac62fc",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Botswana",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "19.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/fa6c3752-cd00-37f1-a77f-d7e5604ab8d2",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bangladesh",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/3d2d7b1c-3400-3b22-af97-a999decf652a",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Seychelles",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "88.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/6687e189-6dd8-37dc-9587-782149127ff0",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Niger",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/72ddd2b6-19af-3f6a-b3fe-bf80f7fcad22",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sweden",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "68.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/a40a9be0-0a9a-3b56-acd6-7011c0d96758",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mozambique",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/db800e86-e9f3-33e7-ae11-02efb21d4595",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Uzbekistan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "7.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5922f5ce-eff3-3bcf-9b99-3efd6cfd5c47",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Zimbabwe",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "39.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/852addab-901c-3e56-99d1-90285a009d7a",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cyprus",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "18.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/93295b0c-76b9-32da-b60a-8e0f2e9a29a1",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kuwait",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/889224e3-fca2-3a6a-b17d-01fe47a45bc8",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Iran",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "6.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/3ed10433-7eb1-3fb7-9010-7978743cbf25",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Syria",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/26160d23-fb07-3f8d-9dae-186eba322e9f",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mauritius",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "17.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/4812648c-8a89-3e18-9830-5642f6a01fa1",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Nicaragua",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "25.3",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -1003,381 +1430,10 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/f14e46ce-7d09-3f93-a616-7acc49969812",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/0ce65b26-dcd3-328e-9b32-9d9efbb6bbbc",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Hungary",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "22.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/bbb7ef7f-2ec9-377d-8895-c9da1c5cddd5",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Fiji",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "55.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/b47b54fd-3a46-3f43-abbc-abe5b10c1891",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guinea",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "26.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/74a788ce-e27d-3690-95a0-786732c662e0",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Lithuania",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/6687e189-6dd8-37dc-9587-782149127ff0",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Niger",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1193ba31-f109-3efd-bab7-6f13cc2b5e44",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sudan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/cd6a7b87-6852-3685-a0db-cd459185091e",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Canada",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/9791bc4d-7273-3a7d-a1fe-f79841bd3423",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Moldova",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d1aa0503-612a-3616-8939-b77b59ca7453",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Slovenia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "62.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/30949d5f-4a69-366c-aa7a-be5e6fd99930",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Togo",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "4.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/79b9d273-ac6d-3688-909d-1ea43e2bdb79",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Albania",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "28.12",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/674027e1-7b0e-364e-b6cd-e2005cb8e76f",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Jordan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/a40a9be0-0a9a-3b56-acd6-7011c0d96758",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mozambique",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d16ad2dc-c6af-3252-a554-ea5f1722abc5",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Vanuatu",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/11760e1a-ac43-36e1-8d31-5e93ad3df3e9",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guatemala",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/197042c4-de91-3ae8-aeaf-a9a52dc8c3a5",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sri Lanka",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "29.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/2f488ffc-82cc-367a-9616-e39fdfc53729",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Hong Kong",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5cb4c9d8-2817-3ed3-931e-c52305b32f47",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Belgium",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "22.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/f92bcb6a-06d2-3e7c-8af7-c8a338f131bf",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Madagascar",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "21.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/130e4a34-f1b8-37a8-b3bd-24b204c06ec4",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Brunei",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "71.8",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/593905b3-1972-36ff-a583-25abf98595ca",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Austria",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "47.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/9d4ac43d-5e24-33d0-9e44-8ce01a277ba5",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Venezuela",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "52.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/40f39cdc-d3ac-3771-931e-4269e54caeff",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for French Polynesia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/479fb34b-dbf4-3ba9-8d03-cca83f64ad4e",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Montenegro",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "40.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/32e087f0-99be-321c-9211-285a1700ff83",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Morocco",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/f3a82610-1b9a-37f3-973c-b0f1a7505587",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Aruba",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/58f76ad9-b377-36df-884c-2901abe54037",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cote d'Ivoire",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "32.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/6754fe3c-d831-3f20-ad04-b8c7b66abebc",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Russia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "49.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1f8dc1a6-076e-32fb-b1ef-a48a19e2d220",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Turkmenistan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "8.8",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/314ccd96-4ef6-3ae6-8ac5-f9bb89f751a1",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cambodia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "56.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/6d31bf00-d7ed-3e6a-a17a-6b16699f8ba9",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Serbia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/bc88a240-30a1-3bde-a13c-8749ed93d30e",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guyana",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "77.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/213598a7-e922-37be-a3a7-58f3c69aea09",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Azerbaijan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/988455e6-7df7-3f81-9090-ea4bacdc05f3",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Norway",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "27.8",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/3ed10433-7eb1-3fb7-9010-7978743cbf25",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Syria",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5c777263-58c5-3af9-8ad9-cdccd0882bca",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bulgaria",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/6544b2fe-cc0e-3a58-9bb6-80e2a1e04ac8",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Korea, South",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "63.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/259a6e93-5b84-3a23-a0c0-b76aced28030",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for El Salvador",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "13.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/82d220df-17ce-3f5c-a489-7d780c354dd5",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Pakistan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/26160d23-fb07-3f8d-9dae-186eba322e9f",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mauritius",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "17.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/8a4bf12e-17b2-3e59-8b12-721ef8d5d024",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Dominican Republic",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "40.8",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/42ab0c94-a1e3-3f61-b5a1-5dba215ccf5f",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Belize",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "60.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/bd6acc86-26d1-3aae-a603-31ce33bf000c",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Algeria",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.8",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/db800e86-e9f3-33e7-ae11-02efb21d4595",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Uzbekistan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "7.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/a495190b-cc2e-3611-a725-616d321016a7",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Portugal",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "37.8",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/41937b20-fbe8-371d-9c6c-3346aff43c00",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mexico",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/0e1d589f-58b7-3e2b-bd5d-8068156d1601",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Nepal",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "25.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/20c0b7bd-ab70-3a2c-89c8-44a0d74a3af0",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Singapore",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "3.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/72ddd2b6-19af-3f6a-b3fe-bf80f7fcad22",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sweden",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "68.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c5f5bb3b-3507-36d7-8da5-7104c55fb6c8",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Latvia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "54.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/36c57243-155b-32cf-b50c-59764354b20d",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Peru",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "53",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1e36b31e-7882-33fb-a035-77144de1d23b",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Panama",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.6",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1a591a3e-91fc-37a4-bf2c-08e9e2e117f3",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Malta",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1aed9ecc-6e1b-3aea-aadd-c5ffb6ba3ed8",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Iraq",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.9",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Malawi",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -1388,213 +1444,38 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/09f199d2-5132-324e-99bf-b1a89916de24",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c909b138-eba8-3ecf-bd86-df4c9d170ac7",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ecuador",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "38.9",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Finland",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "72.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c484b137-e2d1-3229-a4e7-e677f1f8cfce",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/f0a96da3-f86a-334c-be8d-569110d65452",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cuba",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "27.3",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Estonia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "52.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/fcf29f6c-ad32-3270-8b33-e962ef5194fa",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/988455e6-7df7-3f81-9090-ea4bacdc05f3",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Japan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "68.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Norway",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "27.8",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/17d53e0e-6a68-3edf-80b7-8d4f9d868c87",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d16ad2dc-c6af-3252-a554-ea5f1722abc5",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Germany",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.8",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Vanuatu",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/4d206a81-03d3-320a-8685-314dbba1c88f",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/ecae78ab-ec52-3f0f-a00d-db3666aa9db9",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Trinidad and Tobago",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "44",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/dcf25ed5-6c95-3618-9e0f-2d48d8854c04",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Zambia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "66.3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/daa6a489-dbca-3a13-8480-aaa1d0c34495",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mali",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "10.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/96b26252-097e-32ab-a127-7318bd55adcd",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Burma",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "48.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/354bf989-2583-3ea6-8611-b950e2a37ebd",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Argentina",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "10.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/213cb204-5092-36ff-aaed-eca9290b70a6",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Maldives",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "3",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5f4599da-a341-3f78-8c1a-fc3db145f01b",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Armenia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "9.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/2f737399-6064-3665-9401-cb27b066f465",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Colombia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "54.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1c39abf6-8e93-3638-ae5d-ca946e2d6a98",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Egypt",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/55949d4c-1663-3f1c-a75d-7684a379b8f1",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Libya",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/4902a456-caa9-36ea-b463-ce526c9df0f6",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Greece",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "30.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/fbaa3c3e-9e1b-3f9f-a813-f2d4c038b295",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Papua New Guinea",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "63.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/66b98924-b384-360a-aa84-4bf0fe399d5d",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Uruguay",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "10.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/9113c6c0-c1f9-3b53-a354-3b53136ba30c",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Georgia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "39.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c6915368-7791-3b52-812c-e7cca2f4d03a",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Afghanistan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.07",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/7266a1da-7e3a-3739-b245-ddfe74b0b682",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Rwanda",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "18",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/681101d8-f9fa-3e5e-9fbe-8ac5a2c05504",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Vietnam",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "45",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/5eedd6a1-6ab8-32cb-9d6b-2e194e0bdf8b",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Jamaica",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/3d91f763-1ba8-33c1-ba08-a208f1255b2e",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ethiopia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "12.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/fa6c3752-cd00-37f1-a77f-d7e5604ab8d2",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bangladesh",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d6b897fd-145a-36fb-ad36-ff7cb1c47a00",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Romania",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "28.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/1bf429f9-4068-320b-912a-ca3888b58aec",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Costa Rica",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "51.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/7998be8d-446d-368c-99ab-ca446cb3bd79",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Laos",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "67.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/35536a41-b209-335d-9e3a-d440431fef26",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Indonesia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "51.7",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/c78791a3-f0e1-3bd3-8ba4-eac2afa35ec0",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Kyrgyzstan",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "5.1",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/89da124e-04df-33ad-9946-cd37d91a119e",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Denmark",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "12.9",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Solomon Islands",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "78.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -1605,52 +1486,108 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/317dbac9-0743-33e5-a82b-2ddf122cd076",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/259a6e93-5b84-3a23-a0c0-b76aced28030",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ghana",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "21.2",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for El Salvador",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "13.6",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/a2b7c120-c93a-33e6-bdcd-4d984d2a781c",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/6f49c311-92f5-3a1e-9053-a1d699956998",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Thailand",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "37.2",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Saudi Arabia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.5",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/ceafb51e-2b07-33d5-bdd6-20019dff3aa6",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/20c0b7bd-ab70-3a2c-89c8-44a0d74a3af0",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Australia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "16.2",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Singapore",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "3.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5f4599da-a341-3f78-8c1a-fc3db145f01b",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Armenia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "9.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/20a8df9b-7603-3617-8fca-425339ec1c7e",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/17d53e0e-6a68-3edf-80b7-8d4f9d868c87",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Spain",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.8",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Germany",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.8",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d7e0453b-b4af-3700-a533-f4d77ad9546d",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/40f39cdc-d3ac-3771-931e-4269e54caeff",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Croatia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34.4",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for French Polynesia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "43.7",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/d2eaf2aa-1512-3659-ae0a-5bae633537c6",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/7266a1da-7e3a-3739-b245-ddfe74b0b682",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for China",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "22.3",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Rwanda",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "18",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/e3772ac4-b4db-37b4-a8db-fa59ef43cd1a",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/f54da380-bade-3f43-898f-d1f338cb8257",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for France",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "29.2",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mongolia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5cb4c9d8-2817-3ed3-931e-c52305b32f47",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Belgium",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "22.4",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1f8dc1a6-076e-32fb-b1ef-a48a19e2d220",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Turkmenistan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "8.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/32e087f0-99be-321c-9211-285a1700ff83",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Morocco",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/bd6acc86-26d1-3aae-a603-31ce33bf000c",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Algeria",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/79b9d273-ac6d-3688-909d-1ea43e2bdb79",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Albania",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "28.12",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/8a4bf12e-17b2-3e59-8b12-721ef8d5d024",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Dominican Republic",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "40.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/bc88a240-30a1-3bde-a13c-8749ed93d30e",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Guyana",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "77.4",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -1661,45 +1598,10 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/045e2f1d-6c4d-33aa-acfd-1b2f30f30a97",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/5eedd6a1-6ab8-32cb-9d6b-2e194e0bdf8b",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Czechia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/a001af75-ee89-3a2f-b1cb-4db6d3dd0b47",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bolivia",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "52.5",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/349507e4-1dd8-371c-90c9-df6d2444b5e6",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Chile",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "21.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/eb2131ec-e0ef-378e-a8bb-1ae98af60991",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Ireland",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "10.9",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/85fa355b-db4f-36fa-93a2-0a441623d53d",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mauritania",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.2",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/9742d008-c420-3e9d-84b1-794c03b9701c",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Nigeria",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "9.5",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Jamaica",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.1",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
@@ -1710,18 +1612,123 @@
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/768685ca-582a-3f0a-b2fb-b57ca37752aa",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c14c36df-fca6-3b07-810f-5e3630ba5d99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for United States",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "33.3",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Oman",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }, 
     {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/b3c92eec-f0aa-3b05-8860-59d9f6d3261d",
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/f92bcb6a-06d2-3e7c-8af7-c8a338f131bf",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Iceland",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "0.3",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Madagascar",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "21.5",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/50df2d65-8581-3b9e-a96e-34b53f6280fd",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Sierra Leone",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "37.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/cd6a7b87-6852-3685-a0db-cd459185091e",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Canada",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "34.1",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/73a7ddd5-05f2-3e2c-aad1-522e54a79432",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Cameroon",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "41.7",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/a001af75-ee89-3a2f-b1cb-4db6d3dd0b47",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Bolivia",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "52.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/1aed9ecc-6e1b-3aea-aadd-c5ffb6ba3ed8",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Iraq",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "1.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/6544b2fe-cc0e-3a58-9bb6-80e2a1e04ac8",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Korea, South",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "63.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/daa6a489-dbca-3a13-8480-aaa1d0c34495",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Mali",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "10.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/213598a7-e922-37be-a3a7-58f3c69aea09",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Azerbaijan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "11.3",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/fcf29f6c-ad32-3270-8b33-e962ef5194fa",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Japan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "68.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/9742d008-c420-3e9d-84b1-794c03b9701c",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Nigeria",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "9.5",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/a2b7c120-c93a-33e6-bdcd-4d984d2a781c",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Thailand",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "37.2",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/20a8df9b-7603-3617-8fca-425339ec1c7e",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Spain",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "36.8",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/36c57243-155b-32cf-b50c-59764354b20d",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Peru",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "53",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/d7153e67-02b4-3a48-87c0-d01affdef0e1",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Turkey",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "14.9",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
+    }, 
+    {
+      "@id": "http://williamrobertfunk.com/instance/ForestLand/c6915368-7791-3b52-812c-e7cca2f4d03a",
+      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Afghanistan",
+      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "2.07",
+      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2016 est.)"
     }, 
     {
       "@id": "http://williamrobertfunk.com/instance/ForestLand/9769121f-10f7-3279-b27e-b08e9ffa488c",
@@ -1735,13 +1742,6 @@
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
       "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Italy",
       "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "31.4",
-      "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
-    }, 
-    {
-      "@id": "http://williamrobertfunk.com/instance/ForestLand/8067364d-44f5-337b-aba7-e13ba124e934",
-      "@type": "http://williamrobertfunk.com/ontologies/world-factbook#ForestLand/",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Forest Land Use for Philippines",
-      "http://williamrobertfunk.com/ontologies/world-factbook#percentage/": "25.9",
       "http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated/": "(2011 est.)"
     }
   ]
