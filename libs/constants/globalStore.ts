@@ -20,6 +20,7 @@ class GlobalStore {
 	locations = {};
 	maritimeClaims = {};
 	nationalFlags = {};
+	naturalHazards = {};
 	naturalResources = {};
 	otherLands = {};
 	permanentCropsLands = {};

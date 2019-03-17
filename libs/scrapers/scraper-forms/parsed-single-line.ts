@@ -14,7 +14,7 @@ export function parsedSingleLine(
 	storeKey: string,
 	dataPropName: string,
 	label: string,
-	delimiter: string
+	delimiter: (string | RegExp)
 ) {
 	const objectProperties = store.countries[origParams.countryId].objectProperties;
 	const prevHasList = objectProperties.filter(rel => rel[consts.ONTOLOGY[hasProp]]);

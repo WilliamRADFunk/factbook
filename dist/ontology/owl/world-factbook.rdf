@@ -218,6 +218,15 @@
     </rdfs:comment>
   </rdfs:Class>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard -->
+
+  <rdfs:Class rdf:about="&wfact;NaturalHazard">
+    <rdfs:label>Natural Hazard</rdfs:label>
+    <rdfs:comment>
+      A natural phenomenon that might have a negative effect on humans or the environment.
+    </rdfs:comment>
+  </rdfs:Class>
+
   <!--
   ///////////////////////////////////////////////////////////////////////////////////////
   //
@@ -385,6 +394,13 @@
   <owl:ObjectProperty rdf:about="&wfact;hasArtificiallyIrrigatedLand">
       <rdfs:domain rdf:resource="&wfact;Country"/>
       <rdfs:range rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+  </owl:ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasNaturalHazard -->
+
+  <owl:ObjectProperty rdf:about="&wfact;hasNaturalHazard">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;NaturalHazard"/>
   </owl:ObjectProperty>
 
   <!--
@@ -665,7 +681,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#supplementalExplanation -->
 
   <DatatypeProperty rdf:about="&wfact;supplementalExplanation">
-    <rdfs:label>supplementalExplanation</rdfs:label>
+    <rdfs:label>Supplemental Explanation</rdfs:label>
     <rdfs:comment>
       When details are given that don't readily fit into any given category, they go here.
     </rdfs:comment>
@@ -676,7 +692,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#exclusiveFishingZone -->
 
   <DatatypeProperty rdf:about="&wfact;exclusiveFishingZone">
-    <rdfs:label>exclusiveFishingZone</rdfs:label>
+    <rdfs:label>Exclusive Fishing Zone</rdfs:label>
     <rdfs:comment>
       An area beyond the outer limit of the territorial sea in which the coastal State has the right to fish,
       subject to any concessions which may be granted to foreign fishermen.
@@ -688,7 +704,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#resourceName -->
 
   <DatatypeProperty rdf:about="&wfact;resourceName">
-    <rdfs:label>resourceName</rdfs:label>
+    <rdfs:label>Resource Name</rdfs:label>
     <rdfs:comment>The name of the resource (ie. coal, copper, salt, fish)</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;NaturalResource"/>
     <rdfs:range rdf:resource="&xsd;string"/>
@@ -697,7 +713,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#description -->
 
   <DatatypeProperty rdf:about="&wfact;description">
-    <rdfs:label>description</rdfs:label>
+    <rdfs:label>Description</rdfs:label>
     <rdfs:comment>Description of the terrain</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;NaturalResource"/>
     <rdfs:range rdf:resource="&xsd;string"/>
@@ -706,7 +722,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#meanElevation -->
 
   <DatatypeProperty rdf:about="&wfact;meanElevation">
-    <rdfs:label>mean elevation</rdfs:label>
+    <rdfs:label>Mean Elevation</rdfs:label>
     <rdfs:comment>
       The vertical distance between a standard reference point, such as sea level,
       and the top of an object or point on the Earth, such as a mountain.
@@ -718,7 +734,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#lowestPoint -->
 
   <DatatypeProperty rdf:about="&wfact;lowestPoint">
-    <rdfs:label>lowest point</rdfs:label>
+    <rdfs:label>Lowest Point</rdfs:label>
     <rdfs:comment>
       The lowest vertical distance between a standard reference point, such as sea level,
       and the top of an object or point on the Earth, such as a canyon.
@@ -730,7 +746,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#highestPoint -->
 
   <DatatypeProperty rdf:about="&wfact;highestPoint">
-    <rdfs:label>highest point</rdfs:label>
+    <rdfs:label>Highest Point</rdfs:label>
     <rdfs:comment>
       The highest vertical distance between a standard reference point, such as sea level,
       and the top of an object or point on the Earth, such as a mountain.
@@ -742,7 +758,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#lowestPointDescription -->
 
   <DatatypeProperty rdf:about="&wfact;lowestPointDescription">
-    <rdfs:label>lowest point description</rdfs:label>
+    <rdfs:label>Lowest Point Description</rdfs:label>
     <rdfs:comment>Supplemental description for the lowest elevation point</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;Elevation"/>
     <rdfs:range rdf:resource="&xsd;string"/>
@@ -751,7 +767,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#highestPointDescription -->
 
   <DatatypeProperty rdf:about="&wfact;highestPointDescription">
-    <rdfs:label>highest point description</rdfs:label>
+    <rdfs:label>Highest Point Description</rdfs:label>
     <rdfs:comment>Supplemental description for the highest elevation point</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;Elevation"/>
     <rdfs:range rdf:resource="&xsd;string"/>
@@ -760,7 +776,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#percentage -->
 
   <DatatypeProperty rdf:about="&wfact;percentage">
-    <rdfs:label>percentage</rdfs:label>
+    <rdfs:label>Percentage</rdfs:label>
     <rdfs:comment>The percentage belonging to the parent entity</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;LandUse"/>
     <rdfs:domain rdf:resource="&asset;AgriculturalLand"/>
@@ -774,7 +790,7 @@
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated -->
 
   <DatatypeProperty rdf:about="&wfact;lastEstimated">
-    <rdfs:label>last estimated</rdfs:label>
+    <rdfs:label>Last Estimated</rdfs:label>
     <rdfs:comment>The last date/year the field was last estimated</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;LandUse"/>
     <rdfs:domain rdf:resource="&asset;AgriculturalLand"/>
@@ -783,6 +799,15 @@
     <rdfs:domain rdf:resource="&asset;OtherLand"/>
     <rdfs:domain rdf:resource="&asset;PermanentCropsLand"/>
     <rdfs:domain rdf:resource="&asset;PermanentPastureLand"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;hazardDescription">
+    <rdfs:label>Hazard Description</rdfs:label>
+    <rdfs:comment>The description of the hazard (ie. volcanism, hurricanes, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;NaturalHazard"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 

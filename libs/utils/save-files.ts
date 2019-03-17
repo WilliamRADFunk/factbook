@@ -20,6 +20,7 @@ export function saveFiles() {
 	saveFile('locations', 'locations', consts.ONTOLOGY.ONT_GEO_LOCATION);
 	saveFile('maritime-claims', 'maritimeClaims', consts.ONTOLOGY.ONT_MARITIME_CLAIM);
 	saveFile('national-flags', 'nationalFlags', consts.ONTOLOGY.ONT_FLAG);
+	saveFile('natural-hazards', 'naturalHazards', consts.ONTOLOGY.ONT_NATURAL_HAZARD);
 	saveFile('natural-resources', 'naturalResources', consts.ONTOLOGY.ONT_NATURAL_RESOURCE);
 	saveFile('other-lands', 'otherLands', consts.ONTOLOGY.ONT_OTHER_LAND);
 	saveFile('permanent-crops-lands', 'permanentCropsLands', consts.ONTOLOGY.ONT_PERMANENT_CROPS_LAND);

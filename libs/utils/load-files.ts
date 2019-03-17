@@ -23,6 +23,7 @@ export function loadFiles() {
     loadFile('locations', 'locations');
     loadFile('maritime-claims', 'maritimeClaims');
     loadFile('national-flags', 'nationalFlags');
+	loadFile('natural-hazards', 'naturalHazards');
     loadFile('natural-resources', 'naturalResources');
     loadFile('other-lands', 'otherLands');
     loadFile('permanent-crops-lands', 'permanentCropsLands');

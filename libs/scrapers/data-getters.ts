@@ -10,6 +10,7 @@ import { getElevation } from './elevation';
 import { getFlag } from './national-flag';
 import { getLandUses } from './land-uses';
 import { getMaritimeClaims } from './maritime-claims';
+import { getNaturalHazard } from './natural-hazards';
 import { getNaturalResources } from './natural-resources';
 import { getPopDist } from './population-distribution';
 import { getRegionMapImg } from './region-map-image';
@@ -29,6 +30,7 @@ export const dataScrapers = {
 	getIrrigatedLand,
 	getLandUses,
 	getMaritimeClaims,
+	getNaturalHazard,
 	getNaturalResources,
 	getPopDist,
 	getRegionMapImg,
