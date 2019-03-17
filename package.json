@@ -1,7 +1,7 @@
 {
-  "name": "data-glutton",
+  "name": "factbook",
   "version": "0.1.0",
-  "description": "Simple service to scrape data and store it.",
+  "description": "Serves as an independent data scraping module, complete with ontology and full scraping ability for the CIA World Factbook site",
   "main": "index.js",
   "scripts": {
     "clean:dist": "rimraf dist/**/*.json",
@@ -9,6 +9,10 @@
     "scrape": "ts-node index.ts",
     "start": "run-s clean:logs clean:dist scrape",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WilliamRADFunk/factbook.git"
   },
   "keywords": [
     "data",
