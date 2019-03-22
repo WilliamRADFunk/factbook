@@ -47,5 +47,5 @@ export function saveFile(fileName: string, storeName: string, context: string) {
 
     let fileLD = fj(JSON.stringify(jsonLD));
 	fileLD = fileLD.replace(/\\n/g, ' ');
-	fs.writeFileSync(`dist/jsonld/${fileName}.schema.json`, fileLD);
+	fs.writeFileSync(`dist/jsonld/${fileName}.schema.jsonld`, fileLD);
 };
