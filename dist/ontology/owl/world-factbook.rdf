@@ -8,6 +8,7 @@
     <!ENTITY pos "http://www.w3.org/2003/01/geo/wgs84_pos#">
     <!ENTITY asset "http://www.daedafusion.com/Asset#">
     <!ENTITY dbpCountry "http://dbpedia.org/ontology/Country#">
+    <!ENTITY blade "http://modusoperandi.com/ont/blade#">
 ]>
 
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
@@ -20,10 +21,11 @@
   xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
   xmlns:asset="http://www.daedafusion.com/Asset#"
   xmlns:dbpCountry="http://dbpedia.org/ontology/Country#"
+  xmlns:blade="http://modusoperandi.com/ont/blade#"
 >
 
   <Ontology rdf:about="http://williamrobertfunk.com/ontologies/world-factbook">
-    <versionInfo rdf:datatype="&xsd;decimal">1.2</versionInfo>
+    <versionInfo rdf:datatype="&xsd;decimal">1.3</versionInfo>
     <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
     <dc:creator>William R.A.D. Funk</dc:creator>
     <dc:contributor>William R.A.D. Funk</dc:contributor>
@@ -47,6 +49,7 @@
   <rdfs:Class rdf:about="&wfact;Country">
     <rdfs:label>Country</rdfs:label>
     <rdfs:comment>a nation with its own government, occupying a particular territory.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
     <owl:equivalentClass rdf:resource="&dbpCountry;" />
   </rdfs:Class>
 
@@ -58,30 +61,34 @@
       a piece of cloth flown by the government of a country,
       and designed with specific meanings for its colours and symbols.
     </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#Image -->
 
   <rdfs:Class rdf:about="&wfact;Image">
-    <rdfs:subClassOf rdf:resource="&asset;Asset"/>
     <rdfs:label>Image</rdfs:label>
     <rdfs:comment>a digitally stored image</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&asset;Asset"/>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#BorderMap -->
 
   <rdfs:Class rdf:about="&wfact;BorderMap">
-    <rdfs:subClassOf rdf:resource="&wfact;Image"/>
     <rdfs:label>Border Map Image</rdfs:label>
     <rdfs:comment>an image showing a country's full border and direct neighbors.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&wfact;Image"/>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#RegionMap -->
 
   <rdfs:Class rdf:about="&wfact;RegionMap">
-    <rdfs:subClassOf rdf:resource="&wfact;Image"/>
     <rdfs:label>Region Map Image</rdfs:label>
     <rdfs:comment>an image showing a country's position within a region.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&wfact;Image"/>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#DomainArea -->
@@ -89,6 +96,7 @@
   <rdfs:Class rdf:about="&wfact;DomainArea">
     <rdfs:label>Domain Area</rdfs:label>
     <rdfs:comment>Area within a country's borders (ie. Land, Water, Total).</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#Coast -->
@@ -96,6 +104,7 @@
   <rdfs:Class rdf:about="&wfact;Coast">
     <rdfs:label>Coast</rdfs:label>
     <rdfs:comment>Geographic section where the land borders the sea.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#Climate -->
@@ -103,6 +112,7 @@
   <rdfs:Class rdf:about="&wfact;Climate">
     <rdfs:label>Climate</rdfs:label>
     <rdfs:comment>The weather conditions prevailing in an area in general or over a long period.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#ClimateZone -->
@@ -113,6 +123,7 @@
       Divisions of the Earth's climates into general climate zones according to average temperatures and average rainfall.
       The three major climate zones on the Earth are the polar, temperate, and tropical zones.
     </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#BorderCountryPair -->
@@ -120,6 +131,7 @@
   <rdfs:Class rdf:about="&wfact;BorderCountryPair">
     <rdfs:label>Border Country Pair</rdfs:label>
     <rdfs:comment>Two countries that share a land border.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#Border -->
@@ -127,6 +139,7 @@
   <rdfs:Class rdf:about="&wfact;Border">
     <rdfs:label>National Border</rdfs:label>
     <rdfs:comment>Total border belonging to a soverign nation.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim -->
@@ -137,6 +150,7 @@
       The adjacent belt of sea that extends beyond a coastal state's land territory and internal waters.
       Includes airspace over that belt of sea.
     </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource -->
@@ -147,6 +161,7 @@
       Material or substance such as minerals, forests, water,and fertile land
       that occur in nature and can be used for economic gain.
     </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#Elevation -->
@@ -157,6 +172,7 @@
       The vertical distance above the reference geoid,
       a mathematical model of the Earth's sea level as an equipotential gravitational surface.
     </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#Terrain -->
@@ -164,6 +180,7 @@
   <rdfs:Class rdf:about="&wfact;Terrain">
     <rdfs:label>Terrain</rdfs:label>
     <rdfs:comment>A stretch of land, especially with regard to its physical features.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#LandUse -->
@@ -171,6 +188,7 @@
   <rdfs:Class rdf:about="&wfact;LandUse">
     <rdfs:label>Land Use</rdfs:label>
     <rdfs:comment>A break down of uses for the land (ie. agricultural, forest, pasture, etc.).</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#AgriculturalLand -->
@@ -178,6 +196,7 @@
   <rdfs:Class rdf:about="&wfact;AgriculturalLand">
     <rdfs:label>Agricultural Land</rdfs:label>
     <rdfs:comment>Percentage of land used for agricultural purposes.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#ArableLand -->
@@ -185,6 +204,7 @@
   <rdfs:Class rdf:about="&wfact;ArableLand">
     <rdfs:label>Arable Land</rdfs:label>
     <rdfs:comment>Percentage of land set aside to be arable.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#PermanentCropsLand -->
@@ -192,6 +212,7 @@
   <rdfs:Class rdf:about="&wfact;PermanentCropsLand">
     <rdfs:label>Permanent Crops Land</rdfs:label>
     <rdfs:comment>Percentage of land set aside permanently for use in growing crops.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#PermanentPastureLand -->
@@ -199,14 +220,16 @@
   <rdfs:Class rdf:about="&wfact;PermanentPastureLand">
     <rdfs:label>Permanent Pasture Land</rdfs:label>
     <rdfs:comment>Percentage of land set aside permanently for use as pasture.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#OtherLand -->
 
   <rdfs:Class rdf:about="&wfact;OtherLand">
-    <rdfs:subClassOf rdf:resource="&wfact;LandUse"/>
     <rdfs:label>Other Land</rdfs:label>
     <rdfs:comment>Percentage of land used for purposes other that agricultural, grazing, or forest.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&wfact;LandUse"/>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#ArtificiallyIrrigatedLand -->
@@ -216,6 +239,7 @@
     <rdfs:comment>
       Percentage of land artificially irrigated.
     </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard -->
@@ -225,6 +249,7 @@
     <rdfs:comment>
       A natural phenomenon that might have a negative effect on humans or the environment.
     </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#GeographicNote -->
@@ -235,6 +260,7 @@
       An additional description on a place's geography.
       The significance of it's physical location in the larger world.
     </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
   </rdfs:Class>
 
   <!--
