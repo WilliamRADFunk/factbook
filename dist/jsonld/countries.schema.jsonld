@@ -4501,7 +4501,7 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap": {
       "@id": "http://williamrobertfunk.com/instance/BorderMapde1708cf-1227-3e54-9ff2-6a911c56cb99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Midway Islands"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorder": {
       "@id": "http://williamrobertfunk.com/instance/Border545f7fe2-5e4e-37dc-88fb-143cc4963db1",
@@ -4619,47 +4619,47 @@
       {
         "@id": "http://williamrobertfunk.com/instance/Image3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image89d4c2c5-2099-3e40-8e70-d544b6411abb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebe842261-074f-3ad3-83c5-2a9f6b6d38fb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image15cdea37-9269-32c3-9741-f7d41326bf9c",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagea65d4b15-b92b-37a3-a820-937249311065",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagec163173d-de08-3b34-92dd-170a2a00b8ad",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagecbd42303-a3bf-3f7f-8778-e43be0789970",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imaged2b0b086-7cb0-36a7-a706-cf6c32182a42",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain": {
@@ -21352,7 +21352,7 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap": {
       "@id": "http://williamrobertfunk.com/instance/BorderMapde1708cf-1227-3e54-9ff2-6a911c56cb99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Midway Islands"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorder": {
       "@id": "http://williamrobertfunk.com/instance/Borderc6bf8032-9471-3eb9-a153-ded1daed95f5",
@@ -21470,47 +21470,47 @@
       {
         "@id": "http://williamrobertfunk.com/instance/Image3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image89d4c2c5-2099-3e40-8e70-d544b6411abb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebe842261-074f-3ad3-83c5-2a9f6b6d38fb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image15cdea37-9269-32c3-9741-f7d41326bf9c",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagea65d4b15-b92b-37a3-a820-937249311065",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagec163173d-de08-3b34-92dd-170a2a00b8ad",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagecbd42303-a3bf-3f7f-8778-e43be0789970",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imaged2b0b086-7cb0-36a7-a706-cf6c32182a42",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain": {
@@ -25232,7 +25232,7 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap": {
       "@id": "http://williamrobertfunk.com/instance/BorderMapde1708cf-1227-3e54-9ff2-6a911c56cb99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Midway Islands"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorder": {
       "@id": "http://williamrobertfunk.com/instance/Border55957aeb-1714-3a91-9845-5cb9876e462d",
@@ -25350,47 +25350,47 @@
       {
         "@id": "http://williamrobertfunk.com/instance/Image3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image89d4c2c5-2099-3e40-8e70-d544b6411abb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebe842261-074f-3ad3-83c5-2a9f6b6d38fb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image15cdea37-9269-32c3-9741-f7d41326bf9c",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagea65d4b15-b92b-37a3-a820-937249311065",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagec163173d-de08-3b34-92dd-170a2a00b8ad",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagecbd42303-a3bf-3f7f-8778-e43be0789970",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imaged2b0b086-7cb0-36a7-a706-cf6c32182a42",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain": {
@@ -25507,7 +25507,7 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap": {
       "@id": "http://williamrobertfunk.com/instance/BorderMapde1708cf-1227-3e54-9ff2-6a911c56cb99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Midway Islands"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorder": {
       "@id": "http://williamrobertfunk.com/instance/Borderdf234ea5-9088-3ef0-8afd-8cdcca0fb761",
@@ -25625,47 +25625,47 @@
       {
         "@id": "http://williamrobertfunk.com/instance/Image3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image89d4c2c5-2099-3e40-8e70-d544b6411abb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebe842261-074f-3ad3-83c5-2a9f6b6d38fb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image15cdea37-9269-32c3-9741-f7d41326bf9c",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagea65d4b15-b92b-37a3-a820-937249311065",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagec163173d-de08-3b34-92dd-170a2a00b8ad",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagecbd42303-a3bf-3f7f-8778-e43be0789970",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imaged2b0b086-7cb0-36a7-a706-cf6c32182a42",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain": {
@@ -26465,7 +26465,7 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap": {
       "@id": "http://williamrobertfunk.com/instance/BorderMapde1708cf-1227-3e54-9ff2-6a911c56cb99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Midway Islands"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorder": {
       "@id": "http://williamrobertfunk.com/instance/Border22066e1f-775c-3abe-bccd-2a03126060f6",
@@ -26583,47 +26583,47 @@
       {
         "@id": "http://williamrobertfunk.com/instance/Image3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image89d4c2c5-2099-3e40-8e70-d544b6411abb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebe842261-074f-3ad3-83c5-2a9f6b6d38fb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image15cdea37-9269-32c3-9741-f7d41326bf9c",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagea65d4b15-b92b-37a3-a820-937249311065",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagec163173d-de08-3b34-92dd-170a2a00b8ad",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagecbd42303-a3bf-3f7f-8778-e43be0789970",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imaged2b0b086-7cb0-36a7-a706-cf6c32182a42",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain": {
@@ -31075,7 +31075,7 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap": {
       "@id": "http://williamrobertfunk.com/instance/BorderMapde1708cf-1227-3e54-9ff2-6a911c56cb99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Midway Islands"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorder": {
       "@id": "http://williamrobertfunk.com/instance/Bordercdf22ab3-9fd2-3380-bc07-d7fd2665cd7a",
@@ -31193,47 +31193,47 @@
       {
         "@id": "http://williamrobertfunk.com/instance/Image3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image89d4c2c5-2099-3e40-8e70-d544b6411abb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebe842261-074f-3ad3-83c5-2a9f6b6d38fb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image15cdea37-9269-32c3-9741-f7d41326bf9c",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagea65d4b15-b92b-37a3-a820-937249311065",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagec163173d-de08-3b34-92dd-170a2a00b8ad",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagecbd42303-a3bf-3f7f-8778-e43be0789970",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imaged2b0b086-7cb0-36a7-a706-cf6c32182a42",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain": {
@@ -35526,7 +35526,7 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap": {
       "@id": "http://williamrobertfunk.com/instance/BorderMapde1708cf-1227-3e54-9ff2-6a911c56cb99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Midway Islands"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorder": {
       "@id": "http://williamrobertfunk.com/instance/Borderbff21d90-ee3c-3a7a-91e4-43180897f2d7",
@@ -35644,47 +35644,47 @@
       {
         "@id": "http://williamrobertfunk.com/instance/Image3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image89d4c2c5-2099-3e40-8e70-d544b6411abb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebe842261-074f-3ad3-83c5-2a9f6b6d38fb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image15cdea37-9269-32c3-9741-f7d41326bf9c",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagea65d4b15-b92b-37a3-a820-937249311065",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagec163173d-de08-3b34-92dd-170a2a00b8ad",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagecbd42303-a3bf-3f7f-8778-e43be0789970",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imaged2b0b086-7cb0-36a7-a706-cf6c32182a42",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain": {
@@ -49970,7 +49970,7 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap": {
       "@id": "http://williamrobertfunk.com/instance/BorderMapde1708cf-1227-3e54-9ff2-6a911c56cb99",
       "@type": "http://williamrobertfunk.com/ontologies/world-factbook#BorderMap",
-      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Midway Islands"
+      "http://www.w3.org/2000/01/rdf-schema#label": "Border Map for Kingman Reef"
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasBorder": {
       "@id": "http://williamrobertfunk.com/instance/Borderacb3f2f8-a526-3628-a229-a70aa0fe6718",
@@ -50088,47 +50088,47 @@
       {
         "@id": "http://williamrobertfunk.com/instance/Image3bb7baf9-9193-3b3d-b955-d4abf1d73b01",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebc8a2aa6-f0e3-360b-abf0-8035af0b0d1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image89d4c2c5-2099-3e40-8e70-d544b6411abb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagebe842261-074f-3ad3-83c5-2a9f6b6d38fb",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Image15cdea37-9269-32c3-9741-f7d41326bf9c",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagea65d4b15-b92b-37a3-a820-937249311065",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagec163173d-de08-3b34-92dd-170a2a00b8ad",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imagecbd42303-a3bf-3f7f-8778-e43be0789970",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/Imaged2b0b086-7cb0-36a7-a706-cf6c32182a42",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#Image",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Midway Islands"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Supplemental Image for Kingman Reef"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain": {
