@@ -10,10 +10,11 @@ export function saveFile(fileName: string, storeName: string, context: string) {
 	file = file.replace(/\\n/g, ' ');
 	fs.writeFileSync(`dist/json/${fileName}.json`, file);
 	// JSON-LD file construction.
-	const jsonLD = {
-		'@context': context,
-		'@graph': []
-	};
+	const jsonLD = [];
+	// const jsonLD = {
+	// 	'@context': context,
+	// 	'@graph': []
+	// };
 	Object.keys(store[storeName]).forEach(key => {
 		// Grab the basic @id, @type, and rdfs label
 		const mainObj = {
@@ -42,7 +43,8 @@ export function saveFile(fileName: string, storeName: string, context: string) {
 			}
 		})
 		// Add it to the graph that belongs to this entity type.
-		jsonLD['@graph'].push(mainObj);
+		// jsonLD['@graph'].push(mainObj);
+		jsonLD.push(mainObj);
 	});
 
     let fileLD = fj(JSON.stringify(jsonLD));
