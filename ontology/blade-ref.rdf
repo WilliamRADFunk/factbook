@@ -19,7 +19,7 @@
   xmlns:ui="http://modusoperandi.com/ont/ui-context#"
 >
   <Ontology rdf:about="http://modusoperandi.com/ont/blade">
-    <versionInfo rdf:datatype="&xsd;decimal">1.0.2</versionInfo>
+    <versionInfo rdf:datatype="&xsd;decimal">1.2</versionInfo>
     <dc:rights>
         Copyright 2018 Modus Operandi, Inc. All rights reserved.
         This small selection was permitted in this factbook module's use by Kim Ziehlke
