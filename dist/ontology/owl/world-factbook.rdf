@@ -546,7 +546,7 @@
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#contents -->
 
-  <DatatypeProperty rdf:about="&image;contents">
+  <DatatypeProperty rdf:about="&wfact;contents">
     <rdfs:label>Contents</rdfs:label>
     <rdfs:comment>Data URI for the asset (ie. data url for an image).</rdfs:comment>
     <rdfs:domain rdf:resource="&asset;Image"/>
