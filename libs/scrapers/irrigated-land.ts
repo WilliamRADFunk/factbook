@@ -20,7 +20,7 @@ export function getIrrigatedLand(cheerioElem: CheerioSelector, country: string, 
 		'INST_ARTIFICIALLY_IRRIGATED_LAND',
 		'ONT_ARTIFICIALLY_IRRIGATED_LAND',
 		'artificiallyIrrigatedLands',
-        ['totalArea', 'unit', 'lastEstimated'],
+        ['TOTAL_AREA', 'UNIT', 'LAST_ESTIMATED'],
         country,
 		'Artificially Irrigated Land',
 		[/[a-zA-Z]/g, /[^0-9\-\.\,]/g, /\(/g]);

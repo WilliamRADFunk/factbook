@@ -20,7 +20,7 @@ export function loadFiles() {
     loadFile('domain-areas', 'domainAreas');
     loadFile('forest-lands', 'forestLands');
 	loadFile('geographic-notes', 'geographicNotes');
-    loadFileMultiple('images', 'images');
+    loadFile('images', 'images');
     loadFile('land-uses', 'landUses');
     loadFile('locations', 'locations');
     loadFile('maritime-claims', 'maritimeClaims');

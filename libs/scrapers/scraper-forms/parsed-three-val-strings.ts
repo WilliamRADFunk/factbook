@@ -34,9 +34,9 @@ export function parsedThreeValStrings(
                     guid,
                     `${label} for ${country}`);
                 store[storeKey][guid] = objectProp[consts.ONTOLOGY[hasProp]];
-                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[dataPropNames[0]] = val1;
-                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[dataPropNames[1]] = val2;
-                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[dataPropNames[2]] = val3 || 'N/A';
+                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[0]]] = val1;
+                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[1]]] = val2;
+                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[2]]] = val3 || 'N/A';
                 store.countries[origParams.countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY[hasProp], objectProp));
             }
         } else {
