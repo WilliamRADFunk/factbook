@@ -544,6 +544,15 @@
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#contents -->
+
+  <DatatypeProperty rdf:about="&image;contents">
+    <rdfs:label>Contents</rdfs:label>
+    <rdfs:comment>Data URI for the asset (ie. data url for an image).</rdfs:comment>
+    <rdfs:domain rdf:resource="&asset;Image"/>
+    <rdfs:range rdf:resource="&xsd;anyURI"/>
+  </DatatypeProperty>
+
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#unit -->
 
   <DatatypeProperty rdf:about="&wfact;unit">

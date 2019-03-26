@@ -1,5 +1,6 @@
 import { consts } from '../constants/constants';
 import { saveFile } from './save-file';
+import { saveFileMultiple } from './save-file-multiple';
 
 export function saveFiles() {
 	saveFile('agricultural-lands', 'agriculturalLands', consts.ONTOLOGY.MAIN_ONT_PATH);
@@ -16,7 +17,7 @@ export function saveFiles() {
 	saveFile('elevations', 'elevations', consts.ONTOLOGY.MAIN_ONT_PATH);
 	saveFile('forest-lands', 'forestLands', consts.ONTOLOGY.MAIN_ONT_PATH);
 	saveFile('geographic-notes', 'geographicNotes', consts.ONTOLOGY.MAIN_ONT_PATH);
-	saveFile('images', 'images', consts.ONTOLOGY.MAIN_ONT_PATH);
+	saveFileMultiple('images', 'images', consts.ONTOLOGY.MAIN_ONT_PATH);
 	saveFile('land-uses', 'landUses', consts.ONTOLOGY.MAIN_ONT_PATH);
 	saveFile('locations', 'locations', consts.ONTOLOGY.MAIN_ONT_PATH);
 	saveFile('maritime-claims', 'maritimeClaims', consts.ONTOLOGY.MAIN_ONT_PATH);

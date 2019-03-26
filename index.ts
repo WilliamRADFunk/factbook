@@ -78,31 +78,51 @@ const promisesResolutionForCountries = () => {
     const promises = getCountriesData();
     Promise.all(promises)
         .then(function() {
-            if (failedCountries.length) {
-                console.log('Countries that failed to get parsed: [');
-                failedCountries.forEach(c => {
-                    console.log(c);
+            Promise.all(store.IMAGE_PROMISES)
+                .then(function() {
+                    store.IMAGE_PROMISES.length = 0;
+                    Promise.all(store.ENCODE_PROMISES)
+                        .then(function() {
+                            store.ENCODE_PROMISES.length = 0;
+                            if (failedCountries.length) {
+                                console.log('Countries that failed to get parsed: [');
+                                failedCountries.forEach(c => {
+                                    console.log(c);
+                                });
+                                console.log(']');
+                                process.stdout.write('Did you want to retry scraping on those failed countries? (y/n)');
+                                process.stdin.once('data', function (data) {
+                                    console.log(`You said: ${data.toString().trim()}`);
+                                    if (data.toString().trim().toLowerCase().includes('y')) {
+                                        store.countriesInList = failedCountries.slice();
+                                        failedCountries.length = 0;
+                                        promisesResolutionForCountries();
+                                    } else {
+                                        saveFiles();
+                                        process.exit(0);
+                                    }
+                                });
+                                process.stdin.resume();
+                            } else {
+                                saveFiles();
+                                process.exit(0);
+                            }
+                        })
+                        .catch(err => {
+                            store.IMAGE_PROMISES.length = 0;
+                            store.ENCODE_PROMISES.length = 0;
+                            store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+                        });
+                })
+                .catch(err => {
+                    store.IMAGE_PROMISES.length = 0;
+                    store.ENCODE_PROMISES.length = 0;
+                    store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
                 });
-                console.log(']');
-                process.stdout.write('Did you want to retry scraping on those failed countries? (y/n)');
-                process.stdin.once('data', function (data) {
-                    console.log(`You said: ${data.toString().trim()}`);
-                    if (data.toString().trim().toLowerCase().includes('y')) {
-                        store.countriesInList = failedCountries.slice();
-                        failedCountries.length = 0;
-                        promisesResolutionForCountries();
-                    } else {
-                        saveFiles();
-                        process.exit(0);
-                    }
-                });
-                process.stdin.resume();
-            } else {
-                saveFiles();
-                process.exit(0);
-            }
         })
         .catch(err => {
+            store.IMAGE_PROMISES.length = 0;
+            store.ENCODE_PROMISES.length = 0;
             store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
         });
 }

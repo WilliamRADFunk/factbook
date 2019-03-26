@@ -8,7 +8,7 @@ export function loadFile(fileName: string, storeName: string, isCountry?: boolea
     try {
         fileData = fs.readFileSync(`dist/json/${fileName}.json`);
     } catch (err) {
-        fs.closeSync(fs.openSync(`dist/json/${fileName}.json`, 'w'));
+        // fs.closeSync(fs.openSync(`dist/json/${fileName}.json`, 'w'));
     }
     // If preexisting file data, use it.
     if (fileData) {

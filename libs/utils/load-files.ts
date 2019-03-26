@@ -1,5 +1,6 @@
 import { store } from '../constants/globalStore';
 import { loadFile } from './load-file';
+import { loadFileMultiple } from './load-file-multiple';
 
 export function loadFiles() {
     const LOG_FILE_NAME = 'logs/log-' + ((new Date()).toISOString()).replace(':', '-').replace(':', '-').replace('.', '-').trim() + '.log';
@@ -19,7 +20,7 @@ export function loadFiles() {
     loadFile('domain-areas', 'domainAreas');
     loadFile('forest-lands', 'forestLands');
 	loadFile('geographic-notes', 'geographicNotes');
-    loadFile('images', 'images');
+    loadFileMultiple('images', 'images');
     loadFile('land-uses', 'landUses');
     loadFile('locations', 'locations');
     loadFile('maritime-claims', 'maritimeClaims');
