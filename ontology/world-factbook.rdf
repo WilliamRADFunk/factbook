@@ -6,8 +6,8 @@
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY wfact "http://williamrobertfunk.com/ontologies/world-factbook#" >
     <!ENTITY pos "http://www.w3.org/2003/01/geo/wgs84_pos#">
-    <!ENTITY asset "http://www.daedafusion.com/Asset#">
-    <!ENTITY dbpCountry "http://dbpedia.org/ontology/Country#">
+    <!ENTITY dafu "http://www.daedafusion.com/">
+    <!ENTITY dbp "http://dbpedia.org/ontology/">
     <!ENTITY blade "http://modusoperandi.com/ont/blade#">
 ]>
 
@@ -19,10 +19,9 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:wfact="http://williamrobertfunk.com/ontologies/world-factbook#"
   xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
-  xmlns:asset="http://www.daedafusion.com/Asset#"
-  xmlns:dbpCountry="http://dbpedia.org/ontology/Country#"
-  xmlns:blade="http://modusoperandi.com/ont/blade#"
->
+  xmlns:dafu="http://www.daedafusion.com/"
+  xmlns:dbp="http://dbpedia.org/ontology"
+  xmlns:blade="http://modusoperandi.com/ont/blade#">
 
   <Ontology rdf:about="http://williamrobertfunk.com/ontologies/world-factbook">
     <versionInfo rdf:datatype="&xsd;decimal">1.3</versionInfo>
@@ -50,7 +49,7 @@
     <rdfs:label>Country</rdfs:label>
     <rdfs:comment>a nation with its own government, occupying a particular territory.</rdfs:comment>
     <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
-    <owl:equivalentClass rdf:resource="&dbpCountry;" />
+    <owl:equivalentClass rdf:resource="&dbp;Country" />
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag -->
@@ -70,7 +69,7 @@
     <rdfs:label>Image</rdfs:label>
     <rdfs:comment>a digitally stored image</rdfs:comment>
     <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
-    <rdfs:subClassOf rdf:resource="&asset;Asset"/>
+    <rdfs:subClassOf rdf:resource="&dafu;Asset"/>
   </rdfs:Class>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#BorderMap -->
@@ -531,7 +530,7 @@
   <DatatypeProperty rdf:about="&wfact;locatorURI">
     <rdfs:label>Locator URL</rdfs:label>
     <rdfs:comment>URL location where image was originally located.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Asset"/>
+    <rdfs:domain rdf:resource="&dafu;Asset"/>
     <rdfs:range rdf:resource="&xsd;literal"/>
   </DatatypeProperty>
 
@@ -539,8 +538,8 @@
 
   <DatatypeProperty rdf:about="&wfact;contentDescription">
     <rdfs:label>Content Description</rdfs:label>
-    <rdfs:comment>Description of the contents contained within the asset.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Asset"/>
+    <rdfs:comment>Description of the contents contained within the wfact.</rdfs:comment>
+    <rdfs:domain rdf:resource="&dafu;Asset"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -548,8 +547,8 @@
 
   <DatatypeProperty rdf:about="&wfact;contents">
     <rdfs:label>Contents</rdfs:label>
-    <rdfs:comment>Data URI for the asset (ie. data url for an image).</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Image"/>
+    <rdfs:comment>Data URI for the wfact (ie. data url for an image).</rdfs:comment>
+    <rdfs:domain rdf:resource="&dafu;Image"/>
     <rdfs:range rdf:resource="&xsd;anyURI"/>
   </DatatypeProperty>
 
@@ -558,13 +557,13 @@
   <DatatypeProperty rdf:about="&wfact;unit">
     <rdfs:label>Unit</rdfs:label>
     <rdfs:comment>Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;ArtificiallyIrrigatedLand"/>
-    <rdfs:domain rdf:resource="&asset;Border"/>
-    <rdfs:domain rdf:resource="&asset;BorderCountryPair"/>
-    <rdfs:domain rdf:resource="&asset;Coast"/>
-    <rdfs:domain rdf:resource="&asset;DomainArea"/>
-    <rdfs:domain rdf:resource="&asset;Elevation"/>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+    <rdfs:domain rdf:resource="&wfact;Border"/>
+    <rdfs:domain rdf:resource="&wfact;BorderCountryPair"/>
+    <rdfs:domain rdf:resource="&wfact;Coast"/>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -573,8 +572,8 @@
   <DatatypeProperty rdf:about="&wfact;totalArea">
     <rdfs:label>Total Area</rdfs:label>
     <rdfs:comment>Total area associated with the entity to which it's attached.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;ArtificiallyIrrigatedLand"/>
-    <rdfs:domain rdf:resource="&asset;DomainArea"/>
+    <rdfs:domain rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -583,7 +582,7 @@
   <DatatypeProperty rdf:about="&wfact;landArea">
     <rdfs:label>Land Area</rdfs:label>
     <rdfs:comment>Total land area associated with the entity to which it's attached.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;DomainArea"/>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -592,7 +591,7 @@
   <DatatypeProperty rdf:about="&wfact;waterArea">
     <rdfs:label>Water Area</rdfs:label>
     <rdfs:comment>Total water area associated with the entity to which it's attached.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;DomainArea"/>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -601,7 +600,7 @@
   <DatatypeProperty rdf:about="&wfact;areaRank">
     <rdfs:label>Area Rank</rdfs:label>
     <rdfs:comment>Numerical rank compared to similar entities.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;DomainArea"/>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -610,7 +609,7 @@
   <DatatypeProperty rdf:about="&wfact;areaComparative">
     <rdfs:label>Comparative Area</rdfs:label>
     <rdfs:comment>Comparative association with a well-known area to better define scale qualitatively.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;DomainArea"/>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -619,7 +618,7 @@
   <DatatypeProperty rdf:about="&wfact;length">
     <rdfs:label>Length</rdfs:label>
     <rdfs:comment>The measurement or extent of something from end to end</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Coast"/>
+    <rdfs:domain rdf:resource="&wfact;Coast"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -628,7 +627,7 @@
   <DatatypeProperty rdf:about="&wfact;lengthModifier">
     <rdfs:label>Length Modifier</rdfs:label>
     <rdfs:comment>An additional descriptor to add information to a simple length measurement.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Coast"/>
+    <rdfs:domain rdf:resource="&wfact;Coast"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -637,7 +636,7 @@
   <DatatypeProperty rdf:about="&wfact;climateZoneName">
     <rdfs:label>Climate Zone Name</rdfs:label>
     <rdfs:comment>Name of the climate zone (ie. polar, temperate, etc.).</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;ClimateZone"/>
+    <rdfs:domain rdf:resource="&wfact;ClimateZone"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -646,7 +645,7 @@
   <DatatypeProperty rdf:about="&wfact;climateZoneDescription">
     <rdfs:label>Climate Zone Description</rdfs:label>
     <rdfs:comment>Greater detail for the climate of a given area.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;ClimateZone"/>
+    <rdfs:domain rdf:resource="&wfact;ClimateZone"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -655,7 +654,7 @@
   <DatatypeProperty rdf:about="&wfact;borderLength">
     <rdfs:label>Border Length</rdfs:label>
     <rdfs:comment>Length of distance by land that one country shares with other countries.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;BorderCountryPair"/>
+    <rdfs:domain rdf:resource="&wfact;BorderCountryPair"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -664,7 +663,7 @@
   <DatatypeProperty rdf:about="&wfact;totalLandBorder">
     <rdfs:label>Total Land Border</rdfs:label>
     <rdfs:comment>Total length of distance by land of a country's border.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Border"/>
+    <rdfs:domain rdf:resource="&wfact;Border"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -673,7 +672,7 @@
   <DatatypeProperty rdf:about="&wfact;totalBorderCountries">
     <rdfs:label>Total Border Countries</rdfs:label>
     <rdfs:comment>Total number of countries sharing a border with this nation.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Border"/>
+    <rdfs:domain rdf:resource="&wfact;Border"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -682,7 +681,7 @@
   <DatatypeProperty rdf:about="&wfact;territorialSea">
     <rdfs:label>Territorial Sea</rdfs:label>
     <rdfs:comment>Length of sea belt belonging to sovereign coastal state.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -691,7 +690,7 @@
   <DatatypeProperty rdf:about="&wfact;exclusiveEconomicZone">
     <rdfs:label>Territorial Sea</rdfs:label>
     <rdfs:comment>Length of sea belt belonging to sovereign coastal state for exclusive economic use.</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -703,7 +702,7 @@
       Length of sea belt belonging to sovereign coastal state for legally protecting against infringement of its customs,
       fiscal, immigration, or sanitary laws and regulations.
     </rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -715,7 +714,7 @@
       Length of sea belt belonging to sovereign coastal state with exclusive jurisdiction for the purpose of exploring it
       and exploiting its natural resources.
     </rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -726,7 +725,7 @@
     <rdfs:comment>
       Additions, subtractions, or exceptions that pertain to the length of sea belt belonging to a soverign coastal state.
     </rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -737,7 +736,7 @@
     <rdfs:comment>
       When details are given that don't readily fit into any given category, they go here.
     </rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -749,7 +748,7 @@
       An area beyond the outer limit of the territorial sea in which the coastal State has the right to fish,
       subject to any concessions which may be granted to foreign fishermen.
     </rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;MaritimeClaim"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -758,7 +757,7 @@
   <DatatypeProperty rdf:about="&wfact;resourceName">
     <rdfs:label>Resource Name</rdfs:label>
     <rdfs:comment>The name of the resource (ie. coal, copper, salt, fish)</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;NaturalResource"/>
+    <rdfs:domain rdf:resource="&wfact;NaturalResource"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -767,8 +766,8 @@
   <DatatypeProperty rdf:about="&wfact;description">
     <rdfs:label>Description</rdfs:label>
     <rdfs:comment>Description of the terrain</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;GeographicNote"/>
-    <rdfs:domain rdf:resource="&asset;NaturalResource"/>
+    <rdfs:domain rdf:resource="&wfact;GeographicNote"/>
+    <rdfs:domain rdf:resource="&wfact;NaturalResource"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -780,7 +779,7 @@
       The vertical distance between a standard reference point, such as sea level,
       and the top of an object or point on the Earth, such as a mountain.
     </rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -792,7 +791,7 @@
       The lowest vertical distance between a standard reference point, such as sea level,
       and the top of an object or point on the Earth, such as a canyon.
     </rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -804,7 +803,7 @@
       The highest vertical distance between a standard reference point, such as sea level,
       and the top of an object or point on the Earth, such as a mountain.
     </rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
     <rdfs:range rdf:resource="&xsd;integer"/>
   </DatatypeProperty>
 
@@ -813,7 +812,7 @@
   <DatatypeProperty rdf:about="&wfact;lowestPointDescription">
     <rdfs:label>Lowest Point Description</rdfs:label>
     <rdfs:comment>Supplemental description for the lowest elevation point</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -822,7 +821,7 @@
   <DatatypeProperty rdf:about="&wfact;highestPointDescription">
     <rdfs:label>Highest Point Description</rdfs:label>
     <rdfs:comment>Supplemental description for the highest elevation point</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;Elevation"/>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -831,12 +830,12 @@
   <DatatypeProperty rdf:about="&wfact;percentage">
     <rdfs:label>Percentage</rdfs:label>
     <rdfs:comment>The percentage belonging to the parent entity</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;LandUse"/>
-    <rdfs:domain rdf:resource="&asset;AgriculturalLand"/>
-    <rdfs:domain rdf:resource="&asset;ArableLand"/>
-    <rdfs:domain rdf:resource="&asset;OtherLand"/>
-    <rdfs:domain rdf:resource="&asset;PermanentCropsLand"/>
-    <rdfs:domain rdf:resource="&asset;PermanentPastureLand"/>
+    <rdfs:domain rdf:resource="&wfact;LandUse"/>
+    <rdfs:domain rdf:resource="&wfact;AgriculturalLand"/>
+    <rdfs:domain rdf:resource="&wfact;ArableLand"/>
+    <rdfs:domain rdf:resource="&wfact;OtherLand"/>
+    <rdfs:domain rdf:resource="&wfact;PermanentCropsLand"/>
+    <rdfs:domain rdf:resource="&wfact;PermanentPastureLand"/>
     <rdfs:range rdf:resource="&xsd;double"/>
   </DatatypeProperty>
 
@@ -845,13 +844,13 @@
   <DatatypeProperty rdf:about="&wfact;lastEstimated">
     <rdfs:label>Last Estimated</rdfs:label>
     <rdfs:comment>The last date/year the field was last estimated</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;LandUse"/>
-    <rdfs:domain rdf:resource="&asset;AgriculturalLand"/>
-    <rdfs:domain rdf:resource="&asset;ArableLand"/>
-    <rdfs:domain rdf:resource="&asset;ArtificiallyIrrigatedLand"/>
-    <rdfs:domain rdf:resource="&asset;OtherLand"/>
-    <rdfs:domain rdf:resource="&asset;PermanentCropsLand"/>
-    <rdfs:domain rdf:resource="&asset;PermanentPastureLand"/>
+    <rdfs:domain rdf:resource="&wfact;LandUse"/>
+    <rdfs:domain rdf:resource="&wfact;AgriculturalLand"/>
+    <rdfs:domain rdf:resource="&wfact;ArableLand"/>
+    <rdfs:domain rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+    <rdfs:domain rdf:resource="&wfact;OtherLand"/>
+    <rdfs:domain rdf:resource="&wfact;PermanentCropsLand"/>
+    <rdfs:domain rdf:resource="&wfact;PermanentPastureLand"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
@@ -860,7 +859,7 @@
   <DatatypeProperty rdf:about="&wfact;hazardDescription">
     <rdfs:label>Hazard Description</rdfs:label>
     <rdfs:comment>The description of the hazard (ie. volcanism, hurricanes, etc.).</rdfs:comment>
-    <rdfs:domain rdf:resource="&asset;NaturalHazard"/>
+    <rdfs:domain rdf:resource="&wfact;NaturalHazard"/>
     <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
