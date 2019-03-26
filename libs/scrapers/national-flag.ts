@@ -39,7 +39,7 @@ export function getFlag(cheerioElem, country, countryId) {
             flagImgUrl = consts.BASE.URL_BASE + a.replace('../', '');
 		}
         if (flagImgUrl) {
-			flag.datatypeProperties[consts.ONTOLOGY.LOCATION_URI] = flagImgUrl;
+			flag.datatypeProperties[consts.ONTOLOGY.LOCATOR_URI] = flagImgUrl;
 		}
         // TODO: scrape physical image from url and store it.
     });

@@ -40,7 +40,7 @@ export function getSupplementalImages(cheerioElem: CheerioSelector, country: str
 			store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG, objectProp));
 
 			const datatypeProp = {};
-			datatypeProp[consts.ONTOLOGY.LOCATION_URI] = suppImgUrl;
+			datatypeProp[consts.ONTOLOGY.LOCATOR_URI] = suppImgUrl;
 			datatypeProp[consts.ONTOLOGY.CONTENT_DESCRIPTION] = b || null;
 			datatypeProp[consts.ONTOLOGY.IMAGE_DIMENSIONS] = imageProps[0] || 'N/A';
 			datatypeProp[consts.ONTOLOGY.IMAGE_SIZE] = imageProps[1] || 'N/A';

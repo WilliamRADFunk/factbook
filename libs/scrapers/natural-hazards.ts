@@ -20,7 +20,7 @@ export function getNaturalHazard(cheerioElem: CheerioSelector, country: string, 
 		'INST_NATURAL_HAZARD',
 		'ONT_NATURAL_HAZARD',
 		'naturalHazards',
-		'DESCRIPTION',
+		'HAZARD_DESCRIPTION',
 		'Natural Hazard',
 		';',
 		'volcanism:');

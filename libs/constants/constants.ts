@@ -134,7 +134,7 @@ const ONTOLOGY = {
 	LENGTH: MAIN_ONT_PATH + 'length',
 	LENGTH_MODIFIER: MAIN_ONT_PATH + 'lengthModifier',
 	LOCATION_DESCRIPTION: MAIN_ONT_PATH + 'locationDescription',
-	LOCATION_URI: MAIN_ONT_PATH + 'locatorURI',
+	LOCATOR_URI: MAIN_ONT_PATH + 'locatorURI',
 	LOWEST_POINT: MAIN_ONT_PATH + 'lowestPoint',
 	LOWEST_POINT_DESCRIPTION: MAIN_ONT_PATH + 'lowestPointDescription',
 	MAP_REFERENCES: MAIN_ONT_PATH + 'mapReferences',
