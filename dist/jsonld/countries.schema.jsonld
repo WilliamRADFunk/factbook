@@ -32320,14 +32320,24 @@
     },
     "http://williamrobertfunk.com/ontologies/world-factbook#hasGeographicNote": [
       {
-        "@id": "http://williamrobertfunk.com/instance/GeographicNote/5f1c679c-99ee-336d-b43e-a03afe246253",
+        "@id": "http://williamrobertfunk.com/instance/GeographicNote/53d64df4-001c-3f9a-b29b-a2fd380a1c1f",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#GeographicNote",
-        "http://www.w3.org/2000/01/rdf-schema#label": "Geographic Note (first country in the world to incorporate the protection of the environment into its constitution)"
+        "http://www.w3.org/2000/01/rdf-schema#label": "Geographic Note (the Namib Desert, after which the country is named, is considered to be the oldest desert in the world)"
+      }, 
+      {
+        "@id": "http://williamrobertfunk.com/instance/GeographicNote/cbbb40aa-c53a-3339-a51d-251e730c761e",
+        "@type": "http://williamrobertfunk.com/ontologies/world-factbook#GeographicNote",
+        "http://www.w3.org/2000/01/rdf-schema#label": "Geographic Note (Namibia is the first country in the world to incorporate the protection of the environment into its constitution)"
       }, 
       {
         "@id": "http://williamrobertfunk.com/instance/GeographicNote/5872d74d-a974-3339-b571-01b3192648ef",
         "@type": "http://williamrobertfunk.com/ontologies/world-factbook#GeographicNote",
         "http://www.w3.org/2000/01/rdf-schema#label": "Geographic Note (some 14% of the land is protected, including virtually the entire Namib Desert coastal strip)"
+      }, 
+      {
+        "@id": "http://williamrobertfunk.com/instance/GeographicNote/de2f177c-c992-3f92-95e3-2f0e8bdb7d87",
+        "@type": "http://williamrobertfunk.com/ontologies/world-factbook#GeographicNote",
+        "http://www.w3.org/2000/01/rdf-schema#label": "Geographic Note (Namib-Naukluft National Park (49,768 sq km), is the largest game park in Africa and one of the largest in the world)"
       }
     ],
     "http://williamrobertfunk.com/ontologies/world-factbook#hasLocation": {
