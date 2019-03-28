@@ -37,9 +37,9 @@ export function getGeography(cheerioElem: CheerioSelector, country: string, coun
         if (geoGrd) {
 			let coords = geoGrd.split(',');
 			let latSplit = coords[0].trim().split(' ');
-			let lat = (latSplit[0].includes('S') ? -1 : 1) * Number(latSplit[0].trim() + '.' + latSplit[1].trim());
+			let lat = (latSplit[latSplit.length - 1].includes('S') ? -1 : 1) * Number(latSplit[0].trim() + '.' + latSplit[1].trim());
 			let lngSplit = coords[1].trim().split(' ');
-			let lng = (lngSplit[0].includes('W') ? -1 : 1) * Number(lngSplit[0].trim() + '.' + lngSplit[1].trim());
+			let lng = (lngSplit[lngSplit.length - 1].includes('W') ? -1 : 1) * Number(lngSplit[0].trim() + '.' + lngSplit[1].trim());
 			
 			const datatypeProp = {};
 			datatypeProp[consts.WGS84_POS.LAT] = lat;
