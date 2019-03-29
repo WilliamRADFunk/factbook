@@ -24,7 +24,7 @@
   xmlns:blade="http://modusoperandi.com/ont/blade#">
 
   <Ontology rdf:about="http://williamrobertfunk.com/ontologies/world-factbook">
-    <versionInfo rdf:datatype="&xsd;decimal">1.4</versionInfo>
+    <versionInfo rdf:datatype="&xsd;decimal">1.5</versionInfo>
     <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
     <dc:creator>William R.A.D. Funk</dc:creator>
     <dc:contributor>William R.A.D. Funk</dc:contributor>
@@ -887,25 +887,25 @@
   <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
 
   <DataProperty rdf:about="&pos;lat">
-    <rdfs:domain rdf:resource="&wfact;#Location" />
+    <rdfs:domain rdf:resource="&wfact;Location" />
   </DataProperty>
 
   <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
 
   <DataProperty rdf:about="&pos;long">
-    <rdfs:domain rdf:resource="&wfact;#Location" />
+    <rdfs:domain rdf:resource="&wfact;Location" />
   </DataProperty>
 
   <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
 
   <DataProperty rdf:about="&pos;alt">
-    <rdfs:domain rdf:resource="&wfact;#Location" />
+    <rdfs:domain rdf:resource="&wfact;Location" />
   </DataProperty>
 
   <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat_long -->
 
   <DataProperty rdf:about="&pos;lat_long">
-    <rdfs:domain rdf:resource="&wfact;#Location" />
+    <rdfs:domain rdf:resource="&wfact;Location" />
   </DataProperty>
 
 </rdf:RDF>
