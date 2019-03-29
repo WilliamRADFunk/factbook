@@ -1,6 +1,5 @@
 import { store } from '../constants/globalStore';
 import { loadFile } from './load-file';
-import { loadFileMultiple } from './load-file-multiple';
 
 export function loadFiles() {
     const LOG_FILE_NAME = 'logs/log-' + ((new Date()).toISOString()).replace(':', '-').replace(':', '-').replace('.', '-').trim() + '.log';

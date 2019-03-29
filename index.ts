@@ -1,5 +1,7 @@
 import * as rp from 'request-promise';
 import * as cheerio from 'cheerio';
+import * as download from 'image-downloader';
+import * as nodeZip from 'bestzip';
 
 import { consts } from './libs/constants/constants';
 import { store } from './libs/constants/globalStore';
@@ -10,8 +12,57 @@ import { loadFiles } from './libs/utils/load-files';
 import { saveFiles } from './libs/utils/save-files';
 
 const failedCountries = [];
+const failedImages = [];
 
 loadFiles();
+
+const downloadImages = () => {
+    const imagePromises = [];
+    const images = store.IMAGES_TO_SCRAPE.slice();
+    images.forEach(image => {
+        imagePromises.push(
+            download.image(image.options)
+                .then(({ filename, image }) => {
+                    console.log('File saved to', filename);
+                })
+                .catch((err) => {
+                    console.error('~~~~ Failed to download: ', image.fileName);
+                    failedImages.push(image);
+                })
+		);
+    });
+    return imagePromises;
+};
+
+const flushStore = () => {
+    store.agriculturalLands = {};
+	store.arableLands = {};
+	store.artificiallyIrrigatedLands = {};
+	store.borderCountries = {};
+	store.borderMaps = {};
+	store.borders = {};
+	store.climates = {};
+	store.climateZones = {};
+	store.coasts = {};
+	store.countries = {};
+	store.countriesInList = [];
+	store.domainAreas = {};
+	store.elevations = {};
+	store.forestLands = {};
+	store.images = {};
+	store.geographicNotes = {};
+	store.landUses = {};
+	store.locations = {};
+	store.maritimeClaims = {};
+	store.nationalFlags = {};
+	store.naturalHazards = {};
+	store.naturalResources = {};
+	store.otherLands = {};
+	store.permanentCropsLands = {};
+	store.permanentPastureLands = {};
+	store.regionMaps = {};
+	store.terrains = {};
+};
 
 const getCountryData = (country: string, url: string) => {
     if (country && url) {
@@ -78,51 +129,64 @@ const promisesResolutionForCountries = () => {
     const promises = getCountriesData();
     Promise.all(promises)
         .then(function() {
-            Promise.all(store.IMAGE_PROMISES)
-                .then(function() {
-                    store.IMAGE_PROMISES.length = 0;
-                    Promise.all(store.ENCODE_PROMISES)
-                        .then(function() {
-                            store.ENCODE_PROMISES.length = 0;
-                            if (failedCountries.length) {
-                                console.log('Countries that failed to get parsed: [');
-                                failedCountries.forEach(c => {
-                                    console.log(c);
-                                });
-                                console.log(']');
-                                process.stdout.write('Did you want to retry scraping on those failed countries? (y/n)');
-                                process.stdin.once('data', function (data) {
-                                    console.log(`You said: ${data.toString().trim()}`);
-                                    if (data.toString().trim().toLowerCase().includes('y')) {
-                                        store.countriesInList = failedCountries.slice();
-                                        failedCountries.length = 0;
-                                        promisesResolutionForCountries();
-                                    } else {
-                                        saveFiles();
-                                        process.exit(0);
-                                    }
-                                });
-                                process.stdin.resume();
-                            } else {
-                                saveFiles();
-                                process.exit(0);
-                            }
-                        })
-                        .catch(err => {
-                            store.IMAGE_PROMISES.length = 0;
-                            store.ENCODE_PROMISES.length = 0;
-                            store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
-                        });
-                })
-                .catch(err => {
-                    store.IMAGE_PROMISES.length = 0;
-                    store.ENCODE_PROMISES.length = 0;
-                    store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+            if (failedCountries.length) {
+                console.log('Countries that failed to get parsed: [');
+                failedCountries.forEach(c => {
+                    console.log(c);
                 });
+                console.log(']');
+                process.stdout.write('Did you want to retry scraping on those failed countries? (y/n)');
+                process.stdin.once('data', function (data) {
+                    console.log(`You said: ${data.toString().trim()}`);
+                    if (data.toString().trim().toLowerCase().includes('y')) {
+                        store.countriesInList = failedCountries.slice();
+                        failedCountries.length = 0;
+                        promisesResolutionForCountries();
+                    } else {
+                        saveFiles();
+                        flushStore();
+                        scrapeImages();
+                    }
+                });
+                process.stdin.resume();
+            } else {
+                saveFiles();
+                flushStore();
+                scrapeImages();
+            }
         })
         .catch(err => {
-            store.IMAGE_PROMISES.length = 0;
-            store.ENCODE_PROMISES.length = 0;
+            store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+        });
+}
+
+const scrapeImages = () => {
+    const promises = downloadImages();
+    Promise.all(promises)
+        .then(function() {
+            if (failedImages.length) {
+                console.log('Images that failed download: [');
+                failedImages.forEach(c => {
+                    console.log(c.fileName);
+                });
+                console.log(']');
+                process.stdout.write('Did you want to retry downloading on those failed images? (y/n)');
+                process.stdin.once('data', function (data) {
+                    console.log(`You said: ${data.toString().trim()}`);
+                    if (data.toString().trim().toLowerCase().includes('y')) {
+                        store.IMAGES_TO_SCRAPE = failedImages.slice();
+                        failedImages.length = 0;
+                        scrapeImages();
+                    } else {
+                        process.exit(0);
+                    }
+                });
+                process.stdin.resume();
+            } else {
+                process.exit(0);
+            }
+        })
+        .catch(err => {
             store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
         });
 }

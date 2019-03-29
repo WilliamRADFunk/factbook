@@ -1,7 +1,5 @@
 import * as getUuid from 'uuid-by-string';
 import * as htmlToText from 'html-to-text';
-import * as download from 'image-downloader';
-import { promise as DataURI } from 'datauri';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
@@ -50,30 +48,18 @@ export function getSupplementalImages(cheerioElem: CheerioSelector, country: str
 			const fileName = pathSplit[pathSplit.length - 1].split('?')[0].toLowerCase();
 			datatypeProp[consts.ONTOLOGY.MIME_TYPE] = fileName.split('.')[1];
 			datatypeProp[consts.ONTOLOGY.COLLECTION_TIMESTAMP] = (new Date()).toISOString();
+			datatypeProp[consts.ONTOLOGY.CONTENTS] = fileName;
 
-			// const options = {
-			// 	url: suppImgUrl,
-			// 	dest: `dist/images/${fileName}`
-			// }
+			const options = {
+				url: suppImgUrl,
+				dest: `dist/images/${fileName}`,
+				timeout: consts.BASE.DATA_REQUEST_TIMEOUT
+			}
 
-			// store.IMAGE_PROMISES.push(
-			// 	download.image(options)
-			// 		.then(({ filename, image }) => {
-			// 			console.log('File saved to', filename);
-			// 			store.ENCODE_PROMISES.push(DataURI(filename)
-			// 				.then(content => {
-			// 					console.log('File encoded', filename);
-			// 					datatypeProp[consts.ONTOLOGY.CONTENTS] = content;
-			// 				})
-			// 				.catch(err => {
-			// 					console.error('~~~~ Failed to encode: ', filename, err);
-			// 				})
-			// 			);
-			// 		})
-			// 		.catch((err) => {
-			// 			console.error('~~~~ Failed to download: ', fileName, err);
-			// 		})
-			// );
+			store.IMAGES_TO_SCRAPE.push({
+				fileName,
+				options
+			});
 		}
     });
 };

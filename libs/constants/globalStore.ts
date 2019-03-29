@@ -1,8 +1,7 @@
 class GlobalStore {
 	LOG_FILE_NAME = '';
 	LOG_STREAM = null;
-	ENCODE_PROMISES = [];
-	IMAGE_PROMISES = [];
+	IMAGES_TO_SCRAPE = [];
 
 	agriculturalLands = {};
 	arableLands = {};

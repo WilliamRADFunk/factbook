@@ -63,3 +63,4 @@ typings/
 
 # images are just too big to store in git
 dist/images/*
+dist/images.*
