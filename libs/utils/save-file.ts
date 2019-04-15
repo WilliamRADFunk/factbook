@@ -28,7 +28,7 @@ export function saveFile(fileName: string, storeName: string, context: string) {
 			mainObj[key] = dataProps[key];
 		});
 		// Pull out object properties, and make them direct properties but with array groups for multiples.
-		const objectProps = store[storeName][key].objectProperties;
+		let objectProps = store[storeName][key].objectProperties;
 		objectProps.forEach(objP => {
 			// Should be one key per object
 			const key = Object.keys(objP)[0];

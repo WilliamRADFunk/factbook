@@ -528,6 +528,15 @@
 
   <DatatypeProperty rdf:about="&wfact;locationDescription">
     <rdfs:label>Location Description</rdfs:label>
+    <rdfs:comment>A description of where in the world the location is located.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Location"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#locationReferenceDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;locationReferenceDescription">
+    <rdfs:label>Location Reference Description</rdfs:label>
     <rdfs:comment>A description of where in the world the country is located.</rdfs:comment>
     <rdfs:domain rdf:resource="&wfact;Country"/>
     <rdfs:range rdf:resource="&xsd;string"/>

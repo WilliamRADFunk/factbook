@@ -2,53 +2,79 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 
+function parseSingleLocation(cheerio: Cheerio, country: string, countryId: string) {
+	const content = cheerio.find('div.category_data.subfield.text').text().trim();
+	store.countries[countryId].datatypeProperties[consts.ONTOLOGY.LOCATION_REF_DESCRIPTION] = content;
+	
+	let geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country);
+	let objectProp = {};
+	if (store.locations[geoId]) {
+		objectProp[consts.ONTOLOGY.HAS_LOCATION] = store.locations[geoId];
+	} else {
+		objectProp = entityMaker(
+			consts.ONTOLOGY.HAS_LOCATION,
+			consts.ONTOLOGY.ONT_GEO_LOCATION,
+			geoId,
+			`Geographic Location for ${country}`);
+		store.locations[geoId] = objectProp[consts.ONTOLOGY.HAS_LOCATION];
+
+		const datatypeProp = {};
+		datatypeProp[consts.ONTOLOGY.LOCATION_DESCRIPTION] = content
+		objectProp[consts.ONTOLOGY.HAS_LOCATION].datatypeProperties = datatypeProp;
+	}
+	store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_LOCATION, objectProp));
+}
+
+function parseMultipleLocations(cheerioElem: CheerioSelector, country: string, countryId: string, scope) {
+	cheerioElem(scope).find('p').each(function() {
+		const content = cheerioElem(this).text().trim();
+		const strongTag = cheerioElem(this).find('strong').text().trim().slice(0, -1);
+		const locations = store.countries[countryId].objectProperties
+			.filter(objProp => objProp[consts.ONTOLOGY.HAS_LOCATION])
+			.map(objProp => objProp[consts.ONTOLOGY.HAS_LOCATION]);
+        let objectProp = {};
+		if (!strongTag) {
+			const description = content.substring(0, content.indexOf(strongTag)).trim();
+			store.countries[countryId].datatypeProperties[consts.ONTOLOGY.LOCATION_REF_DESCRIPTION] = description;
+		} else {
+		    let geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country) + getUuid(strongTag);
+			let geoAttr = locations.find(loc => loc && loc['@id'] === geoId);
+			if (!geoAttr) {
+				if (store.locations[geoId]) {
+					objectProp[consts.ONTOLOGY.HAS_LOCATION] = store.locations[geoId];
+				} else {
+					objectProp = entityMaker(
+						consts.ONTOLOGY.HAS_LOCATION,
+						consts.ONTOLOGY.ONT_GEO_LOCATION,
+						geoId,
+						`Geographic Location for ${country} - ${strongTag}`);
+					store.locations[geoId] = objectProp[consts.ONTOLOGY.HAS_LOCATION];
+
+					const datatypeProp = {};
+					datatypeProp[consts.ONTOLOGY.LOCATION_DESCRIPTION] = content
+					objectProp[consts.ONTOLOGY.HAS_LOCATION].datatypeProperties = datatypeProp;
+				}
+				geoAttr = objectProp[consts.ONTOLOGY.HAS_LOCATION];
+				store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_LOCATION, objectProp));
+			}
+		}
+	});
+}
+
 export function getGeography(cheerioElem: CheerioSelector, country: string, countryId: string) {
 	cheerioElem('#field-location').each(function() {
-        const locGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
-        if (locGrd) {
-            store.countries[countryId].datatypeProperties[consts.ONTOLOGY.LOCATION_DESCRIPTION] = locGrd;
-        }
-	});
-    const objectProperties = store.countries[countryId].objectProperties;
-	cheerioElem('#field-geographic-coordinates').each(function() {
-		let geoAttr = getRelation(objectProperties, consts.ONTOLOGY.HAS_LOCATION);
-		const geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country);
-		let objectProp = {};
-		if (!geoAttr) {
-			if (store.locations[geoId]) {
-				objectProp[consts.ONTOLOGY.HAS_LOCATION] = store.locations[geoId];
-			} else {
-				objectProp = entityMaker(
-					consts.ONTOLOGY.HAS_LOCATION,
-					consts.ONTOLOGY.ONT_GEO_LOCATION,
-					geoId,
-					`Geographic Location for ${country}`);
-				store.locations[geoId] = objectProp[consts.ONTOLOGY.HAS_LOCATION];
-			}
-			geoAttr = objectProp[consts.ONTOLOGY.HAS_LOCATION];
-			store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_LOCATION, objectProp));
+		const hasMultLocations = cheerioElem(this).find('div.category_data.subfield.text > p');
+		// Multiple p tags suggests the nation has multiple locations in different parts of the world.
+		// This means distinct description and geographic coordinates. Each must be handled separately.
+        if (hasMultLocations.length) {
+			parseMultipleLocations(cheerioElem, country, countryId, this);
+        } else {
+			parseSingleLocation(cheerioElem(this), country, countryId);
 		}
-
-        const geoGrd = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
-        if (geoGrd) {
-			let coords = geoGrd.split(',');
-			let latSplit = coords[0].trim().split(' ');
-			let lat = (latSplit[latSplit.length - 1].includes('S') ? -1 : 1) * Number(latSplit[0].trim() + '.' + latSplit[1].trim());
-			let lngSplit = coords[1].trim().split(' ');
-			let lng = (lngSplit[lngSplit.length - 1].includes('W') ? -1 : 1) * Number(lngSplit[0].trim() + '.' + lngSplit[1].trim());
-			
-			const datatypeProp = {};
-			datatypeProp[consts.WGS84_POS.LAT] = lat;
-			datatypeProp[consts.WGS84_POS.LONG] = lng;
-			datatypeProp[consts.WGS84_POS.LAT_LONG] = `${lat}, ${lng}`;
-
-			objectProp[consts.ONTOLOGY.HAS_LOCATION].datatypeProperties = datatypeProp;
-        }
-    });
+	});
 	cheerioElem('#field-map-references').each(function() {
         const mapRef = cheerioElem(this).find('div.category_data.subfield.text').text().trim();
         if (mapRef) {

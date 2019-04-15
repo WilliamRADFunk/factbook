@@ -80,6 +80,7 @@ const getCountryData = (country: string, url: string) => {
 				dataScrapers.getFlag($, country, countryId);
                 dataScrapers.getGeographicNotes($, country, countryId);
                 dataScrapers.getGeography($, country, countryId);
+                dataScrapers.getGeographyCoordinates($, country, countryId);
                 dataScrapers.getIrrigatedLand($, country, countryId);
                 dataScrapers.getLandUses($, country, countryId);
                 dataScrapers.getMaritimeClaims($, country, countryId);
@@ -145,14 +146,16 @@ const promisesResolutionForCountries = () => {
                     } else {
                         saveFiles();
                         flushStore();
-                        scrapeImages();
+                        // scrapeImages();
+                        process.exit(0);
                     }
                 });
                 process.stdin.resume();
             } else {
                 saveFiles();
                 flushStore();
-                scrapeImages();
+                // scrapeImages();
+                process.exit(0);
             }
         })
         .catch(err => {
