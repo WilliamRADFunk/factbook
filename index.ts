@@ -1,23 +1,23 @@
 import * as rp from 'request-promise';
 import * as cheerio from 'cheerio';
 import * as download from 'image-downloader';
-import * as nodeZip from 'bestzip';
 
-import { consts } from './libs/constants/constants';
-import { store } from './libs/constants/globalStore';
-import { dataScrapers } from './libs/scrapers/data-getters';
-import { entityMaker } from './libs/utils/entity-maker';
-import { countryToId } from './libs/utils/country-to-id';
-import { loadFiles } from './libs/utils/load-files';
-import { saveFiles } from './libs/utils/save-files';
+import { consts } from './src/constants/constants';
+import { store } from './src/constants/globalStore';
+import { dataScrapers } from './src/scrapers/data-getters';
+import { entityMaker } from './src/utils/entity-maker';
+import { countryToId } from './src/utils/country-to-id';
+import { loadFiles } from './src/utils/load-files';
+import { saveFiles } from './src/utils/save-files';
+import { ImageScrapableObject } from './src/models/image-scrapable-object';
 
-const failedCountries = [];
-const failedImages = [];
+const failedCountries: string[] = [];
+const failedImages: ImageScrapableObject[] = [];
 
 loadFiles();
 
 const downloadImages = () => {
-    const imagePromises = [];
+    const imagePromises: Promise<any>[] = [];
     const images = store.IMAGES_TO_SCRAPE.slice();
     images.forEach(image => {
         imagePromises.push(
@@ -64,7 +64,7 @@ const flushStore = () => {
 	store.terrains = {};
 };
 
-const getCountryData = (country: string, url: string) => {
+function getCountryData(country: string, url: string): any {
     if (country && url) {
         return rp(url, { timeout: consts.BASE.DATA_REQUEST_TIMEOUT })
             .then((html) => {
@@ -103,19 +103,19 @@ const getCountryData = (country: string, url: string) => {
                 }\n${
                     err.toString().trim()
                 }\n\n`;
-                store.LOG_STREAM.error(errMsg);
+                // store.LOG_STREAM.error(errMsg);
             });
     } else {
         return new Promise(function(resolve) {
-            store.LOG_STREAM.error(new Date().toISOString()
-                + '\n\nFailure to scrape data for ' + country + ' at \n' + url + '\n\n');
-            resolve(null);
+            // store.LOG_STREAM.error(new Date().toISOString()
+            //     + '\n\nFailure to scrape data for ' + country + ' at \n' + url + '\n\n');
+            resolve();
         }).then(() => {});
     }
 };
 
 const getCountriesData = () => {
-    const countryDataPromises = [];
+    const countryDataPromises: Promise<any>[] = [];
     const countries = store.countriesInList.slice();
     countries.forEach(country => {
         const abbrev = store.countries[countryToId(country)].datatypeProperties[consts.ONTOLOGY.ISO_CODE];
@@ -146,20 +146,18 @@ const promisesResolutionForCountries = () => {
                     } else {
                         saveFiles();
                         flushStore();
-                        // scrapeImages();
-                        process.exit(0);
+                        scrapeImages();
                     }
                 });
                 process.stdin.resume();
             } else {
                 saveFiles();
                 flushStore();
-                // scrapeImages();
-                process.exit(0);
+                scrapeImages();
             }
         })
         .catch(err => {
-            store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+            // store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
         });
 }
 
@@ -173,32 +171,23 @@ const scrapeImages = () => {
                     console.log(c.fileName);
                 });
                 console.log(']');
-                process.stdout.write('Did you want to retry downloading on those failed images? (y/n)');
-                process.stdin.once('data', function (data) {
-                    console.log(`You said: ${data.toString().trim()}`);
-                    if (data.toString().trim().toLowerCase().includes('y')) {
-                        store.IMAGES_TO_SCRAPE = failedImages.slice();
-                        failedImages.length = 0;
-                        scrapeImages();
-                    } else {
-                        process.exit(0);
-                    }
-                });
-                process.stdin.resume();
+                store.IMAGES_TO_SCRAPE = failedImages.slice();
+                failedImages.length = 0;
+                scrapeImages();
             } else {
                 process.exit(0);
             }
         })
         .catch(err => {
-            store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+            // store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
         });
 }
 
 rp('https://www.cia.gov/library/publications/the-world-factbook/')
     .then((html) => {
         const $ = cheerio.load(html);
-        $('#search-place option').each(function() {
-            const a = $(this).prev()
+        $('#search-place option').each((index: number, element: CheerioElement) => {
+            const a = $(element).prev()
             const countryName = a.text().replace(/\\n/g, ' ').trim();
             const id = countryToId(countryName);
             if (!countryName || store.countries[id] || consts.BASE.COUNTRY_BLACKLIST.includes(countryName.toLowerCase())) {
@@ -216,5 +205,5 @@ rp('https://www.cia.gov/library/publications/the-world-factbook/')
         promisesResolutionForCountries();
     })
     .catch(err => {
-        store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+        // store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
     });
