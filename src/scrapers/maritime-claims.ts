@@ -2,9 +2,9 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getMaritimeClaims(cheerioElem: CheerioSelector, country: string, countryId: string) {
 	const objectProperties = store.countries[countryId].objectProperties;
@@ -12,7 +12,7 @@ export function getMaritimeClaims(cheerioElem: CheerioSelector, country: string,
 	const mcId = consts.ONTOLOGY.INST_MARITIME_CLAIM + getUuid(country);
 	let objectProp = {};
     let bailOut = true;
-    cheerioElem('#field-maritime-claims').each(function() {
+    cheerioElem('#field-maritime-claims').each(() => {
 		if (!map) {
 			if (store.maritimeClaims[mcId]) {
 				objectProp[consts.ONTOLOGY.HAS_MARITIME_CLAIM] = store.maritimeClaims[mcId];

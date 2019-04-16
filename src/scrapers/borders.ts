@@ -2,16 +2,16 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
+import { countryToId } from '../utils/country-to-id';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
-import { countryToId } from '../utils/country-to-id';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getBorders(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
     let brdMap = getRelation(objectProperties, consts.ONTOLOGY.HAS_BORDER);
-    cheerioElem('#field-land-boundaries').each((index: number, elementOuter: CheerioElement) => {
-        cheerioElem(elementOuter).find('div.category_data.subfield.numeric').each((index: number, elementInner: CheerioElement) => {
+    cheerioElem('#field-land-boundaries').each((indexOut: number, elementOuter: CheerioElement) => {
+        cheerioElem(elementOuter).find('div.category_data.subfield.numeric').each((indexIn: number, elementInner: CheerioElement) => {
             const brdId = consts.ONTOLOGY.INST_BORDER + getUuid(country);
             let objectProp = {};
             if (!brdMap) {

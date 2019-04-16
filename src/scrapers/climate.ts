@@ -2,16 +2,16 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getClimate(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
 	let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_CLIMATE);
 	let mapZone;
     let bailOut = true;
-    cheerioElem('#field-climate').each(function() {
+    cheerioElem('#field-climate').each(() => {
 		if (!map) {
 			const cId = consts.ONTOLOGY.INST_CLIMATE + getUuid(country);
 			let objectProp = {};

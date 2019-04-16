@@ -2,26 +2,26 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { parsedSingleLine } from './scraper-forms/parsed-single-line';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { parsedSingleLine } from './scraper-forms/parsed-single-line';
 
 export function getGeographicNotes(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
 	const prevHasList = objectProperties.filter(rel => rel[consts.ONTOLOGY.HAS_GEOGRAPHIC_NOTE]);
     let bailOut = true;
-    cheerioElem('#field-geography-note').each(function() {
+    cheerioElem('#field-geography-note').each(() => {
         bailOut = false;
     });
     if (bailOut) {
         return;
     }
     let useOptionA = false;
-    cheerioElem('#field-geography-note > div.category_data.subfield.text').each(function() {
+    cheerioElem('#field-geography-note > div.category_data.subfield.text').each(() => {
         useOptionA = true;
     });
     if (useOptionA) {
-        let origParams = {
+        const origParams = {
             cheerioElem,
             country,
             countryId
@@ -38,7 +38,7 @@ export function getGeographicNotes(cheerioElem: CheerioSelector, country: string
             ';');
     } else {
         cheerioElem('#field-geography-note > div.category_data.note').each((index: number, element: CheerioElement) => {
-            let geographicalNotes = cheerioElem(element).text().trim().replace(/\\n/g, '').trim();
+            const geographicalNotes = cheerioElem(element).text().trim().replace(/\\n/g, '').trim();
             const notes = geographicalNotes.split(/note [0-9]+\:/);
             if (notes.length) {
                 notes.forEach(note => {

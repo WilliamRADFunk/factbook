@@ -2,13 +2,13 @@ import { parsedSingleLineCaveat } from './scraper-forms/parsed-single-line-cavea
 
 export function getNaturalHazard(cheerioElem: CheerioSelector, country: string, countryId: string) {
     let bailOut = true;
-    cheerioElem('#field-natural-hazards').each(function() {
+    cheerioElem('#field-natural-hazards').each(() => {
         bailOut = false;
     });
     if (bailOut) {
         return;
     }
-	let origParams = {
+	const origParams = {
 		cheerioElem,
 		country,
 		countryId

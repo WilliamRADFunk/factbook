@@ -1,5 +1,5 @@
-import * as fs from 'graceful-fs';
 import * as fj from 'formatter-json';
+import * as fs from 'graceful-fs';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
@@ -16,20 +16,20 @@ export function saveFile(fileName: string, storeName: string, context: string): 
 	// 	'@context': context,
 	// 	'@graph': []
 	// };
-	Object.keys(store[storeName]).forEach(key => {
+	Object.keys(store[storeName]).forEach(key1 => {
 		// Grab the basic @id, @type, and rdfs label
 		const mainObj = {
-			'@id': store[storeName][key]['@id'],
-			'@type': store[storeName][key]['@type'],
-			'http://www.w3.org/2000/01/rdf-schema#label': store[storeName][key][consts.RDFS.label]
+			'@id': store[storeName][key1]['@id'],
+			'@type': store[storeName][key1]['@type'],
+			'http://www.w3.org/2000/01/rdf-schema#label': store[storeName][key1][consts.RDFS.label]
 		};
 		// Pull datatype properties out of their singleton object and make them direct props.
-		const dataProps = store[storeName][key].datatypeProperties;
-		Object.keys(dataProps).forEach(key => {
-			mainObj[key] = dataProps[key];
+		const dataProps = store[storeName][key1].datatypeProperties;
+		Object.keys(dataProps).forEach(key2 => {
+			mainObj[key2] = dataProps[key2];
 		});
 		// Pull out object properties, and make them direct properties but with array groups for multiples.
-		let objectProps = store[storeName][key].objectProperties;
+		const objectProps = store[storeName][key1].objectProperties;
 		objectProps.forEach(objP => {
 			// Should be one key per object
 			const key = Object.keys(objP)[0];

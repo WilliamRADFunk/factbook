@@ -1,8 +1,8 @@
-import { hasProp } from './has-prop';
 import { EntityContainer } from '../models/entity-container';
+import { hasProp } from './has-prop';
 
 export function getRelation(objectPropertyList: EntityContainer[], propName: string): any {
-    let propNameChain: string[] = Array.isArray(propName) ? propName : [propName];
-    let rel = objectPropertyList.find(objectProperty => { return !!hasProp(objectProperty, propNameChain); });
+    const propNameChain: string[] = Array.isArray(propName) ? propName : [propName];
+    const rel = objectPropertyList.find(objectProperty => !!hasProp(objectProperty, propNameChain));
     return rel && rel[propNameChain[0]] || null;
 };

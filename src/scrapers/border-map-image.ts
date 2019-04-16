@@ -2,16 +2,17 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getBorderMapImg(cheerioElem: CheerioSelector, country: string, countryId: string): void {
     const objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.locatorBox').each((index: number, element: CheerioElement) => {
         let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_BORDER_MAP);
         const a = cheerioElem(element).find('img').attr('src');
-        let borderMapUrl, bmId;
+        let borderMapUrl;
+        let bmId;
         if (a && a.replace('../', '')) {
             const borderMapId = a.replace('../', '');
             borderMapUrl = consts.BASE.URL_BASE + a.replace('../', '');

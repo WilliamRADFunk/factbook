@@ -2,14 +2,14 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getRegionMapImg(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.mapBox').each((index: number, element: CheerioElement) => {
-        let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_REGION_MAP);
+        const map = getRelation(objectProperties, consts.ONTOLOGY.HAS_REGION_MAP);
         const rmId = consts.ONTOLOGY.INST_REGION_MAP + getUuid(country);
         let objectProp = {};
         if (!map) {
@@ -27,7 +27,6 @@ export function getRegionMapImg(cheerioElem: CheerioSelector, country: string, c
         let regionMapImgUrl;
         if (a && a.replace('../', '')) {
             regionMapImgUrl = consts.BASE.URL_BASE + a.replace('../', '');
-            if (regionMapImgUrl.includes('locator-map')) { }
             if (regionMapImgUrl && !regionMapImgUrl.includes('locator-map')) {
                 const datatypeProp = {};
                 datatypeProp[consts.ONTOLOGY.DT_LOCATOR_URI] = regionMapImgUrl;

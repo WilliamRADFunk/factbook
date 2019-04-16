@@ -2,9 +2,9 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getArea(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
@@ -12,7 +12,7 @@ export function getArea(cheerioElem: CheerioSelector, country: string, countryId
 	const daId = consts.ONTOLOGY.INST_DOMAIN_AREA + getUuid(country);
 	let objectProp = {};
     let bailOut = true;
-    cheerioElem('#field-area').each(function() {
+    cheerioElem('#field-area').each(() => {
 		if (!map) {
 			if (store.domainAreas[daId]) {
 				objectProp[consts.ONTOLOGY.HAS_DOMAIN_AREA] = store.domainAreas[daId];

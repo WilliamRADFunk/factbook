@@ -1,5 +1,5 @@
-import * as getUuid from 'uuid-by-string';
 import * as htmlToText from 'html-to-text';
+import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
@@ -15,9 +15,10 @@ export function getSupplementalImages(cheerioElem: CheerioSelector, country: str
 		let b = cheerioElem(element).find('img').attr('alt');
 		const c = cheerioElem(element).find(cheerioElem('div.carousel-photo-info .photoInfo .flag_description_text'));
 		const imageProps: string[] = [];
-		c.each(function() { imageProps.push(cheerioElem(element).text().trim()); });
+		c.each(() => { imageProps.push(cheerioElem(element).text().trim()); });
 		b = b && htmlToText.fromString(b);
-		let imgId, suppImgUrl;
+		let imgId;
+		let suppImgUrl;
         if (a && a.replace('../', '')) {
 			const cleanSrc = a.replace('../', '');
 			imgId = consts.ONTOLOGY.INST_IMAGE + getUuid(cleanSrc);
@@ -51,9 +52,9 @@ export function getSupplementalImages(cheerioElem: CheerioSelector, country: str
 			datatypeProp[consts.ONTOLOGY.DT_CONTENTS] = fileName;
 
 			const options = {
-				url: suppImgUrl,
 				dest: `dist/images/${fileName}`,
-				timeout: consts.BASE.DATA_REQUEST_TIMEOUT
+				timeout: consts.BASE.DATA_REQUEST_TIMEOUT,
+				url: suppImgUrl
 			}
 
 			store.IMAGES_TO_SCRAPE.push({

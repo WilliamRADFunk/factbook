@@ -2,9 +2,9 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getLandUses(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
@@ -12,7 +12,7 @@ export function getLandUses(cheerioElem: CheerioSelector, country: string, count
 	const luId = consts.ONTOLOGY.INST_LAND_USE + getUuid(country);
     let objectProp = {};
     let bailOut = true;
-    cheerioElem('#field-land-use').each(function() {
+    cheerioElem('#field-land-use').each(() => {
         if (!map) {
             if (store.landUses[luId]) {
                 objectProp[consts.ONTOLOGY.HAS_LAND_USE] = store.landUses[luId];
@@ -38,44 +38,44 @@ export function getLandUses(cheerioElem: CheerioSelector, country: string, count
         const date1Data = cheerioElem(element).find('span.subfield-date').text().trim();
         const refinedValue1 = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
         if (refinedValue1) {
-            let objectProp = {};
+            let objectP = {};
             switch (landUse1Switch) {
                 case 'agricultural land:':
                     const alId = consts.ONTOLOGY.INST_AGRICULTURAL_LAND + getUuid(country);
-                    objectProp = entityMaker(
+                    objectP = entityMaker(
                         consts.ONTOLOGY.HAS_AGRICULTURAL_LAND,
                         consts.ONTOLOGY.ONT_AGRICULTURAL_LAND,
                         alId,
                         `Agricultural Land Use for ${country}`);
-                    const agLandRef = objectProp[consts.ONTOLOGY.HAS_AGRICULTURAL_LAND];
+                    const agLandRef = objectP[consts.ONTOLOGY.HAS_AGRICULTURAL_LAND];
                     store.agriculturalLands[alId] = agLandRef;
-                    store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_AGRICULTURAL_LAND, objectProp));
+                    store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_AGRICULTURAL_LAND, objectP));
                     agLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
                     agLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;
                 case 'forest:':
                     const fId = consts.ONTOLOGY.INST_FOREST_LAND + getUuid(country);
-                    objectProp = entityMaker(
+                    objectP = entityMaker(
                         consts.ONTOLOGY.HAS_FOREST_LAND,
                         consts.ONTOLOGY.ONT_FOREST_LAND,
                         fId,
                         `Forest Land Use for ${country}`);
-                    const fLandRef = objectProp[consts.ONTOLOGY.HAS_FOREST_LAND];
+                    const fLandRef = objectP[consts.ONTOLOGY.HAS_FOREST_LAND];
                     store.forestLands[fId] = fLandRef;
-                    store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_FOREST_LAND, objectProp));
+                    store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_FOREST_LAND, objectP));
                     fLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
                     fLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;
                 case 'other:':
                     const oId = consts.ONTOLOGY.INST_OTHER_LAND + getUuid(country);
-                    objectProp = entityMaker(
+                    objectP = entityMaker(
                         consts.ONTOLOGY.HAS_OTHER_LAND,
                         consts.ONTOLOGY.ONT_OTHER_LAND,
                         oId,
                         `Other Land Use for ${country}`);
-                    const oLandRef = objectProp[consts.ONTOLOGY.HAS_OTHER_LAND];
+                    const oLandRef = objectP[consts.ONTOLOGY.HAS_OTHER_LAND];
                     store.otherLands[oId] = oLandRef;
-                    store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_OTHER_LAND, objectProp));
+                    store.landUses[luId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_OTHER_LAND, objectP));
                     oLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
                     oLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;

@@ -2,10 +2,9 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
+import { EntityContainer } from '../models/entity-container';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
-import { Entity } from '../models/entity';
-import { EntityContainer } from '../models/entity-container';
 
 function parseSingleCoordinates(cheerio: Cheerio, country: string, countryId: string) {
 	const geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country);
@@ -34,13 +33,13 @@ function parseSingleCoordinates(cheerio: Cheerio, country: string, countryId: st
     }
 
 	if (content) {
-		let coords = content.split(',');
-		let latSplit = coords[0].trim().split(' ');
-		let lat = (latSplit[latSplit.length - 1].includes('S') ? -1 : 1) * Number(latSplit[0].trim() + '.' + latSplit[1].trim());
-		let lngSplit = coords[1].trim().split(' ');
-		let lng = (lngSplit[lngSplit.length - 1].includes('W') ? -1 : 1) * Number(lngSplit[0].trim() + '.' + lngSplit[1].trim());
+		const coords = content.split(',');
+		const latSplit = coords[0].trim().split(' ');
+		const lat = (latSplit[latSplit.length - 1].includes('S') ? -1 : 1) * Number(latSplit[0].trim() + '.' + latSplit[1].trim());
+		const lngSplit = coords[1].trim().split(' ');
+		const lng = (lngSplit[lngSplit.length - 1].includes('W') ? -1 : 1) * Number(lngSplit[0].trim() + '.' + lngSplit[1].trim());
 		
-		let datatypeProp = {};
+		const datatypeProp = {};
 		if (geoAttr.datatypeProperties) {
             geoAttr.datatypeProperties[consts.WGS84_POS.LAT] = lat;
             geoAttr.datatypeProperties[consts.WGS84_POS.LONG] = lng;
@@ -64,7 +63,7 @@ function parseMultipleCoordinates(cheerioElem: CheerioSelector, country: string,
         let objectProp: EntityContainer = {};
 
         if (strongTag) {
-		    let geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country) + getUuid(strongTag);
+		    const geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country) + getUuid(strongTag);
             let geoAttr = locations.find(loc => loc && loc['@id'] === geoId);
             if (!geoAttr) {
                 if (store.locations[geoId]) {
@@ -84,13 +83,13 @@ function parseMultipleCoordinates(cheerioElem: CheerioSelector, country: string,
             }
 
             if (content) {
-                let coords = content.split(',');
-                let latSplit = coords[0].trim().split(' ');
-                let lat = (latSplit[latSplit.length - 1].includes('S') ? -1 : 1) * Number(latSplit[0].trim() + '.' + latSplit[1].trim());
-                let lngSplit = coords[1].trim().split(' ');
-                let lng = (lngSplit[lngSplit.length - 1].includes('W') ? -1 : 1) * Number(lngSplit[0].trim() + '.' + lngSplit[1].trim());
+                const coords = content.split(',');
+                const latSplit = coords[0].trim().split(' ');
+                const lat = (latSplit[latSplit.length - 1].includes('S') ? -1 : 1) * Number(latSplit[0].trim() + '.' + latSplit[1].trim());
+                const lngSplit = coords[1].trim().split(' ');
+                const lng = (lngSplit[lngSplit.length - 1].includes('W') ? -1 : 1) * Number(lngSplit[0].trim() + '.' + lngSplit[1].trim());
                 
-                let datatypeProp = {};
+                const datatypeProp = {};
                 if (geoAttr && geoAttr.datatypeProperties) {
                     geoAttr.datatypeProperties[consts.WGS84_POS.LAT] = lat;
                     geoAttr.datatypeProperties[consts.WGS84_POS.LONG] = lng;

@@ -1,10 +1,10 @@
-import * as rp from 'request-promise';
 import * as cheerio from 'cheerio';
+import * as rp from 'request-promise';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { entityMaker } from './entity-maker';
 import { countryToId } from './country-to-id';
+import { entityMaker } from './entity-maker';
 
 export function getCountries() {
     rp('https://www.cia.gov/library/publications/the-world-factbook/')

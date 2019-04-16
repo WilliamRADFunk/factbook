@@ -2,9 +2,9 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getElevation(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
@@ -12,7 +12,7 @@ export function getElevation(cheerioElem: CheerioSelector, country: string, coun
 	const eId = consts.ONTOLOGY.INST_ELEVATION + getUuid(country);
     let objectProp = {};
     let bailOut = true;
-    cheerioElem('#field-elevation').each(function() {
+    cheerioElem('#field-elevation').each(() => {
         if (!map) {
             if (store.elevations[eId]) {
                 objectProp[consts.ONTOLOGY.HAS_ELEVATION] = store.elevations[eId];

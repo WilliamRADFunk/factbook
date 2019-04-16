@@ -2,9 +2,9 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { getRelation } from '../utils/get-objectProperty';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
+import { getRelation } from '../utils/get-objectProperty';
 
 export function getFlag(cheerioElem, country, countryId) {
     const objectProperties = store.countries[countryId].objectProperties;
@@ -12,7 +12,7 @@ export function getFlag(cheerioElem, country, countryId) {
 	const fId = consts.ONTOLOGY.INST_FLAG + getUuid(country);
 	let objectProp = {};
     let bailOut = true;
-    cheerioElem('div.flagBox').each(function() {
+    cheerioElem('div.flagBox').each(() => {
 		if (!flag) {
 			if (store.nationalFlags[fId]) {
 				objectProp[consts.ONTOLOGY.HAS_FLAG] = store.nationalFlags[fId];

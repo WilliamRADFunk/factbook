@@ -9,7 +9,7 @@ function parseSingleLocation(cheerio: Cheerio, country: string, countryId: strin
 	const content = cheerio.find('div.category_data.subfield.text').text().trim();
 	store.countries[countryId].datatypeProperties[consts.ONTOLOGY.DT_LOCATION_REF_DESCRIPTION] = content;
 	
-	let geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country);
+	const geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country);
 	let objectProp = {};
 	if (store.locations[geoId]) {
 		objectProp[consts.ONTOLOGY.HAS_LOCATION] = store.locations[geoId];
@@ -40,7 +40,7 @@ function parseMultipleLocations(cheerioElem: CheerioSelector, country: string, c
 			const description = content.substring(0, content.indexOf(strongTag)).trim();
 			store.countries[countryId].datatypeProperties[consts.ONTOLOGY.DT_LOCATION_REF_DESCRIPTION] = description;
 		} else {
-		    let geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country) + getUuid(strongTag);
+		    const geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country) + getUuid(strongTag);
 			let geoAttr = locations.find(loc => loc && loc['@id'] === geoId);
 			if (!geoAttr) {
 				if (store.locations[geoId]) {

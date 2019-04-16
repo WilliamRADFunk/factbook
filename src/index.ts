@@ -9,6 +9,7 @@ import { dataScrapers } from './scrapers/data-getters';
 import { countryToId } from './utils/country-to-id';
 import { entityMaker } from './utils/entity-maker';
 import { loadFiles } from './utils/load-files';
+import { consoleError, consoleLog } from './utils/logger';
 import { saveFiles } from './utils/save-files';
 
 const failedCountries: string[] = [];
@@ -23,10 +24,10 @@ const downloadImages = () => {
         imagePromises.push(
             download.image(img.options)
                 .then(({ filename, image }) => {
-                    console.log('File saved to', filename);
+                    consoleLog(`File saved to ${filename}`);
                 })
                 .catch((err) => {
-                    console.error('~~~~ Failed to download: ', img.fileName);
+                    consoleError(`~~~~ Failed to download: ${img.fileName}`);
                     failedImages.push(img);
                 })
 		);
@@ -90,7 +91,7 @@ function getCountryData(country: string, url: string): any {
 				dataScrapers.getRegionMapImg($, country, countryId);
                 dataScrapers.getSupplementalImages($, country, countryId);
                 dataScrapers.getTerrains($, country, countryId);
-                console.log('Data scrape for ', country, ' is complete');
+                consoleLog(`Data scrape for ${country} is complete`);
             })
             .catch(err => {
                 failedCountries.push(country);
@@ -131,14 +132,14 @@ const promisesResolutionForCountries = () => {
     Promise.all(promises)
         .then(() => {
             if (failedCountries.length) {
-                console.log('Countries that failed to get parsed: [');
+                consoleLog('Countries that failed to get parsed: [');
                 failedCountries.forEach(c => {
-                    console.log(c);
+                    consoleLog(c);
                 });
-                console.log(']');
+                consoleLog(']');
                 process.stdout.write('Did you want to retry scraping on those failed countries? (y/n)');
                 process.stdin.once('data', data => {
-                    console.log(`You said: ${data.toString().trim()}`);
+                    consoleLog(`You said: ${data.toString().trim()}`);
                     if (data.toString().trim().toLowerCase().includes('y')) {
                         store.countriesInList = failedCountries.slice();
                         failedCountries.length = 0;
@@ -166,11 +167,11 @@ const scrapeImages = () => {
     Promise.all(promises)
         .then(() => {
             if (failedImages.length) {
-                console.log('Images that failed download: [');
+                consoleLog('Images that failed download: [');
                 failedImages.forEach(c => {
-                    console.log(c.fileName);
+                    consoleLog(c.fileName);
                 });
-                console.log(']');
+                consoleLog(']');
                 store.IMAGES_TO_SCRAPE = failedImages.slice();
                 failedImages.length = 0;
                 scrapeImages();
