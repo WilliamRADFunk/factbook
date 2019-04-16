@@ -38,17 +38,17 @@ export function getSupplementalImages(cheerioElem: CheerioSelector, country: str
 			store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG, objectProp));
 
 			const datatypeProp = {};
-			datatypeProp[consts.ONTOLOGY.LOCATOR_URI] = suppImgUrl;
-			datatypeProp[consts.ONTOLOGY.CONTENT_DESCRIPTION] = b || null;
-			datatypeProp[consts.ONTOLOGY.IMAGE_DIMENSIONS] = imageProps[0] || 'N/A';
-			datatypeProp[consts.ONTOLOGY.IMAGE_SIZE] = imageProps[1] || 'N/A';
+			datatypeProp[consts.ONTOLOGY.DT_LOCATOR_URI] = suppImgUrl;
+			datatypeProp[consts.ONTOLOGY.DT_CONTENT_DESCRIPTION] = b || null;
+			datatypeProp[consts.ONTOLOGY.DT_IMAGE_DIMENSIONS] = imageProps[0] || 'N/A';
+			datatypeProp[consts.ONTOLOGY.DT_IMAGE_SIZE] = imageProps[1] || 'N/A';
 			objectProp[consts.ONTOLOGY.HAS_SUPPLEMENTAL_IMG].datatypeProperties = datatypeProp;
 
 			const pathSplit: string[] = suppImgUrl.split('/');
 			const fileName: string = pathSplit[pathSplit.length - 1].split('?')[0].toLowerCase();
-			datatypeProp[consts.ONTOLOGY.MIME_TYPE] = fileName.split('.')[1];
-			datatypeProp[consts.ONTOLOGY.COLLECTION_TIMESTAMP] = (new Date()).toISOString();
-			datatypeProp[consts.ONTOLOGY.CONTENTS] = fileName;
+			datatypeProp[consts.ONTOLOGY.DT_MIME_TYPE] = fileName.split('.')[1];
+			datatypeProp[consts.ONTOLOGY.DT_COLLECTION_TIMESTAMP] = (new Date()).toISOString();
+			datatypeProp[consts.ONTOLOGY.DT_CONTENTS] = fileName;
 
 			const options = {
 				url: suppImgUrl,

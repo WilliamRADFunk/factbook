@@ -23,7 +23,7 @@ export function getCountries() {
                     consts.ONTOLOGY.ONT_COUNTRY,
                     id,
                     countryName)[consts.ONTOLOGY.HAS_COUNTRY];
-                store.countries[id].datatypeProperties[consts.ONTOLOGY.ISO_CODE] = a.attr('data-place-code');
+                store.countries[id].datatypeProperties[consts.ONTOLOGY.DT_ISO_CODE] = a.attr('data-place-code');
             }
         });
     })

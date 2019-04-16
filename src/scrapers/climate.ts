@@ -38,8 +38,8 @@ export function getClimate(cheerioElem: CheerioSelector, country: string, countr
 				zone[consts.ONTOLOGY.HAS_CLIMATE_ZONE] = store.climateZones[czId];
 			} else {
 				const attr = {};
-				attr[consts.ONTOLOGY.CLIMATE_ZONE_NAME] = 'N/A';
-				attr[consts.ONTOLOGY.CLIMATE_ZONE_DESCRIPTION] = 'N/A';
+				attr[consts.ONTOLOGY.DT_CLIMATE_ZONE_NAME] = 'N/A';
+				attr[consts.ONTOLOGY.DT_CLIMATE_ZONE_DESCRIPTION] = 'N/A';
 
 				zone = {};
 				zone = entityMaker(
@@ -61,9 +61,9 @@ export function getClimate(cheerioElem: CheerioSelector, country: string, countr
         const climGrd = cheerioElem(element).find('div.category_data.subfield.text').text().trim()
         if (climGrd) {
 			const tempSplit = climGrd.replace(/\\n/g, '').trim().split(';');
-			mapZone.datatypeProperties[consts.ONTOLOGY.CLIMATE_ZONE_NAME] = tempSplit[0].trim();
-			mapZone.datatypeProperties[consts.ONTOLOGY.CLIMATE_ZONE_DESCRIPTION] = tempSplit.slice(1).join(';').trim();
-			mapZone[consts.RDFS.label] = `Climate Zone (${mapZone.datatypeProperties[consts.ONTOLOGY.CLIMATE_ZONE_NAME]})`
+			mapZone.datatypeProperties[consts.ONTOLOGY.DT_CLIMATE_ZONE_NAME] = tempSplit[0].trim();
+			mapZone.datatypeProperties[consts.ONTOLOGY.DT_CLIMATE_ZONE_DESCRIPTION] = tempSplit.slice(1).join(';').trim();
+			mapZone[consts.RDFS.label] = `Climate Zone (${mapZone.datatypeProperties[consts.ONTOLOGY.DT_CLIMATE_ZONE_NAME]})`
         }
 	});
 };

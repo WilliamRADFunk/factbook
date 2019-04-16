@@ -33,7 +33,7 @@ export function getGeographicNotes(cheerioElem: CheerioSelector, country: string
             'INST_GEOGRAPHIC_NOTE',
             'ONT_GEOGRAPHIC_NOTE',
             'geographicNotes',
-            'DESCRIPTION',
+            'DT_DESCRIPTION',
             'Geographic Note',
             ';');
     } else {
@@ -57,7 +57,7 @@ export function getGeographicNotes(cheerioElem: CheerioSelector, country: string
                                 `Geographic Note (${dataPropItem})`);
                             store.geographicNotes[guid] = objectProp[consts.ONTOLOGY.HAS_GEOGRAPHIC_NOTE];
                         }
-                        objectProp[consts.ONTOLOGY.HAS_GEOGRAPHIC_NOTE].datatypeProperties[consts.ONTOLOGY.DESCRIPTION] = dataPropItem;
+                        objectProp[consts.ONTOLOGY.HAS_GEOGRAPHIC_NOTE].datatypeProperties[consts.ONTOLOGY.DT_DESCRIPTION] = dataPropItem;
                         store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_GEOGRAPHIC_NOTE, objectProp));
                     }
                 });

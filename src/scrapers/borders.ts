@@ -30,9 +30,9 @@ export function getBorders(cheerioElem: CheerioSelector, country: string, countr
             }
             const bordGrd = cheerioElem(elementInner).find('span.subfield-number').text().trim();
             if (bordGrd) {
-                brdMap.datatypeProperties[consts.ONTOLOGY.TOTAL_BORDER] = bordGrd.replace(/,|[a-z]/g, '').trim();
+                brdMap.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_BORDER] = bordGrd.replace(/,|[a-z]/g, '').trim();
             }
-            brdMap.datatypeProperties[consts.ONTOLOGY.UNIT] = 'km';
+            brdMap.datatypeProperties[consts.ONTOLOGY.DT_UNIT] = 'km';
         });
         const numBrdGrd = cheerioElem(elementOuter).find('div.category_data.subfield.text > span.subfield-name').text();
         if (numBrdGrd) {
@@ -40,7 +40,7 @@ export function getBorders(cheerioElem: CheerioSelector, country: string, countr
             const closeParam = numBrdGrd.indexOf(')');
             const num = (openParam > -1 && -1 < closeParam) ? numBrdGrd.substring(openParam + 1, closeParam) : 0;
             try {
-                brdMap.datatypeProperties[consts.ONTOLOGY.TOTAL_BORDER_COUNTRIES] = Number(num);
+                brdMap.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_BORDER_COUNTRIES] = Number(num);
             } catch (err) {
                 // store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
             }
@@ -70,9 +70,9 @@ export function getBorders(cheerioElem: CheerioSelector, country: string, countr
                             `Border Country Pair of ${orderedContrs[0]} and ${orderedContrs[1]}`);
 
                         objProp[consts.ONTOLOGY.HAS_BORDER_COUNTRY]
-                            .datatypeProperties[consts.ONTOLOGY.BORDER_LENGTH] = distance;
+                            .datatypeProperties[consts.ONTOLOGY.DT_BORDER_LENGTH] = distance;
                         objProp[consts.ONTOLOGY.HAS_BORDER_COUNTRY]
-							.datatypeProperties[consts.ONTOLOGY.UNIT] = 'km';
+							.datatypeProperties[consts.ONTOLOGY.DT_UNIT] = 'km';
 
 						const borderCountryObj1 = {}
 						borderCountryObj1[consts.ONTOLOGY.HAS_COUNTRY] = {

@@ -30,7 +30,7 @@ export function getRegionMapImg(cheerioElem: CheerioSelector, country: string, c
             if (regionMapImgUrl.includes('locator-map')) { }
             if (regionMapImgUrl && !regionMapImgUrl.includes('locator-map')) {
                 const datatypeProp = {};
-                datatypeProp[consts.ONTOLOGY.LOCATOR_URI] = regionMapImgUrl;
+                datatypeProp[consts.ONTOLOGY.DT_LOCATOR_URI] = regionMapImgUrl;
                 objectProp[consts.ONTOLOGY.HAS_REGION_MAP].datatypeProperties = datatypeProp;
                 store.regionMaps[rmId] = objectProp[consts.ONTOLOGY.HAS_REGION_MAP];
                 store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_REGION_MAP, objectProp));

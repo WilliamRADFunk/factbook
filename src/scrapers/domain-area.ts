@@ -37,28 +37,28 @@ export function getArea(cheerioElem: CheerioSelector, country: string, countryId
 		const areaData = cheerioElem(element).find('span.subfield-number').text().trim();
 		switch (areaSwitch) {
 			case 'total:':
-				map.datatypeProperties[consts.ONTOLOGY.TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
 				break;
 			case 'land:':
-				map.datatypeProperties[consts.ONTOLOGY.LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
 				break;
 			case 'water:':
-				map.datatypeProperties[consts.ONTOLOGY.WATER_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_WATER_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
 				break;
 		}
     });
 	cheerioElem('#field-area > div > span.category_data').each((index: number, element: CheerioElement) => {
         const areaRank = cheerioElem(element).find('a').text().trim();
 		if (areaRank) {
-			map.datatypeProperties[consts.ONTOLOGY.AREA_RANK] = areaRank;
+			map.datatypeProperties[consts.ONTOLOGY.DT_AREA_RANK] = areaRank;
 		}
 		
 	});
-	map.datatypeProperties[consts.ONTOLOGY.UNIT] = 'sq km';
+	map.datatypeProperties[consts.ONTOLOGY.DT_UNIT] = 'sq km';
 	cheerioElem('#field-area-comparative').each((index: number, element: CheerioElement) => {
         const areaGrd = cheerioElem(element).find('div.category_data.subfield.text').text().trim().replace(/\\n/g, '');
         if (areaGrd) {
-            map.datatypeProperties[consts.ONTOLOGY.AREA_COMPARATIVE] = areaGrd;
+            map.datatypeProperties[consts.ONTOLOGY.DT_AREA_COMPARATIVE] = areaGrd;
         }
     });
 };

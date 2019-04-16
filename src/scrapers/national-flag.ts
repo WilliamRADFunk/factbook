@@ -39,7 +39,7 @@ export function getFlag(cheerioElem, country, countryId) {
             flagImgUrl = consts.BASE.URL_BASE + a.replace('../', '');
 		}
         if (flagImgUrl) {
-			flag.datatypeProperties[consts.ONTOLOGY.LOCATOR_URI] = flagImgUrl;
+			flag.datatypeProperties[consts.ONTOLOGY.DT_LOCATOR_URI] = flagImgUrl;
 		}
         // TODO: scrape physical image from url and store it.
     });
@@ -48,9 +48,9 @@ export function getFlag(cheerioElem, country, countryId) {
         if (!b) { return; }
 
         if (flag) {
-			flag.datatypeProperties[consts.ONTOLOGY.CONTENT_DESCRIPTION] = b.replace(/\\n/g, '').trim();
+			flag.datatypeProperties[consts.ONTOLOGY.DT_CONTENT_DESCRIPTION] = b.replace(/\\n/g, '').trim();
         } else {
-			flag.datatypeProperties[consts.ONTOLOGY.CONTENT_DESCRIPTION] = b.trim();
+			flag.datatypeProperties[consts.ONTOLOGY.DT_CONTENT_DESCRIPTION] = b.trim();
         }
     });
 };

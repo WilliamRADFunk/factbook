@@ -4,6 +4,7 @@
   "description": "Serves as an independent data scraping module, complete with ontology and full scraping ability for the CIA World Factbook site",
   "main": "api.js",
   "scripts": {
+    "build": "tsc",
     "clean:dist": "npm-run-all clean:dist:*",
     "clean:dist:json": "rimraf dist/**/*.json",
     "clean:dist:jsonld": "rimraf dist/ontology/**/*.jsonld",
@@ -13,7 +14,9 @@
     "copy:ontology": "npm-run-all copy:jsonld copy:owl",
     "copy:jsonld": "copyfiles -u 1 ontology/*.json dist/ontology/jsonld/",
     "copy:owl": "copyfiles -u 1 ontology/*.rdf dist/ontology/owl/",
-    "scrape": "ts-node index.ts -- --max-old-space-size=16000",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "scrape": "ts-node src/index.ts -- --max-old-space-size=16000",
     "start": "run-s clean:logs clean:dist scrape copy:ontology zip -- --recurse-directories=false",
     "test": "echo \"Error: no test specified\" && exit 1",
     "zip": "bestzip dist/images.zip dist/images/*"
@@ -61,6 +64,9 @@
     "uuid-by-string": "^2.1.0"
   },
   "devDependencies": {
+    "prettier": "^1.17.0",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
     "typings": "^2.1.1"
   }
 }
