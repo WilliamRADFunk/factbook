@@ -22,6 +22,7 @@ export { loadFiles } from './utils/load-files';
 export { saveFiles } from './utils/save-files';
 
 // Data Scrape Functions
+export { getCountriesData } from './utils/get-countries-data';
 export { getCountryData } from './utils/get-country-data';
 export { getCountries } from './utils/get-countries';
 export { getImages } from './utils/get-images';

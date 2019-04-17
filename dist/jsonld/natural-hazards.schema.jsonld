@@ -1,81 +1,33 @@
 [
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/16d9de4b-e447-3faf-b5b4-e56a99cb8854",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Ile Amsterdam and Ile Saint-Paul are inactive volcanoes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Ile Amsterdam and Ile Saint-Paul are inactive volcanoes"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/08b6199a-0f79-32b5-a4de-ecb5ec016b74",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Iles Eparses subject to periodic cyclones)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Iles Eparses subject to periodic cyclones"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/c4e13a51-b583-366d-830d-83f78a7d1a16",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Bassas da India is a maritime hazard since it is under water for a period of three hours prior to and following the high tide and surrounded by reefs)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Bassas da India is a maritime hazard since it is under water for a period of three hours prior to and following the high tide and surrounded by reefs"
-  }, 
-  {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/7a1f4d23-3391-3321-9c85-8e20b51af2ce",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
     "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (dominated by the volcano Beerenberg)",
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "dominated by the volcano Beerenberg"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/2deafb61-afc8-32bc-ac1d-3b9420d3ec42",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a58b1274-724b-3b69-a4f3-5be5521e4357",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional floods)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional floods"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (San Miguel de Tucuman and Mendoza areas in the Andes subject to earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "San Miguel de Tucuman and Mendoza areas in the Andes subject to earthquakes"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/89df2da0-f78c-339a-b445-cb60d0ad4123",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/0e14c82a-ce56-3e8f-8412-9e10afc6ef32",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe droughts)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "severe droughts"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (pamperos are violent windstorms that can strike the pampas and northeast)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "pamperos are violent windstorms that can strike the pampas and northeast"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a848815e-25b4-33ff-a51a-780c7273f520",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/14b3ba0f-096c-37fe-a194-11870a80c474",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (tsunamis)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "tsunamis"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (heavy flooding in some areas)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "heavy flooding in some areas"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b60fd95a-89ef-3235-a65c-2addaf3325c4",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/eb935d11-8dce-337b-a838-5d476dec6cbf",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/aeb8ce38-768e-3b94-bbcb-4701b03445f7",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanoes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanoes"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/3bded76b-122f-3635-a543-65b0d6716d17",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (forest fires)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "forest fires"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/5bde5abb-c421-32d6-b329-201bdbd04ca4",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones, most frequent from November to March)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones, most frequent from November to March"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e4072c43-2af3-365e-80e7-4028ff9f0d93",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (geologically active Great Rift Valley susceptible to earthquakes, volcanic eruptions)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "geologically active Great Rift Valley susceptible to earthquakes, volcanic eruptions"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/2c01d06d-f1f2-3fde-b71a-0737507c1339",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent droughts)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent droughts"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (active volcanism on Tristan da Cunha)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "active volcanism on Tristan da Cunha"
   }, 
   {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/9af3c24a-d399-3aa3-b409-d3eddd134000",
@@ -96,12 +48,6 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "active volcanoes in the east along the Great Rift Valley"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/737ed52e-1afc-3f6b-997a-7f05653a6439",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (hurricanes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "hurricanes"
-  }, 
-  {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/1660669b-2668-3639-91dc-68e19291c0ff",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
     "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (tropical cyclones, but rarely destructive)",
@@ -114,28 +60,274 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "geologically active region with frequent earthquakes, tremors, and volcanic activity"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b95fc69e-2c45-363a-8c7e-2f4e6710bf14",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a848815e-25b4-33ff-a51a-780c7273f520",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes and volcanic activity)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes and volcanic activity"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (tsunamis)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "tsunamis"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/c472573c-dd61-3209-867b-4266a25cfb34",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/88a6cb84-4aaf-3a86-89fc-09f42f9f6fa5",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (lies on edge of hurricane belt)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "lies on edge of hurricane belt"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (periodic droughts)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "periodic droughts"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e15abdbc-2d92-3a7f-85ba-bbe5990ea7a4",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b176f71a-2719-3289-884b-65dd79b5260d",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (hurricane season lasts from June to November)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "hurricane season lasts from June to November"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (the volcanic Virunga Mountains are in the northwest along the border with Democratic Republic of the Congo)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "the volcanic Virunga Mountains are in the northwest along the border with Democratic Republic of the Congo"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e10d2132-47a1-3eed-b537-020897016e1b",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/737ed52e-1afc-3f6b-997a-7f05653a6439",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent sand and dust storms)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent sand and dust storms"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (hurricanes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "hurricanes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e4c09cd4-12b0-323d-a923-d87ae56e97ce",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (La Soufriere volcano on the island of Saint Vincent is a constant threat)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "La Soufriere volcano on the island of Saint Vincent is a constant threat"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/16d9de4b-e447-3faf-b5b4-e56a99cb8854",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Ile Amsterdam and Ile Saint-Paul are inactive volcanoes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Ile Amsterdam and Ile Saint-Paul are inactive volcanoes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/08b6199a-0f79-32b5-a4de-ecb5ec016b74",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Iles Eparses subject to periodic cyclones)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Iles Eparses subject to periodic cyclones"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/c4e13a51-b583-366d-830d-83f78a7d1a16",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Bassas da India is a maritime hazard since it is under water for a period of three hours prior to and following the high tide and surrounded by reefs)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Bassas da India is a maritime hazard since it is under water for a period of three hours prior to and following the high tide and surrounded by reefs"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/7ced698f-288b-3f8a-8354-47ef052eb99f",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones (October to April))",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones (October to April)"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a75729dd-6ed3-3a14-916b-f2f4224b456d",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes and volcanic activity on Fonuafo'ou)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes and volcanic activity on Fonuafo'ou"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b60fd95a-89ef-3235-a65c-2addaf3325c4",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e55af66f-ed41-3782-a40a-6f63f285f5c9",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (typhoons)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "typhoons"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/5bde5abb-c421-32d6-b329-201bdbd04ca4",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones, most frequent from November to March)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones, most frequent from November to March"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/2deafb61-afc8-32bc-ac1d-3b9420d3ec42",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional floods)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional floods"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/89df2da0-f78c-339a-b445-cb60d0ad4123",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe droughts)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "severe droughts"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/aeb8ce38-768e-3b94-bbcb-4701b03445f7",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanoes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanoes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/3bded76b-122f-3635-a543-65b0d6716d17",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (forest fires)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "forest fires"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/482595b5-c8d7-3281-b12a-209b4246b79a",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (hurricanes (July to October))",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "hurricanes (July to October)"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/6e7a8518-e6c6-3bb1-ac31-66a0d19a7da0",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional cyclones)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional cyclones"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/767c4bc2-1d95-36c5-9dbe-1f30e2a91c3e",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (active volcanism)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "active volcanism"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/62623489-f5a9-36b8-a892-53b7c060d317",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes, tsunamis, flooding, landslides, mild volcanic activity)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes, tsunamis, flooding, landslides, mild volcanic activity"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/45585394-a977-339f-bb0c-4ae6b992a62a",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (sandstorms and dust storms in summer)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "sandstorms and dust storms in summer"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b865cbba-acc4-36c3-840c-ee7a28cfe388",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional typhoons bring high winds and floods)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional typhoons bring high winds and floods"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a6c20f30-f732-37e6-b49b-de260c01b4eb",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (low-level seismic activity common in southwest)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "low-level seismic activity common in southwest"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/0e17fd6f-7072-371e-ba5d-a8b2063927e2",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (droughts)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "droughts"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/737de7bc-b4dd-3374-9c42-c40d56a128a5",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional cyclonic disturbances from the Indian Ocean bring heavy rains and flash floods)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional cyclonic disturbances from the Indian Ocean bring heavy rains and flash floods"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/92df605f-2681-323b-8ad5-dcee69afb4e2",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (many dormant and some active volcanoes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "many dormant and some active volcanoes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/cf39be7a-6e1d-377f-9ff0-c17c78a25a1d",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (about 1,500 seismic occurrences (mostly tremors but occasional severe earthquakes) every year)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "about 1,500 seismic occurrences (mostly tremors but occasional severe earthquakes) every year"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/131ffa21-2015-3a97-990f-40b95ad00494",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Azores subject to severe earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Azores subject to severe earthquakes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/8c74c3c3-1582-3e0d-9365-79584a1c6d04",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flash floods are a constant threat)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flash floods are a constant threat"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/4a1ed0da-3012-3e1a-b5fa-c8ef0b5efd01",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (destructive hurricanes can be expected during the late summer months)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "destructive hurricanes can be expected during the late summer months"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a794675f-f761-3b2a-b145-cf5e3526a474",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones along the coast)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones along the coast"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/6eec7688-688b-3323-ac84-20cebf326013",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (regional risks include landslides, mudflows, avalanches, earthquakes, volcanic eruptions, flooding)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "regional risks include landslides, mudflows, avalanches, earthquakes, volcanic eruptions, flooding"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a959ddb1-0e21-36e0-b564-93d1e268874d",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (land subsidence in Venice)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "land subsidence in Venice"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e257ebe3-9d4f-3f79-81ab-c6d431222969",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flash floods, as well as widespread and destructive flooding from monsoonal rains)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flash floods, as well as widespread and destructive flooding from monsoonal rains"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a3ed28b3-da3d-3f72-9f69-65bb7005df7c",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe thunderstorms)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "severe thunderstorms"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/9167c0ff-ded6-3723-bb79-d9c441f644b4",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (violent windstorms)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "violent windstorms"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/27a80c3b-136b-3b1a-bd52-b6ca5d95dcc2",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flash floods)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flash floods"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a18ec94f-2132-3bc1-b3fd-2ee3ca4a919d",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (highlands subject to volcanic eruptions)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "highlands subject to volcanic eruptions"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/7b4462a2-7fe2-325e-8f7a-420dbf02e7bc",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional earthquakes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/16ed1956-c496-3677-aa7a-1496ea8ff615",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (recurring drought)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "recurring drought"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/9039f56a-7963-3f08-b151-83470c69a420",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flooding during rainy seasons)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flooding during rainy seasons"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/c82262ca-22ba-3bfc-87b1-6ea8dc62f61f",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (dust storms, sandstorms)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "dust storms, sandstorms"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/f0480818-7813-36f7-b160-b4f96fd3c319",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (tropical cyclones (January to April))",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "tropical cyclones (January to April)"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/43e24f22-dad4-3f72-86e8-1d193aa87b94",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic eruption on Aoba (Ambae) island began on 27 November 2005, volcanism also causes minor earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic eruption on Aoba (Ambae) island began on 27 November 2005, volcanism also causes minor earthquakes"
   }, 
   {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/ec041107-c989-3316-b03e-9c0b6aa9b6d5",
@@ -156,6 +348,42 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "extremely susceptible to hurricanes"
   }, 
   {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/333122c8-70c1-3623-b531-d525eb5c38e9",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (rockslides, avalanches)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "rockslides, avalanches"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/af94c599-b579-3fac-94ed-ecbc292f2cf4",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent droughts, rare earthquakes and volcanoes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent droughts, rare earthquakes and volcanoes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/8f19096e-105d-3bcc-85dc-4e2ea5b9bd92",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (locust swarms)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "locust swarms"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/4be59f4d-165e-3ee8-a871-2ac521714d1b",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (periodic cyclones)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "periodic cyclones"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/7d52e6d4-b263-3a28-adad-cdea3bb1d2c0",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (drought)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "drought"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/03d25406-7277-3a28-87c2-4db13f6f3ae8",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (and locust infestation)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "and locust infestation"
+  }, 
+  {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/db2e340c-a4ac-3b44-86db-64f4048d644b",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
     "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe earthquakes, especially in northern Turkey, along an arc extending from the Sea of Marmara to Lake Van)",
@@ -174,58 +402,70 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flooding"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e4c09cd4-12b0-323d-a923-d87ae56e97ce",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (La Soufriere volcano on the island of Saint Vincent is a constant threat)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "La Soufriere volcano on the island of Saint Vincent is a constant threat"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/39b9c1de-0b6e-338a-bc3e-73b264e8665a",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "severe earthquakes"
-  }, 
-  {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/8e87833e-34bf-3f10-8f0a-f8bcef8d60f8",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
     "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flooding in the northeast (March to April))",
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flooding in the northeast (March to April)"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/c82262ca-22ba-3bfc-87b1-6ea8dc62f61f",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b79ccf4b-9f78-3b4a-a731-2fd8f143c988",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (dust storms, sandstorms)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "dust storms, sandstorms"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones common from December to March)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones common from December to March"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b865cbba-acc4-36c3-840c-ee7a28cfe388",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/17ae9ddb-23af-362f-ba3b-323fd55c98d6",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional typhoons bring high winds and floods)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional typhoons bring high winds and floods"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (continuous permafrost in north is a serious obstacle to development)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "continuous permafrost in north is a serious obstacle to development"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a6c20f30-f732-37e6-b49b-de260c01b4eb",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/488e0125-bca6-32b3-9e4e-6e661c298d37",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (low-level seismic activity common in southwest)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "low-level seismic activity common in southwest"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclonic storms form east of the Rocky Mountains, a result of the mixing of air masses from the Arctic, Pacific, and North American interior, and produce most of the country's rain and snow east of the mountains)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclonic storms form east of the Rocky Mountains, a result of the mixing of air masses from the Arctic, Pacific, and North American interior, and produce most of the country's rain and snow east of the mountains"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/482595b5-c8d7-3281-b12a-209b4246b79a",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b95fc69e-2c45-363a-8c7e-2f4e6710bf14",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (hurricanes (July to October))",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "hurricanes (July to October)"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes and volcanic activity)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes and volcanic activity"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/80edb890-61c5-331e-afb4-ed192915368e",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/5629f623-68af-3711-b019-a6ad74049201",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones possible during rainy season (December to April))",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones possible during rainy season (December to April)"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (the country is subject to frequent and sometimes severe earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "the country is subject to frequent and sometimes severe earthquakes"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/3f5d7634-67c2-3248-88e5-3103880ed6f1",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/8d4b1749-b227-3229-aa81-0b8dce6859a9",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic activity on Grand Comore)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic activity on Grand Comore"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (mud slides)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "mud slides"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e4072c43-2af3-365e-80e7-4028ff9f0d93",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (geologically active Great Rift Valley susceptible to earthquakes, volcanic eruptions)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "geologically active Great Rift Valley susceptible to earthquakes, volcanic eruptions"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/2c01d06d-f1f2-3fde-b71a-0737507c1339",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent droughts)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent droughts"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/c472573c-dd61-3209-867b-4266a25cfb34",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (lies on edge of hurricane belt)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "lies on edge of hurricane belt"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e15abdbc-2d92-3a7f-85ba-bbe5990ea7a4",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (hurricane season lasts from June to November)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "hurricane season lasts from June to November"
   }, 
   {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/61f636ed-ed12-361b-8b52-b403c5dc0528",
@@ -234,64 +474,46 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flooding on the central plateau during the rainy season"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/7d52e6d4-b263-3a28-adad-cdea3bb1d2c0",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/092b3868-92da-3a4a-93f3-63b3afbd088b",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (drought)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "drought"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (permafrost over much of Siberia is a major impediment to development)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "permafrost over much of Siberia is a major impediment to development"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a18ec94f-2132-3bc1-b3fd-2ee3ca4a919d",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/31fcaa82-8903-3fce-a2f2-09e5b7e3963f",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (highlands subject to volcanic eruptions)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "highlands subject to volcanic eruptions"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic activity in the Kuril Islands)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic activity in the Kuril Islands"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/7b4462a2-7fe2-325e-8f7a-420dbf02e7bc",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/63fad2f9-6503-3be7-a60a-a6bb6030d2c3",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional earthquakes"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanoes and earthquakes on the Kamchatka Peninsula)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanoes and earthquakes on the Kamchatka Peninsula"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/88a6cb84-4aaf-3a86-89fc-09f42f9f6fa5",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/d0030db9-e281-3bd2-b8c5-c89ba55325ae",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (periodic droughts)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "periodic droughts"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (spring floods and summer/autumn forest fires throughout Siberia and parts of European Russia)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "spring floods and summer/autumn forest fires throughout Siberia and parts of European Russia"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e55af66f-ed41-3782-a40a-6f63f285f5c9",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/39b9c1de-0b6e-338a-bc3e-73b264e8665a",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (typhoons)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "typhoons"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "severe earthquakes"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/f0480818-7813-36f7-b160-b4f96fd3c319",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e19e8864-9383-3f62-85fd-6ba9b266b922",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (tropical cyclones (January to April))",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "tropical cyclones (January to April)"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (tsunamis along the Pacific coast, volcanoes and destructive earthquakes in the center and south, and hurricanes on the Pacific, Gulf of Mexico, and Caribbean coasts)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "tsunamis along the Pacific coast, volcanoes and destructive earthquakes in the center and south, and hurricanes on the Pacific, Gulf of Mexico, and Caribbean coasts"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/43e24f22-dad4-3f72-86e8-1d193aa87b94",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/0c607b5d-f182-3bab-828b-08899554b793",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic eruption on Aoba (Ambae) island began on 27 November 2005, volcanism also causes minor earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic eruption on Aoba (Ambae) island began on 27 November 2005, volcanism also causes minor earthquakes"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/c70c867f-f020-3bea-8f12-46249b194314",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (prolonged droughts)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "prolonged droughts"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/974fbeb1-55a8-36e8-9c18-7a8a838fd97d",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional earthquakes, hurricanes along Atlantic coast)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional earthquakes, hurricanes along Atlantic coast"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b417c192-81e4-3bc0-949f-7e722b1dc40e",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent flooding of lowlands at onset of rainy season and landslides)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent flooding of lowlands at onset of rainy season and landslides"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (astride typhoon belt, usually affected by 15 and struck by five to six cyclonic storms each year)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "astride typhoon belt, usually affected by 15 and struck by five to six cyclonic storms each year"
   }, 
   {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b08c68bb-65ec-3b95-bf30-bf264c991bc0",
@@ -300,34 +522,58 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "active volcanoes"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/9167c0ff-ded6-3723-bb79-d9c441f644b4",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b519a0de-32f1-3fa4-ac61-d0e6d63c97f3",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (violent windstorms)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "violent windstorms"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (destructive earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "destructive earthquakes"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/27a80c3b-136b-3b1a-bd52-b6ca5d95dcc2",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/62c9370f-d89a-3eaf-a936-6028f7c763e4",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flash floods)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flash floods"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (late spring droughts often followed by severe flooding)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "late spring droughts often followed by severe flooding"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/6e7a8518-e6c6-3bb1-ac31-66a0d19a7da0",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/93fc2853-150f-320f-b0bc-e3d897898b42",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional cyclones)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional cyclones"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional typhoons during the early fall)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional typhoons during the early fall"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/767c4bc2-1d95-36c5-9dbe-1f30e2a91c3e",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/71c70123-10d2-376f-a816-cde4956240bd",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (active volcanism)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "active volcanism"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic eruptions)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic eruptions"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/45585394-a977-339f-bb0c-4ae6b992a62a",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/0286b9fb-b828-3248-baf3-e6b6a7fab1e7",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (sandstorms and dust storms in summer)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "sandstorms and dust storms in summer"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe hurricanes (June to November))",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "severe hurricanes (June to November)"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a33a3dbf-609d-327c-a4a8-d22c0f831bd3",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent earthquakes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent earthquakes"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/879d870a-f999-3a48-9559-a39741501479",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic activity)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic activity"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/682b67f2-0f47-3712-abb2-4e7480a0cdfa",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (floods)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "floods"
+  }, 
+  {
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/2d314866-e035-37fb-8105-ed09c10440eb",
+    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes are common, though usually not severe)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes are common, though usually not severe"
   }, 
   {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/8d4574df-0299-3bdb-a7d7-6dd7a5e0c4d3",
@@ -360,88 +606,40 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "overseas departments: hurricanes (cyclones)"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/62c9370f-d89a-3eaf-a936-6028f7c763e4",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/974fbeb1-55a8-36e8-9c18-7a8a838fd97d",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (late spring droughts often followed by severe flooding)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "late spring droughts often followed by severe flooding"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional earthquakes, hurricanes along Atlantic coast)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional earthquakes, hurricanes along Atlantic coast"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/93fc2853-150f-320f-b0bc-e3d897898b42",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b417c192-81e4-3bc0-949f-7e722b1dc40e",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional typhoons during the early fall)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional typhoons during the early fall"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent flooding of lowlands at onset of rainy season and landslides)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent flooding of lowlands at onset of rainy season and landslides"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/5629f623-68af-3711-b019-a6ad74049201",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/80edb890-61c5-331e-afb4-ed192915368e",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (the country is subject to frequent and sometimes severe earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "the country is subject to frequent and sometimes severe earthquakes"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones possible during rainy season (December to April))",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones possible during rainy season (December to April)"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/8d4b1749-b227-3229-aa81-0b8dce6859a9",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/3f5d7634-67c2-3248-88e5-3103880ed6f1",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (mud slides)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "mud slides"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic activity on Grand Comore)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic activity on Grand Comore"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/16ed1956-c496-3677-aa7a-1496ea8ff615",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/693f4301-22ad-36c2-98a7-c1db6d42c515",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (recurring drought)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "recurring drought"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (periodic droughts, occasional flooding)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "periodic droughts, occasional flooding"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/9039f56a-7963-3f08-b151-83470c69a420",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/c70c867f-f020-3bea-8f12-46249b194314",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flooding during rainy seasons)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flooding during rainy seasons"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/92df605f-2681-323b-8ad5-dcee69afb4e2",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (many dormant and some active volcanoes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "many dormant and some active volcanoes"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/cf39be7a-6e1d-377f-9ff0-c17c78a25a1d",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (about 1,500 seismic occurrences (mostly tremors but occasional severe earthquakes) every year)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "about 1,500 seismic occurrences (mostly tremors but occasional severe earthquakes) every year"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/0e17fd6f-7072-371e-ba5d-a8b2063927e2",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (droughts)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "droughts"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e257ebe3-9d4f-3f79-81ab-c6d431222969",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flash floods, as well as widespread and destructive flooding from monsoonal rains)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flash floods, as well as widespread and destructive flooding from monsoonal rains"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a3ed28b3-da3d-3f72-9f69-65bb7005df7c",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe thunderstorms)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "severe thunderstorms"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b79ccf4b-9f78-3b4a-a731-2fd8f143c988",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones common from December to March)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones common from December to March"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b176f71a-2719-3289-884b-65dd79b5260d",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (the volcanic Virunga Mountains are in the northwest along the border with Democratic Republic of the Congo)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "the volcanic Virunga Mountains are in the northwest along the border with Democratic Republic of the Congo"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b519a0de-32f1-3fa4-ac61-d0e6d63c97f3",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (destructive earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "destructive earthquakes"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (prolonged droughts)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "prolonged droughts"
   }, 
   {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/85a564d8-9a9c-3e48-80ac-8f5799bf1757",
@@ -456,54 +654,6 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanically and seismically active"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/333122c8-70c1-3623-b531-d525eb5c38e9",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (rockslides, avalanches)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "rockslides, avalanches"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/092b3868-92da-3a4a-93f3-63b3afbd088b",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (permafrost over much of Siberia is a major impediment to development)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "permafrost over much of Siberia is a major impediment to development"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/31fcaa82-8903-3fce-a2f2-09e5b7e3963f",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic activity in the Kuril Islands)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic activity in the Kuril Islands"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/63fad2f9-6503-3be7-a60a-a6bb6030d2c3",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanoes and earthquakes on the Kamchatka Peninsula)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanoes and earthquakes on the Kamchatka Peninsula"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/d0030db9-e281-3bd2-b8c5-c89ba55325ae",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (spring floods and summer/autumn forest fires throughout Siberia and parts of European Russia)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "spring floods and summer/autumn forest fires throughout Siberia and parts of European Russia"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/7ced698f-288b-3f8a-8354-47ef052eb99f",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones (October to April))",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones (October to April)"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a75729dd-6ed3-3a14-916b-f2f4224b456d",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes and volcanic activity on Fonuafo'ou)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes and volcanic activity on Fonuafo'ou"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/131efcda-89b7-3e6b-b92a-7acae436ba5d",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic activity with periodic releases of poisonous gases from Lake Nyos and Lake Monoun volcanoes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic activity with periodic releases of poisonous gases from Lake Nyos and Lake Monoun volcanoes"
-  }, 
-  {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b03dd82e-f82e-3a7b-8334-887d482d814a",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
     "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (numerous volcanoes in mountains, with occasional violent earthquakes)",
@@ -514,126 +664,6 @@
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
     "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Caribbean coast extremely susceptible to hurricanes and other tropical storms)",
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Caribbean coast extremely susceptible to hurricanes and other tropical storms"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/693f4301-22ad-36c2-98a7-c1db6d42c515",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (periodic droughts, occasional flooding)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "periodic droughts, occasional flooding"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a58b1274-724b-3b69-a4f3-5be5521e4357",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (San Miguel de Tucuman and Mendoza areas in the Andes subject to earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "San Miguel de Tucuman and Mendoza areas in the Andes subject to earthquakes"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/0e14c82a-ce56-3e8f-8412-9e10afc6ef32",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (pamperos are violent windstorms that can strike the pampas and northeast)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "pamperos are violent windstorms that can strike the pampas and northeast"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/14b3ba0f-096c-37fe-a194-11870a80c474",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (heavy flooding in some areas)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "heavy flooding in some areas"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/17ae9ddb-23af-362f-ba3b-323fd55c98d6",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (continuous permafrost in north is a serious obstacle to development)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "continuous permafrost in north is a serious obstacle to development"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/488e0125-bca6-32b3-9e4e-6e661c298d37",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclonic storms form east of the Rocky Mountains, a result of the mixing of air masses from the Arctic, Pacific, and North American interior, and produce most of the country's rain and snow east of the mountains)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclonic storms form east of the Rocky Mountains, a result of the mixing of air masses from the Arctic, Pacific, and North American interior, and produce most of the country's rain and snow east of the mountains"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/2d314866-e035-37fb-8105-ed09c10440eb",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes are common, though usually not severe)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes are common, though usually not severe"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/879d870a-f999-3a48-9559-a39741501479",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic activity)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic activity"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/62623489-f5a9-36b8-a892-53b7c060d317",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (earthquakes, tsunamis, flooding, landslides, mild volcanic activity)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "earthquakes, tsunamis, flooding, landslides, mild volcanic activity"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e19e8864-9383-3f62-85fd-6ba9b266b922",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (tsunamis along the Pacific coast, volcanoes and destructive earthquakes in the center and south, and hurricanes on the Pacific, Gulf of Mexico, and Caribbean coasts)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "tsunamis along the Pacific coast, volcanoes and destructive earthquakes in the center and south, and hurricanes on the Pacific, Gulf of Mexico, and Caribbean coasts"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/6eec7688-688b-3323-ac84-20cebf326013",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (regional risks include landslides, mudflows, avalanches, earthquakes, volcanic eruptions, flooding)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "regional risks include landslides, mudflows, avalanches, earthquakes, volcanic eruptions, flooding"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a959ddb1-0e21-36e0-b564-93d1e268874d",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (land subsidence in Venice)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "land subsidence in Venice"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/131ffa21-2015-3a97-990f-40b95ad00494",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (Azores subject to severe earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "Azores subject to severe earthquakes"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/af94c599-b579-3fac-94ed-ecbc292f2cf4",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent droughts, rare earthquakes and volcanoes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent droughts, rare earthquakes and volcanoes"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/8f19096e-105d-3bcc-85dc-4e2ea5b9bd92",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (locust swarms)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "locust swarms"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/737de7bc-b4dd-3374-9c42-c40d56a128a5",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (occasional cyclonic disturbances from the Indian Ocean bring heavy rains and flash floods)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "occasional cyclonic disturbances from the Indian Ocean bring heavy rains and flash floods"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/0c607b5d-f182-3bab-828b-08899554b793",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (astride typhoon belt, usually affected by 15 and struck by five to six cyclonic storms each year)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "astride typhoon belt, usually affected by 15 and struck by five to six cyclonic storms each year"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/671e5fc6-3313-3e6f-b972-6b4c21256042",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent typhoons (about five per year along southern and eastern coasts))",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent typhoons (about five per year along southern and eastern coasts)"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/d7457fa3-d437-32c9-8d4d-bcabf3cde5e8",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (damaging floods)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "damaging floods"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b5939bdf-90a4-3ef1-b933-af43b25e9537",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (land subsidence)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "land subsidence"
   }, 
   {
     "@id": "http://williamrobertfunk.com/instance/NaturalHazard/34e51b84-7e72-3715-a21d-443dce79386e",
@@ -672,63 +702,33 @@
     "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "permafrost in northern Alaska, a major impediment to development"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/eb935d11-8dce-337b-a838-5d476dec6cbf",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/671e5fc6-3313-3e6f-b972-6b4c21256042",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (active volcanism on Tristan da Cunha)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "active volcanism on Tristan da Cunha"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent typhoons (about five per year along southern and eastern coasts))",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent typhoons (about five per year along southern and eastern coasts)"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a33a3dbf-609d-327c-a4a8-d22c0f831bd3",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/d7457fa3-d437-32c9-8d4d-bcabf3cde5e8",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent earthquakes)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent earthquakes"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (damaging floods)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "damaging floods"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/682b67f2-0f47-3712-abb2-4e7480a0cdfa",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/b5939bdf-90a4-3ef1-b933-af43b25e9537",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (floods)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "floods"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (land subsidence)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "land subsidence"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/a794675f-f761-3b2a-b145-cf5e3526a474",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/131efcda-89b7-3e6b-b92a-7acae436ba5d",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (cyclones along the coast)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "cyclones along the coast"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic activity with periodic releases of poisonous gases from Lake Nyos and Lake Monoun volcanoes)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic activity with periodic releases of poisonous gases from Lake Nyos and Lake Monoun volcanoes"
   }, 
   {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/8c74c3c3-1582-3e0d-9365-79584a1c6d04",
+    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/e10d2132-47a1-3eed-b537-020897016e1b",
     "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (flash floods are a constant threat)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "flash floods are a constant threat"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/4a1ed0da-3012-3e1a-b5fa-c8ef0b5efd01",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (destructive hurricanes can be expected during the late summer months)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "destructive hurricanes can be expected during the late summer months"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/4be59f4d-165e-3ee8-a871-2ac521714d1b",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (periodic cyclones)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "periodic cyclones"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/03d25406-7277-3a28-87c2-4db13f6f3ae8",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (and locust infestation)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "and locust infestation"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/71c70123-10d2-376f-a816-cde4956240bd",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (volcanic eruptions)",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "volcanic eruptions"
-  }, 
-  {
-    "@id": "http://williamrobertfunk.com/instance/NaturalHazard/0286b9fb-b828-3248-baf3-e6b6a7fab1e7",
-    "@type": "http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard",
-    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (severe hurricanes (June to November))",
-    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "severe hurricanes (June to November)"
+    "http://www.w3.org/2000/01/rdf-schema#label": "Natural Hazard (frequent sand and dust storms)",
+    "http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription": "frequent sand and dust storms"
   }
 ]
