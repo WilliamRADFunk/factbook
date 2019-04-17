@@ -18,7 +18,8 @@ const BASE = {
 		"world"
 	],
 	DATA_REQUEST_TIMEOUT: 40000,
-	URL_BASE: 'https://www.cia.gov/library/publications/the-world-factbook/'
+	URL_BASE: 'https://www.cia.gov/library/publications/the-world-factbook/',
+	URL_COUNTRY_BASE: 'https://www.cia.gov/library/publications/the-world-factbook/geos/'
 };
 
 const ONTOLOGY = {

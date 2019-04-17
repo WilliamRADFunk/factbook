@@ -1,8 +1,8 @@
 {
   "name": "factbook",
-  "version": "0.1.2-1",
+  "version": "0.1.2-7",
   "description": "Serves as an independent data scraping module, complete with ontology and full scraping ability for the CIA World Factbook site",
-  "main": "api.js",
+  "main": "lib/api.js",
   "scripts": {
     "build": "tsc",
     "clean:dist": "npm-run-all clean:dist:*",
@@ -21,6 +21,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "zip": "bestzip dist/images.zip dist/images/*"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/WilliamRADFunk/factbook.git"
@@ -49,6 +52,7 @@
     "@types/graceful-fs": "^4.1.3",
     "@types/request-promise": "^4.1.42",
     "bestzip": "^2.1.2",
+    "bluebird": "^3.5.4",
     "cheerio": "^1.0.0-rc.2",
     "copyfiles": "^2.1.0",
     "formatter-json": "^0.1.1",
