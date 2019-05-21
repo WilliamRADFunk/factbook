@@ -1,6 +1,6 @@
 {
   "name": "factbook",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Serves as an independent data scraping module, complete with ontology and full scraping ability for the CIA World Factbook site",
   "main": "lib/api.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "copy:owl": "copyfiles -u 1 ontology/*.rdf dist/ontology/owl/",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
+    "postbuild": "copyfiles -u 1 ontology/*.rdf lib/ontology/owl/",
     "scrape": "ts-node src/index.ts -- --max-old-space-size=16000",
     "start": "run-s clean:logs clean:dist scrape copy:ontology zip -- --recurse-directories=false",
     "test": "echo \"Error: no test specified\" && exit 1",
