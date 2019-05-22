@@ -36,7 +36,7 @@ export function getBorderMapImg(cheerioElem: CheerioSelector, country: string, c
         if (borderMapUrl) {
 			const datatypeProp = {};
 			datatypeProp[consts.ONTOLOGY.DT_LOCATOR_URI] = borderMapUrl;
-			objectProp[consts.ONTOLOGY.HAS_BORDER_MAP].datatypeProperties = datatypeProp;
+			map.datatypeProperties = datatypeProp;
         }
         // TODO: scrape physical image from url and store it.
     });

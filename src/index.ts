@@ -5,10 +5,7 @@ import { loadFiles } from './utils/load-files';
 
 loadFiles();
 
-Promise.all([getCountries()])
-    .then(() => {
-        getCountriesData();
-    })
-    .catch(err => {
-        store.errorLogger(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
-    });
+(async () => {
+    await getCountries();
+    await getCountriesData();
+})();

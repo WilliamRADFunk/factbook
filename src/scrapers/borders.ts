@@ -2,7 +2,6 @@ import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { countryToId } from '../utils/country-to-id';
 import { entityMaker } from '../utils/entity-maker';
 import { entityRefMaker } from '../utils/entity-ref-maker';
 import { getRelation } from '../utils/get-objectProperty';
@@ -10,24 +9,24 @@ import { getRelation } from '../utils/get-objectProperty';
 export function getBorders(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
     let brdMap = getRelation(objectProperties, consts.ONTOLOGY.HAS_BORDER);
+    const brdId = consts.ONTOLOGY.INST_BORDER + getUuid(country);
+    let objectProp = {};
+    if (!brdMap) {
+        if (store.borders[brdId]) {
+            objectProp[consts.ONTOLOGY.HAS_BORDER] = store.borders[brdId];
+        } else {
+            objectProp = entityMaker(
+                consts.ONTOLOGY.HAS_BORDER,
+                consts.ONTOLOGY.ONT_BORDER,
+                brdId,
+                `Border of ${country}`);
+            store.borders[brdId] = objectProp[consts.ONTOLOGY.HAS_BORDER];
+        }
+        brdMap = objectProp[consts.ONTOLOGY.HAS_BORDER];
+        store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_BORDER, objectProp));
+    }
     cheerioElem('#field-land-boundaries').each((indexOut: number, elementOuter: CheerioElement) => {
         cheerioElem(elementOuter).find('div.category_data.subfield.numeric').each((indexIn: number, elementInner: CheerioElement) => {
-            const brdId = consts.ONTOLOGY.INST_BORDER + getUuid(country);
-            let objectProp = {};
-            if (!brdMap) {
-                if (store.borders[brdId]) {
-                    objectProp[consts.ONTOLOGY.HAS_BORDER] = store.borders[brdId];
-                } else {
-                    objectProp = entityMaker(
-                        consts.ONTOLOGY.HAS_BORDER,
-                        consts.ONTOLOGY.ONT_BORDER,
-                        brdId,
-                        `Border of ${country}`);
-                    store.borders[brdId] = objectProp[consts.ONTOLOGY.HAS_BORDER];
-                }
-                brdMap = objectProp[consts.ONTOLOGY.HAS_BORDER];
-                store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_BORDER, objectProp));
-            }
             const bordGrd = cheerioElem(elementInner).find('span.subfield-number').text().trim();
             if (bordGrd) {
                 brdMap.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_BORDER] = bordGrd.replace(/,|[a-z]/g, '').trim();
@@ -42,7 +41,7 @@ export function getBorders(cheerioElem: CheerioSelector, country: string, countr
             try {
                 brdMap.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_BORDER_COUNTRIES] = Number(num);
             } catch (err) {
-                // store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+                store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
             }
         }
         let brderContrs = cheerioElem(elementOuter).find('div.category_data.subfield.text').text().trim();
@@ -81,9 +80,15 @@ export function getBorders(cheerioElem: CheerioSelector, country: string, countr
 						};
                         borderCountryObj1[consts.ONTOLOGY.HAS_COUNTRY][consts.RDFS.label] = store.countries[countryId][consts.RDFS.label];
                         objProp[consts.ONTOLOGY.HAS_BORDER_COUNTRY].objectProperties.push(borderCountryObj1);
-
-						const borderCountryObj2 = {}
-						const borderCountryId = countryToId(borderCountry);
+                        //////// Bail out if counterpart id is not in the system
+                        const foundBorderCountry = Object.values(store.countries)
+                            .find(c => c['http://www.w3.org/2000/01/rdf-schema#label'].toLowerCase() === borderCountry.toLowerCase());
+                        const borderCountryId = foundBorderCountry && foundBorderCountry['@id'];
+                        if (!borderCountryId) {
+                            return;
+                        }
+                        ////////
+                        const borderCountryObj2 = {}
 						borderCountryObj2[consts.ONTOLOGY.HAS_COUNTRY] = {
 							'@id': borderCountryId,
 							'@type': consts.ONTOLOGY.INST_COUNTRY

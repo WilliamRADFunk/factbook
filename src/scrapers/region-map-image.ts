@@ -9,9 +9,10 @@ import { getRelation } from '../utils/get-objectProperty';
 export function getRegionMapImg(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;
     cheerioElem('div.mapBox').each((index: number, element: CheerioElement) => {
-        const map = getRelation(objectProperties, consts.ONTOLOGY.HAS_REGION_MAP);
+        let map = getRelation(objectProperties, consts.ONTOLOGY.HAS_REGION_MAP);
         const rmId = consts.ONTOLOGY.INST_REGION_MAP + getUuid(country);
         let objectProp = {};
+        objectProp[consts.ONTOLOGY.HAS_REGION_MAP] = map;
         if (!map) {
             if (store.regionMaps[rmId]) {
                 objectProp[consts.ONTOLOGY.HAS_REGION_MAP] = store.regionMaps[rmId];
@@ -22,6 +23,7 @@ export function getRegionMapImg(cheerioElem: CheerioSelector, country: string, c
                     rmId,
                     `Region Map for ${country}`);
             }
+            map = objectProp[consts.ONTOLOGY.HAS_REGION_MAP];
         }
         const a = cheerioElem(element).find('img').attr('src');
         let regionMapImgUrl;
@@ -30,8 +32,8 @@ export function getRegionMapImg(cheerioElem: CheerioSelector, country: string, c
             if (regionMapImgUrl && !regionMapImgUrl.includes('locator-map')) {
                 const datatypeProp = {};
                 datatypeProp[consts.ONTOLOGY.DT_LOCATOR_URI] = regionMapImgUrl;
-                objectProp[consts.ONTOLOGY.HAS_REGION_MAP].datatypeProperties = datatypeProp;
-                store.regionMaps[rmId] = objectProp[consts.ONTOLOGY.HAS_REGION_MAP];
+                map.datatypeProperties = datatypeProp;
+                store.regionMaps[rmId] = map;
                 store.countries[countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_REGION_MAP, objectProp));
             }
         }

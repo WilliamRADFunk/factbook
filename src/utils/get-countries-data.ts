@@ -15,26 +15,23 @@ const createCountriesPromises = () => {
     return countryDataPromises;
 };
 
-export function getCountriesData() {
+export async function getCountriesData(): Promise<void> {
     store.countriesInList.sort();
     const promises = createCountriesPromises();
-    Promise.all(promises)
-        .then(() => {
+    await Promise.all(promises)
+        .then(async () => {
             if (store.failedCountries.length) {
                 store.countriesInList = store.failedCountries.slice();
                 store.failedCountries.length = 0;
-                setTimeout(() => {
-                    store.debugLogger('Waiting 3 seconds before retrieving missed countries...');
-                    getCountriesData()
-                }, 3000);
+                await getCountriesData();
             } else {
                 saveFiles();
-                getImages();
+                await getImages();
                 flushStore();
             }
         })
         .catch(err => {
-            store.errorLogger(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+            store.errorLogger(new Date().toISOString() + '\n\ngetCountriesData\n\n' + err.toString() + '\n\n');
         });
 }
 

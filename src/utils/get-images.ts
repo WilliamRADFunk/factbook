@@ -1,10 +1,10 @@
 import { store } from "../constants/globalStore";
 import { downloadImages } from "./download-images";
 
-export function getImages() {
+export async function getImages(): Promise<void> {
     const promises = downloadImages();
-    Promise.all(promises)
-        .then(() => {
+    return await Promise.all(promises)
+        .then(async () => {
             if (store.failedImages.length) {
                 store.debugLogger('Images that failed download: [');
                 store.failedImages.forEach(c => {
@@ -13,12 +13,10 @@ export function getImages() {
                 store.debugLogger(']');
                 store.IMAGES_TO_SCRAPE = store.failedImages.slice();
                 store.failedImages.length = 0;
-                getImages();
-            } else {
-                process.exit(0);
+                await getImages();
             }
         })
         .catch(err => {
-            // store.LOG_STREAM.error(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+            store.LOG_STREAM.error(new Date().toISOString() + '\n\ngetImages\n\n' + err.toString() + '\n\n');
         });
 };

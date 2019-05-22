@@ -30,10 +30,9 @@ export function getClimate(cheerioElem: CheerioSelector, country: string, countr
 		}
 
 		mapZone = getRelation(map.objectProperties, consts.ONTOLOGY.HAS_CLIMATE_ZONE);
-		let zone;
 		if (!mapZone) {
+			let zone = {};
 			const czId = consts.ONTOLOGY.INST_CLIMATE_ZONE + getUuid(country);
-			zone = {};
 			if (store.climateZones[czId]) {
 				zone[consts.ONTOLOGY.HAS_CLIMATE_ZONE] = store.climateZones[czId];
 			} else {
@@ -41,7 +40,6 @@ export function getClimate(cheerioElem: CheerioSelector, country: string, countr
 				attr[consts.ONTOLOGY.DT_CLIMATE_ZONE_NAME] = 'N/A';
 				attr[consts.ONTOLOGY.DT_CLIMATE_ZONE_DESCRIPTION] = 'N/A';
 
-				zone = {};
 				zone = entityMaker(
 					consts.ONTOLOGY.HAS_CLIMATE_ZONE,
 					consts.ONTOLOGY.ONT_CLIMATE_ZONE,
@@ -50,8 +48,8 @@ export function getClimate(cheerioElem: CheerioSelector, country: string, countr
 				store.climateZones[czId] = zone[consts.ONTOLOGY.HAS_CLIMATE_ZONE];
 			}
 			mapZone = zone[consts.ONTOLOGY.HAS_CLIMATE_ZONE];
+			map.objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_CLIMATE_ZONE, zone));
 		}
-		map.objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_CLIMATE_ZONE, zone));
         bailOut = false;
     });
     if (bailOut) {

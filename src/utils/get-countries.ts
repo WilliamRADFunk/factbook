@@ -6,8 +6,8 @@ import { store } from '../constants/globalStore';
 import { countryToId } from './country-to-id';
 import { entityMaker } from './entity-maker';
 
-export function getCountries(): any {
-    return rp('https://www.cia.gov/library/publications/the-world-factbook/')
+export async function getCountries(): Promise<any> {
+    return await rp('https://www.cia.gov/library/publications/the-world-factbook/')
         .then((html: string) => {
             const $ = cheerio.load(html);
             const cNames = $('#search-place option').toArray()
@@ -22,7 +22,7 @@ export function getCountries(): any {
             store.countriesInList.push(...cNames);
 
             store.countriesInList.forEach(country => {
-                const id: string = countryToId(country.name);
+                const id: string = countryToId(country.isoCode);
                 store.countries[id] = entityMaker(
                     consts.ONTOLOGY.HAS_COUNTRY,
                     consts.ONTOLOGY.ONT_COUNTRY,
@@ -32,6 +32,6 @@ export function getCountries(): any {
             });
         })
         .catch((err: Error) => {
-            store.errorLogger(new Date().toISOString() + '\n\n' + err.toString() + '\n\n');
+            store.errorLogger(new Date().toISOString() + '\n\ngetCountries\n\n' + err.toString() + '\n\n');
         });
 };
