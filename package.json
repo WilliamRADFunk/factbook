@@ -1,6 +1,6 @@
 {
   "name": "factbook",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Serves as an independent data scraping module, complete with ontology and full scraping ability for the CIA World Factbook site",
   "main": "lib/api.js",
   "scripts": {

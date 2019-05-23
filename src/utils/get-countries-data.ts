@@ -9,7 +9,7 @@ const createCountriesPromises = () => {
     const countryDataPromises: Array<Promise<any>> = [];
     const countries = store.countriesInList.slice();
     countries.forEach(country => {
-        const url = getCountryURL(country.isoCode);
+        const url = getCountryURL(country.dataCode);
         countryDataPromises.push(getCountryData(country, url));
     });
     return countryDataPromises;

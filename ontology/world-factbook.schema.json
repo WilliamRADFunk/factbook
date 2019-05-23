@@ -33,6 +33,19 @@
       }
     },
     {
+      "@id": "http://williamrobertfunk.com/ontologies/world-factbook",
+      "@type": "owl:Ontology",
+      "dc:contributor": "William R.A.D. Funk",
+      "dc:creator": "William R.A.D. Funk",
+      "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
+      "owl:versionInfo": {
+        "@type": "xsd:decimal",
+        "@value": "1.6"
+      },
+      "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
+      "rdfs:label": "Funk Ontology"
+    },
+    {
       "@id": "wfact:hasRegionMap",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
@@ -126,13 +139,15 @@
       }
     },
     {
-      "@id": "wfact:hasBorderCountryPair",
-      "@type": "owl:ObjectProperty",
+      "@id": "wfact:exclusiveFishingZone",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      An area beyond the outer limit of the territorial sea in which the coastal State has the right to fish,\n      subject to any concessions which may be granted to foreign fishermen.\n    ",
       "rdfs:domain": {
-        "@id": "wfact:Country"
+        "@id": "wfact:MaritimeClaim"
       },
+      "rdfs:label": "Exclusive Fishing Zone",
       "rdfs:range": {
-        "@id": "wfact:BorderCountryPair"
+        "@id": "xsd:string"
       }
     },
     {
@@ -218,23 +233,13 @@
       "rdfs:label": "Arable Land"
     },
     {
-      "@id": "http://williamrobertfunk.com/ontologies/world-factbook",
-      "@type": "owl:Ontology",
-      "dc:contributor": "William R.A.D. Funk",
-      "dc:creator": "William R.A.D. Funk",
-      "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
-      "owl:versionInfo": {
-        "@type": "xsd:decimal",
-        "@value": "1.5"
-      },
-      "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
-      "rdfs:label": "Funk Ontology"
-    },
-    {
       "@id": "wfact:percentage",
       "@type": "owl:DatatypeProperty",
       "rdfs:comment": "The percentage belonging to the parent entity",
       "rdfs:domain": [
+        {
+          "@id": "wfact:LandUse"
+        },
         {
           "@id": "wfact:ArableLand"
         },
@@ -242,16 +247,13 @@
           "@id": "wfact:PermanentCropsLand"
         },
         {
+          "@id": "wfact:PermanentPastureLand"
+        },
+        {
           "@id": "wfact:AgriculturalLand"
         },
         {
-          "@id": "wfact:LandUse"
-        },
-        {
           "@id": "wfact:OtherLand"
-        },
-        {
-          "@id": "wfact:PermanentPastureLand"
         }
       ],
       "rdfs:label": "Percentage",
@@ -260,15 +262,13 @@
       }
     },
     {
-      "@id": "wfact:exclusiveFishingZone",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "\n      An area beyond the outer limit of the territorial sea in which the coastal State has the right to fish,\n      subject to any concessions which may be granted to foreign fishermen.\n    ",
+      "@id": "wfact:hasBorderCountryPair",
+      "@type": "owl:ObjectProperty",
       "rdfs:domain": {
-        "@id": "wfact:MaritimeClaim"
+        "@id": "wfact:Country"
       },
-      "rdfs:label": "Exclusive Fishing Zone",
       "rdfs:range": {
-        "@id": "xsd:string"
+        "@id": "wfact:BorderCountryPair"
       }
     },
     {
@@ -280,22 +280,22 @@
           "@id": "wfact:ArableLand"
         },
         {
-          "@id": "wfact:PermanentCropsLand"
-        },
-        {
-          "@id": "wfact:ArtificiallyIrrigatedLand"
+          "@id": "wfact:PermanentPastureLand"
         },
         {
           "@id": "wfact:AgriculturalLand"
         },
         {
-          "@id": "wfact:LandUse"
-        },
-        {
           "@id": "wfact:OtherLand"
         },
         {
-          "@id": "wfact:PermanentPastureLand"
+          "@id": "wfact:PermanentCropsLand"
+        },
+        {
+          "@id": "wfact:LandUse"
+        },
+        {
+          "@id": "wfact:ArtificiallyIrrigatedLand"
         }
       ],
       "rdfs:label": "Last Estimated",
@@ -373,25 +373,25 @@
       "rdfs:comment": "Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).",
       "rdfs:domain": [
         {
-          "@id": "wfact:BorderCountryPair"
-        },
-        {
-          "@id": "wfact:Border"
-        },
-        {
           "@id": "wfact:Elevation"
         },
         {
           "@id": "wfact:MaritimeClaim"
         },
         {
+          "@id": "wfact:BorderCountryPair"
+        },
+        {
+          "@id": "wfact:Border"
+        },
+        {
+          "@id": "wfact:DomainArea"
+        },
+        {
           "@id": "wfact:ArtificiallyIrrigatedLand"
         },
         {
           "@id": "wfact:Coast"
-        },
-        {
-          "@id": "wfact:DomainArea"
         }
       ],
       "rdfs:label": "Unit",
@@ -426,16 +426,11 @@
       "rdfs:label": "Elevation"
     },
     {
-      "@id": "wfact:totalLandBorder",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Total length of distance by land of a country's border.",
-      "rdfs:domain": {
-        "@id": "wfact:Border"
-      },
-      "rdfs:label": "Total Land Border",
-      "rdfs:range": {
-        "@id": "xsd:string"
-      }
+      "@id": "wfact:Terrain",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "rdfs:comment": "A stretch of land, especially with regard to its physical features.",
+      "rdfs:label": "Terrain"
     },
     {
       "@id": "wfact:hasPermanentCropsLand",
@@ -506,13 +501,13 @@
       "rdfs:comment": "URL location where image was originally located.",
       "rdfs:domain": [
         {
-          "@id": "wfact:Image"
+          "@id": "wfact:NationalFlag"
         },
         {
           "@id": "dafu:Asset"
         },
         {
-          "@id": "wfact:NationalFlag"
+          "@id": "wfact:Image"
         }
       ],
       "rdfs:label": "Locator URL",
@@ -531,11 +526,31 @@
       }
     },
     {
-      "@id": "wfact:Terrain",
-      "@type": "owl:Class",
-      "blade:navClass": true,
-      "rdfs:comment": "A stretch of land, especially with regard to its physical features.",
-      "rdfs:label": "Terrain"
+      "@id": "wfact:totalLandBorder",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Total length of distance by land of a country's border.",
+      "rdfs:domain": {
+        "@id": "wfact:Border"
+      },
+      "rdfs:label": "Total Land Border",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "wfact:countryCodeDEC",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "\n      Geopolitical Entities and Codes (formerly FIPS PUB 10-4).\n    ",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
+      "rdfs:label": "GEC Country Code",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
     },
     {
       "@id": "wfact:hasBorder",
@@ -572,23 +587,13 @@
       "rdfs:label": "Agricultural Land"
     },
     {
-      "@id": "wfact:contentDescription",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Description of the contents contained.",
-      "rdfs:domain": [
-        {
-          "@id": "dafu:Image"
-        },
-        {
-          "@id": "wfact:NationalFlag"
-        },
-        {
-          "@id": "dafu:Asset"
-        }
-      ],
-      "rdfs:label": "Content Description",
+      "@id": "wfact:hasOtherLand",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wfact:LandUse"
+      },
       "rdfs:range": {
-        "@id": "xsd:string"
+        "@id": "wfact:OtherLand"
       }
     },
     {
@@ -642,13 +647,13 @@
       }
     },
     {
-      "@id": "wfact:hasArableLand",
+      "@id": "wfact:hasSupplementalImage",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
-        "@id": "wfact:LandUse"
+        "@id": "wfact:Country"
       },
       "rdfs:range": {
-        "@id": "wfact:ArableLand"
+        "@id": "wfact:Image"
       }
     },
     {
@@ -664,9 +669,9 @@
     {
       "@id": "wfact:locationDescription",
       "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "A description of where in the world the country is located.",
+      "rdfs:comment": "A description of where in the world the location is located.",
       "rdfs:domain": {
-        "@id": "wfact:Country"
+        "@id": "wfact:Location"
       },
       "rdfs:label": "Location Description",
       "rdfs:range": {
@@ -703,15 +708,10 @@
       "rdfs:label": "Border Country Pair"
     },
     {
-      "@id": "wfact:climateZoneDescription",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:comment": "Greater detail for the climate of a given area.",
+      "@id": "pos:long",
+      "@type": "owl:DataProperty",
       "rdfs:domain": {
-        "@id": "wfact:ClimateZone"
-      },
-      "rdfs:label": "Climate Zone Description",
-      "rdfs:range": {
-        "@id": "xsd:string"
+        "@id": "wfact:Location"
       }
     },
     {
@@ -741,20 +741,35 @@
       }
     },
     {
-      "@id": "pos:long",
-      "@type": "owl:DataProperty",
+      "@id": "wfact:climateZoneDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Greater detail for the climate of a given area.",
       "rdfs:domain": {
-        "@id": "wfact:Location"
+        "@id": "wfact:ClimateZone"
+      },
+      "rdfs:label": "Climate Zone Description",
+      "rdfs:range": {
+        "@id": "xsd:string"
       }
     },
     {
-      "@id": "wfact:hasOtherLand",
-      "@type": "owl:ObjectProperty",
-      "rdfs:domain": {
-        "@id": "wfact:LandUse"
-      },
+      "@id": "wfact:contentDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Description of the contents contained.",
+      "rdfs:domain": [
+        {
+          "@id": "dafu:Asset"
+        },
+        {
+          "@id": "wfact:NationalFlag"
+        },
+        {
+          "@id": "dafu:Image"
+        }
+      ],
+      "rdfs:label": "Content Description",
       "rdfs:range": {
-        "@id": "wfact:OtherLand"
+        "@id": "xsd:string"
       }
     },
     {
@@ -818,10 +833,10 @@
       "rdfs:comment": "Total area associated with the entity to which it's attached.",
       "rdfs:domain": [
         {
-          "@id": "wfact:DomainArea"
+          "@id": "wfact:ArtificiallyIrrigatedLand"
         },
         {
-          "@id": "wfact:ArtificiallyIrrigatedLand"
+          "@id": "wfact:DomainArea"
         }
       ],
       "rdfs:label": "Total Area",
@@ -862,13 +877,13 @@
       }
     },
     {
-      "@id": "wfact:hasSupplementalImage",
+      "@id": "wfact:hasArableLand",
       "@type": "owl:ObjectProperty",
       "rdfs:domain": {
-        "@id": "wfact:Country"
+        "@id": "wfact:LandUse"
       },
       "rdfs:range": {
-        "@id": "wfact:Image"
+        "@id": "wfact:ArableLand"
       }
     },
     {
@@ -939,8 +954,8 @@
     {
       "@id": "wfact:imageSize",
       "@type": [
-        "owl:DatatypeProperty",
-        "owl:FunctionalProperty"
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
       ],
       "rdfs:comment": "The amount of computer memory the image requires.",
       "rdfs:domain": {
@@ -954,14 +969,26 @@
     {
       "@id": "wfact:background",
       "@type": [
-        "owl:FunctionalProperty",
-        "owl:DatatypeProperty"
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
       ],
       "rdfs:comment": "Description of variable length that summarizes the history of a thing.",
       "rdfs:domain": {
         "@id": "wfact:Country"
       },
       "rdfs:label": "Background information",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "wfact:locationReferenceDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "A description of where in the world the country is located.",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
+      "rdfs:label": "Location Reference Description",
       "rdfs:range": {
         "@id": "xsd:string"
       }
@@ -991,8 +1018,8 @@
     {
       "@id": "wfact:populationDistribution",
       "@type": [
-        "owl:FunctionalProperty",
-        "owl:DatatypeProperty"
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
       ],
       "rdfs:comment": "\n      The pattern of where people live.\n    ",
       "rdfs:domain": {

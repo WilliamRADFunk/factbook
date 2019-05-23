@@ -4,6 +4,7 @@ import * as rp from 'request-promise';
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
 import { countryToId } from './country-to-id';
+import { dataCodeToIsoCode } from './country-code-lookup-tables';
 import { entityMaker } from './entity-maker';
 
 export async function getCountries(): Promise<any> {
@@ -12,8 +13,10 @@ export async function getCountries(): Promise<any> {
             const $ = cheerio.load(html);
             const cNames = $('#search-place option').toArray()
                 .map(c => {
+                    const dCode = $(c).prev().attr('data-place-code')
                     return {
-                        isoCode: $(c).prev().attr('data-place-code'),
+                        dataCode: dCode,
+                        isoCode: dataCodeToIsoCode(dCode),
                         name: $(c).prev().text().replace(/\\n/g, ' ').trim()
                     };
                 })
@@ -22,12 +25,13 @@ export async function getCountries(): Promise<any> {
             store.countriesInList.push(...cNames);
 
             store.countriesInList.forEach(country => {
-                const id: string = countryToId(country.isoCode);
+                const id: string = countryToId(country.dataCode);
                 store.countries[id] = entityMaker(
                     consts.ONTOLOGY.HAS_COUNTRY,
                     consts.ONTOLOGY.ONT_COUNTRY,
                     id,
                     country.name)[consts.ONTOLOGY.HAS_COUNTRY];
+                    store.countries[id].datatypeProperties[consts.ONTOLOGY.DT_GEC_CODE] = country.dataCode;
                     store.countries[id].datatypeProperties[consts.ONTOLOGY.DT_ISO_CODE] = country.isoCode;
             });
         })

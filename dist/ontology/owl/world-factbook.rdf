@@ -24,7 +24,7 @@
   xmlns:blade="http://modusoperandi.com/ont/blade#">
 
   <Ontology rdf:about="http://williamrobertfunk.com/ontologies/world-factbook">
-    <versionInfo rdf:datatype="&xsd;decimal">1.5</versionInfo>
+    <versionInfo rdf:datatype="&xsd;decimal">1.6</versionInfo>
     <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
     <dc:creator>William R.A.D. Funk</dc:creator>
     <dc:contributor>William R.A.D. Funk</dc:contributor>
@@ -469,6 +469,18 @@
   //
   ///////////////////////////////////////////////////////////////////////////////////////
   -->
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#countryCodeDEC -->
+
+  <DatatypeProperty rdf:about="&wfact;countryCodeDEC">
+    <rdfs:label>GEC Country Code</rdfs:label>
+    <rdfs:comment>
+      Geopolitical Entities and Codes (formerly FIPS PUB 10-4).
+    </rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
 
   <!-- http://williamrobertfunk.com/ontologies/world-factbook#countryCodeISO -->
 

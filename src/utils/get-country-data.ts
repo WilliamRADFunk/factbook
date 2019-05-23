@@ -14,7 +14,7 @@ export function getCountryData(country: CountryReference, url: string): any {
         return rp(url, { timeout: consts.BASE.DATA_REQUEST_TIMEOUT })
             .then((html) => {
                 const $ = cheerio.load(html);
-                const countryId = countryToId(country.isoCode);
+                const countryId = countryToId(country.dataCode);
                 dataScrapers.getArea($, country.name, countryId);
                 store.progressLogger(country.name, 1 / numberOfScrapers);
 				dataScrapers.getBackground($, country.name, countryId);

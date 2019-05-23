@@ -39,6 +39,7 @@ const ONTOLOGY = {
 	DT_DESCRIPTION: MAIN_ONT_PATH + 'description',
 	DT_EXCLUSIVE_ECONOMIC_ZONE: MAIN_ONT_PATH + 'exclusiveEconomicZone',
 	DT_EXCLUSIVE_FISHING_ZONE: MAIN_ONT_PATH + 'exclusiveFishingZone',
+	DT_GEC_CODE: MAIN_ONT_PATH + 'countryCodeGEC',
 	DT_HAZARD_DESCRIPTION: MAIN_ONT_PATH + 'hazardDescription',
 	DT_HIGHEST_POINT: MAIN_ONT_PATH + 'highestPoint',
 	DT_HIGHEST_POINT_DESCRIPTION: MAIN_ONT_PATH + 'highestPointDescription',
