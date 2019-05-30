@@ -28,4 +28,7 @@ export function flushStore() {
 	store.permanentPastureLands = {};
 	store.regionMaps = {};
 	store.terrains = {};
+	
+	store.jsonLD = [];
+	store.jsonNT = '';
 };

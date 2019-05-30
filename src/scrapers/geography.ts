@@ -1,9 +1,8 @@
+import { entityMaker, entityRefMaker } from 'funktologies';
 import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { entityMaker } from '../utils/entity-maker';
-import { entityRefMaker } from '../utils/entity-ref-maker';
 
 function parseSingleLocation(cheerio: Cheerio, country: string, countryId: string) {
 	const content = cheerio.find('div.category_data.subfield.text').text().trim();

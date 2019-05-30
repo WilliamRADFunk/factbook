@@ -1,0 +1,213 @@
+{
+  "@context": {
+    "airport": "http://williamrobertfunk.com/ontologies/airport#",
+    "blade": "http://modusoperandi.com/ont/blade#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "wfact": "http://williamrobertfunk.com/ontologies/world-factbook#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "wfact:hasElevation",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "airport:Airport"
+      },
+      "rdfs:range": {
+        "@id": "wfact:Elevation"
+      }
+    },
+    {
+      "@id": "airport:iataCode",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:comment": "\n      The International Air Transportation Association code associated with an airport or airline.\n    ",
+      "rdfs:domain": [
+        {
+          "@id": "airport:Airline"
+        },
+        {
+          "@id": "airport:Airport"
+        }
+      ],
+      "rdfs:label": "IATA Code",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "airport:wikiURI",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "URL location on Wikipedia where more information can be located.",
+      "rdfs:domain": [
+        {
+          "@id": "airport:Airline"
+        },
+        {
+          "@id": "airport:Airport"
+        }
+      ],
+      "rdfs:label": "Wikipedia URL",
+      "rdfs:range": {
+        "@id": "xsd:literal"
+      }
+    },
+    {
+      "@id": "airport:type",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:comment": "\n      The general use type of the airport (Military, Airport, Heliport, Spaceport, etc.).\n    ",
+      "rdfs:domain": {
+        "@id": "airport:Airport"
+      },
+      "rdfs:label": "Type",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "wfact:hasAirport",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
+      "rdfs:range": {
+        "@id": "airport:Airport"
+      }
+    },
+    {
+      "@id": "airport:status",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:comment": "\n      The last known status of the airport (ie. open or closed).\n    ",
+      "rdfs:domain": {
+        "@id": "airport:Airport"
+      },
+      "rdfs:label": "Status",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "airport:relativeSize",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "\n      The relative size of the airport (small, medium, or major).\n    ",
+      "rdfs:domain": {
+        "@id": "airport:Airport"
+      },
+      "rdfs:label": "Relative Size",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "airport:icaoCode",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "\n      The International Civil Aviation Organization code associated with an airport.\n    ",
+      "rdfs:domain": {
+        "@id": "airport:Airport"
+      },
+      "rdfs:label": "ICAO Code",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "airport:name",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:comment": "\n      Name or title associated with thing or place it represents.\n    ",
+      "rdfs:domain": [
+        {
+          "@id": "airport:Airport"
+        },
+        {
+          "@id": "airport:Airline"
+        }
+      ],
+      "rdfs:label": "Name",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "wfact:hasCountry",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "airport:Airport"
+      },
+      "rdfs:range": {
+        "@id": "wfact:Country"
+      }
+    },
+    {
+      "@id": "http://williamrobertfunk.com/ontologies/airport",
+      "@type": "owl:Ontology",
+      "dc:contributor": "William R.A.D. Funk",
+      "dc:creator": "William R.A.D. Funk",
+      "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
+      "owl:versionInfo": {
+        "@type": "xsd:decimal",
+        "@value": "1.1"
+      },
+      "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
+      "rdfs:label": "Funk Ontology"
+    },
+    {
+      "@id": "wfact:regionCodeISO",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "\n      Hyphen-delimited region code within a country assigned by the International Organization for Standardization\n    ",
+      "rdfs:domain": {
+        "@id": "wfact:Country"
+      },
+      "rdfs:label": "ISO Country-Region Code",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "airport:Airport",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "rdfs:comment": "\n      a complex of runways and buildings for the takeoff, landing, and maintenance of civil aircraft, with facilities for passengers.\n    ",
+      "rdfs:label": "Airport"
+    },
+    {
+      "@id": "wfact:hasLocation",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "airport:Airport"
+      },
+      "rdfs:range": {
+        "@id": "wfact:Location"
+      }
+    },
+    {
+      "@id": "airport:Airline",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "rdfs:comment": "\n      an organization providing a regular public service of air transportation on one or more routes.\n    ",
+      "rdfs:label": "Airline"
+    }
+  ]
+}

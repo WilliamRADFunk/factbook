@@ -1,10 +1,9 @@
+import { entityMaker, entityRefMaker } from 'funktologies';
 import * as htmlToText from 'html-to-text';
 import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { entityMaker } from '../utils/entity-maker';
-import { entityRefMaker } from '../utils/entity-ref-maker';
 
 export function getSupplementalImages(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;

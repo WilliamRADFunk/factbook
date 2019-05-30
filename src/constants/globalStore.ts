@@ -1,5 +1,5 @@
-import { CountryReference } from "../models/country-reference";
-import { EntityListWrapper } from "../models/entity-list-wrapper";
+import { CountryReference, FlatEntity } from "funktologies";
+import { EntityListWrapper } from "funktologies";
 import { ImageScrapableObject } from "../models/image-scrapable-object";
 import { consoleError, consoleLog } from "../utils/logger";
 
@@ -16,6 +16,8 @@ class GlobalStore {
 	public progressLogger: any = noop;
 	public failedCountries: CountryReference[] = [];
 	public failedImages: ImageScrapableObject[] = [];
+	public jsonLD: FlatEntity[] = [];
+	public jsonNT: string = '';
 
 	public agriculturalLands: EntityListWrapper = {};
 	public arableLands: EntityListWrapper = {};

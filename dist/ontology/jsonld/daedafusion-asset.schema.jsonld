@@ -1,0 +1,251 @@
+{
+    "@context": {
+      "asset": "http://www.daedafusion.com/Asset#",
+      "edt": "http://www.daedafusion.com/editor_annotation#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+      {
+        "@id": "_:N3e756b8bb40040c89fd7e9d06192901b",
+        "@type": "owl:Restriction",
+        "owl:cardinality": {
+          "@type": "xsd:nonNegativeInteger",
+          "@value": "1"
+        },
+        "owl:onProperty": {
+          "@id": "asset:mimeType"
+        }
+      },
+      {
+        "@id": "asset:contents",
+        "@type": "owl:ObjectProperty",
+        "edt:namespacePrefix": "argos",
+        "rdfs:comment": {
+          "@language": "en-US",
+          "@value": "Specifies a reference to the contents of the asset."
+        },
+        "rdfs:domain": {
+          "@id": "asset:Asset"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://www.daedafusion.com/Asset"
+        },
+        "rdfs:label": {
+          "@language": "en-US",
+          "@value": "Contents"
+        },
+        "rdfs:range": {
+          "@id": "owl:Thing"
+        }
+      },
+      {
+        "@id": "http://www.daedafusion.com/Asset",
+        "@type": "owl:Ontology",
+        "owl:imports": {
+          "@id": "http://www.daedafusion.com/editor_annotation"
+        },
+        "owl:versionInfo": "1.0.0.0",
+        "rdfs:comment": {
+          "@language": "en-US",
+          "@value": "Editor Annotation ontology defines a set of annotations that provide a graphical editor information about how to create corresponding IRI's for new instances created along with information that is used to control how properties appear in the editor. \n\nCopyright (c) 2014, DaedaFusion, LLC.  All rights reserved."
+        },
+        "rdfs:label": {
+          "@language": "en-US",
+          "@value": "ARGOS Asset Ontology"
+        }
+      },
+      {
+        "@id": "asset:uuid",
+        "@type": "owl:DatatypeProperty",
+        "edt:namespacePrefix": "argos",
+        "rdfs:comment": {
+          "@language": "en-US",
+          "@value": "Specifies the unified universal identifier associated with the asset"
+        },
+        "rdfs:domain": {
+          "@id": "asset:Asset"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://www.daedafusion.com/Asset"
+        },
+        "rdfs:label": {
+          "@language": "en-US",
+          "@value": "UUID"
+        },
+        "rdfs:range": {
+          "@id": "xsd:string"
+        }
+      },
+      {
+        "@id": "asset:mimeType",
+        "@type": "owl:DatatypeProperty",
+        "edt:namespacePrefix": "argos",
+        "rdfs:comment": {
+          "@language": "en-US",
+          "@value": "Specifies the MIME type associated with the asset"
+        },
+        "rdfs:domain": {
+          "@id": "asset:Asset"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://www.daedafusion.com/Asset"
+        },
+        "rdfs:label": {
+          "@language": "en-US",
+          "@value": "MIME Type"
+        },
+        "rdfs:range": {
+          "@id": "xsd:string"
+        }
+      },
+      {
+        "@id": "_:N8953eb1791ed427e99952e784318e929",
+        "@type": "owl:Restriction",
+        "owl:cardinality": {
+          "@type": "xsd:nonNegativeInteger",
+          "@value": "1"
+        },
+        "owl:onProperty": {
+          "@id": "asset:locatorURI"
+        }
+      },
+      {
+        "@id": "_:N2278e2953bfe48a9ab3def0b5a3f6e3a",
+        "@type": "owl:Restriction",
+        "owl:cardinality": {
+          "@type": "xsd:nonNegativeInteger",
+          "@value": "1"
+        },
+        "owl:onProperty": {
+          "@id": "asset:collectionTimestamp"
+        }
+      },
+      {
+        "@id": "asset:locatorURI",
+        "@type": "owl:ObjectProperty",
+        "edt:namespacePrefix": "argos",
+        "rdfs:comment": {
+          "@language": "en-US",
+          "@value": "Specifies the location from where the asset was ingested"
+        },
+        "rdfs:domain": {
+          "@id": "asset:Asset"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://www.daedafusion.com/Asset"
+        },
+        "rdfs:label": {
+          "@language": "en-US",
+          "@value": "Location URI"
+        },
+        "rdfs:range": {
+          "@id": "owl:Thing"
+        }
+      },
+      {
+        "@id": "asset:collectionTimestamp",
+        "@type": "owl:DatatypeProperty",
+        "edt:namespacePrefix": "argos",
+        "rdfs:comment": {
+          "@language": "en-US",
+          "@value": "Specifies the date and time when the asset was collected"
+        },
+        "rdfs:domain": {
+          "@id": "asset:Asset"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://www.daedafusion.com/Asset"
+        },
+        "rdfs:label": {
+          "@language": "en-US",
+          "@value": "Collection Timestamp"
+        },
+        "rdfs:range": {
+          "@id": "xsd:dateTime"
+        }
+      },
+      {
+        "@id": "asset:Asset",
+        "@type": "owl:Class",
+        "edt:namespacePrefix": "argos",
+        "rdfs:comment": {
+          "@language": "en-US",
+          "@value": "Characterizes a digital asset"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://www.daedafusion.com/Asset"
+        },
+        "rdfs:label": {
+          "@language": "en-US",
+          "@value": "Asset"
+        },
+        "rdfs:subClassOf": [
+          {
+            "@id": "_:N73fe75c30e1f481e84fda454b339867b"
+          },
+          {
+            "@id": "_:N2278e2953bfe48a9ab3def0b5a3f6e3a"
+          },
+          {
+            "@id": "_:N3e756b8bb40040c89fd7e9d06192901b"
+          },
+          {
+            "@id": "_:N8953eb1791ed427e99952e784318e929"
+          },
+          {
+            "@id": "owl:Thing"
+          },
+          {
+            "@id": "_:N4566185888c34155b080946b7f13fa65"
+          }
+        ]
+      },
+      {
+        "@id": "asset:parent",
+        "@type": "owl:ObjectProperty",
+        "edt:namespacePrefix": "argos",
+        "rdfs:comment": {
+          "@language": "en-US",
+          "@value": "Specifies the parent of the assets."
+        },
+        "rdfs:domain": {
+          "@id": "asset:Asset"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://www.daedafusion.com/Asset"
+        },
+        "rdfs:label": {
+          "@language": "en-US",
+          "@value": "Parent Asset"
+        },
+        "rdfs:range": {
+          "@id": "asset:Asset"
+        }
+      },
+      {
+        "@id": "_:N73fe75c30e1f481e84fda454b339867b",
+        "@type": "owl:Restriction",
+        "owl:cardinality": {
+          "@type": "xsd:nonNegativeInteger",
+          "@value": "1"
+        },
+        "owl:onProperty": {
+          "@id": "asset:uuid"
+        }
+      },
+      {
+        "@id": "_:N4566185888c34155b080946b7f13fa65",
+        "@type": "owl:Restriction",
+        "owl:cardinality": {
+          "@type": "xsd:nonNegativeInteger",
+          "@value": "1"
+        },
+        "owl:onProperty": {
+          "@id": "asset:parent"
+        }
+      }
+    ]
+  }

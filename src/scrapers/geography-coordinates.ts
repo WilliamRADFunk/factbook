@@ -1,10 +1,8 @@
+import { EntityContainer, entityMaker, entityRefMaker } from 'funktologies';
 import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { EntityContainer } from '../models/entity-container';
-import { entityMaker } from '../utils/entity-maker';
-import { entityRefMaker } from '../utils/entity-ref-maker';
 
 function parseSingleCoordinates(cheerio: Cheerio, country: string, countryId: string) {
 	const geoId = consts.ONTOLOGY.INST_GEO_LOCATION + getUuid(country);

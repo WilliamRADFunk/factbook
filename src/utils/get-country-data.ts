@@ -1,9 +1,10 @@
 import * as cheerio from 'cheerio';
 import * as rp from 'request-promise';
 
+import { CountryReference } from 'funktologies';
+
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { CountryReference } from "../models/country-reference";
 import { dataScrapers } from '../scrapers/data-getters';
 import { countryToId } from './country-to-id';
 

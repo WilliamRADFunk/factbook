@@ -1,9 +1,8 @@
+import { entityMaker, entityRefMaker } from 'funktologies';
 import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../../constants/constants';
 import { store } from '../../constants/globalStore';
-import { entityMaker } from '../../utils/entity-maker';
-import { entityRefMaker } from '../../utils/entity-ref-maker';
 
 export function parsedThreeValStrings(
 	origParams: { cheerioElem: CheerioSelector; country: string; countryId: string; },

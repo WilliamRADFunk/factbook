@@ -3,7 +3,6 @@ import * as fs from 'graceful-fs';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { FlatEntity } from '../models/flat-entity';
 
 export function saveFile(fileName: string, storeName: string, context: string): void {
 	// Normal JSON file.
@@ -11,7 +10,7 @@ export function saveFile(fileName: string, storeName: string, context: string): 
 	file = file.replace(/\\n/g, ' ');
 	fs.writeFileSync(`dist/json/${fileName}.json`, file);
 	// JSON-LD file construction.
-	const jsonLD: FlatEntity[] = [];
+	store.jsonLD = [];
 	// const jsonLD = {
 	// 	'@context': context,
 	// 	'@graph': []
@@ -44,11 +43,54 @@ export function saveFile(fileName: string, storeName: string, context: string): 
 			}
 		})
 		// Add it to the graph that belongs to this entity type.
-		// jsonLD['@graph'].push(mainObj);
-		jsonLD.push(mainObj);
+		// store.jsonLD['@graph'].push(mainObj);
+		store.jsonLD.push(mainObj);
+		store[storeName][key1] = null;
 	});
 
-    let fileLD = fj(JSON.stringify(jsonLD));
+	store[storeName] = {};
+
+    let fileLD = fj(JSON.stringify(store.jsonLD));
 	fileLD = fileLD.replace(/\\n/g, ' ');
 	fs.writeFileSync(`dist/jsonld/${fileName}.schema.jsonld`, fileLD);
+	fileLD = null;
+	store.debugLogger(`+++ Saved ${storeName} in ${fileName}.schema.jsonld`);
+	store.debugLogger(`~~~ Converting jsonld to n-triples`);
+
+	convertJsonldToNTriples();
+
+	store.debugLogger(`~~~ Saving ${storeName} to ${fileName}.schema.nt`);
+	fs.writeFileSync(`dist/n-triples/${fileName}.schema.nt`, store.jsonNT);
+	store.jsonNT = '';
+};
+
+function convertJsonldToNTriples(): void {
+	const length = store.jsonLD.length;
+	for (let i = 0; i < length; i++) {
+		const entity = store.jsonLD.pop();
+		if (entity) {
+			const mainId = entity['@id'];
+			const mainLabel = entity['http://www.w3.org/2000/01/rdf-schema#label'];
+			const mainType = entity['@type'];
+			store.jsonNT += `<${mainId}> <http://www.w3.org/2000/01/rdf-schema#label> ${JSON.stringify(mainLabel)} .\n`;
+			store.jsonNT += `<${mainId}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <${mainType}> .\n`;
+			Object.entries(entity).forEach(entry => {
+				if (['@id', '@type', 'http://www.w3.org/2000/01/rdf-schema#label'].includes(entry[0])) {
+					// Taken care of already.
+				} else if (Array.isArray(entry[1])) {
+					entry[1].forEach(innerEntry => {
+						store.jsonNT += `<${mainId}> <${entry[0]}> <${innerEntry['@id']}> .\n`;
+						store.jsonNT += `<${innerEntry['@id']}> <http://www.w3.org/2000/01/rdf-schema#label> ${JSON.stringify(innerEntry['http://www.w3.org/2000/01/rdf-schema#label'])} .\n`;
+						store.jsonNT += `<${innerEntry['@id']}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <${innerEntry['@type']}> .\n`;
+					});
+				} else if(typeof entry[1] === 'object') {
+					store.jsonNT += `<${mainId}> <${entry[0]}> <${entry[1]['@id']}> .\n`;
+					store.jsonNT += `<${entry[1]['@id']}> <http://www.w3.org/2000/01/rdf-schema#label> ${JSON.stringify(entry[1]['http://www.w3.org/2000/01/rdf-schema#label'])} .\n`;
+					store.jsonNT += `<${entry[1]['@id']}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <${entry[1]['@type']}> .\n`;
+				} else {
+					store.jsonNT += `<${mainId}> <${entry[0]}> ${JSON.stringify(entry[1])} .\n`;
+				}
+			});
+		}
+	}
 };

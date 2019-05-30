@@ -1,0 +1,82 @@
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY wfact "http://williamrobertfunk.com/ontologies/world-factbook#" >
+    <!ENTITY airport "http://williamrobertfunk.com/ontologies/airport#" >
+    <!ENTITY municipality "http://williamrobertfunk.com/ontologies/municipality#" >
+    <!ENTITY blade "http://modusoperandi.com/ont/blade#">
+]>
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wfact="http://williamrobertfunk.com/ontologies/world-factbook#"
+  xmlns:airport="http://williamrobertfunk.com/ontologies/airport#"
+  xmlns:municipality="http://williamrobertfunk.com/ontologies/municipality#"
+  xmlns:blade="http://modusoperandi.com/ont/blade#">
+
+  <Ontology rdf:about="http://williamrobertfunk.com/ontologies/municipality">
+    <versionInfo rdf:datatype="&xsd;decimal">1.1</versionInfo>
+    <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
+    <dc:creator>William R.A.D. Funk</dc:creator>
+    <dc:contributor>William R.A.D. Funk</dc:contributor>
+    <rdfs:comment>
+      Identifies application specific classes and annotations that are relevant
+      only to my associated applications.
+    </rdfs:comment>
+    <rdfs:label>Funk Ontology</rdfs:label>
+  </Ontology>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Classes
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/municipality#Municipality -->
+
+  <Class rdf:about="&municipality;Municipality">
+    <rdfs:label>Municipality</rdfs:label>
+    <rdfs:comment>
+      a city or town that has corporate status and local government.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Object Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Datatype Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/municipality#name -->
+
+  <DatatypeProperty rdf:about="&municipality;name">
+    <rdfs:label>Name</rdfs:label>
+    <rdfs:comment>
+      Name or title associated with thing or place it represents.
+    </rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&municipality;Municipality"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+</rdf:RDF>

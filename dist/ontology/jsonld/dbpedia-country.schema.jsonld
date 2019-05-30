@@ -1,0 +1,276 @@
+{
+    "@context": {
+      "ns5": "http://open.vocab.org/terms/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "schema": "http://schema.org/",
+      "wdsr": "http://www.w3.org/2007/05/powder-s#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+      {
+        "@id": "http://dbpedia.org/ontology/countryOrigin",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/usingCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/countryWithFirstSatelliteLaunched",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/europeanUnionEntranceDate",
+        "rdfs:domain": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/sourceCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/locationCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/sourceConfluenceCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/capitalCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/sportCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/managementCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/firstDriverCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/data/definitions.ttl",
+        "ns5:describes": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/stateOfOrigin",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/HistoricalCountry",
+        "rdfs:subClassOf": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/thirdDriverCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/mouthCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/twinCountry",
+        "rdfs:domain": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        },
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/countryWithFirstAstronaut",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/Country",
+        "@type": "owl:Class",
+        "owl:equivalentClass": [
+          {
+            "@id": "schema:Country"
+          },
+          {
+            "@id": "http://www.wikidata.org/entity/Q6256"
+          }
+        ],
+        "owl:sameAs": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        },
+        "prov:wasDerivedFrom": {
+          "@id": "http://mappings.dbpedia.org/index.php/OntologyClass:Country"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://dbpedia.org/ontology/"
+        },
+        "rdfs:label": [
+          {
+            "@language": "ga",
+            "@value": "tír"
+          },
+          {
+            "@language": "es",
+            "@value": "país"
+          },
+          {
+            "@language": "fr",
+            "@value": "pays"
+          },
+          {
+            "@language": "ko",
+            "@value": "나라"
+          },
+          {
+            "@language": "ja",
+            "@value": "国"
+          },
+          {
+            "@language": "nl",
+            "@value": "land"
+          },
+          {
+            "@language": "el",
+            "@value": "χώρα"
+          },
+          {
+            "@language": "ru",
+            "@value": "Государство"
+          },
+          {
+            "@language": "de",
+            "@value": "Staat"
+          },
+          {
+            "@language": "sl",
+            "@value": "država"
+          },
+          {
+            "@language": "en",
+            "@value": "country"
+          }
+        ],
+        "rdfs:subClassOf": {
+          "@id": "http://dbpedia.org/ontology/PopulatedPlace"
+        },
+        "wdsr:describedby": {
+          "@id": "http://dbpedia.org/ontology/data/definitions.ttl"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/countryWithFirstSatellite",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/governmentCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/fastestDriverCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/wordBefore",
+        "rdfs:domain": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/topLevelDomain",
+        "rdfs:domain": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/poleDriverCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/",
+        "ns5:defines": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/secondDriverCountry",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/numberOfMinistries",
+        "rdfs:domain": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/countryWithFirstSpaceflight",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/country",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/nationality",
+        "rdfs:range": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      },
+      {
+        "@id": "http://dbpedia.org/ontology/continent",
+        "rdfs:domain": {
+          "@id": "http://dbpedia.org/ontology/Country"
+        }
+      }
+    ]
+  }

@@ -1,11 +1,12 @@
 import * as cheerio from 'cheerio';
 import * as rp from 'request-promise';
 
+import { entityMaker } from 'funktologies';
+
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { countryToId } from './country-to-id';
 import { dataCodeToIsoCode } from './country-code-lookup-tables';
-import { entityMaker } from './entity-maker';
+import { countryToId } from './country-to-id';
 
 export async function getCountries(): Promise<any> {
     return await rp('https://www.cia.gov/library/publications/the-world-factbook/')

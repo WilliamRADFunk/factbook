@@ -1,0 +1,972 @@
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY wfact "http://williamrobertfunk.com/ontologies/world-factbook#" >
+    <!ENTITY airport "http://williamrobertfunk.com/ontologies/airport#" >
+    <!ENTITY municipality "http://williamrobertfunk.com/ontologies/municipality#" >
+    <!ENTITY wleaders "http://williamrobertfunk.com/ontologies/world-leaders#" >
+    <!ENTITY pos "http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <!ENTITY dafu "http://www.daedafusion.com/">
+    <!ENTITY dbp "http://dbpedia.org/ontology/">
+    <!ENTITY blade "http://modusoperandi.com/ont/blade#">
+]>
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wfact="http://williamrobertfunk.com/ontologies/world-factbook#"
+  xmlns:airport="http://williamrobertfunk.com/ontologies/airport#"
+  xmlns:municipality="http://williamrobertfunk.com/ontologies/municipality#"
+  xmlns:wleaders="http://williamrobertfunk.com/ontologies/world-leaders#"
+  xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dafu="http://www.daedafusion.com/"
+  xmlns:dbp="http://dbpedia.org/ontology"
+  xmlns:blade="http://modusoperandi.com/ont/blade#">
+
+  <Ontology rdf:about="http://williamrobertfunk.com/ontologies/world-factbook">
+    <versionInfo rdf:datatype="&xsd;decimal">1.6</versionInfo>
+    <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
+    <dc:creator>William R.A.D. Funk</dc:creator>
+    <dc:contributor>William R.A.D. Funk</dc:contributor>
+    <rdfs:comment>
+      Identifies application specific classes and annotations that are relevant
+      only to my associated applications.
+    </rdfs:comment>
+    <rdfs:label>Funk Ontology</rdfs:label>
+  </Ontology>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Classes
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Country -->
+
+  <Class rdf:about="&wfact;Country">
+    <rdfs:label>Country</rdfs:label>
+    <rdfs:comment>a nation with its own government, occupying a particular territory.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <equivalentClass rdf:resource="&dbp;Country" />
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#NationalFlag -->
+
+  <Class rdf:about="&wfact;NationalFlag">
+    <rdfs:label>NationalFlag</rdfs:label>
+    <rdfs:comment>
+      a piece of cloth flown by the government of a country,
+      and designed with specific meanings for its colours and symbols.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Image -->
+
+  <Class rdf:about="&wfact;Image">
+    <rdfs:label>Image</rdfs:label>
+    <rdfs:comment>a digitally stored image</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&dafu;Asset"/>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#BorderMap -->
+
+  <Class rdf:about="&wfact;BorderMap">
+    <rdfs:label>Border Map Image</rdfs:label>
+    <rdfs:comment>an image showing a country's full border and direct neighbors.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&wfact;Image"/>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#RegionMap -->
+
+  <Class rdf:about="&wfact;RegionMap">
+    <rdfs:label>Region Map Image</rdfs:label>
+    <rdfs:comment>an image showing a country's position within a region.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&wfact;Image"/>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#DomainArea -->
+
+  <Class rdf:about="&wfact;DomainArea">
+    <rdfs:label>Domain Area</rdfs:label>
+    <rdfs:comment>Area within a country's borders (ie. Land, Water, Total).</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Coast -->
+
+  <Class rdf:about="&wfact;Coast">
+    <rdfs:label>Coast</rdfs:label>
+    <rdfs:comment>Geographic section where the land borders the sea.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Climate -->
+
+  <Class rdf:about="&wfact;Climate">
+    <rdfs:label>Climate</rdfs:label>
+    <rdfs:comment>The weather conditions prevailing in an area in general or over a long period.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#ClimateZone -->
+
+  <Class rdf:about="&wfact;ClimateZone">
+    <rdfs:label>Climate Zone</rdfs:label>
+    <rdfs:comment>
+      Divisions of the Earth's climates into general climate zones according to average temperatures and average rainfall.
+      The three major climate zones on the Earth are the polar, temperate, and tropical zones.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#BorderCountryPair -->
+
+  <Class rdf:about="&wfact;BorderCountryPair">
+    <rdfs:label>Border Country Pair</rdfs:label>
+    <rdfs:comment>Two countries that share a land border.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Border -->
+
+  <Class rdf:about="&wfact;Border">
+    <rdfs:label>National Border</rdfs:label>
+    <rdfs:comment>Total border belonging to a soverign nation.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#MaritimeClaim -->
+
+  <Class rdf:about="&wfact;MaritimeClaim">
+    <rdfs:label>Maritime Claim</rdfs:label>
+    <rdfs:comment>
+      The adjacent belt of sea that extends beyond a coastal state's land territory and internal waters.
+      Includes airspace over that belt of sea.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#NaturalResource -->
+
+  <Class rdf:about="&wfact;NaturalResource">
+    <rdfs:label>Natural Resource</rdfs:label>
+    <rdfs:comment>
+      Material or substance such as minerals, forests, water,and fertile land
+      that occur in nature and can be used for economic gain.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Elevation -->
+
+  <Class rdf:about="&wfact;Elevation">
+    <rdfs:label>Elevation</rdfs:label>
+    <rdfs:comment>
+      The vertical distance above the reference geoid,
+      a mathematical model of the Earth's sea level as an equipotential gravitational surface.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Terrain -->
+
+  <Class rdf:about="&wfact;Terrain">
+    <rdfs:label>Terrain</rdfs:label>
+    <rdfs:comment>A stretch of land, especially with regard to its physical features.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#LandUse -->
+
+  <Class rdf:about="&wfact;LandUse">
+    <rdfs:label>Land Use</rdfs:label>
+    <rdfs:comment>A break down of uses for the land (ie. agricultural, forest, pasture, etc.).</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#AgriculturalLand -->
+
+  <Class rdf:about="&wfact;AgriculturalLand">
+    <rdfs:label>Agricultural Land</rdfs:label>
+    <rdfs:comment>Percentage of land used for agricultural purposes.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#ArableLand -->
+
+  <Class rdf:about="&wfact;ArableLand">
+    <rdfs:label>Arable Land</rdfs:label>
+    <rdfs:comment>Percentage of land set aside to be arable.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#PermanentCropsLand -->
+
+  <Class rdf:about="&wfact;PermanentCropsLand">
+    <rdfs:label>Permanent Crops Land</rdfs:label>
+    <rdfs:comment>Percentage of land set aside permanently for use in growing crops.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#PermanentPastureLand -->
+
+  <Class rdf:about="&wfact;PermanentPastureLand">
+    <rdfs:label>Permanent Pasture Land</rdfs:label>
+    <rdfs:comment>Percentage of land set aside permanently for use as pasture.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#OtherLand -->
+
+  <Class rdf:about="&wfact;OtherLand">
+    <rdfs:label>Other Land</rdfs:label>
+    <rdfs:comment>Percentage of land used for purposes other that agricultural, grazing, or forest.</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&wfact;LandUse"/>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#ArtificiallyIrrigatedLand -->
+
+  <Class rdf:about="&wfact;ArtificiallyIrrigatedLand">
+    <rdfs:label>Artificially Irrigated Land</rdfs:label>
+    <rdfs:comment>
+      Percentage of land artificially irrigated.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#NaturalHazard -->
+
+  <Class rdf:about="&wfact;NaturalHazard">
+    <rdfs:label>Natural Hazard</rdfs:label>
+    <rdfs:comment>
+      A natural phenomenon that might have a negative effect on humans or the environment.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#GeographicNote -->
+
+  <Class rdf:about="&wfact;GeographicNote">
+    <rdfs:label>Geographic Note</rdfs:label>
+    <rdfs:comment>
+      An additional description on a place's geography.
+      The significance of it's physical location in the larger world.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#Location -->
+
+  <Class rdf:about="&wfact;Location">
+    <rdfs:label>Location</rdfs:label>
+    <rdfs:comment>
+      A location defined by latitude and longitude according to the wgs84 definition.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Object Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasAirport -->
+
+  <ObjectProperty rdf:about="&wfact;hasAirport">
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:domain rdf:resource="&municipality;Municipality"/>
+    <rdfs:range rdf:resource="&airport;Airport"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasNationalFlag -->
+
+  <ObjectProperty rdf:about="&wfact;hasNationalFlag">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;NationalFlag"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasBorderMap -->
+
+  <ObjectProperty rdf:about="&wfact;hasBorderMap">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;BorderMap"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasRegionMap -->
+
+  <ObjectProperty rdf:about="&wfact;hasRegionMap">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;RegionMap"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasSupplementalImage -->
+
+  <ObjectProperty rdf:about="&wfact;hasSupplementalImage">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;Image"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasDomainArea -->
+
+  <ObjectProperty rdf:about="&wfact;hasDomainArea">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;DomainArea"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasCoast -->
+
+  <ObjectProperty rdf:about="&wfact;hasCoast">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;Coast"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasClimate -->
+
+  <ObjectProperty rdf:about="&wfact;hasClimate">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;Climate"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasClimateZone -->
+
+  <ObjectProperty rdf:about="&wfact;hasClimateZone">
+      <rdfs:domain rdf:resource="&wfact;Climate"/>
+      <rdfs:range rdf:resource="&wfact;ClimateZone"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasBorderCountryPair -->
+
+  <ObjectProperty rdf:about="&wfact;hasBorderCountryPair">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;BorderCountryPair"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasCountry -->
+
+  <ObjectProperty rdf:about="&wfact;hasCountry">
+      <rdfs:domain rdf:resource="&airport;Airport"/>
+      <rdfs:domain rdf:resource="&wfact;BorderCountryPair"/>
+      <rdfs:domain rdf:resource="&wleaders;GovernmentOffice"/>
+      <rdfs:domain rdf:resource="&municipality;Municipality"/>
+      <rdfs:range rdf:resource="&wfact;Country"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasBorder -->
+
+  <ObjectProperty rdf:about="&wfact;hasBorder">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;Border"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasMaritimeClaim -->
+
+  <ObjectProperty rdf:about="&wfact;hasMaritimeClaim">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;MaritimeClaim"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasNaturalResource -->
+
+  <ObjectProperty rdf:about="&wfact;hasNaturalResource">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;NaturalResource"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasElevation -->
+
+  <ObjectProperty rdf:about="&wfact;hasElevation">
+    <rdfs:domain rdf:resource="&airport;Airport"/>
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&wfact;Elevation"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasTerrain -->
+
+  <ObjectProperty rdf:about="&wfact;hasTerrain">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;Terrain"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasLandUse -->
+
+  <ObjectProperty rdf:about="&wfact;hasLandUse">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;LandUse"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasAgriculturalLand -->
+
+  <ObjectProperty rdf:about="&wfact;hasAgriculturalLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;AgriculturalLand"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasArableLand -->
+
+  <ObjectProperty rdf:about="&wfact;hasArableLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;ArableLand"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasForestLand -->
+
+  <ObjectProperty rdf:about="&wfact;hasForestLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;ForestLand"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasOtherLand -->
+
+  <ObjectProperty rdf:about="&wfact;hasOtherLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;OtherLand"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasPermanentCropsLand -->
+
+  <ObjectProperty rdf:about="&wfact;hasPermanentCropsLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;PermanentCropsLand"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasPermanentPastureLand -->
+
+  <ObjectProperty rdf:about="&wfact;hasPermanentPastureLand">
+      <rdfs:domain rdf:resource="&wfact;LandUse"/>
+      <rdfs:range rdf:resource="&wfact;PermanentPastureLand"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasArtificiallyIrrigatedLand -->
+
+  <ObjectProperty rdf:about="&wfact;hasArtificiallyIrrigatedLand">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasNaturalHazard -->
+
+  <ObjectProperty rdf:about="&wfact;hasNaturalHazard">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;NaturalHazard"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasGeographicNote -->
+
+  <ObjectProperty rdf:about="&wfact;hasGeographicNote">
+      <rdfs:domain rdf:resource="&wfact;Country"/>
+      <rdfs:range rdf:resource="&wfact;GeographicNote"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasLocation -->
+
+  <ObjectProperty rdf:about="&wfact;hasLocation">
+    <rdfs:domain rdf:resource="&airport;Airport"/>
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:domain rdf:resource="&municipality;Municipality"/>
+    <rdfs:range rdf:resource="&wfact;Location"/>
+  </ObjectProperty>
+  
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hasMunicipality -->
+
+  <ObjectProperty rdf:about="&wfact;hasMunicipality">
+    <rdfs:domain rdf:resource="&airport;Airport"/>
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&municipality;Municipality"/>
+  </ObjectProperty>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Datatype Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#countryCodeDEC -->
+
+  <DatatypeProperty rdf:about="&wfact;countryCodeDEC">
+    <rdfs:label>GEC Country Code</rdfs:label>
+    <rdfs:comment>
+      Geopolitical Entities and Codes (formerly FIPS PUB 10-4).
+    </rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#countryCodeISO -->
+
+  <DatatypeProperty rdf:about="&wfact;countryCodeISO">
+    <rdfs:label>ISO Country Code</rdfs:label>
+    <rdfs:comment>
+      Two digit country code assigned by the International Organization for Standardization
+    </rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#populationDistribution -->
+
+  <DatatypeProperty rdf:about="&wfact;populationDistribution">
+    <rdfs:label>Population Distribution</rdfs:label>
+    <rdfs:comment>
+      The pattern of where people live.
+    </rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#background -->
+
+  <DatatypeProperty rdf:about="&wfact;background">
+    <rdfs:label>Background information</rdfs:label>
+    <rdfs:comment>Description of variable length that summarizes the history of a thing.</rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#imageDimensions -->
+
+  <DatatypeProperty rdf:about="&wfact;imageDimensions">
+    <rdfs:label>Width by Height Dimensions</rdfs:label>
+    <rdfs:comment>The width and height of the image, usually in pixels</rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Image"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#imageSize -->
+
+  <DatatypeProperty rdf:about="&wfact;imageSize">
+    <rdfs:label>Image Size</rdfs:label>
+    <rdfs:comment>The amount of computer memory the image requires.</rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Image"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#locationDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;locationDescription">
+    <rdfs:label>Location Description</rdfs:label>
+    <rdfs:comment>A description of where in the world the location is located.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Location"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#locationReferenceDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;locationReferenceDescription">
+    <rdfs:label>Location Reference Description</rdfs:label>
+    <rdfs:comment>A description of where in the world the country is located.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#mapReferences -->
+
+  <DatatypeProperty rdf:about="&wfact;mapReferences">
+    <rdfs:label>Map Reference</rdfs:label>
+    <rdfs:comment>A broad reference to country's position in the world (ie. Africa).</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#locatorURI -->
+
+  <DatatypeProperty rdf:about="&wfact;locatorURI">
+    <rdfs:label>Locator URL</rdfs:label>
+    <rdfs:comment>URL location where image was originally located.</rdfs:comment>
+    <rdfs:domain rdf:resource="&dafu;Asset"/>
+    <rdfs:domain rdf:resource="&wfact;Image"/>
+    <rdfs:domain rdf:resource="&wfact;NationalFlag"/>
+    <rdfs:range rdf:resource="&xsd;literal"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#contentDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;contentDescription">
+    <rdfs:label>Content Description</rdfs:label>
+    <rdfs:comment>Description of the contents contained.</rdfs:comment>
+    <rdfs:domain rdf:resource="&dafu;Asset"/>
+    <rdfs:domain rdf:resource="&wfact;Image"/>
+    <rdfs:domain rdf:resource="&wfact;NationalFlag"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#contents -->
+
+  <DatatypeProperty rdf:about="&wfact;contents">
+    <rdfs:label>Contents</rdfs:label>
+    <rdfs:comment>Data URI for the wfact (ie. data url for an image).</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Image"/>
+    <rdfs:range rdf:resource="&xsd;anyURI"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#unit -->
+
+  <DatatypeProperty rdf:about="&wfact;unit">
+    <rdfs:label>Unit</rdfs:label>
+    <rdfs:comment>Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+    <rdfs:domain rdf:resource="&wfact;Border"/>
+    <rdfs:domain rdf:resource="&wfact;BorderCountryPair"/>
+    <rdfs:domain rdf:resource="&wfact;Coast"/>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#totalArea -->
+
+  <DatatypeProperty rdf:about="&wfact;totalArea">
+    <rdfs:label>Total Area</rdfs:label>
+    <rdfs:comment>Total area associated with the entity to which it's attached.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#landArea -->
+
+  <DatatypeProperty rdf:about="&wfact;landArea">
+    <rdfs:label>Land Area</rdfs:label>
+    <rdfs:comment>Total land area associated with the entity to which it's attached.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#waterArea -->
+
+  <DatatypeProperty rdf:about="&wfact;waterArea">
+    <rdfs:label>Water Area</rdfs:label>
+    <rdfs:comment>Total water area associated with the entity to which it's attached.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#areaRank -->
+
+  <DatatypeProperty rdf:about="&wfact;areaRank">
+    <rdfs:label>Area Rank</rdfs:label>
+    <rdfs:comment>Numerical rank compared to similar entities.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#areaComparative -->
+
+  <DatatypeProperty rdf:about="&wfact;areaComparative">
+    <rdfs:label>Comparative Area</rdfs:label>
+    <rdfs:comment>Comparative association with a well-known area to better define scale qualitatively.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;DomainArea"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#length -->
+
+  <DatatypeProperty rdf:about="&wfact;length">
+    <rdfs:label>Length</rdfs:label>
+    <rdfs:comment>The measurement or extent of something from end to end</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Coast"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#lengthModifier -->
+
+  <DatatypeProperty rdf:about="&wfact;lengthModifier">
+    <rdfs:label>Length Modifier</rdfs:label>
+    <rdfs:comment>An additional descriptor to add information to a simple length measurement.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Coast"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#climateZoneName -->
+
+  <DatatypeProperty rdf:about="&wfact;climateZoneName">
+    <rdfs:label>Climate Zone Name</rdfs:label>
+    <rdfs:comment>Name of the climate zone (ie. polar, temperate, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;ClimateZone"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#climateZoneDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;climateZoneDescription">
+    <rdfs:label>Climate Zone Description</rdfs:label>
+    <rdfs:comment>Greater detail for the climate of a given area.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;ClimateZone"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#borderLength -->
+
+  <DatatypeProperty rdf:about="&wfact;borderLength">
+    <rdfs:label>Border Length</rdfs:label>
+    <rdfs:comment>Length of distance by land that one country shares with other countries.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;BorderCountryPair"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#totalLandBorder -->
+
+  <DatatypeProperty rdf:about="&wfact;totalLandBorder">
+    <rdfs:label>Total Land Border</rdfs:label>
+    <rdfs:comment>Total length of distance by land of a country's border.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Border"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#totalBorderCountries -->
+
+  <DatatypeProperty rdf:about="&wfact;totalBorderCountries">
+    <rdfs:label>Total Border Countries</rdfs:label>
+    <rdfs:comment>Total number of countries sharing a border with this nation.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Border"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#territorialSea -->
+
+  <DatatypeProperty rdf:about="&wfact;territorialSea">
+    <rdfs:label>Territorial Sea</rdfs:label>
+    <rdfs:comment>Length of sea belt belonging to sovereign coastal state.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#exclusiveEconomicZone -->
+
+  <DatatypeProperty rdf:about="&wfact;exclusiveEconomicZone">
+    <rdfs:label>Territorial Sea</rdfs:label>
+    <rdfs:comment>Length of sea belt belonging to sovereign coastal state for exclusive economic use.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#contiguousZone -->
+
+  <DatatypeProperty rdf:about="&wfact;contiguousZone">
+    <rdfs:label>Contiguous Zone</rdfs:label>
+    <rdfs:comment>
+      Length of sea belt belonging to sovereign coastal state for legally protecting against infringement of its customs,
+      fiscal, immigration, or sanitary laws and regulations.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#continentalShelf -->
+
+  <DatatypeProperty rdf:about="&wfact;continentalShelf">
+    <rdfs:label>Continental Shelf</rdfs:label>
+    <rdfs:comment>
+      Length of sea belt belonging to sovereign coastal state with exclusive jurisdiction for the purpose of exploring it
+      and exploiting its natural resources.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#continentalShelfModifier -->
+
+  <DatatypeProperty rdf:about="&wfact;continentalShelfModifier">
+    <rdfs:label>Continental Shelf</rdfs:label>
+    <rdfs:comment>
+      Additions, subtractions, or exceptions that pertain to the length of sea belt belonging to a soverign coastal state.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#supplementalExplanation -->
+
+  <DatatypeProperty rdf:about="&wfact;supplementalExplanation">
+    <rdfs:label>Supplemental Explanation</rdfs:label>
+    <rdfs:comment>
+      When details are given that don't readily fit into any given category, they go here.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#exclusiveFishingZone -->
+
+  <DatatypeProperty rdf:about="&wfact;exclusiveFishingZone">
+    <rdfs:label>Exclusive Fishing Zone</rdfs:label>
+    <rdfs:comment>
+      An area beyond the outer limit of the territorial sea in which the coastal State has the right to fish,
+      subject to any concessions which may be granted to foreign fishermen.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;MaritimeClaim"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#resourceName -->
+
+  <DatatypeProperty rdf:about="&wfact;resourceName">
+    <rdfs:label>Resource Name</rdfs:label>
+    <rdfs:comment>The name of the resource (ie. coal, copper, salt, fish)</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;NaturalResource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#description -->
+
+  <DatatypeProperty rdf:about="&wfact;description">
+    <rdfs:label>Description</rdfs:label>
+    <rdfs:comment>Deeper description of the entity</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;GeographicNote"/>
+    <rdfs:domain rdf:resource="&wfact;NaturalResource"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#meanElevation -->
+
+  <DatatypeProperty rdf:about="&wfact;meanElevation">
+    <rdfs:label>Mean Elevation</rdfs:label>
+    <rdfs:comment>
+      The vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a mountain.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#lowestPoint -->
+
+  <DatatypeProperty rdf:about="&wfact;lowestPoint">
+    <rdfs:label>Lowest Point</rdfs:label>
+    <rdfs:comment>
+      The lowest vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a canyon.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#highestPoint -->
+
+  <DatatypeProperty rdf:about="&wfact;highestPoint">
+    <rdfs:label>Highest Point</rdfs:label>
+    <rdfs:comment>
+      The highest vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a mountain.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#lowestPointDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;lowestPointDescription">
+    <rdfs:label>Lowest Point Description</rdfs:label>
+    <rdfs:comment>Supplemental description for the lowest elevation point</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#highestPointDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;highestPointDescription">
+    <rdfs:label>Highest Point Description</rdfs:label>
+    <rdfs:comment>Supplemental description for the highest elevation point</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#percentage -->
+
+  <DatatypeProperty rdf:about="&wfact;percentage">
+    <rdfs:label>Percentage</rdfs:label>
+    <rdfs:comment>The percentage belonging to the parent entity</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;LandUse"/>
+    <rdfs:domain rdf:resource="&wfact;AgriculturalLand"/>
+    <rdfs:domain rdf:resource="&wfact;ArableLand"/>
+    <rdfs:domain rdf:resource="&wfact;OtherLand"/>
+    <rdfs:domain rdf:resource="&wfact;PermanentCropsLand"/>
+    <rdfs:domain rdf:resource="&wfact;PermanentPastureLand"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#lastEstimated -->
+
+  <DatatypeProperty rdf:about="&wfact;lastEstimated">
+    <rdfs:label>Last Estimated</rdfs:label>
+    <rdfs:comment>The last date/year the field was last estimated</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;LandUse"/>
+    <rdfs:domain rdf:resource="&wfact;AgriculturalLand"/>
+    <rdfs:domain rdf:resource="&wfact;ArableLand"/>
+    <rdfs:domain rdf:resource="&wfact;ArtificiallyIrrigatedLand"/>
+    <rdfs:domain rdf:resource="&wfact;OtherLand"/>
+    <rdfs:domain rdf:resource="&wfact;PermanentCropsLand"/>
+    <rdfs:domain rdf:resource="&wfact;PermanentPastureLand"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#hazardDescription -->
+
+  <DatatypeProperty rdf:about="&wfact;hazardDescription">
+    <rdfs:label>Hazard Description</rdfs:label>
+    <rdfs:comment>The description of the hazard (ie. volcanism, hurricanes, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="&wfact;NaturalHazard"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+  <DataProperty rdf:about="&pos;lat">
+    <rdfs:domain rdf:resource="&wfact;Location" />
+  </DataProperty>
+
+  <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+  <DataProperty rdf:about="&pos;long">
+    <rdfs:domain rdf:resource="&wfact;Location" />
+  </DataProperty>
+
+  <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+  <DataProperty rdf:about="&pos;alt">
+    <rdfs:domain rdf:resource="&wfact;Location" />
+  </DataProperty>
+
+  <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat_long -->
+
+  <DataProperty rdf:about="&pos;lat_long">
+    <rdfs:domain rdf:resource="&wfact;Location" />
+  </DataProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/world-factbook#regionCodeISO -->
+
+  <DatatypeProperty rdf:about="&wfact;regionCodeISO">
+    <rdfs:label>ISO Country-Region Code</rdfs:label>
+    <rdfs:comment>
+      Hyphen-delimited region code within a country assigned by the International Organization for Standardization
+    </rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&wfact;Country"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+</rdf:RDF>

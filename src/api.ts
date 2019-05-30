@@ -6,11 +6,6 @@ export { consts } from './constants/constants';
 export { store } from './constants/globalStore';
 
 // Models
-export { CountryReference } from './models/country-reference';
-export { EntityContainer } from './models/entity-container';
-export { EntityListWrapper } from './models/entity-list-wrapper';
-export { Entity } from './models/entity';
-export { FlatEntity } from './models/flat-entity';
 export { ImageScrapableObject } from './models/image-scrapable-object';
 
 // Utility Functions

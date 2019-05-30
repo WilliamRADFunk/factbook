@@ -1,0 +1,58 @@
+{
+    "@context": {
+      "blade": "http://modusoperandi.com/ont/blade#",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "ui": "http://modusoperandi.com/ont/ui-context#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+      {
+        "@id": "dc:contributor",
+        "@type": "owl:AnnotationProperty"
+      },
+      {
+        "@id": "ui:classAttribute",
+        "@type": "owl:AnnotationProperty",
+        "rdfs:comment": "\n      Should be asserted against annotation properties that should be imported\n      into the taxonomy model.\n      See \"navClass\" below in this file for example usage.\n    ",
+        "rdfs:label": "Class Attribute"
+      },
+      {
+        "@id": "dc:creator",
+        "@type": "owl:AnnotationProperty"
+      },
+      {
+        "@id": "blade:navClass",
+        "@type": "owl:AnnotationProperty",
+        "rdfs:comment": "\n      This property is used to indicate to the GUI which classes should be\n      identified as navigational nodes. This annotation property should only be\n      asserted against classes.\n    ",
+        "rdfs:label": "Navigation Class",
+        "rdfs:range": {
+          "@id": "xsd:boolean"
+        },
+        "ui:classAttribute": "true"
+      },
+      {
+        "@id": "http://modusoperandi.com/ont/blade",
+        "@type": "owl:Ontology",
+        "dc:contributor": "Nicholas J. Fiorello Jr.",
+        "dc:creator": "Modus Operandi, Inc.",
+        "dc:rights": "\n        Copyright 2018 Modus Operandi, Inc. All rights reserved.\n        This small selection was permitted in this factbook module's use by Kim Ziehlke\n        to allow easier ingestion into their system.\n        Only those annotations/properties/classes used in world-factbook.rdf\n        are included in this reference ontology\n    ",
+        "owl:versionInfo": {
+          "@type": "xsd:decimal",
+          "@value": "1.2"
+        },
+        "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to the Blade UI and associated applications.\n    ",
+        "rdfs:label": "Blade Ontology"
+      },
+      {
+        "@id": "owl:versionInfo",
+        "@type": "owl:AnnotationProperty"
+      },
+      {
+        "@id": "dc:rights",
+        "@type": "owl:AnnotationProperty"
+      }
+    ]
+  }

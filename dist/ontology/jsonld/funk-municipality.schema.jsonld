@@ -1,0 +1,95 @@
+{
+    "@context": {
+      "airport": "http://williamrobertfunk.com/ontologies/airport#",
+      "blade": "http://modusoperandi.com/ont/blade#",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "municipality": "http://williamrobertfunk.com/ontologies/municipality#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "wfact": "http://williamrobertfunk.com/ontologies/world-factbook#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+      {
+        "@id": "wfact:hasMunicipality",
+        "@type": "owl:ObjectProperty",
+        "rdfs:domain": {
+          "@id": "municipality:Municipality"
+        },
+        "rdfs:range": [
+          {
+            "@id": "wfact:Country"
+          },
+          {
+            "@id": "airport:Airport"
+          }
+        ]
+      },
+      {
+        "@id": "municipality:Municipality",
+        "@type": "owl:Class",
+        "blade:navClass": true,
+        "rdfs:comment": "\n      a city or town that has corporate status and local government.\n    ",
+        "rdfs:label": "Municipality"
+      },
+      {
+        "@id": "airport:name",
+        "@type": [
+          "owl:DatatypeProperty",
+          "owl:FunctionalProperty"
+        ],
+        "rdfs:comment": "\n      Name or title associated with thing or place it represents.\n    ",
+        "rdfs:domain": {
+          "@id": "municipality:Municipality"
+        },
+        "rdfs:label": "Name",
+        "rdfs:range": {
+          "@id": "xsd:string"
+        }
+      },
+      {
+        "@id": "wfact:hasAirport",
+        "@type": "owl:ObjectProperty",
+        "rdfs:domain": {
+          "@id": "municipality:Municipality"
+        },
+        "rdfs:range": {
+          "@id": "airport:Airport"
+        }
+      },
+      {
+        "@id": "wfact:hasCountry",
+        "@type": "owl:ObjectProperty",
+        "rdfs:domain": {
+          "@id": "municipality:Municipality"
+        },
+        "rdfs:range": {
+          "@id": "wfact:Country"
+        }
+      },
+      {
+        "@id": "http://williamrobertfunk.com/ontologies/municipality",
+        "@type": "owl:Ontology",
+        "dc:contributor": "William R.A.D. Funk",
+        "dc:creator": "William R.A.D. Funk",
+        "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
+        "owl:versionInfo": {
+          "@type": "xsd:decimal",
+          "@value": "1.0"
+        },
+        "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
+        "rdfs:label": "Funk Ontology"
+      },
+      {
+        "@id": "wfact:hasLocation",
+        "@type": "owl:ObjectProperty",
+        "rdfs:domain": {
+          "@id": "municipality:Municipality"
+        },
+        "rdfs:range": {
+          "@id": "wfact:Location"
+        }
+      }
+    ]
+  }

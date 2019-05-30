@@ -1,10 +1,8 @@
+import { entityMaker, entityRefMaker, getRelation } from 'funktologies';
 import * as getUuid from 'uuid-by-string';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
-import { entityMaker } from '../utils/entity-maker';
-import { entityRefMaker } from '../utils/entity-ref-maker';
-import { getRelation } from '../utils/get-objectProperty';
 
 export function getElevation(cheerioElem: CheerioSelector, country: string, countryId: string) {
     const objectProperties = store.countries[countryId].objectProperties;

@@ -1,0 +1,65 @@
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/">
+    <!ENTITY blade "http://modusoperandi.com/ont/blade#">
+    <!ENTITY ui "http://modusoperandi.com/ont/ui-context#">
+]>
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:blade="http://modusoperandi.com/ont/blade#"
+  xmlns:ui="http://modusoperandi.com/ont/ui-context#"
+>
+  <Ontology rdf:about="http://modusoperandi.com/ont/blade">
+    <versionInfo rdf:datatype="&xsd;decimal">1.2</versionInfo>
+    <dc:rights>
+        Copyright 2018 Modus Operandi, Inc. All rights reserved.
+        This small selection was permitted in this factbook module's use by Kim Ziehlke
+        to allow easier ingestion into their system.
+        Only those annotations/properties/classes used in world-factbook.rdf
+        are included in this reference ontology
+    </dc:rights>
+    <dc:creator>Modus Operandi, Inc.</dc:creator>
+    <dc:contributor>Nicholas J. Fiorello Jr.</dc:contributor>
+    <rdfs:comment>
+      Identifies application specific classes and annotations that are relevant
+      only to the Blade UI and associated applications.
+    </rdfs:comment>
+    <rdfs:label>Blade Ontology</rdfs:label>
+  </Ontology>
+
+  <!-- Annotations -->
+  <AnnotationProperty rdf:about="&owl;versionInfo" />
+  <AnnotationProperty rdf:about="&dc;rights" />
+  <AnnotationProperty rdf:about="&dc;creator" />
+  <AnnotationProperty rdf:about="&dc;contributor" />
+
+  <AnnotationProperty rdf:about="&ui;classAttribute">
+    <rdfs:label>Class Attribute</rdfs:label>
+    <rdfs:comment>
+      Should be asserted against annotation properties that should be imported
+      into the taxonomy model.
+      See "navClass" below in this file for example usage.
+    </rdfs:comment>
+  </AnnotationProperty>
+
+  <AnnotationProperty rdf:about="&blade;navClass">
+    <rdfs:label>Navigation Class</rdfs:label>
+    <rdfs:comment>
+      This property is used to indicate to the GUI which classes should be
+      identified as navigational nodes. This annotation property should only be
+      asserted against classes.
+    </rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+    <ui:classAttribute>true</ui:classAttribute>
+  </AnnotationProperty>
+
+</rdf:RDF>
