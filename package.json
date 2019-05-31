@@ -20,7 +20,9 @@
     "scrape": "ts-node src/index.ts",
     "start": "run-s clean:logs clean:dist scrape copy:ontology zip -- --recurse-directories=false",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "zip": "bestzip dist/images.zip dist/images/*"
+    "zip": "npm-run-all zip:*",
+    "zip:images": "bestzip dist/images.zip dist/images/*",
+    "zip:triples": "bestzip dist/n-triples/n-triples.zip dist/n-triples/*.schema.nt"
   },
   "files": [
     "lib/**/*"

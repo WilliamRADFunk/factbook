@@ -83,7 +83,7 @@ function convertJsonldToNTriples(): void {
 						store.jsonNT += `<${innerEntry['@id']}> <http://www.w3.org/2000/01/rdf-schema#label> ${JSON.stringify(innerEntry['http://www.w3.org/2000/01/rdf-schema#label'])} .\n`;
 						store.jsonNT += `<${innerEntry['@id']}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <${innerEntry['@type']}> .\n`;
 					});
-				} else if(typeof entry[1] === 'object') {
+				} else if(entry[1] && typeof entry[1] === 'object') {
 					store.jsonNT += `<${mainId}> <${entry[0]}> <${entry[1]['@id']}> .\n`;
 					store.jsonNT += `<${entry[1]['@id']}> <http://www.w3.org/2000/01/rdf-schema#label> ${JSON.stringify(entry[1]['http://www.w3.org/2000/01/rdf-schema#label'])} .\n`;
 					store.jsonNT += `<${entry[1]['@id']}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <${entry[1]['@type']}> .\n`;

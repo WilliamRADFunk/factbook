@@ -48,7 +48,7 @@ export function getLandUses(cheerioElem: CheerioSelector, country: string, count
                     const agLandRef = objectP[consts.ONTOLOGY.HAS_AGRICULTURAL_LAND];
                     store.agriculturalLands[alId] = agLandRef;
                     map.objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_AGRICULTURAL_LAND, objectP));
-                    agLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    agLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = Number(landUse1Data.replace(/[^0-9\-\.]/g, '').trim()) || null;
                     agLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;
                 case 'forest:':
@@ -61,7 +61,7 @@ export function getLandUses(cheerioElem: CheerioSelector, country: string, count
                     const fLandRef = objectP[consts.ONTOLOGY.HAS_FOREST_LAND];
                     store.forestLands[fId] = fLandRef;
                     map.objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_FOREST_LAND, objectP));
-                    fLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    fLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = Number(landUse1Data.replace(/[^0-9\-\.]/g, '').trim()) || null;
                     fLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;
                 case 'other:':
@@ -74,7 +74,7 @@ export function getLandUses(cheerioElem: CheerioSelector, country: string, count
                     const oLandRef = objectP[consts.ONTOLOGY.HAS_OTHER_LAND];
                     store.otherLands[oId] = oLandRef;
                     map.objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_OTHER_LAND, objectP));
-                    oLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = landUse1Data.replace(/[^0-9\-\.]/g, '').trim() || null;
+                    oLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = Number(landUse1Data.replace(/[^0-9\-\.]/g, '').trim()) || null;
                     oLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = date1Data.substring(date1Data.indexOf('('), date1Data.indexOf(')') + 1).trim() || 'N/A';
                     break;
             }
@@ -96,7 +96,7 @@ export function getLandUses(cheerioElem: CheerioSelector, country: string, count
             const arbLandRef = objectPropArable[consts.ONTOLOGY.HAS_ARABLE_LAND];
             store.arableLands[arbId] = arbLandRef;
             map.objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_ARABLE_LAND, objectPropArable));
-            arbLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = percentages[0] || null;
+            arbLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = Number(percentages[0]) || null;
             arbLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = dates[0] || 'N/A';
             // Permanent Crops Land
             const pcId = consts.ONTOLOGY.INST_PERMANENT_CROPS_LAND + getUuid(country);
@@ -108,7 +108,7 @@ export function getLandUses(cheerioElem: CheerioSelector, country: string, count
             const pcLandRef = objectPropPermCrop[consts.ONTOLOGY.HAS_PERMANENT_CROPS_LAND];
             store.permanentCropsLands[pcId] = pcLandRef;
             map.objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_PERMANENT_CROPS_LAND, objectPropPermCrop));
-            pcLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = percentages[1] || null;
+            pcLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = Number(percentages[1]) || null;
             pcLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = dates[1] || 'N/A';
             // Permanent Pasture Land
             const ppId = consts.ONTOLOGY.INST_PERMANENT_PASTURE_LAND + getUuid(country);
@@ -120,7 +120,7 @@ export function getLandUses(cheerioElem: CheerioSelector, country: string, count
             const ppLandRef = objectPropPermPast[consts.ONTOLOGY.HAS_PERMANENT_PASTURE_LAND];
             store.permanentPastureLands[ppId] = ppLandRef;
             map.objectProperties.push(entityRefMaker(consts.ONTOLOGY.HAS_PERMANENT_PASTURE_LAND, objectPropPermPast));
-            ppLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = percentages[2] || null;
+            ppLandRef.datatypeProperties[consts.ONTOLOGY.DT_PERCENTAGE] = Number(percentages[2]) || null;
             ppLandRef.datatypeProperties[consts.ONTOLOGY.DT_LAST_ESTIMATED] = dates[2] || 'N/A';
         }
     });
