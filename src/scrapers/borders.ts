@@ -27,7 +27,7 @@ export function getBorders(cheerioElem: CheerioSelector, country: string, countr
         cheerioElem(elementOuter).find('div.category_data.subfield.numeric').each((indexIn: number, elementInner: CheerioElement) => {
             const bordGrd = cheerioElem(elementInner).find('span.subfield-number').text().trim();
             if (bordGrd) {
-                brdMap.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_BORDER] = bordGrd.replace(/,|[a-z]/g, '').trim();
+                brdMap.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_BORDER] = Number(bordGrd.replace(/,|[a-z]/g, '').trim()) || null;
             }
             brdMap.datatypeProperties[consts.ONTOLOGY.DT_UNIT] = 'km';
         });
@@ -67,7 +67,7 @@ export function getBorders(cheerioElem: CheerioSelector, country: string, countr
                             `Border Country Pair of ${orderedContrs[0]} and ${orderedContrs[1]}`);
 
                         objProp[consts.ONTOLOGY.HAS_BORDER_COUNTRY]
-                            .datatypeProperties[consts.ONTOLOGY.DT_BORDER_LENGTH] = distance;
+                            .datatypeProperties[consts.ONTOLOGY.DT_BORDER_LENGTH] = Number(distance) || null;
                         objProp[consts.ONTOLOGY.HAS_BORDER_COUNTRY]
 							.datatypeProperties[consts.ONTOLOGY.DT_UNIT] = 'km';
 

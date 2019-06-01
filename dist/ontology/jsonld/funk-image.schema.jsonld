@@ -1,0 +1,118 @@
+{
+    "@context": {
+      "blade": "http://modusoperandi.com/ont/blade#",
+      "dafu": "http://www.daedafusion.com/",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "image": "http://williamrobertfunk.com/ontologies/image#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+      {
+        "@id": "image:locatorURI",
+        "@type": "owl:DatatypeProperty",
+        "rdfs:comment": "URL location where image was originally located.",
+        "rdfs:domain": [
+          {
+            "@id": "image:Image"
+          },
+          {
+            "@id": "dafu:Asset"
+          }
+        ],
+        "rdfs:label": "Locator URL",
+        "rdfs:range": {
+          "@id": "xsd:literal"
+        }
+      },
+      {
+        "@id": "http://williamrobertfunk.com/ontologies/image",
+        "@type": "owl:Ontology",
+        "dc:contributor": "William R.A.D. Funk",
+        "dc:creator": "William R.A.D. Funk",
+        "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
+        "owl:versionInfo": {
+          "@type": "xsd:decimal",
+          "@value": "1.0"
+        },
+        "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
+        "rdfs:label": "Funk Ontology"
+      },
+      {
+        "@id": "image:imageSize",
+        "@type": [
+          "owl:FunctionalProperty",
+          "owl:DatatypeProperty"
+        ],
+        "rdfs:comment": "The amount of computer memory the image requires.",
+        "rdfs:domain": {
+          "@id": "image:Image"
+        },
+        "rdfs:label": "Image Size",
+        "rdfs:range": {
+          "@id": "xsd:string"
+        }
+      },
+      {
+        "@id": "image:contents",
+        "@type": "owl:DatatypeProperty",
+        "rdfs:comment": "Data URI for the image.",
+        "rdfs:domain": [
+          {
+            "@id": "image:Image"
+          },
+          {
+            "@id": "dafu:Asset"
+          }
+        ],
+        "rdfs:label": "Contents",
+        "rdfs:range": {
+          "@id": "xsd:anyURI"
+        }
+      },
+      {
+        "@id": "image:imageDimensions",
+        "@type": [
+          "owl:FunctionalProperty",
+          "owl:DatatypeProperty"
+        ],
+        "rdfs:comment": "The width and height of the image, usually in pixels",
+        "rdfs:domain": {
+          "@id": "image:Image"
+        },
+        "rdfs:label": "Width by Height Dimensions",
+        "rdfs:range": {
+          "@id": "xsd:string"
+        }
+      },
+      {
+        "@id": "image:Image",
+        "@type": "owl:Class",
+        "blade:navClass": true,
+        "rdfs:comment": "a digitally stored image",
+        "rdfs:label": "Image",
+        "rdfs:subClassOf": {
+          "@id": "dafu:Asset"
+        }
+      },
+      {
+        "@id": "image:contentDescription",
+        "@type": "owl:DatatypeProperty",
+        "rdfs:comment": "Description of the contents contained.",
+        "rdfs:domain": [
+          {
+            "@id": "dafu:Asset"
+          },
+          {
+            "@id": "image:Image"
+          }
+        ],
+        "rdfs:label": "Content Description",
+        "rdfs:range": {
+          "@id": "xsd:string"
+        }
+      }
+    ]
+  }

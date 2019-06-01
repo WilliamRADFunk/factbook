@@ -23,5 +23,6 @@ export function getIrrigatedLand(cheerioElem: CheerioSelector, country: string, 
         ['DT_TOTAL_AREA', 'DT_UNIT', 'DT_LAST_ESTIMATED'],
         country,
 		'Artificially Irrigated Land',
-		[/[a-zA-Z]/g, /[^0-9\-\.\,]/g, /\(/g]);
+		[/[a-zA-Z]/g, /[^0-9\-\.\,]/g, /\(/g],
+		['number', 'string', 'string']);
 };

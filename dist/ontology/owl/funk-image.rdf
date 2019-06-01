@@ -1,0 +1,117 @@
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY image "http://williamrobertfunk.com/ontologies/image#" >
+    <!ENTITY dafu "http://www.daedafusion.com/">
+    <!ENTITY blade "http://modusoperandi.com/ont/blade#">
+]>
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:image="http://williamrobertfunk.com/ontologies/image#"
+  xmlns:dafu="http://www.daedafusion.com/"
+  xmlns:blade="http://modusoperandi.com/ont/blade#">
+
+  <Ontology rdf:about="http://williamrobertfunk.com/ontologies/image">
+    <versionInfo rdf:datatype="&xsd;decimal">1.0</versionInfo>
+    <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
+    <dc:creator>William R.A.D. Funk</dc:creator>
+    <dc:contributor>William R.A.D. Funk</dc:contributor>
+    <rdfs:comment>
+      Identifies application specific classes and annotations that are relevant
+      only to my associated applications.
+    </rdfs:comment>
+    <rdfs:label>Funk Ontology</rdfs:label>
+  </Ontology>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Classes
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/image#Image -->
+
+  <Class rdf:about="&image;Image">
+    <rdfs:label>Image</rdfs:label>
+    <rdfs:comment>a digitally stored image</rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+    <rdfs:subClassOf rdf:resource="&dafu;Asset"/>
+  </Class>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Object Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Datatype Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/image#imageDimensions -->
+
+  <DatatypeProperty rdf:about="&image;imageDimensions">
+    <rdfs:label>Width by Height Dimensions</rdfs:label>
+    <rdfs:comment>The width and height of the image, usually in pixels</rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&image;Image"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/image#imageSize -->
+
+  <DatatypeProperty rdf:about="&image;imageSize">
+    <rdfs:label>Image Size</rdfs:label>
+    <rdfs:comment>The amount of computer memory the image requires.</rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&image;Image"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/image#locatorURI -->
+
+  <DatatypeProperty rdf:about="&image;locatorURI">
+    <rdfs:label>Locator URL</rdfs:label>
+    <rdfs:comment>URL location where image was originally located.</rdfs:comment>
+    <rdfs:domain rdf:resource="&dafu;Asset"/>
+    <rdfs:domain rdf:resource="&image;Image"/>
+    <rdfs:range rdf:resource="&xsd;literal"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/image#contents -->
+
+  <DatatypeProperty rdf:about="&image;contents">
+    <rdfs:label>Contents</rdfs:label>
+    <rdfs:comment>Data URI for the image.</rdfs:comment>
+    <rdfs:domain rdf:resource="&dafu;Asset"/>
+    <rdfs:domain rdf:resource="&image;Image"/>
+    <rdfs:range rdf:resource="&xsd;anyURI"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/image#contentDescription -->
+
+  <DatatypeProperty rdf:about="&image;contentDescription">
+    <rdfs:label>Content Description</rdfs:label>
+    <rdfs:comment>Description of the contents contained.</rdfs:comment>
+    <rdfs:domain rdf:resource="&dafu;Asset"/>
+    <rdfs:domain rdf:resource="&image;Image"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+</rdf:RDF>

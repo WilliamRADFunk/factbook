@@ -4,7 +4,8 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY wfact "http://williamrobertfunk.com/ontologies/world-factbook#" >
+    <!ENTITY general "http://williamrobertfunk.com/ontologies/general#" >
+    <!ENTITY country "http://williamrobertfunk.com/ontologies/country#" >
     <!ENTITY airport "http://williamrobertfunk.com/ontologies/airport#" >
     <!ENTITY municipality "http://williamrobertfunk.com/ontologies/municipality#" >
     <!ENTITY blade "http://modusoperandi.com/ont/blade#">
@@ -16,7 +17,8 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:wfact="http://williamrobertfunk.com/ontologies/world-factbook#"
+  xmlns:general="http://williamrobertfunk.com/ontologies/general#"
+  xmlns:country="http://williamrobertfunk.com/ontologies/country#"
   xmlns:airport="http://williamrobertfunk.com/ontologies/airport#"
   xmlns:municipality="http://williamrobertfunk.com/ontologies/municipality#"
   xmlns:blade="http://modusoperandi.com/ont/blade#">
@@ -58,6 +60,38 @@
   //
   ///////////////////////////////////////////////////////////////////////////////////////
   -->
+  
+  <!-- http://williamrobertfunk.com/ontologies/municipality#hasMunicipality -->
+
+  <ObjectProperty rdf:about="&municipality;hasMunicipality">
+    <rdfs:range rdf:resource="&municipality;Municipality"/>
+  </ObjectProperty>
+
+  <!-- General Ontology Extensions -->
+
+  <!-- http://williamrobertfunk.com/ontologies/general#hasLocation -->
+
+  <ObjectProperty rdf:about="&general;hasLocation">
+    <rdfs:domain rdf:resource="&municipality;Municipality"/>
+    <rdfs:range rdf:resource="&general;Location"/>
+  </ObjectProperty>
+
+  <!-- Country Ontology Extensions -->
+
+  <!-- http://williamrobertfunk.com/ontologies/country#hasCountry -->
+
+  <ObjectProperty rdf:about="&country;hasCountry">
+    <rdfs:domain rdf:resource="&municipality;Municipality"/>
+    <rdfs:range rdf:resource="&country;Country"/>
+  </ObjectProperty>
+
+  <!-- Airport Ontology Extensions -->
+
+  <!-- http://williamrobertfunk.com/ontologies/airport#hasAirport -->
+
+  <ObjectProperty rdf:about="&airport;hasAirport">
+    <rdfs:domain rdf:resource="&municipality;Municipality"/>
+  </ObjectProperty>
 
   <!--
   ///////////////////////////////////////////////////////////////////////////////////////
@@ -67,16 +101,12 @@
   ///////////////////////////////////////////////////////////////////////////////////////
   -->
 
-  <!-- http://williamrobertfunk.com/ontologies/municipality#name -->
+  <!-- General Ontology Extensions -->
 
-  <DatatypeProperty rdf:about="&municipality;name">
-    <rdfs:label>Name</rdfs:label>
-    <rdfs:comment>
-      Name or title associated with thing or place it represents.
-    </rdfs:comment>
-    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+  <!-- http://williamrobertfunk.com/ontologies/general#wikiURI -->
+
+  <DatatypeProperty rdf:about="&general;wikiURI">
     <rdfs:domain rdf:resource="&municipality;Municipality"/>
-    <rdfs:range rdf:resource="&xsd;string"/>
   </DatatypeProperty>
 
 </rdf:RDF>

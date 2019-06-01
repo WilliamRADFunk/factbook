@@ -1,5 +1,4 @@
-import { CountryReference, FlatEntity } from "funktologies";
-import { EntityListWrapper } from "funktologies";
+import { CountryReference, EntityListWrapper, FlatEntity } from "funktologies";
 import { ImageScrapableObject } from "../models/image-scrapable-object";
 import { consoleError, consoleLog } from "../utils/logger";
 

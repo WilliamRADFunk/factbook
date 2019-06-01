@@ -34,7 +34,7 @@ export function getCoastLength(cheerioElem: CheerioSelector, country: string, co
         const coastGrd = cheerioElem(element).find('div.category_data.subfield.numeric').text().trim()
         if (coastGrd) {
 			const coastGrdSplit = coastGrd.split('km');
-			map.datatypeProperties[consts.ONTOLOGY.DT_LENGTH] = coastGrdSplit[0].trim();
+			map.datatypeProperties[consts.ONTOLOGY.DT_LENGTH] = Number(coastGrdSplit[0].trim()) || null;
 			map.datatypeProperties[consts.ONTOLOGY.DT_LENGTH_MODIFIER] = coastGrdSplit.slice(1).join('km').replace(/\\n/g, '').trim() || null;
         }
 	});

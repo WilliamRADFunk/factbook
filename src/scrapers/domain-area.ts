@@ -35,20 +35,20 @@ export function getArea(cheerioElem: CheerioSelector, country: string, countryId
 		const areaData = cheerioElem(element).find('span.subfield-number').text().trim();
 		switch (areaSwitch) {
 			case 'total:':
-				map.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_TOTAL_AREA] = Number(areaData.replace(/,|[a-z]/g, '').trim()) || null;
 				break;
 			case 'land:':
-				map.datatypeProperties[consts.ONTOLOGY.DT_LAND_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_LAND_AREA] = Number(areaData.replace(/,|[a-z]/g, '').trim()) || null;
 				break;
 			case 'water:':
-				map.datatypeProperties[consts.ONTOLOGY.DT_WATER_AREA] = areaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_WATER_AREA] = Number(areaData.replace(/,|[a-z]/g, '').trim()) || null;
 				break;
 		}
     });
 	cheerioElem('#field-area > div > span.category_data').each((index: number, element: CheerioElement) => {
         const areaRank = cheerioElem(element).find('a').text().trim();
 		if (areaRank) {
-			map.datatypeProperties[consts.ONTOLOGY.DT_AREA_RANK] = areaRank;
+			map.datatypeProperties[consts.ONTOLOGY.DT_AREA_RANK] = Number(areaRank);
 		}
 		
 	});

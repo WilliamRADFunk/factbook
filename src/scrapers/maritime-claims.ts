@@ -35,19 +35,19 @@ export function getMaritimeClaims(cheerioElem: CheerioSelector, country: string,
 		const seaData = cheerioElem(element).find('span.subfield-number').text().trim();
 		switch (seaSwitch) {
 			case 'territorial sea:':
-				map.datatypeProperties[consts.ONTOLOGY.DT_TERRITORIAL_SEA] = seaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_TERRITORIAL_SEA] = Number(seaData.replace(/,|[a-z]/g, '').trim()) || null;
 				break;
 			case 'exclusive economic zone:':
-				map.datatypeProperties[consts.ONTOLOGY.DT_EXCLUSIVE_ECONOMIC_ZONE] = seaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_EXCLUSIVE_ECONOMIC_ZONE] = Number(seaData.replace(/,|[a-z]/g, '').trim()) || null;
 				break;
 			case 'contiguous zone:':
-				map.datatypeProperties[consts.ONTOLOGY.DT_CONTIGUOUS_ZONE] = seaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_CONTIGUOUS_ZONE] = Number(seaData.replace(/,|[a-z]/g, '').trim()) || null;
 				break;
 			case 'exclusive fishing zone:':
-				map.datatypeProperties[consts.ONTOLOGY.DT_EXCLUSIVE_FISHING_ZONE] = seaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_EXCLUSIVE_FISHING_ZONE] = Number(seaData.replace(/,|[a-z]/g, '').trim()) || null;
 				break;
 			case 'continental shelf:':
-				map.datatypeProperties[consts.ONTOLOGY.DT_CONTINENTAL_SHELF] = seaData.replace(/,|[a-z]/g, '').trim();
+				map.datatypeProperties[consts.ONTOLOGY.DT_CONTINENTAL_SHELF] = Number(seaData.replace(/,|[a-z]/g, '').trim()) || null;
 				map.datatypeProperties[consts.ONTOLOGY.DT_CONTINENTAL_SHELF_MODIFIER] = seaData.substring(seaData.indexOf('nm or') + 5).trim();
 				break;
 		}

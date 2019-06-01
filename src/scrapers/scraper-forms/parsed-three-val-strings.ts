@@ -14,7 +14,8 @@ export function parsedThreeValStrings(
     dataPropNames: [ string, string, string ],
     country: string,
 	label: string,
-	delimiters: [ RegExp, RegExp, RegExp ]
+    delimiters: [ RegExp, RegExp, RegExp ],
+    datatype?: string[]
 ): void {
 	const objectProperties = store.countries[origParams.countryId].objectProperties;
 	const prevHasList = objectProperties.filter(rel => rel[consts.ONTOLOGY[hasProp]]);
@@ -33,9 +34,27 @@ export function parsedThreeValStrings(
                     guid,
                     `${label} for ${country}`);
                 store[storeKey][guid] = objectProp[consts.ONTOLOGY[hasProp]];
-                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[0]]] = val1;
-                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[1]]] = val2;
-                objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[2]]] = val3 || 'N/A';
+                if (!datatype) {
+                    objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[0]]] = val1;
+                    objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[1]]] = val2;
+                    objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[2]]] = val3 || 'N/A';
+                } else {
+                    if (datatype[0] && datatype[0] === 'number') {
+                        objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[0]]] = Number(val1) || null;
+                    } else {
+                        objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[0]]] = val1;
+                    }
+                    if (datatype[1] && datatype[1] === 'number') {
+                        objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[1]]] = Number(val2) || null;
+                    } else {
+                        objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[1]]] = val2;
+                    }
+                    if (datatype[2] && datatype[2] === 'number') {
+                        objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[2]]] = Number(val3) || null;
+                    } else {
+                        objectProp[consts.ONTOLOGY[hasProp]].datatypeProperties[consts.ONTOLOGY[dataPropNames[2]]] = val3 || 'N/A';
+                    }
+                }
                 store.countries[origParams.countryId].objectProperties.push(entityRefMaker(consts.ONTOLOGY[hasProp], objectProp));
             }
         } else {

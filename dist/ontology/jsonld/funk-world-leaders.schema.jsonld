@@ -1,108 +1,118 @@
 {
-    "@context": {
-      "blade": "http://modusoperandi.com/ont/blade#",
-      "dc": "http://purl.org/dc/elements/1.1/",
-      "foaf": "http://xmlns.com/foaf/0.1/",
-      "foaf1": "http://xmlns.com/foaf/0.1",
-      "owl": "http://www.w3.org/2002/07/owl#",
-      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "wfact": "http://williamrobertfunk.com/ontologies/world-factbook#",
-      "wleaders": "http://williamrobertfunk.com/ontologies/world-leaders#",
-      "xsd": "http://www.w3.org/2001/XMLSchema#"
+  "@context": {
+    "blade": "http://modusoperandi.com/ont/blade#",
+    "country": "http://williamrobertfunk.com/ontologies/country#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "foaf1": "http://xmlns.com/foaf/0.1",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "wleaders": "http://williamrobertfunk.com/ontologies/world-leaders#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "wleaders:GovernmentOffice",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "rdfs:comment": "\n      a title or position in a governing body with a specific set of roles, responsibilities, and authority.\n    ",
+      "rdfs:label": "Government Office"
     },
-    "@graph": [
-      {
-        "@id": "http://williamrobertfunk.com/ontologies/world-leaders",
-        "@type": "owl:Ontology",
-        "dc:contributor": "William R.A.D. Funk",
-        "dc:creator": "William R.A.D. Funk",
-        "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
-        "owl:versionInfo": {
-          "@type": "xsd:decimal",
-          "@value": "1.1"
-        },
-        "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
-        "rdfs:label": "Funk Ontology"
+    {
+      "@id": "country:hasCountry",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "wleaders:GovernmentOffice"
       },
-      {
-        "@id": "wleaders:GovernmentOffice",
-        "@type": "owl:Class",
-        "blade:navClass": true,
-        "rdfs:comment": "\n      a title or position in a governing body with a specific set of roles, responsibilities, and authority.\n    ",
-        "rdfs:label": "Government Office"
-      },
-      {
-        "@id": "wleaders:title",
-        "@type": [
-          "owl:DatatypeProperty",
-          "owl:FunctionalProperty"
-        ],
-        "rdfs:comment": "\n      The official name of the government office\n    ",
-        "rdfs:domain": {
-          "@id": "wleaders:GovernmentOffice"
-        },
-        "rdfs:label": "Title",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
-      },
-      {
-        "@id": "wleaders:hasGovernmentOffice",
-        "@type": "owl:ObjectProperty",
-        "rdfs:domain": {
-          "@id": "wfact:Country"
-        },
-        "rdfs:range": {
-          "@id": "wleaders:GovernmentOffice"
-        }
-      },
-      {
-        "@id": "wleaders:hasGovernmentOfficial",
-        "@type": "owl:ObjectProperty",
-        "rdfs:comment": "\n      a person serving a governing body in the capacity outlined by the government office to which they are employed.\n    ",
-        "rdfs:domain": {
-          "@id": "wleaders:GovernmentOffice"
-        },
-        "rdfs:range": {
-          "@id": "wleaders:Person"
-        }
-      },
-      {
-        "@id": "wleaders:appointedGovernmentOffice",
-        "@type": "owl:ObjectProperty",
-        "rdfs:comment": "\n      a government office to which this person is appointed.\n    ",
-        "rdfs:domain": {
-          "@id": "wleaders:Person"
-        },
-        "rdfs:range": {
-          "@id": "wleaders:GovernmentOffice"
-        }
-      },
-      {
-        "@id": "wleaders:regionSpecific",
-        "@type": [
-          "owl:FunctionalProperty",
-          "owl:DatatypeProperty"
-        ],
-        "rdfs:comment": "\n      Specific Region to which the government office applies\n      (ie. \"Chief Executive\" in China for Hong Kong, or Macau).\n    ",
-        "rdfs:domain": {
-          "@id": "wleaders:GovernmentOffice"
-        },
-        "rdfs:label": "Region Specific",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
-      },
-      {
-        "@id": "wleaders:Person",
-        "@type": "owl:Class",
-        "blade:navClass": true,
-        "owl:equivalentClass": {
-          "@id": "foaf:Person"
-        },
-        "rdfs:comment": "\n      a human being regarded as an individual.\n    ",
-        "rdfs:label": "Person"
+      "rdfs:range": {
+        "@id": "country:Country"
       }
-    ]
-  }
+    },
+    {
+      "@id": "wleaders:title",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:comment": "\n      The official name of the government office\n    ",
+      "rdfs:domain": {
+        "@id": "wleaders:GovernmentOffice"
+      },
+      "rdfs:label": "Title",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "wleaders:hasGovernmentOffice",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "country:Country"
+      },
+      "rdfs:range": {
+        "@id": "wleaders:GovernmentOffice"
+      }
+    },
+    {
+      "@id": "wleaders:hasGovernmentOfficial",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": "\n      a person serving a governing body in the capacity outlined by the government office to which they are employed.\n    ",
+      "rdfs:domain": {
+        "@id": "wleaders:GovernmentOffice"
+      },
+      "rdfs:range": {
+        "@id": "wleaders:Person"
+      }
+    },
+    {
+      "@id": "wleaders:appointedGovernmentOffice",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": "\n      a government office to which this person is appointed.\n    ",
+      "rdfs:domain": {
+        "@id": "wleaders:Person"
+      },
+      "rdfs:range": {
+        "@id": "wleaders:GovernmentOffice"
+      }
+    },
+    {
+      "@id": "wleaders:regionSpecific",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:comment": "\n      Specific Region to which the government office applies\n      (ie. \"Chief Executive\" in China for Hong Kong, or Macau).\n    ",
+      "rdfs:domain": {
+        "@id": "wleaders:GovernmentOffice"
+      },
+      "rdfs:label": "Region Specific",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://williamrobertfunk.com/ontologies/world-leaders",
+      "@type": "owl:Ontology",
+      "dc:contributor": "William R.A.D. Funk",
+      "dc:creator": "William R.A.D. Funk",
+      "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
+      "owl:versionInfo": {
+        "@type": "xsd:decimal",
+        "@value": "1.1"
+      },
+      "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
+      "rdfs:label": "Funk Ontology"
+    },
+    {
+      "@id": "wleaders:Person",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "owl:equivalentClass": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:comment": "\n      a human being regarded as an individual.\n    ",
+      "rdfs:label": "Person"
+    }
+  ]
+}

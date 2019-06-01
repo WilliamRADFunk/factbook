@@ -1,0 +1,283 @@
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY general "http://williamrobertfunk.com/ontologies/general#" >
+    <!ENTITY pos "http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <!ENTITY dbp "http://dbpedia.org/ontology/">
+    <!ENTITY blade "http://modusoperandi.com/ont/blade#">
+]>
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:general="http://williamrobertfunk.com/ontologies/general#"
+  xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dbp="http://dbpedia.org/ontology"
+  xmlns:blade="http://modusoperandi.com/ont/blade#">
+
+  <Ontology rdf:about="http://williamrobertfunk.com/ontologies/general">
+    <versionInfo rdf:datatype="&xsd;decimal">1.0</versionInfo>
+    <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
+    <dc:creator>William R.A.D. Funk</dc:creator>
+    <dc:contributor>William R.A.D. Funk</dc:contributor>
+    <rdfs:comment>
+      Identifies application specific classes and annotations that are relevant
+      only to my associated applications.
+    </rdfs:comment>
+    <rdfs:label>Funk Ontology</rdfs:label>
+  </Ontology>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Classes
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/general#Elevation -->
+
+  <Class rdf:about="&general;Elevation">
+    <rdfs:label>Elevation</rdfs:label>
+    <rdfs:comment>
+      The vertical distance above the reference geoid,
+      a mathematical model of the Earth's sea level as an equipotential gravitational surface.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#Location -->
+
+  <Class rdf:about="&general;Location">
+    <rdfs:label>Location</rdfs:label>
+    <rdfs:comment>
+      A location defined by latitude and longitude according to the wgs84 definition.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#SurfaceMaterial -->
+
+  <Class rdf:about="&general;SurfaceMaterial">
+    <rdfs:label>Surface Material</rdfs:label>
+    <rdfs:comment>
+      The exterior or outer boundary material of an object or body.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Object Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/general#hasElevation -->
+
+  <ObjectProperty rdf:about="&general;hasElevation">
+    <rdfs:range rdf:resource="&general;Elevation"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#hasLocation -->
+
+  <ObjectProperty rdf:about="&general;hasLocation">
+    <rdfs:range rdf:resource="&general;Location"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#hasSurfaceMaterial -->
+
+  <ObjectProperty rdf:about="&general;hasSurfaceMaterial">
+    <rdfs:range rdf:resource="&general;SurfaceMaterial"/>
+  </ObjectProperty>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Datatype Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/general#width -->
+
+  <DatatypeProperty rdf:about="&general;width">
+    <rdfs:label>Width</rdfs:label>
+    <rdfs:comment>The measurement or extent of something from side to side.</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#length -->
+
+  <DatatypeProperty rdf:about="&general;length">
+    <rdfs:label>Length</rdfs:label>
+    <rdfs:comment>The measurement or extent of something from end to end.</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#lengthModifier -->
+
+  <DatatypeProperty rdf:about="&general;lengthModifier">
+    <rdfs:label>Length Modifier</rdfs:label>
+    <rdfs:comment>An additional descriptor to add information to a simple length measurement.</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#description -->
+
+  <DatatypeProperty rdf:about="&general;description">
+    <rdfs:label>Description</rdfs:label>
+    <rdfs:comment>Deeper description of the entity</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#meanElevation -->
+
+  <DatatypeProperty rdf:about="&general;meanElevation">
+    <rdfs:label>Mean Elevation</rdfs:label>
+    <rdfs:comment>
+      The vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a mountain.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&general;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#lowestPoint -->
+
+  <DatatypeProperty rdf:about="&general;lowestPoint">
+    <rdfs:label>Lowest Point</rdfs:label>
+    <rdfs:comment>
+      The lowest vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a canyon.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&general;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#highestPoint -->
+
+  <DatatypeProperty rdf:about="&general;highestPoint">
+    <rdfs:label>Highest Point</rdfs:label>
+    <rdfs:comment>
+      The highest vertical distance between a standard reference point, such as sea level,
+      and the top of an object or point on the Earth, such as a mountain.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&general;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#lowestPointDescription -->
+
+  <DatatypeProperty rdf:about="&general;lowestPointDescription">
+    <rdfs:label>Lowest Point Description</rdfs:label>
+    <rdfs:comment>Supplemental description for the lowest elevation point</rdfs:comment>
+    <rdfs:domain rdf:resource="&general;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#highestPointDescription -->
+
+  <DatatypeProperty rdf:about="&general;highestPointDescription">
+    <rdfs:label>Highest Point Description</rdfs:label>
+    <rdfs:comment>Supplemental description for the highest elevation point</rdfs:comment>
+    <rdfs:domain rdf:resource="&general;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+  <DataProperty rdf:about="&pos;lat">
+    <rdfs:domain rdf:resource="&general;Location" />
+  </DataProperty>
+
+  <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+  <DataProperty rdf:about="&pos;long">
+    <rdfs:domain rdf:resource="&general;Location" />
+  </DataProperty>
+
+  <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+  <DataProperty rdf:about="&pos;alt">
+    <rdfs:domain rdf:resource="&general;Location" />
+  </DataProperty>
+
+  <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat_long -->
+
+  <DataProperty rdf:about="&pos;lat_long">
+    <rdfs:domain rdf:resource="&general;Location" />
+  </DataProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#locationDescription -->
+
+  <DatatypeProperty rdf:about="&general;locationDescription">
+    <rdfs:label>Location Description</rdfs:label>
+    <rdfs:comment>A description of where in the world the location is located.</rdfs:comment>
+    <rdfs:domain rdf:resource="&general;Location"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#percentage -->
+
+  <DatatypeProperty rdf:about="&general;percentage">
+    <rdfs:label>Percentage</rdfs:label>
+    <rdfs:comment>The percentage belonging to the domain instance</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;double"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#condition -->
+
+  <DatatypeProperty rdf:about="&general;condition">
+    <rdfs:label>Condition</rdfs:label>
+    <rdfs:comment>The qualitative condition of a thing (ie. poor, fair, good, etc.).</rdfs:comment>
+    <rdf:type rdf:resource="&owl;FunctionalProperty" />
+    <rdfs:domain rdf:resource="&general;SurfaceMaterial"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#isComposite -->
+
+  <DatatypeProperty rdf:about="&general;isComposite">
+    <rdfs:label>Is Composite</rdfs:label>
+    <rdfs:comment>The parent instance consists of two or more materials.</rdfs:comment>
+    <rdfs:domain rdf:resource="&general;SurfaceMaterial"/>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#material -->
+
+  <DatatypeProperty rdf:about="&general;material">
+    <rdfs:label>Material</rdfs:label>
+    <rdfs:comment>Material (ie. concrete, dirt, water, asphalt, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="&general;SurfaceMaterial"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#unit -->
+
+  <DatatypeProperty rdf:about="&general;unit">
+    <rdfs:label>Unit</rdfs:label>
+    <rdfs:comment>Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="&general;Elevation"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#wikiURI -->
+
+  <DatatypeProperty rdf:about="&general;wikiURI">
+    <rdfs:label>Wikipedia URL</rdfs:label>
+    <rdfs:comment>URL location on Wikipedia where more information can be located.</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;literal"/>
+  </DatatypeProperty>
+
+</rdf:RDF>
