@@ -1,6 +1,6 @@
 {
   "name": "factbook",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Serves as an independent data scraping module, complete with ontology and full scraping ability for the CIA World Factbook site",
   "main": "lib/api.js",
   "scripts": {
@@ -22,6 +22,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "zip": "npm-run-all zip:*",
     "zip:images": "bestzip dist/images.zip dist/images/*",
+    "zip:json": "bestzip dist/json/json.zip dist/json/*.json",
+    "zip:jsonld": "bestzip dist/jsonld/jsonld.zip dist/jsonld/*.schema.jsonld",
     "zip:triples": "bestzip dist/n-triples/n-triples.zip dist/n-triples/*.schema.nt"
   },
   "files": [
@@ -58,8 +60,7 @@
     "bluebird": "^3.5.4",
     "cheerio": "^1.0.0-rc.2",
     "copyfiles": "^2.1.0",
-    "formatter-json": "^0.1.1",
-    "funktologies": "^0.1.1",
+    "funktologies": "^0.1.3",
     "html-to-text": "^4.0.0",
     "image-downloader": "^3.4.2",
     "log4js": "^4.1.0",

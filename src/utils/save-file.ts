@@ -1,34 +1,44 @@
-import * as fj from 'formatter-json';
 import * as fs from 'graceful-fs';
+
+import { Entity } from 'funktologies';
 
 import { consts } from '../constants/constants';
 import { store } from '../constants/globalStore';
 
 export function saveFile(fileName: string, storeName: string, context: string): void {
+	store.debugLogger(`--- Saving ${storeName} in ${fileName}.json`);
 	// Normal JSON file.
-    let file = fj(JSON.stringify(store[storeName]));
-	file = file.replace(/\\n/g, ' ');
-	fs.writeFileSync(`dist/json/${fileName}.json`, file);
+	fs.writeFileSync(`dist/json/${fileName}.json`, JSON.stringify(store[storeName]));
+	store.debugLogger(`+++ Saved ${storeName} in ${fileName}.json`);
 	// JSON-LD file construction.
 	store.jsonLD = [];
 	// const jsonLD = {
 	// 	'@context': context,
 	// 	'@graph': []
 	// };
-	Object.keys(store[storeName]).forEach(key1 => {
+	store.debugLogger(`--- Saving ${storeName} in ${fileName}.schema.jsonld`);
+	const asAList: Entity[] = Object.values(store[storeName]);
+	const length = asAList.length;
+	store[storeName] = {};
+	store.debugLogger(`--- Making JsonLD List`);
+	for (let i = 0; i < length; i++) {
+		const entity = asAList.pop();
+		if (!entity) {
+			continue;
+		}
 		// Grab the basic @id, @type, and rdfs label
 		const mainObj = {
-			'@id': store[storeName][key1]['@id'],
-			'@type': store[storeName][key1]['@type'],
-			'http://www.w3.org/2000/01/rdf-schema#label': store[storeName][key1][consts.RDFS.label]
+			'@id': entity['@id'],
+			'@type': entity['@type'],
+			'http://www.w3.org/2000/01/rdf-schema#label': entity[consts.RDFS.label]
 		};
 		// Pull datatype properties out of their singleton object and make them direct props.
-		const dataProps = store[storeName][key1].datatypeProperties;
+		const dataProps = entity.datatypeProperties;
 		Object.keys(dataProps).forEach(key2 => {
 			mainObj[key2] = dataProps[key2];
 		});
 		// Pull out object properties, and make them direct properties but with array groups for multiples.
-		const objectProps = store[storeName][key1].objectProperties;
+		const objectProps = entity.objectProperties;
 		objectProps.forEach(objP => {
 			// Should be one key per object
 			const key = Object.keys(objP)[0];
@@ -43,17 +53,11 @@ export function saveFile(fileName: string, storeName: string, context: string): 
 			}
 		})
 		// Add it to the graph that belongs to this entity type.
-		// store.jsonLD['@graph'].push(mainObj);
+		// jsonLD['@graph'].push(mainObj);
 		store.jsonLD.push(mainObj);
-		store[storeName][key1] = null;
-	});
+	};
 
-	store[storeName] = {};
-
-    let fileLD = fj(JSON.stringify(store.jsonLD));
-	fileLD = fileLD.replace(/\\n/g, ' ');
-	fs.writeFileSync(`dist/jsonld/${fileName}.schema.jsonld`, fileLD);
-	fileLD = null;
+	fs.writeFileSync(`dist/jsonld/${fileName}.schema.jsonld`, JSON.stringify(store.jsonLD));
 	store.debugLogger(`+++ Saved ${storeName} in ${fileName}.schema.jsonld`);
 	store.debugLogger(`~~~ Converting jsonld to n-triples`);
 
@@ -88,7 +92,14 @@ function convertJsonldToNTriples(): void {
 					store.jsonNT += `<${entry[1]['@id']}> <http://www.w3.org/2000/01/rdf-schema#label> ${JSON.stringify(entry[1]['http://www.w3.org/2000/01/rdf-schema#label'])} .\n`;
 					store.jsonNT += `<${entry[1]['@id']}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <${entry[1]['@type']}> .\n`;
 				} else {
-					store.jsonNT += `<${mainId}> <${entry[0]}> ${JSON.stringify(entry[1])} .\n`;
+					const val = JSON.stringify(entry[1]);
+					if (val.split('"').length > 1) {
+						store.jsonNT += `<${mainId}> <${entry[0]}> ${val}^^<http://www.w3.org/2001/XMLSchema#string> .\n`;
+					} else if (val.split('.').length > 1) {
+						store.jsonNT += `<${mainId}> <${entry[0]}> ${val}^^<http://www.w3.org/2001/XMLSchema#double> .\n`;
+					} else {
+						store.jsonNT += `<${mainId}> <${entry[0]}> ${val}^^<http://www.w3.org/2001/XMLSchema#integer> .\n`;
+					}
 				}
 			});
 		}
