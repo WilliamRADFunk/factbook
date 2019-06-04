@@ -93,12 +93,17 @@ function convertJsonldToNTriples(): void {
 					store.jsonNT += `<${entry[1]['@id']}> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <${entry[1]['@type']}> .\n`;
 				} else {
 					const val = JSON.stringify(entry[1]);
-					if (val.split('"').length > 1) {
+					if (entry[1] === null) {
+						// Include null without a datatype annotation
+						store.jsonNT += `<${mainId}> <${entry[0]}> ${val} .\n`;
+					} else if (!entry[1]) {
+						// Don't include undefined
+					} else if (val.split('"').length > 1) {
 						store.jsonNT += `<${mainId}> <${entry[0]}> ${val}^^<http://www.w3.org/2001/XMLSchema#string> .\n`;
 					} else if (val.split('.').length > 1) {
-						store.jsonNT += `<${mainId}> <${entry[0]}> ${val}^^<http://www.w3.org/2001/XMLSchema#double> .\n`;
+						store.jsonNT += `<${mainId}> <${entry[0]}> "${val}"^^<http://www.w3.org/2001/XMLSchema#double> .\n`;
 					} else {
-						store.jsonNT += `<${mainId}> <${entry[0]}> ${val}^^<http://www.w3.org/2001/XMLSchema#integer> .\n`;
+						store.jsonNT += `<${mainId}> <${entry[0]}> "${val}"^^<http://www.w3.org/2001/XMLSchema#integer> .\n`;
 					}
 				}
 			});
