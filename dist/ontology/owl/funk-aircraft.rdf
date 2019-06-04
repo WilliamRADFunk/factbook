@@ -1,0 +1,205 @@
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY general "http://williamrobertfunk.com/ontologies/general#" >
+    <!ENTITY aircraft "http://williamrobertfunk.com/ontologies/aircraft#" >
+    <!ENTITY pos "http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <!ENTITY dbp "http://dbpedia.org/ontology/">
+    <!ENTITY blade "http://modusoperandi.com/ont/blade#">
+]>
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:general="http://williamrobertfunk.com/ontologies/general#"
+  xmlns:aircraft="http://williamrobertfunk.com/ontologies/aircraft#"
+  xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+  xmlns:dbp="http://dbpedia.org/ontology"
+  xmlns:blade="http://modusoperandi.com/ont/blade#">
+
+  <Ontology rdf:about="http://williamrobertfunk.com/ontologies/aircraft">
+    <versionInfo rdf:datatype="&xsd;decimal">1.0</versionInfo>
+    <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
+    <dc:creator>William R.A.D. Funk</dc:creator>
+    <dc:contributor>William R.A.D. Funk</dc:contributor>
+    <rdfs:comment>
+      Identifies application specific classes and annotations that are relevant
+      only to my associated applications.
+    </rdfs:comment>
+    <rdfs:label>Funk Ontology</rdfs:label>
+  </Ontology>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Classes
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/aircraft#HelicopterLandingZone -->
+
+  <Class rdf:about="&aircraft;HelicopterLandingZone">
+    <rdfs:label>Helicopter Landing Zone</rdfs:label>
+    <rdfs:comment>
+      A specified ground area for landing assault helicopters to embark or disembark troops and/or cargo.
+    </rdfs:comment>
+    <blade:navClass rdf:datatype="&xsd;boolean">true</blade:navClass>
+  </Class>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Object Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/general#hasHelicopterLandingZone -->
+
+  <ObjectProperty rdf:about="&aircraft;hasHelicopterLandingZone">
+    <rdfs:range rdf:resource="&aircraft;HelicopterLandingZone"/>
+  </ObjectProperty>
+
+  <!-- General Ontology Extensions -->
+
+  <!-- http://williamrobertfunk.com/ontologies/general#hasLocation -->
+
+  <ObjectProperty rdf:about="&general;hasLocation">
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+  </ObjectProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#hasSurfaceMaterial -->
+
+  <ObjectProperty rdf:about="&general;hasSurfaceMaterial">
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+  </ObjectProperty>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Datatype Properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <!-- http://williamrobertfunk.com/ontologies/aircraft#numberOfLandingPointSize1 -->
+
+  <DatatypeProperty rdf:about="&aircraft;numberOfLandingPointSize1">
+    <rdfs:comment>
+      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of
+      5, 15, and 25 meters in diameter respectively from inside out.
+
+      Light observation helicopters such as the OH-6 and OH-58D.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/aircraft#numberOfLandingPointSize2 -->
+
+  <DatatypeProperty rdf:about="&aircraft;numberOfLandingPointSize2">
+    <rdfs:comment>
+      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of
+      10, 20, and 35 meters in diameter respectively from inside out.
+
+      Light utility and attack helicopters such as the UH-1H, H-65, and AH-1W.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/aircraft#numberOfLandingPointSize3 -->
+
+  <DatatypeProperty rdf:about="&aircraft;numberOfLandingPointSize3">
+    <rdfs:comment>
+      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of
+      15, 35, and 50 meters in diameter respectively from inside out.
+
+      Medium utility and attack helicopters such as the UH-60, H-2, and AH-64.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/aircraft#numberOfLandingPointSize4 -->
+
+  <DatatypeProperty rdf:about="&aircraft;numberOfLandingPointSize4">
+    <rdfs:comment>
+      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of
+      15, 35, and 80 meters in diameter respectively from inside out.
+
+      Cargo helicopters such as the CH-47, H-3 and CH-53, or with prior coordination.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/aircraft#numberOfLandingPointSize5 -->
+
+  <DatatypeProperty rdf:about="&aircraft;numberOfLandingPointSize5">
+    <rdfs:comment>
+      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of
+      15, 60, and 100 meters in diameter respectively from inside out.
+
+      Slingload helicopters and aircraft of an unknown origin.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/aircraft#numberOfLandingPointSize6 -->
+
+  <DatatypeProperty rdf:about="&aircraft;numberOfLandingPointSize6">
+    <rdfs:comment>
+      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of
+      15, 75, and 125 meters in diameter respectively from inside out.
+
+      Slingload long-line operations.
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/aircraft#numberOfLandingPointSize7 -->
+
+  <DatatypeProperty rdf:about="&aircraft;numberOfLandingPointSize7">
+    <rdfs:comment>
+      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of
+      15, 75, and 150 meters in diameter respectively from inside out.
+
+      Slingload operations with night vision goggles (NVG).
+    </rdfs:comment>
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+    <rdfs:range rdf:resource="&xsd;integer"/>
+  </DatatypeProperty>
+
+  <!-- General Ontology Extensions -->
+
+  <!-- http://williamrobertfunk.com/ontologies/general#width -->
+
+  <DatatypeProperty rdf:about="&general;width">
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#length -->
+
+  <DatatypeProperty rdf:about="&general;length">
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+  </DatatypeProperty>
+
+  <!-- http://williamrobertfunk.com/ontologies/general#unit -->
+
+  <DatatypeProperty rdf:about="&general;unit">
+    <rdfs:domain rdf:resource="&aircraft;HelicopterLandingZone"/>
+  </DatatypeProperty>
+
+</rdf:RDF>

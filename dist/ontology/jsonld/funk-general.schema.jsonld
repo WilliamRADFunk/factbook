@@ -1,214 +1,276 @@
 {
-    "@context": {
-      "blade": "http://modusoperandi.com/ont/blade#",
-      "dbp": "http://dbpedia.org/ontology",
-      "dc": "http://purl.org/dc/elements/1.1/",
-      "foaf": "http://xmlns.com/foaf/0.1/",
-      "general": "http://williamrobertfunk.com/ontologies/general#",
-      "owl": "http://www.w3.org/2002/07/owl#",
-      "pos": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "xsd": "http://www.w3.org/2001/XMLSchema#"
-    },
-    "@graph": [
-      {
-        "@id": "general:highestPointDescription",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "Supplemental description for the highest elevation point",
-        "rdfs:domain": {
-          "@id": "general:Elevation"
-        },
-        "rdfs:label": "Highest Point Description",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
+  "@context": {
+    "blade": "http://modusoperandi.com/ont/blade#",
+    "dbp": "http://dbpedia.org/ontology",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "general": "http://williamrobertfunk.com/ontologies/general#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "pos": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "general:highestPointDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Supplemental description for the highest elevation point",
+      "rdfs:domain": {
+        "@id": "general:Elevation"
       },
-      {
-        "@id": "general:meanElevation",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "\n      The vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a mountain.\n    ",
-        "rdfs:domain": {
-          "@id": "general:Elevation"
-        },
-        "rdfs:label": "Mean Elevation",
-        "rdfs:range": {
-          "@id": "xsd:integer"
-        }
-      },
-      {
-        "@id": "general:highestPoint",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "\n      The highest vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a mountain.\n    ",
-        "rdfs:domain": {
-          "@id": "general:Elevation"
-        },
-        "rdfs:label": "Highest Point",
-        "rdfs:range": {
-          "@id": "xsd:integer"
-        }
-      },
-      {
-        "@id": "general:Elevation",
-        "@type": "owl:Class",
-        "blade:navClass": true,
-        "rdfs:comment": "\n      The vertical distance above the reference geoid,\n      a mathematical model of the Earth's sea level as an equipotential gravitational surface.\n    ",
-        "rdfs:label": "Elevation"
-      },
-      {
-        "@id": "general:length",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "The measurement or extent of something from end to end",
-        "rdfs:label": "Length",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
-      },
-      {
-        "@id": "general:hasLocation",
-        "@type": "owl:ObjectProperty",
-        "rdfs:range": {
-          "@id": "general:Location"
-        }
-      },
-      {
-        "@id": "general:locationDescription",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "A description of where in the world the location is located.",
-        "rdfs:domain": {
-          "@id": "general:Location"
-        },
-        "rdfs:label": "Location Description",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
-      },
-      {
-        "@id": "pos:lat_long",
-        "@type": "owl:DataProperty",
-        "rdfs:domain": {
-          "@id": "general:Location"
-        }
-      },
-      {
-        "@id": "pos:alt",
-        "@type": "owl:DataProperty",
-        "rdfs:domain": {
-          "@id": "general:Location"
-        }
-      },
-      {
-        "@id": "general:Location",
-        "@type": "owl:Class",
-        "blade:navClass": true,
-        "rdfs:comment": "\n      A location defined by latitude and longitude according to the wgs84 definition.\n    ",
-        "rdfs:label": "Location"
-      },
-      {
-        "@id": "general:percentage",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "The percentage belonging to the domain instance",
-        "rdfs:label": "Percentage",
-        "rdfs:range": {
-          "@id": "xsd:double"
-        }
-      },
-      {
-        "@id": "http://williamrobertfunk.com/ontologies/general",
-        "@type": "owl:Ontology",
-        "dc:contributor": "William R.A.D. Funk",
-        "dc:creator": "William R.A.D. Funk",
-        "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
-        "owl:versionInfo": {
-          "@type": "xsd:decimal",
-          "@value": "1.0"
-        },
-        "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
-        "rdfs:label": "Funk Ontology"
-      },
-      {
-        "@id": "pos:long",
-        "@type": "owl:DataProperty",
-        "rdfs:domain": {
-          "@id": "general:Location"
-        }
-      },
-      {
-        "@id": "general:wikiURI",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "URL location on Wikipedia where more information can be located.",
-        "rdfs:label": "Wikipedia URL",
-        "rdfs:range": {
-          "@id": "xsd:literal"
-        }
-      },
-      {
-        "@id": "general:hasElevation",
-        "@type": "owl:ObjectProperty",
-        "rdfs:range": {
-          "@id": "general:Elevation"
-        }
-      },
-      {
-        "@id": "pos:lat",
-        "@type": "owl:DataProperty",
-        "rdfs:domain": {
-          "@id": "general:Location"
-        }
-      },
-      {
-        "@id": "general:lowestPointDescription",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "Supplemental description for the lowest elevation point",
-        "rdfs:domain": {
-          "@id": "general:Elevation"
-        },
-        "rdfs:label": "Lowest Point Description",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
-      },
-      {
-        "@id": "general:description",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "Deeper description of the entity",
-        "rdfs:label": "Description",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
-      },
-      {
-        "@id": "general:unit",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).",
-        "rdfs:domain": {
-          "@id": "general:Elevation"
-        },
-        "rdfs:label": "Unit",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
-      },
-      {
-        "@id": "general:lowestPoint",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "\n      The lowest vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a canyon.\n    ",
-        "rdfs:domain": {
-          "@id": "general:Elevation"
-        },
-        "rdfs:label": "Lowest Point",
-        "rdfs:range": {
-          "@id": "xsd:integer"
-        }
-      },
-      {
-        "@id": "general:lengthModifier",
-        "@type": "owl:DatatypeProperty",
-        "rdfs:comment": "An additional descriptor to add information to a simple length measurement.",
-        "rdfs:label": "Length Modifier",
-        "rdfs:range": {
-          "@id": "xsd:string"
-        }
+      "rdfs:label": "Highest Point Description",
+      "rdfs:range": {
+        "@id": "xsd:string"
       }
-    ]
-  }
+    },
+    {
+      "@id": "general:hasSurfaceMaterial",
+      "@type": "owl:ObjectProperty",
+      "rdfs:range": {
+        "@id": "general:SurfaceMaterial"
+      }
+    },
+    {
+      "@id": "http://williamrobertfunk.com/ontologies/general",
+      "@type": "owl:Ontology",
+      "dc:contributor": "William R.A.D. Funk",
+      "dc:creator": "William R.A.D. Funk",
+      "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
+      "owl:versionInfo": {
+        "@type": "xsd:decimal",
+        "@value": "1.1"
+      },
+      "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
+      "rdfs:label": "Funk Ontology"
+    },
+    {
+      "@id": "general:wikiURI",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "URL location on Wikipedia where more information can be located.",
+      "rdfs:label": "Wikipedia URL",
+      "rdfs:range": {
+        "@id": "xsd:literal"
+      }
+    },
+    {
+      "@id": "general:hasLocation",
+      "@type": "owl:ObjectProperty",
+      "rdfs:range": {
+        "@id": "general:Location"
+      }
+    },
+    {
+      "@id": "general:condition",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": "The qualitative condition of a thing (ie. poor, fair, good, etc.).",
+      "rdfs:domain": {
+        "@id": "general:SurfaceMaterial"
+      },
+      "rdfs:label": "Condition",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "general:percentage",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "The percentage belonging to the domain instance",
+      "rdfs:label": "Percentage",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      }
+    },
+    {
+      "@id": "general:lengthModifier",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "An additional descriptor to add information to a simple length measurement.",
+      "rdfs:label": "Length Modifier",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "general:Elevation",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "rdfs:comment": "\n      The vertical distance above the reference geoid,\n      a mathematical model of the Earth's sea level as an equipotential gravitational surface.\n    ",
+      "rdfs:label": "Elevation"
+    },
+    {
+      "@id": "pos:alt",
+      "@type": "owl:DataProperty",
+      "rdfs:domain": {
+        "@id": "general:Location"
+      }
+    },
+    {
+      "@id": "pos:lat_long",
+      "@type": "owl:DataProperty",
+      "rdfs:domain": {
+        "@id": "general:Location"
+      }
+    },
+    {
+      "@id": "pos:long",
+      "@type": "owl:DataProperty",
+      "rdfs:domain": {
+        "@id": "general:Location"
+      }
+    },
+    {
+      "@id": "general:lowestPointDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Supplemental description for the lowest elevation point",
+      "rdfs:domain": {
+        "@id": "general:Elevation"
+      },
+      "rdfs:label": "Lowest Point Description",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "general:unit",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Unit of measurement (ie. m, km, mi, sq km, celcius, etc.).",
+      "rdfs:domain": {
+        "@id": "general:Elevation"
+      },
+      "rdfs:label": "Unit",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "general:highestPoint",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      The highest vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a mountain.\n    ",
+      "rdfs:domain": {
+        "@id": "general:Elevation"
+      },
+      "rdfs:label": "Highest Point",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "general:meanElevation",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      The vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a mountain.\n    ",
+      "rdfs:domain": {
+        "@id": "general:Elevation"
+      },
+      "rdfs:label": "Mean Elevation",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "general:isComposite",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "The parent instance consists of two or more materials.",
+      "rdfs:domain": {
+        "@id": "general:SurfaceMaterial"
+      },
+      "rdfs:label": "Is Composite",
+      "rdfs:range": {
+        "@id": "xsd:boolean"
+      }
+    },
+    {
+      "@id": "general:description",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Deeper description of the entity",
+      "rdfs:label": "Description",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "general:lowestPoint",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      The lowest vertical distance between a standard reference point, such as sea level,\n      and the top of an object or point on the Earth, such as a canyon.\n    ",
+      "rdfs:domain": {
+        "@id": "general:Elevation"
+      },
+      "rdfs:label": "Lowest Point",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "general:length",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "The measurement or extent of something from end to end.",
+      "rdfs:label": "Length",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      }
+    },
+    {
+      "@id": "general:material",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "Material (ie. concrete, dirt, water, asphalt, etc.).",
+      "rdfs:domain": {
+        "@id": "general:SurfaceMaterial"
+      },
+      "rdfs:label": "Material",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "pos:lat",
+      "@type": "owl:DataProperty",
+      "rdfs:domain": {
+        "@id": "general:Location"
+      }
+    },
+    {
+      "@id": "general:Location",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "rdfs:comment": "\n      A location defined by latitude and longitude according to the wgs84 definition.\n    ",
+      "rdfs:label": "Location"
+    },
+    {
+      "@id": "general:locationDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "A description of where in the world the location is located.",
+      "rdfs:domain": {
+        "@id": "general:Location"
+      },
+      "rdfs:label": "Location Description",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "general:hasElevation",
+      "@type": "owl:ObjectProperty",
+      "rdfs:range": {
+        "@id": "general:Elevation"
+      }
+    },
+    {
+      "@id": "general:SurfaceMaterial",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "rdfs:comment": "\n      The exterior or outer boundary material of an object or body.\n    ",
+      "rdfs:label": "Surface Material"
+    },
+    {
+      "@id": "general:width",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "The measurement or extent of something from side to side.",
+      "rdfs:label": "Width",
+      "rdfs:range": {
+        "@id": "xsd:double"
+      }
+    }
+  ]
+}

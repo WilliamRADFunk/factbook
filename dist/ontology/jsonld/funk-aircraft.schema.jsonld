@@ -1,0 +1,156 @@
+{
+  "@context": {
+    "aircraft": "http://williamrobertfunk.com/ontologies/aircraft#",
+    "blade": "http://modusoperandi.com/ont/blade#",
+    "dbp": "http://dbpedia.org/ontology",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "general": "http://williamrobertfunk.com/ontologies/general#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "pos": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "aircraft:numberOfLandingPointSize1",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of\n      5, 15, and 25 meters in diameter respectively from inside out.\n\n      Light observation helicopters such as the OH-6 and OH-58D.\n    ",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "aircraft:numberOfLandingPointSize2",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of\n      10, 20, and 35 meters in diameter respectively from inside out.\n\n      Light utility and attack helicopters such as the UH-1H, H-65, and AH-1W.\n    ",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "aircraft:numberOfLandingPointSize3",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of\n      15, 35, and 50 meters in diameter respectively from inside out.\n\n      Medium utility and attack helicopters such as the UH-60, H-2, and AH-64.\n    ",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "aircraft:numberOfLandingPointSize4",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of\n      15, 35, and 80 meters in diameter respectively from inside out.\n\n      Cargo helicopters such as the CH-47, H-3 and CH-53, or with prior coordination.\n    ",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "aircraft:numberOfLandingPointSize5",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of\n      15, 60, and 100 meters in diameter respectively from inside out.\n\n      Slingload helicopters and aircraft of an unknown origin.\n    ",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "aircraft:numberOfLandingPointSize6",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of\n      15, 75, and 125 meters in diameter respectively from inside out.\n\n      Slingload long-line operations.\n    ",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "aircraft:numberOfLandingPointSize7",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "\n      Number of places in a Helicopter Landing Zone that contain three unobstructed concentric circles of\n      15, 75, and 150 meters in diameter respectively from inside out.\n\n      Slingload operations with night vision goggles (NVG).\n    ",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "general:length",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      }
+    },
+    {
+      "@id": "general:unit",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      }
+    },
+    {
+      "@id": "general:hasSurfaceMaterial",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      }
+    },
+    {
+      "@id": "aircraft:hasHelicopterLandingZone",
+      "@type": "owl:ObjectProperty",
+      "rdfs:range": {
+        "@id": "aircraft:HelicopterLandingZone"
+      }
+    },
+    {
+      "@id": "aircraft:HelicopterLandingZone",
+      "@type": "owl:Class",
+      "blade:navClass": true,
+      "rdfs:comment": "\n      A specified ground area for landing assault helicopters to embark or disembark troops and/or cargo.\n    ",
+      "rdfs:label": "Helicopter Landing Zone"
+    },
+    {
+      "@id": "general:width",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      }
+    },
+    {
+      "@id": "general:hasLocation",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "aircraft:HelicopterLandingZone"
+      }
+    },
+    {
+      "@id": "http://williamrobertfunk.com/ontologies/aircraft",
+      "@type": "owl:Ontology",
+      "dc:contributor": "William R.A.D. Funk",
+      "dc:creator": "William R.A.D. Funk",
+      "dc:rights": "Copyright 2019 William R.A.D. Funk. All rights reserved.",
+      "owl:versionInfo": {
+        "@type": "xsd:decimal",
+        "@value": "1.0"
+      },
+      "rdfs:comment": "\n      Identifies application specific classes and annotations that are relevant\n      only to my associated applications.\n    ",
+      "rdfs:label": "Funk Ontology"
+    }
+  ]
+}

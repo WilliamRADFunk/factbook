@@ -64,5 +64,7 @@ typings/
 # images are just too big to store in git
 dist/images/*
 dist/images.*
+dist/json/*.json
+dist/jsonld/*.jsonld
 dist/n-triples/*.nt
 lib/

@@ -24,7 +24,7 @@
   xmlns:blade="http://modusoperandi.com/ont/blade#">
 
   <Ontology rdf:about="http://williamrobertfunk.com/ontologies/general">
-    <versionInfo rdf:datatype="&xsd;decimal">1.0</versionInfo>
+    <versionInfo rdf:datatype="&xsd;decimal">1.1</versionInfo>
     <dc:rights>Copyright 2019 William R.A.D. Funk. All rights reserved.</dc:rights>
     <dc:creator>William R.A.D. Funk</dc:creator>
     <dc:contributor>William R.A.D. Funk</dc:contributor>
@@ -113,7 +113,7 @@
   <DatatypeProperty rdf:about="&general;width">
     <rdfs:label>Width</rdfs:label>
     <rdfs:comment>The measurement or extent of something from side to side.</rdfs:comment>
-    <rdfs:range rdf:resource="&xsd;string"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
   </DatatypeProperty>
 
   <!-- http://williamrobertfunk.com/ontologies/general#length -->
@@ -121,7 +121,7 @@
   <DatatypeProperty rdf:about="&general;length">
     <rdfs:label>Length</rdfs:label>
     <rdfs:comment>The measurement or extent of something from end to end.</rdfs:comment>
-    <rdfs:range rdf:resource="&xsd;string"/>
+    <rdfs:range rdf:resource="&xsd;double"/>
   </DatatypeProperty>
 
   <!-- http://williamrobertfunk.com/ontologies/general#lengthModifier -->
