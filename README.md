@@ -1,5 +1,5 @@
 # factbook
-(In Progress) Serves as an independent data scraping module, complete with ontology and full scraping ability.
+Serves as an independent data scraping module, complete with ontology and full scraping ability.
 
 Also serves as child module for the larger [data-glutton](https://github.com/WilliamRADFunk/data-glutton.git), which culminates data from multiple locations and bridges them under a universal ontology.
 
